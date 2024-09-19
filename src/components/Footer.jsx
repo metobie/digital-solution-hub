@@ -5,12 +5,12 @@ const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white py-8">
       <div className="container mx-auto px-6">
-        <div className="flex flex-wrap justify-between">
-          <div className="w-full md:w-1/3 mb-6 md:mb-0">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="col-span-1">
             <img src="https://i.imgur.com/DZ7kP2T.png" alt="Renew I/O Logo" className="h-12 mb-2" />
             <p className="text-sm">Din partner för digital transformation och strategisk utveckling</p>
           </div>
-          <div className="w-full md:w-1/3 mb-6 md:mb-0">
+          <div className="col-span-1 md:pl-8"> {/* Added left padding here */}
             <h3 className="text-lg font-semibold mb-2">Snabblänkar</h3>
             <ul className="text-sm">
               <li className="mb-2"><Link to="/" className="hover:text-gray-300">Hem</Link></li>
@@ -18,7 +18,7 @@ const Footer = () => {
               <li className="mb-2"><Link to="/contact" className="hover:text-gray-300">Kontakt</Link></li>
             </ul>
           </div>
-          <div className="w-full md:w-1/3">
+          <div className="col-span-1">
             <h3 className="text-lg font-semibold mb-2">Kontakt</h3>
             <p className="text-sm mb-2">Email: info@renewio.se</p>
             <p className="text-sm mb-2">Telefon: +46 73 035 28 88</p>
