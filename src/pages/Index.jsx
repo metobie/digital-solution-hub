@@ -16,7 +16,7 @@ const Index = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <h1 className="text-5xl font-extrabold mb-4 text-gray-800 tracking-tight" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.1)' }}>Välkommen till Renew I/O</h1>
+          <h1 className="text-6xl font-extrabold mb-4 text-gray-800 tracking-tight" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.1)' }}>Välkommen till Renew I/O</h1>
           <p className="text-xl text-gray-600">Din partner för digital transformation, strategisk utveckling och cybersäkerhet</p>
         </motion.section>
 
@@ -76,8 +76,8 @@ const Index = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-white p-6 rounded-lg shadow">
-              <p className="italic mb-2">"Renew I/O:s strategiska insikter har varit avgörande för vår digitala transformation. Deras förmåga att navigera både tekniska och affärsmässiga aspekter är enastående."</p>
-              <p className="font-semibold">- Anna Andersson, VD, TechCorp AB</p>
+              <p className="italic mb-2">"Vi på Nakof vill varmt tacka för ovärderliga insatser under användartesterna av vår ljudprogramvara. Renew I/O's tekniska expertis och breda kunskaper förbättrade både funktionalitet och design. Noggrann och analytisk feedback var avgörande för att höja kvaliteten."</p>
+              <p className="font-semibold">- Robert Nesta Nuhu, Grundare, Nakof</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow">
               <p className="italic mb-2">"Tack vare Renew I/O:s expertis kunde vi implementera en skräddarsydd digital lösning som drastiskt förbättrade vår operativa effektivitet och cybersäkerhet."</p>
