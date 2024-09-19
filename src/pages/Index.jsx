@@ -31,7 +31,7 @@ const Index = () => {
             <CardContent className="p-6">
               <div className="flex flex-col md:flex-row items-center">
                 <motion.div
-                  className="w-48 h-48 bg-gray-900 rounded-full flex items-center justify-center mb-4 md:mb-0 md:mr-6 flex-shrink-0"
+                  className="w-48 h-48 bg-gray-200 rounded-full flex items-center justify-center mb-4 md:mb-0 md:mr-6 flex-shrink-0"
                   animate={{
                     scale: [1, 1.1, 1],
                     rotate: [0, 10, -10, 0],
@@ -44,7 +44,7 @@ const Index = () => {
                     repeatDelay: 1
                   }}
                 >
-                  <Shield className="w-24 h-24 text-gray-300" />
+                  <Shield className="w-24 h-24 text-gray-700" />
                 </motion.div>
                 <Separator orientation="vertical" className="h-48 mx-6 hidden md:block" />
                 <div className="md:ml-6 flex-grow">
@@ -71,7 +71,7 @@ const Index = () => {
           transition={{ duration: 0.5, delay: 0.6 }}
         >
           <h2 className="text-2xl font-semibold mb-4 flex items-center justify-center">
-            <Star className="w-6 h-6 mr-2 text-yellow-500" />
+            <Star className="w-8 h-8 mr-2 text-gray-800" />
             Rekommendationer
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
