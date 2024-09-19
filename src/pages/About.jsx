@@ -41,7 +41,7 @@ const About = () => {
         transition={{ duration: 0.5, delay: 0.4 }}
       >
         <h2 className="text-2xl font-semibold mb-4 flex items-center">
-          <Briefcase className="mr-2 text-blue-500" />
+          <Briefcase className="mr-2 text-gray-800" />
           Min Bakgrund
         </h2>
         <p className="mb-4">
@@ -62,7 +62,7 @@ const About = () => {
         transition={{ duration: 0.5, delay: 0.6 }}
       >
         <h2 className="text-2xl font-semibold mb-4 flex items-center">
-          <Shield className="mr-2 text-blue-500" />
+          <Shield className="mr-2 text-gray-800" />
           Cybersäkerhetsexpertis
         </h2>
         <Card>
