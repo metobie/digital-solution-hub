@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Card, CardContent } from "@/components/ui/card";
-import { Shield } from 'lucide-react';
+import { Shield, Briefcase } from 'lucide-react';
 
 const About = () => {
   return (
@@ -40,7 +40,10 @@ const About = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.4 }}
       >
-        <h2 className="text-2xl font-semibold mb-4">Min Bakgrund</h2>
+        <h2 className="text-2xl font-semibold mb-4 flex items-center">
+          <Briefcase className="mr-2 text-blue-500" />
+          Min Bakgrund
+        </h2>
         <p className="mb-4">
           Med över ett decennium av erfarenhet inom IT, digital strategi och cybersäkerhet har jag haft förmånen att arbeta med en mängd olika företag och organisationer. Min resa började inom teknisk support och utvecklades snabbt till bl.a. tekniska roller inom workplace-lösningar, storskaliga infrastruktur-implementationer, cloud och strategisk rådgivning.
         </p>
