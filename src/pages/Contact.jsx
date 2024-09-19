@@ -37,7 +37,7 @@ const Contact = () => {
         >
           <h2 className="text-2xl font-semibold mb-4">Låt oss samarbeta</h2>
           <p className="mb-4">
-            Oavsett om du står inför stora utmaningar eller bara vill säga hej, är jag här för att lyssna och hjälpa. Min expertis som Digital Solution Strategist och Cybersäkerhetsexpert kan vara nyckeln till att låsa upp din organisations fulla potential och säkra dess digitala framtid.
+            Oavsett om du står inför stora utmaningar eller bara vill säga hej, är jag här för att lyssna och hjälpa. Min expertis som IT Infrastruktur, Cloud Cyber Security kan vara nyckeln till att låsa upp din organisations fulla potential och säkra dess digitala framtid.
           </p>
           <p className="mb-4">
             Kanske brottas du med:
