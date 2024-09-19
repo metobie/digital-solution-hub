@@ -16,7 +16,7 @@ const Index = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <h1 className="text-4xl font-bold mb-4">Välkommen till Renew I/O</h1>
+          <h1 className="text-5xl font-extrabold mb-4 text-gray-800 tracking-tight" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.1)' }}>Välkommen till Renew I/O</h1>
           <p className="text-xl text-gray-600">Din partner för digital transformation, strategisk utveckling och cybersäkerhet</p>
         </motion.section>
 
