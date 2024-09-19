@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Shield } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -64,10 +64,6 @@ const Contact = () => {
             <div className="flex items-center">
               <MapPin className="mr-2" />
               <span>Stockholm, Sverige</span>
-            </div>
-            <div className="flex items-center">
-              <Shield className="mr-2" />
-              <span>Cybersäkerhetskonsultationer tillgängliga</span>
             </div>
           </div>
         </motion.div>
