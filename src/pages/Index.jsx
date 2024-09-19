@@ -80,8 +80,8 @@ const Index = () => {
               <p className="font-semibold">- Robert Nesta Nuhu, Grundare, Nakof</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow">
-              <p className="italic mb-2">"Tack vare Renew I/O:s expertis kunde vi implementera en skräddarsydd digital lösning som drastiskt förbättrade vår operativa effektivitet och cybersäkerhet."</p>
-              <p className="font-semibold">- Erik Eriksson, CTO, InnovateNow</p>
+              <p className="italic mb-2">"Vi har haft nöjet att arbeta med Renew I/O under ett omfattande IT-projekt. Deras tekniska expertis och förmåga att lösa komplexa problem imponerade stort. Deras insikter och rådgivning bidrog direkt till projektets framgång. Rekommenderas starkt för teknisk rådgivning och implementation."</p>
+              <p className="font-semibold">- Tim Omorogieva, VD, Rider</p>
             </div>
           </div>
         </motion.section>
