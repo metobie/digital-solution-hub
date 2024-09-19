@@ -1,9 +1,37 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 
 const Index = () => {
+  const recommendations = [
+    {
+      text: "Renew I/O:s strategiska insikter har varit avgörande för vår digitala transformation. Deras förmåga att navigera både tekniska och affärsmässiga aspekter är enastående.",
+      author: "Anna Andersson, VD, TechCorp AB"
+    },
+    {
+      text: "Tack vare Renew I/O:s expertis kunde vi implementera en skräddarsydd digital lösning som drastiskt förbättrade vår operativa effektivitet.",
+      author: "Erik Eriksson, CTO, InnovateNow"
+    },
+    {
+      text: "Vi på Nakof vill varmt tacka Renew I/O för deras ovärderliga insatser under användartesterna av vår ljudprogramvarupluggin. Deras tekniska expertis och breda kunskaper har förbättrat både funktionaliteten och utseendet på produkten. Den analytiska och noggranna feedbacken har varit avgörande för att höja kvaliteten. Vi kan starkt rekommendera Renew I/O till alla som söker teknisk expertis.",
+      author: "Robert Nesta Nuhu, Nakof"
+    }
+  ];
+
+  const [currentRecommendations, setCurrentRecommendations] = useState([0, 1]);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentRecommendations(prev => {
+        const next = [(prev[0] + 1) % recommendations.length, (prev[1] + 1) % recommendations.length];
+        return next[0] === next[1] ? [(next[0] + 1) % recommendations.length, next[1]] : next;
+      });
+    }, 5000); // Rotate every 5 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="min-h-screen bg-gray-100">
       <main className="container mx-auto px-6 py-8">
@@ -41,14 +69,19 @@ const Index = () => {
         >
           <h2 className="text-2xl font-semibold mb-4">Rekommendationer</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-white p-6 rounded-lg shadow">
-              <p className="italic mb-2">"Renew I/O:s strategiska insikter har varit avgörande för vår digitala transformation. Deras förmåga att navigera både tekniska och affärsmässiga aspekter är enastående."</p>
-              <p className="font-semibold">- Anna Andersson, VD, TechCorp AB</p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow">
-              <p className="italic mb-2">"Tack vare Renew I/O:s expertis kunde vi implementera en skräddarsydd digital lösning som drastiskt förbättrade vår operativa effektivitet."</p>
-              <p className="font-semibold">- Erik Eriksson, CTO, InnovateNow</p>
-            </div>
+            {currentRecommendations.map((index) => (
+              <motion.div 
+                key={index}
+                className="bg-white p-6 rounded-lg shadow"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.5 }}
+              >
+                <p className="italic mb-2">"{recommendations[index].text}"</p>
+                <p className="font-semibold">- {recommendations[index].author}</p>
+              </motion.div>
+            ))}
           </div>
         </motion.section>
 
