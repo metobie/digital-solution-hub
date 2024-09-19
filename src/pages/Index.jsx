@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Shield } from 'lucide-react';
+import { Shield, Search, FileCheck, GraduationCap, Activity, AlertTriangle } from 'lucide-react';
 
 const Index = () => {
   return (
@@ -81,13 +81,28 @@ const Index = () => {
               <p className="text-center mb-4">
                 I dagens digitala landskap är cybersäkerhet avgörande för varje verksamhet. Renew I/O erbjuder omfattande cybersäkerhetslösningar för att skydda ditt företag mot moderna hot.
               </p>
-              <ul className="list-disc list-inside">
-                <li>Säkerhetsgranskningar och penetrationstester</li>
-                <li>Implementering av säkerhetsrutiner och policyer</li>
-                <li>Utbildning i cybersäkerhet för anställda</li>
-                <li>Övervakning och hantering av säkerhetshot i realtid</li>
-                <li>Incidenthantering och återställningsplanering</li>
-              </ul>
+              <div className="flex flex-col items-center space-y-4">
+                <div className="flex items-center">
+                  <Search className="w-6 h-6 mr-2 text-gray-800" />
+                  <span>Säkerhetsgranskningar och penetrationstester</span>
+                </div>
+                <div className="flex items-center">
+                  <FileCheck className="w-6 h-6 mr-2 text-gray-800" />
+                  <span>Implementering av säkerhetsrutiner och policyer</span>
+                </div>
+                <div className="flex items-center">
+                  <GraduationCap className="w-6 h-6 mr-2 text-gray-800" />
+                  <span>Utbildning i cybersäkerhet för anställda</span>
+                </div>
+                <div className="flex items-center">
+                  <Activity className="w-6 h-6 mr-2 text-gray-800" />
+                  <span>Övervakning och hantering av säkerhetshot i realtid</span>
+                </div>
+                <div className="flex items-center">
+                  <AlertTriangle className="w-6 h-6 mr-2 text-gray-800" />
+                  <span>Incidenthantering och återställningsplanering</span>
+                </div>
+              </div>
             </CardContent>
           </Card>
         </motion.section>
