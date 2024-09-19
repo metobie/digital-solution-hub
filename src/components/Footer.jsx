@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-wrap justify-between">
           <div className="w-full md:w-1/3 mb-6 md:mb-0">
-            <h3 className="text-lg font-semibold mb-2">Renew I/O</h3>
+            <img src="https://i.imgur.com/DZ7kP2T.png" alt="Renew I/O Logo" className="h-12 mb-2" />
             <p className="text-sm">Din partner för digital transformation och strategisk utveckling</p>
           </div>
           <div className="w-full md:w-1/3 mb-6 md:mb-0">
