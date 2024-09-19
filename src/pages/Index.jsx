@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Shield, Search, FileCheck, GraduationCap, Activity, AlertTriangle, Zap, Lightbulb, Link as LinkIcon, Compass, LockIcon } from 'lucide-react';
+import { Shield, Search, FileCheck, GraduationCap, Activity, AlertTriangle } from 'lucide-react';
 
 const Index = () => {
   return (
@@ -34,28 +34,13 @@ const Index = () => {
                   <h3 className="text-xl font-semibold mb-2">Skräddarsydda digitala lösningar för din framgång</h3>
                   <p className="mb-2">Hos Renew I/O förstår vi att varje företag är unikt. Vår expertis ligger i att skapa skräddarsydda digitala strategier som driver tillväxt, effektiviserar processer och ger er ett konkurrenskraftigt övertag på marknaden.</p>
                   <p>Med vår djupa tekniska kunskap och affärsstrategiska insikter hjälper vi er att:</p>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-                    <div className="flex items-center">
-                      <Zap className="w-6 h-6 mr-2 text-gray-800" />
-                      <span>Optimera er digitala infrastruktur för ökad effektivitet</span>
-                    </div>
-                    <div className="flex items-center">
-                      <Lightbulb className="w-6 h-6 mr-2 text-gray-800" />
-                      <span>Implementera innovativa lösningar som driver affärsvärde</span>
-                    </div>
-                    <div className="flex items-center">
-                      <LinkIcon className="w-6 h-6 mr-2 text-gray-800" />
-                      <span>Överbrygga klyftan mellan IT och affärsmål</span>
-                    </div>
-                    <div className="flex items-center">
-                      <Compass className="w-6 h-6 mr-2 text-gray-800" />
-                      <span>Navigera den digitala transformationen med säkerhet och precision</span>
-                    </div>
-                    <div className="flex items-center">
-                      <LockIcon className="w-6 h-6 mr-2 text-gray-800" />
-                      <span>Stärka er cybersäkerhet för att skydda verksamheten</span>
-                    </div>
-                  </div>
+                  <ul className="list-disc list-inside mt-4 space-y-2">
+                    <li>Optimera er digitala infrastruktur för ökad effektivitet</li>
+                    <li>Implementera innovativa lösningar som driver affärsvärde</li>
+                    <li>Överbrygga klyftan mellan IT och affärsmål</li>
+                    <li>Navigera den digitala transformationen med säkerhet och precision</li>
+                    <li>Stärka er cybersäkerhet för att skydda verksamheten</li>
+                  </ul>
                 </div>
               </div>
             </CardContent>
