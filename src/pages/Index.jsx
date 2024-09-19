@@ -24,7 +24,7 @@ const Index = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
-          <h2 className="text-2xl font-semibold mb-4 text-center">Förnya din verksamhet med Renew I/O</h2>
+          <h2 className="text-2xl font-semibold mb-4 text-center">Förnya din verksamhet med vår hjälp</h2>
           <Card className="overflow-hidden">
             <CardContent className="p-6">
               <div className="flex flex-col md:flex-row items-center">
