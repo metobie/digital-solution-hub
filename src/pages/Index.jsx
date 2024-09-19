@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 
 const Index = () => {
   return (
@@ -24,13 +25,18 @@ const Index = () => {
           transition={{ duration: 0.5, delay: 0.4 }}
         >
           <h2 className="text-2xl font-semibold mb-4">Om mig</h2>
-          <div className="flex flex-col md:flex-row items-center">
-            <img src="https://i.imgur.com/PBAVzJh.jpeg" alt="Profilbild" className="w-48 h-48 rounded-full mb-4 md:mb-0 md:mr-6" />
-            <div>
-              <p className="mb-2">Som Digital Solution Strategist kombinerar jag min erfarenhet inom storskalig infrastruktur med förmågan att kommunicera effektivt på både företags- och teknisk nivå.</p>
-              <p>Min unika kompetens ligger i att överbrygga klyftan mellan affärsmål och tekniska lösningar, vilket möjliggör sömlös integration och optimering av digitala strategier.</p>
-            </div>
-          </div>
+          <Card className="overflow-hidden">
+            <CardContent className="p-6">
+              <div className="flex flex-col md:flex-row items-center">
+                <img src="https://i.imgur.com/PBAVzJh.jpeg" alt="Profilbild" className="w-48 h-48 rounded-full mb-4 md:mb-0 md:mr-6" />
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">Digital Solution Strategist</h3>
+                  <p className="mb-2">Som Digital Solution Strategist kombinerar jag min erfarenhet inom storskalig infrastruktur med förmågan att kommunicera effektivt på både företags- och teknisk nivå.</p>
+                  <p>Min unika kompetens ligger i att överbrygga klyftan mellan affärsmål och tekniska lösningar, vilket möjliggör sömlös integration och optimering av digitala strategier.</p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
         </motion.section>
 
         <motion.section 
