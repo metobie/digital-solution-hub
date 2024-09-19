@@ -21,8 +21,8 @@ const Footer = () => {
           <div className="w-full md:w-1/3">
             <h3 className="text-lg font-semibold mb-2">Kontakt</h3>
             <p className="text-sm mb-2">Email: info@renewio.se</p>
-            <p className="text-sm mb-2">Telefon: +46 70 123 45 67</p>
-            <p className="text-sm">Stockholm, Sverige</p>
+            <p className="text-sm mb-2">Telefon: +46 73 035 28 88</p>
+            <p className="text-sm">Kristianstad, Sverige</p>
           </div>
         </div>
         <div className="border-t border-gray-700 mt-8 pt-8 text-sm text-center">
