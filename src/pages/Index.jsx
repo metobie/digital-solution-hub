@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Shield } from 'lucide-react';
+import { Shield, Star } from 'lucide-react';
 
 const Index = () => {
   return (
@@ -29,7 +29,22 @@ const Index = () => {
           <Card className="overflow-hidden">
             <CardContent className="p-6">
               <div className="flex flex-col md:flex-row items-center">
-                <img src="https://i.imgur.com/PBAVzJh.jpeg" alt="Profilbild" className="w-48 h-48 rounded-full mb-4 md:mb-0 md:mr-6" />
+                <motion.div
+                  className="w-48 h-48 bg-blue-100 rounded-full flex items-center justify-center mb-4 md:mb-0 md:mr-6"
+                  animate={{
+                    scale: [1, 1.1, 1],
+                    rotate: [0, 10, -10, 0],
+                  }}
+                  transition={{
+                    duration: 3,
+                    ease: "easeInOut",
+                    times: [0, 0.2, 0.5, 0.8, 1],
+                    repeat: Infinity,
+                    repeatDelay: 1
+                  }}
+                >
+                  <Shield className="w-24 h-24 text-blue-500" />
+                </motion.div>
                 <div>
                   <h3 className="text-xl font-semibold mb-2">Skräddarsydda digitala lösningar för din framgång</h3>
                   <p className="mb-2">Hos Renew I/O förstår vi att varje företag är unikt. Vår expertis ligger i att skapa skräddarsydda digitala strategier som driver tillväxt, effektiviserar processer och ger er ett konkurrenskraftigt övertag på marknaden.</p>
@@ -53,7 +68,10 @@ const Index = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          <h2 className="text-2xl font-semibold mb-4">Rekommendationer</h2>
+          <h2 className="text-2xl font-semibold mb-4 flex items-center justify-center">
+            <Star className="w-6 h-6 mr-2 text-yellow-500" />
+            Rekommendationer
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-white p-6 rounded-lg shadow">
               <p className="italic mb-2">"Renew I/O:s strategiska insikter har varit avgörande för vår digitala transformation. Deras förmåga att navigera både tekniska och affärsmässiga aspekter är enastående."</p>
