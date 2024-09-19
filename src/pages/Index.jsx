@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Shield } from 'lucide-react';
 
 const Index = () => {
   return (
@@ -15,7 +16,7 @@ const Index = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <h1 className="text-4xl font-bold mb-4">Välkommen till Renew I/O</h1>
-          <p className="text-xl text-gray-600">Din partner för digital transformation och strategisk utveckling</p>
+          <p className="text-xl text-gray-600">Din partner för digital transformation, strategisk utveckling och cybersäkerhet</p>
         </motion.section>
 
         <motion.section 
@@ -38,6 +39,7 @@ const Index = () => {
                     <li>Implementera innovativa lösningar som driver affärsvärde</li>
                     <li>Överbrygga klyftan mellan IT och affärsmål</li>
                     <li>Navigera den digitala transformationen med säkerhet och precision</li>
+                    <li>Stärka er cybersäkerhet för att skydda verksamheten</li>
                   </ul>
                 </div>
               </div>
@@ -58,20 +60,46 @@ const Index = () => {
               <p className="font-semibold">- Anna Andersson, VD, TechCorp AB</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow">
-              <p className="italic mb-2">"Tack vare Renew I/O:s expertis kunde vi implementera en skräddarsydd digital lösning som drastiskt förbättrade vår operativa effektivitet."</p>
+              <p className="italic mb-2">"Tack vare Renew I/O:s expertis kunde vi implementera en skräddarsydd digital lösning som drastiskt förbättrade vår operativa effektivitet och cybersäkerhet."</p>
               <p className="font-semibold">- Erik Eriksson, CTO, InnovateNow</p>
             </div>
           </div>
         </motion.section>
 
         <motion.section
-          className="text-center"
+          className="mb-12"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.8 }}
         >
+          <h2 className="text-2xl font-semibold mb-4 text-center">Cybersäkerhet i fokus</h2>
+          <Card className="overflow-hidden">
+            <CardContent className="p-6">
+              <div className="flex items-center justify-center mb-4">
+                <Shield className="w-16 h-16 text-blue-500" />
+              </div>
+              <p className="text-center mb-4">
+                I dagens digitala landskap är cybersäkerhet avgörande för varje verksamhet. Renew I/O erbjuder omfattande cybersäkerhetslösningar för att skydda ditt företag mot moderna hot.
+              </p>
+              <ul className="list-disc list-inside">
+                <li>Säkerhetsgranskningar och penetrationstester</li>
+                <li>Implementering av säkerhetsrutiner och policyer</li>
+                <li>Utbildning i cybersäkerhet för anställda</li>
+                <li>Övervakning och hantering av säkerhetshot i realtid</li>
+                <li>Incidenthantering och återställningsplanering</li>
+              </ul>
+            </CardContent>
+          </Card>
+        </motion.section>
+
+        <motion.section
+          className="text-center"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 1 }}
+        >
           <h2 className="text-2xl font-semibold mb-4">Redo att ta nästa steg?</h2>
-          <p className="mb-4">Låt oss tillsammans utforska hur Renew I/O kan hjälpa ditt företag att nå nya höjder inom digital innovation och effektivitet.</p>
+          <p className="mb-4">Låt oss tillsammans utforska hur Renew I/O kan hjälpa ditt företag att nå nya höjder inom digital innovation, effektivitet och säkerhet.</p>
           <Link to="/contact">
             <Button size="lg">Kontakta oss nu</Button>
           </Link>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin, Shield } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -37,7 +37,7 @@ const Contact = () => {
         >
           <h2 className="text-2xl font-semibold mb-4">Låt oss samarbeta</h2>
           <p className="mb-4">
-            Oavsett om du står inför stora utmaningar eller bara vill säga hej, är jag här för att lyssna och hjälpa. Min expertis som Digital Solution Strategist kan vara nyckeln till att låsa upp din organisations fulla potential.
+            Oavsett om du står inför stora utmaningar eller bara vill säga hej, är jag här för att lyssna och hjälpa. Min expertis som Digital Solution Strategist och Cybersäkerhetsexpert kan vara nyckeln till att låsa upp din organisations fulla potential och säkra dess digitala framtid.
           </p>
           <p className="mb-4">
             Kanske brottas du med:
@@ -47,9 +47,10 @@ const Contact = () => {
             <li>Svårigheter att överbrygga klyftan mellan IT och affärsverksamhet</li>
             <li>Behov av en skräddarsydd digital strategi</li>
             <li>Önskan att optimera er befintliga infrastruktur</li>
+            <li>Oro över cybersäkerhetshot och behov av robusta säkerhetslösningar</li>
           </ul>
           <p className="mb-4">
-            Eller kanske du bara är nyfiken på hur Renew I/O kan bidra till din verksamhet? Oavsett anledning, tveka inte att höra av dig. Tillsammans kan vi utforska möjligheterna och skapa en ljusare digital framtid för ditt företag.
+            Eller kanske du bara är nyfiken på hur Renew I/O kan bidra till din verksamhet och stärka er cybersäkerhet? Oavsett anledning, tveka inte att höra av dig. Tillsammans kan vi utforska möjligheterna och skapa en ljusare och säkrare digital framtid för ditt företag.
           </p>
           <div className="flex flex-col space-y-2">
             <div className="flex items-center">
@@ -63,6 +64,10 @@ const Contact = () => {
             <div className="flex items-center">
               <MapPin className="mr-2" />
               <span>Stockholm, Sverige</span>
+            </div>
+            <div className="flex items-center">
+              <Shield className="mr-2" />
+              <span>Cybersäkerhetskonsultationer tillgängliga</span>
             </div>
           </div>
         </motion.div>
@@ -86,7 +91,7 @@ const Contact = () => {
               <Input type="text" placeholder="Företag" />
             </div>
             <div className="mb-4">
-              <Textarea placeholder="Beskriv kort vad du vill ha hjälp med eller fråga om" required rows={5} />
+              <Textarea placeholder="Beskriv kort vad du vill ha hjälp med eller fråga om (inklusive eventuella cybersäkerhetsfrågor)" required rows={5} />
             </div>
             {/* TODO: Implement reCAPTCHA */}
             <Button type="submit" className="w-full">Skicka meddelande</Button>
