@@ -14,7 +14,7 @@ export const navItems = [
     page: <Index />,
   },
   {
-    title: "Om mig",
+    title: "Om oss",
     to: "/about",
     icon: <InfoIcon className="h-4 w-4" />,
     page: <About />,
