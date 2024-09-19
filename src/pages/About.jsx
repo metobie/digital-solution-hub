@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Card, CardContent } from "@/components/ui/card";
-import { Shield, Briefcase, Mail, Phone, MapPin } from 'lucide-react';
+import { Shield, Briefcase } from 'lucide-react';
 
 const About = () => {
   return (
@@ -29,20 +29,6 @@ const About = () => {
                 <h2 className="text-2xl font-semibold mb-2">Tobias Karlsson</h2>
                 <p className="mb-2">Som teknisk expert kombinerar jag min erfarenhet inom storskalig infrastruktur med förmågan att kommunicera effektivt på både företags- och teknisk nivå.</p>
                 <p>Min unika kompetens ligger i att överbrygga klyftan mellan affärsmål och tekniska lösningar, vilket möjliggör sömlös integration och optimering av digitala strategier, samtidigt som jag säkerställer robusta säkerhetslösningar för att skydda verksamheten.</p>
-                <div className="mt-4">
-                  <div className="flex items-center mb-2">
-                    <Mail className="mr-2" />
-                    <span>info@renew-io.se</span>
-                  </div>
-                  <div className="flex items-center mb-2">
-                    <Phone className="mr-2" />
-                    <span>+46 73 035 28 88</span>
-                  </div>
-                  <div className="flex items-center">
-                    <MapPin className="mr-2" />
-                    <span>Kristianstad, Sverige</span>
-                  </div>
-                </div>
               </div>
             </div>
           </CardContent>
