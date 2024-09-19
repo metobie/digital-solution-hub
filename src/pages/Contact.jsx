@@ -59,11 +59,11 @@ const Contact = () => {
             </div>
             <div className="flex items-center">
               <Phone className="mr-2" />
-              <span>+46 70 123 45 67</span>
+              <span>+46 73 035 28 88</span>
             </div>
             <div className="flex items-center">
               <MapPin className="mr-2" />
-              <span>Stockholm, Sverige</span>
+              <span>Kristianstad, Sverige</span>
             </div>
           </div>
         </motion.div>
