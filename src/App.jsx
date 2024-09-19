@@ -15,7 +15,7 @@ const App = () => (
       <Toaster />
       <BrowserRouter>
         <div className="flex flex-col min-h-screen">
-          <header className="bg-white shadow-md">
+          <header className="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
             <nav className="container mx-auto px-6 py-3">
               <div className="flex items-center justify-between">
                 <Link to="/">
@@ -25,7 +25,7 @@ const App = () => (
                     className="h-12"
                   />
                 </Link>
-                <ul className="flex space-x-4">
+                <ul className="hidden md:flex space-x-4">
                   {navItems.map(({ title, to, icon }) => (
                     <li key={to}>
                       <Link to={to}>
@@ -40,7 +40,7 @@ const App = () => (
               </div>
             </nav>
           </header>
-          <main className="flex-grow">
+          <main className="flex-grow mt-20">
             <Routes>
               {navItems.map(({ to, page }) => (
                 <Route key={to} path={to} element={page} />
