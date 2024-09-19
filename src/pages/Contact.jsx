@@ -55,7 +55,7 @@ const Contact = () => {
           <div className="flex flex-col space-y-2">
             <div className="flex items-center">
               <Mail className="mr-2" />
-              <span>info@renewio.se</span>
+              <span>info@renew-io.se</span>
             </div>
             <div className="flex items-center">
               <Phone className="mr-2" />
