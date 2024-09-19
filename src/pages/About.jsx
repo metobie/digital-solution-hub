@@ -45,7 +45,7 @@ const About = () => {
           Med över ett decennium av erfarenhet inom IT, digital strategi och cybersäkerhet har jag haft förmånen att arbeta med en mängd olika företag och organisationer. Min resa började inom teknisk support och utvecklades snabbt till bl.a. roller inom workplace-lösningar, storskaliga implementationer, cloud och strategisk rådgivning.
         </p>
         <p className="mb-4">
-          Genom åren har jag lett projekt som sträckt sig från små startups till stora multinationella företag, alltid med fokus på att leverera skräddarsydda lösningar som driver verklig affärsnytta och säkerställer robust säkerhet. Min passion ligger i att se bortom de omedelbara tekniska utmaningarna och istället fokusera på de långsiktiga strategiska målen, samtidigt som jag integrerar starka säkerhetsåtgärder.
+          Genom åren har jag lett projekt som sträckt sig från små till stora multinationella företag, alltid med fokus på att leverera skräddarsydda lösningar som driver verklig affärsnytta och säkerställer robust säkerhet och stabilitet. Min passion ligger i att se bortom de omedelbara tekniska utmaningarna och istället fokusera på de långsiktiga strategiska målen.
         </p>
         <p>
           Som grundare av Renew I/O är mitt mål att dela denna expertis och hjälpa företag att inte bara hålla jämna steg med den digitala utvecklingen, utan att faktiskt leda den på ett säkert sätt. Jag tror starkt på kraften i samarbete och kontinuerligt lärande, och ser varje nytt projekt som en möjlighet att både dela med mig av min kunskap och lära mig något nytt inom både teknologi och cybersäkerhet.
