@@ -83,17 +83,6 @@ const About = () => {
           </CardContent>
         </Card>
       </motion.section>
-
-      <motion.section
-        className="mt-12 text-center"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.8 }}
-      >
-        <p className="text-lg">
-          Kontakta mig på <a href="mailto:info@renew-io.se" className="text-blue-600 hover:underline">info@renew-io.se</a> för att diskutera hur vi kan hjälpa er verksamhet.
-        </p>
-      </motion.section>
     </div>
   );
 };
