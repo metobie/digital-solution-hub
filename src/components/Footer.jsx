@@ -10,7 +10,7 @@ const Footer = () => {
             <img src="https://i.imgur.com/DZ7kP2T.png" alt="Renew I/O Logo" className="h-12 mb-2" />
             <p className="text-sm">Din partner för digital transformation och strategisk utveckling</p>
           </div>
-          <div className="col-span-1 md:pl-8"> {/* Added left padding here */}
+          <div className="col-span-1 md:pl-8">
             <h3 className="text-lg font-semibold mb-2">Snabblänkar</h3>
             <ul className="text-sm">
               <li className="mb-2"><Link to="/" className="hover:text-gray-300">Hem</Link></li>
@@ -20,7 +20,7 @@ const Footer = () => {
           </div>
           <div className="col-span-1">
             <h3 className="text-lg font-semibold mb-2">Kontakt</h3>
-            <p className="text-sm mb-2">Email: info@renewio.se</p>
+            <p className="text-sm mb-2">Email: info@renew-io.se</p>
             <p className="text-sm mb-2">Telefon: +46 73 035 28 88</p>
             <p className="text-sm">Kristianstad, Sverige</p>
           </div>
