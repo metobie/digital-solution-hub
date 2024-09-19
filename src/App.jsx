@@ -7,6 +7,7 @@ import { navItems } from "./nav-items";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import Footer from "./components/Footer";
+import MobileMenu from "./components/MobileMenu";
 
 const queryClient = new QueryClient();
 
@@ -33,6 +34,7 @@ const AppContent = () => {
                 className="h-12"
               />
             </Link>
+            <MobileMenu />
             <ul className="hidden md:flex space-x-4">
               {navItems.map(({ title, to, icon }) => (
                 <li key={to}>
