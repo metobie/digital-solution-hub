@@ -87,12 +87,12 @@ const Index = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.8 }}
         >
-          <h2 className="text-2xl font-semibold mb-4 text-center">Cybersäkerhet i fokus</h2>
+          <h2 className="text-2xl font-semibold mb-4 text-center flex items-center justify-center">
+            <Shield className="w-8 h-8 mr-2 text-gray-800" />
+            Cybersäkerhet i fokus
+          </h2>
           <Card className="overflow-hidden">
             <CardContent className="p-6">
-              <div className="flex items-center justify-center mb-4">
-                <Shield className="w-16 h-16 text-gray-800" />
-              </div>
               <p className="text-center mb-4">
                 I dagens digitala landskap är cybersäkerhet avgörande för varje verksamhet. Renew I/O erbjuder omfattande cybersäkerhetslösningar för att skydda ditt företag mot moderna hot.
               </p>
