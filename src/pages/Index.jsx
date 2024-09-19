@@ -30,7 +30,7 @@ const Index = () => {
             <CardContent className="p-6">
               <div className="flex flex-col md:flex-row items-center">
                 <motion.div
-                  className="w-48 h-48 bg-blue-100 rounded-full flex items-center justify-center mb-4 md:mb-0 md:mr-6"
+                  className="w-48 h-48 bg-blue-900 rounded-full flex items-center justify-center mb-4 md:mb-0 md:mr-6"
                   animate={{
                     scale: [1, 1.1, 1],
                     rotate: [0, 10, -10, 0],
@@ -43,7 +43,7 @@ const Index = () => {
                     repeatDelay: 1
                   }}
                 >
-                  <Shield className="w-24 h-24 text-blue-500" />
+                  <Shield className="w-24 h-24 text-blue-300" />
                 </motion.div>
                 <div>
                   <h3 className="text-xl font-semibold mb-2">Skräddarsydda digitala lösningar för din framgång</h3>
