@@ -14,7 +14,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-2">Snabblänkar</h3>
             <ul className="text-sm">
               <li className="mb-2"><Link to="/" className="hover:text-gray-300">Hem</Link></li>
-              <li className="mb-2"><Link to="/about" className="hover:text-gray-300">Om mig</Link></li>
+              <li className="mb-2"><Link to="/founder" className="hover:text-gray-300">Grundare</Link></li>
               <li className="mb-2"><Link to="/contact" className="hover:text-gray-300">Kontakt</Link></li>
             </ul>
           </div>

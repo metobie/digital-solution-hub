@@ -13,10 +13,10 @@ export const navItems = [
     page: <Index />,
   },
   {
-    title: "Om mig",
-    to: "/about",
+    title: "Grundare",
+    to: "/founder",
     icon: <InfoIcon className="h-4 w-4" />,
-    page: <div>Om mig sida</div>, // Placeholder for About page
+    page: <div>Grundare sida</div>, // Placeholder for Founder page
   },
   {
     title: "Kontakt",
