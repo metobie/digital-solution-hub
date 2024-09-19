@@ -50,7 +50,7 @@ const Contact = () => {
             <li>Oro över cybersäkerhetshot och behov av robusta säkerhetslösningar</li>
           </ul>
           <p className="mb-4">
-            Eller kanske du bara är nyfiken på hur Renew I/O kan bidra till din verksamhet och stärka er cybersäkerhet? Oavsett anledning, tveka inte att höra av dig. Tillsammans kan vi utforska möjligheterna och skapa en ljusare och säkrare digital framtid för ditt företag.
+            Eller kanske du bara är nyfiken på hur Renew I/O kan bidra till din verksamhet? Oavsett anledning, tveka inte att höra av dig. Tillsammans kan vi utforska möjligheterna och skapa en ljusare och säkrare digital framtid för ditt företag.
           </p>
           <div className="flex flex-col space-y-2">
             <div className="flex items-center">
