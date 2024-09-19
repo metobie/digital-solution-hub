@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Shield } from 'lucide-react';
+import { Shield, Star } from 'lucide-react';
 
 const Index = () => {
   return (
@@ -53,7 +53,10 @@ const Index = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          <h2 className="text-2xl font-semibold mb-4">Rekommendationer</h2>
+          <h2 className="text-2xl font-semibold mb-4 flex items-center justify-center">
+            <Star className="w-6 h-6 mr-2 text-yellow-500" />
+            Rekommendationer
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-white p-6 rounded-lg shadow">
               <p className="italic mb-2">"Renew I/O:s strategiska insikter har varit avgörande för vår digitala transformation. Deras förmåga att navigera både tekniska och affärsmässiga aspekter är enastående."</p>
