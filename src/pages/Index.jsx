@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Shield, Star } from 'lucide-react';
+import { Separator } from "@/components/ui/separator";
 
 const Index = () => {
   return (
@@ -30,7 +31,7 @@ const Index = () => {
             <CardContent className="p-6">
               <div className="flex flex-col md:flex-row items-center">
                 <motion.div
-                  className="w-48 h-48 bg-blue-900 rounded-full flex items-center justify-center mb-4 md:mb-0 md:mr-6"
+                  className="w-48 h-48 bg-gray-900 rounded-full flex items-center justify-center mb-4 md:mb-0 md:mr-6 flex-shrink-0"
                   animate={{
                     scale: [1, 1.1, 1],
                     rotate: [0, 10, -10, 0],
@@ -43,9 +44,10 @@ const Index = () => {
                     repeatDelay: 1
                   }}
                 >
-                  <Shield className="w-24 h-24 text-blue-300" />
+                  <Shield className="w-24 h-24 text-gray-300" />
                 </motion.div>
-                <div>
+                <Separator orientation="vertical" className="h-48 mx-6 hidden md:block" />
+                <div className="md:ml-6 flex-grow">
                   <h3 className="text-xl font-semibold mb-2">Skräddarsydda digitala lösningar för din framgång</h3>
                   <p className="mb-2">Hos Renew I/O förstår vi att varje företag är unikt. Vår expertis ligger i att skapa skräddarsydda digitala strategier som driver tillväxt, effektiviserar processer och ger er ett konkurrenskraftigt övertag på marknaden.</p>
                   <p>Med vår djupa tekniska kunskap och affärsstrategiska insikter hjälper vi er att:</p>
