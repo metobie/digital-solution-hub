@@ -24,7 +24,7 @@ const Index = () => {
         <nav className="container mx-auto px-6 py-3">
           <div className="flex items-center justify-between">
             <motion.img 
-              src="https://i.imgur.com/DZ7kP2T.png" 
+              src="https://i.imgur.com/Fmh6crC.png" 
               alt="Renew I/O Logo" 
               className="h-12"
               initial={{ opacity: 0, y: -20 }}
