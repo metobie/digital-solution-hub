@@ -24,15 +24,21 @@ const Index = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
-          <h2 className="text-2xl font-semibold mb-4">Om mig</h2>
+          <h2 className="text-2xl font-semibold mb-4">Förnya din verksamhet med Renew I/O</h2>
           <Card className="overflow-hidden">
             <CardContent className="p-6">
               <div className="flex flex-col md:flex-row items-center">
                 <img src="https://i.imgur.com/PBAVzJh.jpeg" alt="Profilbild" className="w-48 h-48 rounded-full mb-4 md:mb-0 md:mr-6" />
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Digital Solution Strategist</h3>
-                  <p className="mb-2">Som Digital Solution Strategist kombinerar jag min erfarenhet inom storskalig infrastruktur med förmågan att kommunicera effektivt på både företags- och teknisk nivå.</p>
-                  <p>Min unika kompetens ligger i att överbrygga klyftan mellan affärsmål och tekniska lösningar, vilket möjliggör sömlös integration och optimering av digitala strategier.</p>
+                  <h3 className="text-xl font-semibold mb-2">Skräddarsydda digitala lösningar för din framgång</h3>
+                  <p className="mb-2">Hos Renew I/O förstår vi att varje företag är unikt. Vår expertis ligger i att skapa skräddarsydda digitala strategier som driver tillväxt, effektiviserar processer och ger er ett konkurrenskraftigt övertag på marknaden.</p>
+                  <p>Med vår djupa tekniska kunskap och affärsstrategiska insikter hjälper vi er att:</p>
+                  <ul className="list-disc list-inside mt-2">
+                    <li>Optimera er digitala infrastruktur för ökad effektivitet</li>
+                    <li>Implementera innovativa lösningar som driver affärsvärde</li>
+                    <li>Överbrygga klyftan mellan IT och affärsmål</li>
+                    <li>Navigera den digitala transformationen med säkerhet och precision</li>
+                  </ul>
                 </div>
               </div>
             </CardContent>
