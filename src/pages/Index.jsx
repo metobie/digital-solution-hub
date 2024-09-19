@@ -76,7 +76,7 @@ const Index = () => {
           <Card className="overflow-hidden">
             <CardContent className="p-6">
               <div className="flex items-center justify-center mb-4">
-                <Shield className="w-16 h-16 text-blue-500" />
+                <Shield className="w-16 h-16 text-gray-800" />
               </div>
               <p className="text-center mb-4">
                 I dagens digitala landskap är cybersäkerhet avgörande för varje verksamhet. Renew I/O erbjuder omfattande cybersäkerhetslösningar för att skydda ditt företag mot moderna hot.
