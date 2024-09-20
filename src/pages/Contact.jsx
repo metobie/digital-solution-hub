@@ -1,16 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Linkedin } from 'lucide-react';
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import Confetti from 'react-confetti';
 
 const Contact = () => {
+  const [showConfetti, setShowConfetti] = useState(false);
+
   const handleEmailClick = () => {
+    setShowConfetti(true);
+    setTimeout(() => setShowConfetti(false), 5000); // Hide confetti after 5 seconds
     window.location.href = "mailto:info@renew-io.se?subject=Förfrågan%20från%20webbplatsen&body=Hej%20Renew%20I/O,%0D%0A%0D%0AJag%20skulle%20vilja%20veta%20mer%20om%20era%20tjänster.";
   };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
+      {showConfetti && <Confetti />}
       <div className="container mx-auto px-6 py-12">
         <motion.h1 
           className="text-4xl font-bold mb-8 text-center text-gray-800"
