@@ -37,11 +37,10 @@ const Index = () => {
                   className="w-48 h-48 bg-gradient-to-br from-gray-200 to-gray-300 rounded-full flex items-center justify-center mb-4 md:mb-0 md:mr-6 flex-shrink-0"
                   animate={{
                     scale: [1, 1.05, 1],
-                    rotate: [0, 360, 0],
                   }}
                   transition={{
-                    duration: 10,
-                    ease: "linear",
+                    duration: 4,
+                    ease: "easeInOut",
                     times: [0, 0.5, 1],
                     repeat: Infinity,
                     repeatDelay: 0
