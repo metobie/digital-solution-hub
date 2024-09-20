@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Shield, Star, Zap } from 'lucide-react';
+import { Shield, Star, RefreshCw } from 'lucide-react';
 import { Separator } from "@/components/ui/separator";
 
 const Index = () => {
@@ -37,17 +37,17 @@ const Index = () => {
                   className="w-48 h-48 bg-gradient-to-br from-gray-200 to-gray-300 rounded-full flex items-center justify-center mb-4 md:mb-0 md:mr-6 flex-shrink-0"
                   animate={{
                     scale: [1, 1.05, 1],
-                    rotate: [0, 5, -5, 0],
+                    rotate: [0, 360, 0],
                   }}
                   transition={{
-                    duration: 3,
-                    ease: "easeInOut",
-                    times: [0, 0.2, 0.5, 0.8, 1],
+                    duration: 10,
+                    ease: "linear",
+                    times: [0, 0.5, 1],
                     repeat: Infinity,
-                    repeatDelay: 1
+                    repeatDelay: 0
                   }}
                 >
-                  <Zap className="w-24 h-24 text-gray-600" />
+                  <RefreshCw className="w-24 h-24 text-blue-500" />
                 </motion.div>
                 <Separator orientation="vertical" className="h-48 mx-6 hidden md:block" />
                 <div className="md:ml-6 flex-grow">
