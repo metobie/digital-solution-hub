@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Linkedin } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 import { Card, CardContent } from "@/components/ui/card";
 
 const Contact = () => {
@@ -23,14 +23,24 @@ const Contact = () => {
         >
           <Card className="shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
             <CardContent className="p-6">
-              <h2 className="text-2xl font-semibold mb-4 text-center text-gray-800">Låt oss samarbeta</h2>
-              <p className="mb-4 text-gray-600 text-center">
+              <h2 className="text-2xl font-semibold mb-4 text-gray-800">Låt oss samarbeta</h2>
+              <p className="mb-4 text-gray-600">
                 Oavsett om du står inför stora utmaningar eller bara vill säga hej, är jag här för att lyssna och hjälpa. Min expertis inom IT Infrastruktur, Cloud och Cyber Security kan vara nyckeln till att låsa upp din organisations fulla potential och säkra dess digitala framtid.
               </p>
-              <p className="mb-4 text-gray-600 text-center">
-                Tillsammans kan vi utforska möjligheterna och skapa en stark digital framtid för ditt företag.
+              <p className="mb-4 text-gray-600">
+                Kanske brottas du med:
               </p>
-              <div className="flex flex-col items-center space-y-4 text-gray-600 mt-8">
+              <ul className="list-disc list-inside mb-4 text-gray-600">
+                <li>Komplexa tekniska utmaningar som hindrar tillväxt</li>
+                <li>Svårigheter att överbrygga klyftan mellan IT och affärsverksamhet</li>
+                <li>Behov av en skräddarsydd digital strategi</li>
+                <li>Önskan att optimera er befintliga infrastruktur</li>
+                <li>Oro över cybersäkerhetshot och behov av robusta säkerhetslösningar</li>
+              </ul>
+              <p className="mb-4 text-gray-600">
+                Eller kanske du bara är nyfiken på hur Renew I/O kan bidra till din verksamhet? Oavsett anledning, tveka inte att höra av dig. Tillsammans kan vi utforska möjligheterna och skapa en stark digital framtid för ditt företag.
+              </p>
+              <div className="flex flex-col space-y-2 text-gray-600">
                 <div className="flex items-center">
                   <Mail className="mr-2 text-blue-500" />
                   <span>info@renew-io.se</span>
@@ -42,12 +52,6 @@ const Contact = () => {
                 <div className="flex items-center">
                   <MapPin className="mr-2 text-blue-500" />
                   <span>Kristianstad, Sverige</span>
-                </div>
-                <div className="flex items-center">
-                  <Linkedin className="mr-2 text-blue-500" />
-                  <a href="https://www.linkedin.com/company/renew-io/" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
-                    LinkedIn
-                  </a>
                 </div>
               </div>
             </CardContent>
