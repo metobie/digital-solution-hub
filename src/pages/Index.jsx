@@ -8,7 +8,7 @@ import { Separator } from "@/components/ui/separator";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-100 to-gray-200">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
       <main className="container mx-auto px-6 py-8">
         <motion.section 
           className="text-center mb-12 relative overflow-hidden rounded-lg p-8"
@@ -16,9 +16,9 @@ const Index = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-gray-200 to-gray-300 opacity-50"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 opacity-50"></div>
           <div className="relative z-10">
-            <h1 className="text-4xl md:text-7xl font-extrabold mb-4 text-gray-800 tracking-tight">Välkommen till Renew I/O</h1>
+            <h1 className="text-3xl md:text-6xl font-extrabold mb-4 text-gray-800 tracking-tight">Välkommen till Renew I/O</h1>
             <p className="text-xl text-gray-600">Din partner för digital transformation, strategisk utveckling och cybersäkerhet</p>
           </div>
         </motion.section>
@@ -34,7 +34,7 @@ const Index = () => {
             <CardContent className="p-6">
               <div className="flex flex-col md:flex-row items-center">
                 <motion.div
-                  className="w-48 h-48 bg-gradient-to-br from-gray-300 to-gray-400 rounded-full flex items-center justify-center mb-4 md:mb-0 md:mr-6 flex-shrink-0"
+                  className="w-48 h-48 bg-gradient-to-br from-gray-200 to-gray-300 rounded-full flex items-center justify-center mb-4 md:mb-0 md:mr-6 flex-shrink-0"
                   animate={{
                     scale: [1, 1.05, 1],
                     rotate: [0, 5, -5, 0],
@@ -47,7 +47,7 @@ const Index = () => {
                     repeatDelay: 1
                   }}
                 >
-                  <Zap className="w-24 h-24 text-gray-100" />
+                  <Zap className="w-24 h-24 text-gray-600" />
                 </motion.div>
                 <Separator orientation="vertical" className="h-48 mx-6 hidden md:block" />
                 <div className="md:ml-6 flex-grow">
@@ -103,7 +103,7 @@ const Index = () => {
             <Shield className="w-8 h-8 mr-2 text-blue-400" />
             Cybersäkerhet i fokus
           </h2>
-          <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300 bg-gradient-to-r from-gray-100 to-gray-200">
+          <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300 bg-gradient-to-r from-gray-50 to-gray-100">
             <CardContent className="p-6">
               <p className="text-center mb-4 text-gray-600">
                 I dagens digitala landskap är cybersäkerhet avgörande för varje verksamhet. Renew I/O erbjuder omfattande cybersäkerhetslösningar för att skydda ditt företag mot moderna hot.
