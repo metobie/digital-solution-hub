@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin } from 'lucide-react';
 import { Button } from "@/components/ui/button";
@@ -9,14 +9,46 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const Contact = () => {
   const { toast } = useToast();
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    company: '',
+    message: ''
+  });
 
-  const handleSubmit = (e) => {
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // TODO: Implement form submission logic
-    toast({
-      title: "Formulär skickat",
-      description: "Tack för ditt meddelande. Vi återkommer så snart som möjligt.",
-    });
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        toast({
+          title: "Formulär skickat",
+          description: "Tack för ditt meddelande. Vi återkommer så snart som möjligt.",
+        });
+        setFormData({ name: '', email: '', phone: '', company: '', message: '' });
+      } else {
+        throw new Error('Failed to send email');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      toast({
+        title: "Ett fel uppstod",
+        description: "Det gick inte att skicka meddelandet. Försök igen senare.",
+        variant: "destructive",
+      });
+    }
   };
 
   return (
@@ -83,21 +115,20 @@ const Contact = () => {
               <CardContent className="p-6">
                 <form onSubmit={handleSubmit}>
                   <div className="mb-4">
-                    <Input type="text" placeholder="Namn" required className="bg-gray-50" />
+                    <Input type="text" name="name" placeholder="Namn" required className="bg-gray-50" value={formData.name} onChange={handleChange} />
                   </div>
                   <div className="mb-4">
-                    <Input type="email" placeholder="E-post" required className="bg-gray-50" />
+                    <Input type="email" name="email" placeholder="E-post" required className="bg-gray-50" value={formData.email} onChange={handleChange} />
                   </div>
                   <div className="mb-4">
-                    <Input type="tel" placeholder="Telefon (valfritt)" className="bg-gray-50" />
+                    <Input type="tel" name="phone" placeholder="Telefon (valfritt)" className="bg-gray-50" value={formData.phone} onChange={handleChange} />
                   </div>
                   <div className="mb-4">
-                    <Input type="text" placeholder="Företag" className="bg-gray-50" />
+                    <Input type="text" name="company" placeholder="Företag" className="bg-gray-50" value={formData.company} onChange={handleChange} />
                   </div>
                   <div className="mb-4">
-                    <Textarea placeholder="Beskriv kort vad du vill ha hjälp med eller fråga om (inklusive eventuella cybersäkerhetsfrågor)" required rows={5} className="bg-gray-50" />
+                    <Textarea name="message" placeholder="Beskriv kort vad du vill ha hjälp med eller fråga om (inklusive eventuella cybersäkerhetsfrågor)" required rows={5} className="bg-gray-50" value={formData.message} onChange={handleChange} />
                   </div>
-                  {/* TODO: Implement reCAPTCHA */}
                   <Button type="submit" className="w-full bg-blue-500 hover:bg-blue-600 text-white">Skicka meddelande</Button>
                 </form>
               </CardContent>
