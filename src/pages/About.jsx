@@ -68,17 +68,10 @@ const About = () => {
         <Card>
           <CardContent className="p-6">
             <p className="mb-4">
-              I en tid då digitala hot blir allt mer sofistikerade, är min expertis inom cybersäkerhet en avgörande del av de tjänster jag erbjuder. Jag hjälper organisationer att:
+              I en tid då digitala hot blir allt mer sofistikerade, är min expertis inom cybersäkerhet en avgörande del av de tjänster jag erbjuder. Jag hjälper organisationer att stärka sin säkerhetspostur, implementera robusta lösningar och utveckla omfattande strategier för att skydda verksamheten mot moderna cyberhot.
             </p>
-            <ul className="list-disc list-inside mb-4">
-              <li>Utvärdera och stärka deras nuvarande säkerhetspostur</li>
-              <li>Implementera robusta säkerhetslösningar som skyddar känslig data</li>
-              <li>Utveckla och implementera omfattande cybersäkerhetsstrategier</li>
-              <li>Utbilda personal i bästa praxis för cybersäkerhet</li>
-              <li>Hantera och mildra säkerhetsincidenter effektivt</li>
-            </ul>
             <p>
-              Min approach till cybersäkerhet är holistisk, där jag integrerar säkerhetstänkandet i varje aspekt av den digitala strategin och infrastrukturen. Detta säkerställer att säkerhet inte är ett efterhandstillägg, utan en grundläggande del av er digitala transformation.
+              Min approach till cybersäkerhet är holistisk, där säkerhetstänkandet integreras i varje aspekt av den digitala strategin och infrastrukturen, för att säkerställa ett proaktivt och heltäckande skydd.
             </p>
           </CardContent>
         </Card>
