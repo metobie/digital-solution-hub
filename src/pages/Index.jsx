@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Shield, Star, RefreshCw } from 'lucide-react';
+import { Shield, Star, Server } from 'lucide-react';
 import { Separator } from "@/components/ui/separator";
 
 const Index = () => {
@@ -47,7 +47,7 @@ const Index = () => {
                     repeatDelay: 0
                   }}
                 >
-                  <RefreshCw className="w-24 h-24 text-blue-500" />
+                  <Server className="w-20 h-20 text-blue-500" />
                 </motion.div>
                 <Separator orientation="vertical" className="h-48 mx-6 hidden md:block" />
                 <div className="md:ml-6 flex-grow">
