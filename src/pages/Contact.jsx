@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
 import { Card, CardContent } from "@/components/ui/card";
+import { sendEmail } from '../lib/emailService';
 
 const Contact = () => {
   const { toast } = useToast();
@@ -24,23 +25,23 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('/api/send-email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
+      await sendEmail(
+        'info@renew-io.se',
+        'New Contact Form Submission',
+        `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nCompany: ${formData.company}\nMessage: ${formData.message}`,
+        `<h1>New Contact Form Submission</h1>
+         <p><strong>Name:</strong> ${formData.name}</p>
+         <p><strong>Email:</strong> ${formData.email}</p>
+         <p><strong>Phone:</strong> ${formData.phone}</p>
+         <p><strong>Company:</strong> ${formData.company}</p>
+         <p><strong>Message:</strong> ${formData.message}</p>`
+      );
 
-      if (response.ok) {
-        toast({
-          title: "Formulär skickat",
-          description: "Tack för ditt meddelande. Vi återkommer så snart som möjligt.",
-        });
-        setFormData({ name: '', email: '', phone: '', company: '', message: '' });
-      } else {
-        throw new Error('Failed to send email');
-      }
+      toast({
+        title: "Formulär skickat",
+        description: "Tack för ditt meddelande. Vi återkommer så snart som möjligt.",
+      });
+      setFormData({ name: '', email: '', phone: '', company: '', message: '' });
     } catch (error) {
       console.error('Error:', error);
       toast({
