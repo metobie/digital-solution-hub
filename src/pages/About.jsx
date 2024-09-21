@@ -43,7 +43,7 @@ const About = () => {
         >
           <h2 className="text-2xl font-semibold mb-4 flex items-center text-gray-800">
             <motion.div
-              className="w-12 h-12 bg-gradient-to-br from-[#346D7B] to-[#75347B] rounded-full flex items-center justify-center mr-2"
+              className="w-8 h-8 bg-gradient-to-br from-[#346D7B] to-[#75347B] rounded-full flex items-center justify-center mr-2"
               animate={{
                 scale: [1, 1.05, 1],
               }}
@@ -55,7 +55,7 @@ const About = () => {
                 repeatDelay: 0
               }}
             >
-              <Briefcase className="w-6 h-6 text-white" />
+              <Briefcase className="w-4 h-4 text-white" />
             </motion.div>
             Min Bakgrund
           </h2>
@@ -82,7 +82,7 @@ const About = () => {
         >
           <h2 className="text-2xl font-semibold mb-4 flex items-center text-gray-800">
             <motion.div
-              className="w-12 h-12 bg-gradient-to-br from-[#346D7B] to-[#75347B] rounded-full flex items-center justify-center mr-2"
+              className="w-8 h-8 bg-gradient-to-br from-[#346D7B] to-[#75347B] rounded-full flex items-center justify-center mr-2"
               animate={{
                 scale: [1, 1.05, 1],
               }}
@@ -94,7 +94,7 @@ const About = () => {
                 repeatDelay: 0
               }}
             >
-              <Shield className="w-6 h-6 text-white" />
+              <Shield className="w-4 h-4 text-white" />
             </motion.div>
             Cybersäkerhetsexpertis
           </h2>
@@ -118,7 +118,7 @@ const About = () => {
         >
           <h2 className="text-2xl font-semibold mb-4 flex items-center text-gray-800">
             <motion.div
-              className="w-12 h-12 bg-gradient-to-br from-[#346D7B] to-[#75347B] rounded-full flex items-center justify-center mr-2"
+              className="w-8 h-8 bg-gradient-to-br from-[#346D7B] to-[#75347B] rounded-full flex items-center justify-center mr-2"
               animate={{
                 scale: [1, 1.05, 1],
               }}
@@ -130,7 +130,7 @@ const About = () => {
                 repeatDelay: 0
               }}
             >
-              <Lightbulb className="w-6 h-6 text-white" />
+              <Lightbulb className="w-4 h-4 text-white" />
             </motion.div>
             Vår Vision
           </h2>
