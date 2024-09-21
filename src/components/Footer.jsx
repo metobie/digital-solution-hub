@@ -26,7 +26,7 @@ const Footer = () => {
             <p className="text-sm">Kristianstad, Sverige</p>
           </div>
         </div>
-        <div className="border-t border-gray-300 mt-8 pt-8 text-sm text-center">
+        <div className="border-t border-gray-600 mt-8 pt-8 text-sm text-center">
           <p>&copy; {new Date().getFullYear()} Renew I/O. Alla rättigheter förbehållna.</p>
         </div>
       </div>
