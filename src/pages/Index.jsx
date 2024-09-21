@@ -3,7 +3,6 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Server } from 'lucide-react';
 import { Separator } from "@/components/ui/separator";
 
 const Index = () => {
@@ -63,7 +62,12 @@ const Index = () => {
                     repeatDelay: 0
                   }}
                 >
-                  <Server className="w-20 h-20 text-white" />
+                  <svg xmlns="http://www.w3.org/2000/svg" className="w-20 h-20 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                    <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                    <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                    <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                  </svg>
                 </motion.div>
                 <Separator orientation="vertical" className="h-48 mx-6 hidden md:block" />
                 <div className="md:ml-6 flex-grow">
@@ -120,7 +124,7 @@ const Index = () => {
               </p>
               <div className="flex justify-center mt-4">
                 <Link to="/about">
-                  <Button size="lg" className="bg-gray-100 text-gray-800 hover:bg-gray-200 transition-all duration-300 shadow-sm">Läs mer</Button>
+                  <Button size="lg" className="bg-gray-100 text-gray-800 hover:bg-gray-200 transition-all duration-300 border border-gray-900/10 hover:border-gray-900/20">Läs mer</Button>
                 </Link>
               </div>
             </CardContent>
@@ -136,7 +140,7 @@ const Index = () => {
           <h2 className="text-2xl font-semibold mb-4 text-gray-700">Redo att ta nästa steg?</h2>
           <p className="mb-4 text-gray-600">Låt oss tillsammans utforska hur Renew I/O kan hjälpa ditt företag att nå nya höjder inom digital innovation, effektivitet och säkerhet.</p>
           <Link to="/contact">
-            <Button size="lg" className="bg-gray-100 text-gray-800 hover:bg-gray-200 transition-all duration-300 shadow-sm">Kontakta oss nu</Button>
+            <Button size="lg" className="bg-gray-100 text-gray-800 hover:bg-gray-200 transition-all duration-300 border border-gray-900/10 hover:border-gray-900/20">Kontakta oss nu</Button>
           </Link>
         </motion.section>
       </main>
