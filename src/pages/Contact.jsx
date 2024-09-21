@@ -33,11 +33,12 @@ const Contact = () => {
   );
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
+    <div className="min-h-screen relative bg-cover bg-center" style={{ backgroundImage: "url('https://i.imgur.com/2dexfVJ.jpeg')" }}>
+      <div className="absolute inset-0 bg-black opacity-70"></div>
       {showConfetti && <Confetti />}
-      <div className="container mx-auto px-6 py-12">
+      <div className="container mx-auto px-6 py-12 relative z-10">
         <motion.h1 
-          className="text-4xl font-bold mb-8 text-center text-gray-800"
+          className="text-4xl font-bold mb-8 text-center text-white"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -50,12 +51,12 @@ const Contact = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white/90 backdrop-blur-sm overflow-hidden">
+          <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white/10 backdrop-blur-sm overflow-hidden">
             <CardContent className="p-8">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
-                  <h2 className="text-2xl font-semibold mb-4 text-gray-800">Vi ser fram emot att höra från dig</h2>
-                  <p className="mb-6 text-gray-600">
+                  <h2 className="text-2xl font-semibold mb-4 text-white">Vi ser fram emot att höra från dig</h2>
+                  <p className="mb-6 text-gray-200">
                     Oavsett om du har en specifik fråga eller bara vill utforska möjligheterna, är vi här för att hjälpa. Låt oss tillsammans ta ditt företag till nästa nivå inom digital innovation och säkerhet.
                   </p>
                   <Button 
@@ -68,7 +69,7 @@ const Contact = () => {
                     href="https://www.linkedin.com/company/renew-io/" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center w-full p-2 border border-gray-300 rounded-md text-gray-600 hover:bg-gray-50 transition-colors duration-300"
+                    className="flex items-center justify-center w-full p-2 border border-gray-300 rounded-md text-gray-200 hover:bg-gray-700 transition-colors duration-300"
                   >
                     <Linkedin className="w-4 h-4 mr-2" />
                     Följ oss på LinkedIn
@@ -84,8 +85,8 @@ const Contact = () => {
                       <Mail className="w-4 h-4 text-white" />
                     </IconWrapper>
                     <div>
-                      <h3 className="font-semibold text-gray-800">E-post</h3>
-                      <p className="text-gray-600">info@renew-io.se</p>
+                      <h3 className="font-semibold text-white">E-post</h3>
+                      <p className="text-gray-200">info@renew-io.se</p>
                     </div>
                   </motion.div>
                   <motion.div 
@@ -97,8 +98,8 @@ const Contact = () => {
                       <Phone className="w-4 h-4 text-white" />
                     </IconWrapper>
                     <div>
-                      <h3 className="font-semibold text-gray-800">Telefon</h3>
-                      <p className="text-gray-600">+46 73 035 28 88</p>
+                      <h3 className="font-semibold text-white">Telefon</h3>
+                      <p className="text-gray-200">+46 73 035 28 88</p>
                     </div>
                   </motion.div>
                   <motion.div 
@@ -110,12 +111,12 @@ const Contact = () => {
                       <Linkedin className="w-4 h-4 text-white" />
                     </IconWrapper>
                     <div>
-                      <h3 className="font-semibold text-gray-800">LinkedIn</h3>
+                      <h3 className="font-semibold text-white">LinkedIn</h3>
                       <a 
                         href="https://www.linkedin.com/company/renew-io/" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="text-gray-600 hover:text-[#4A8A9B] transition-colors duration-300"
+                        className="text-gray-200 hover:text-[#4A8A9B] transition-colors duration-300"
                       >
                         Renew I/O
                       </a>
@@ -130,8 +131,8 @@ const Contact = () => {
                       <MapPin className="w-4 h-4 text-white" />
                     </IconWrapper>
                     <div>
-                      <h3 className="font-semibold text-gray-800">Plats</h3>
-                      <p className="text-gray-600">Kristianstad, Sverige</p>
+                      <h3 className="font-semibold text-white">Plats</h3>
+                      <p className="text-gray-200">Kristianstad, Sverige</p>
                     </div>
                   </motion.div>
                 </div>
