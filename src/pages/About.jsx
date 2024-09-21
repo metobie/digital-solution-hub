@@ -42,6 +42,10 @@ const About = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
+          <br />
+          <br />
+          <br />
+          <br />
           <Card className="overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
             <CardContent className="p-6">
               <div className="flex flex-col md:flex-row items-center">
