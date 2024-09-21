@@ -25,6 +25,7 @@ const ScrollToTop = () => {
 
 const AppContent = () => {
   const location = useLocation();
+  const footerTheme = location.pathname === '/contact' ? 'dark' : 'light';
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -63,7 +64,7 @@ const AppContent = () => {
           <Route path="/privacy" element={<Privacy />} />
         </Routes>
       </main>
-      <Footer />
+      <Footer theme={footerTheme} />
       <CookieConsentBanner />
     </div>
   );
