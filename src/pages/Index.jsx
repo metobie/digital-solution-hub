@@ -26,11 +26,31 @@ const Index = () => {
         />
         <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
         <div className="relative z-20 text-center px-6">
-          <h1 className="text-4xl md:text-6xl font-extrabold mb-4 text-white tracking-tight">Välkommen till Renew I/O</h1>
-          <p className="text-xl text-gray-200 mb-8">Din partner för digital transformation, strategisk utveckling och cybersäkerhet</p>
-          <Link to="/contact">
-            <Button size="lg" className="bg-gradient-to-br from-[#3E7A8B] to-[#8A3A8B] text-white hover:from-[#5A9AAB] hover:to-[#AA5AAB] transition-all duration-300">Kontakta oss nu</Button>
-          </Link>
+          <motion.h1 
+            className="text-4xl md:text-6xl font-extrabold mb-4 text-white tracking-tight"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            Välkommen till Renew I/O
+          </motion.h1>
+          <motion.p 
+            className="text-xl text-gray-200 mb-8"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
+            Din partner för digital transformation, strategisk utveckling och cybersäkerhet
+          </motion.p>
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+          >
+            <Link to="/contact">
+              <Button size="lg" className="bg-gradient-to-br from-[#3E7A8B] to-[#8A3A8B] text-white hover:from-[#5A9AAB] hover:to-[#AA5AAB] transition-all duration-300">Kontakta oss nu</Button>
+            </Link>
+          </motion.div>
         </div>
       </motion.section>
 
