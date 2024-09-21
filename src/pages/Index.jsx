@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Shield, Star, Server } from 'lucide-react';
+import { Server } from 'lucide-react';
 import { Separator } from "@/components/ui/separator";
 
 const Index = () => {
@@ -89,24 +89,7 @@ const Index = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          <h2 className="text-2xl font-semibold mb-4 flex items-center justify-center text-gray-700">
-            <motion.div
-              className="w-8 h-8 bg-white rounded-full flex items-center justify-center mr-2"
-              animate={{
-                scale: [1, 1.05, 1],
-              }}
-              transition={{
-                duration: 4,
-                ease: "easeInOut",
-                times: [0, 0.5, 1],
-                repeat: Infinity,
-                repeatDelay: 0
-              }}
-            >
-              <Star className="w-4 h-4 text-black" />
-            </motion.div>
-            Rekommendationer
-          </h2>
+          <h2 className="text-2xl font-semibold mb-4 text-center text-gray-700">Rekommendationer</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <Card className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
               <CardContent>
@@ -129,24 +112,7 @@ const Index = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.8 }}
         >
-          <h2 className="text-2xl font-semibold mb-4 text-center flex items-center justify-center text-gray-700">
-            <motion.div
-              className="w-8 h-8 bg-white rounded-full flex items-center justify-center mr-2"
-              animate={{
-                scale: [1, 1.05, 1],
-              }}
-              transition={{
-                duration: 4,
-                ease: "easeInOut",
-                times: [0, 0.5, 1],
-                repeat: Infinity,
-                repeatDelay: 0
-              }}
-            >
-              <Shield className="w-4 h-4 text-black" />
-            </motion.div>
-            Cybersäkerhet i fokus
-          </h2>
+          <h2 className="text-2xl font-semibold mb-4 text-center text-gray-700">Cybersäkerhet i fokus</h2>
           <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300 bg-gradient-to-r from-gray-50 to-gray-100">
             <CardContent className="p-6">
               <p className="text-center mb-4 text-gray-600">
