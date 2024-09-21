@@ -16,7 +16,7 @@ const Contact = () => {
 
   const IconWrapper = ({ children }) => (
     <motion.div
-      className="w-12 h-12 bg-gradient-to-br from-[#346D7B] to-[#75347B] rounded-full flex items-center justify-center mr-4"
+      className="w-8 h-8 bg-gradient-to-br from-[#346D7B] to-[#75347B] rounded-full flex items-center justify-center mr-4"
       animate={{
         scale: [1, 1.05, 1],
       }}
@@ -70,7 +70,7 @@ const Contact = () => {
                     rel="noopener noreferrer"
                     className="flex items-center justify-center w-full p-2 border border-gray-300 rounded-md text-gray-600 hover:bg-gray-50 transition-colors duration-300"
                   >
-                    <Linkedin className="w-5 h-5 mr-2" />
+                    <Linkedin className="w-4 h-4 mr-2" />
                     Följ oss på LinkedIn
                   </a>
                 </div>
@@ -81,7 +81,7 @@ const Contact = () => {
                     transition={{ type: "spring", stiffness: 400, damping: 10 }}
                   >
                     <IconWrapper>
-                      <Mail className="w-6 h-6 text-white" />
+                      <Mail className="w-4 h-4 text-white" />
                     </IconWrapper>
                     <div>
                       <h3 className="font-semibold text-gray-800">E-post</h3>
@@ -94,7 +94,7 @@ const Contact = () => {
                     transition={{ type: "spring", stiffness: 400, damping: 10 }}
                   >
                     <IconWrapper>
-                      <Phone className="w-6 h-6 text-white" />
+                      <Phone className="w-4 h-4 text-white" />
                     </IconWrapper>
                     <div>
                       <h3 className="font-semibold text-gray-800">Telefon</h3>
@@ -107,7 +107,7 @@ const Contact = () => {
                     transition={{ type: "spring", stiffness: 400, damping: 10 }}
                   >
                     <IconWrapper>
-                      <Linkedin className="w-6 h-6 text-white" />
+                      <Linkedin className="w-4 h-4 text-white" />
                     </IconWrapper>
                     <div>
                       <h3 className="font-semibold text-gray-800">LinkedIn</h3>
@@ -127,7 +127,7 @@ const Contact = () => {
                     transition={{ type: "spring", stiffness: 400, damping: 10 }}
                   >
                     <IconWrapper>
-                      <MapPin className="w-6 h-6 text-white" />
+                      <MapPin className="w-4 h-4 text-white" />
                     </IconWrapper>
                     <div>
                       <h3 className="font-semibold text-gray-800">Plats</h3>
