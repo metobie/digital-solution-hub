@@ -29,12 +29,7 @@ const About = () => {
                 <div>
                   <h2 className="text-2xl font-semibold mb-2 text-gray-800">Tobias Karlsson</h2>
                   <p className="mb-2 text-gray-600">Som teknisk expert kombinerar jag min erfarenhet inom storskalig infrastruktur med förmågan att kommunicera effektivt på både företags- och teknisk nivå.</p>
-                  <p className="mb-4 text-gray-600">Min unika kompetens ligger i att överbrygga klyftan mellan affärsmål och tekniska lösningar, vilket möjliggör sömlös integration och optimering av digitala strategier, samtidigt som jag säkerställer robusta säkerhetslösningar för att skydda verksamheten.</p>
-                  <div className="border-t border-gray-200 pt-4 mt-4">
-                    <p className="text-gray-700 font-medium italic">
-                      "På denna kunskap leder och bygger jag detta företaget, med målet att skapa innovativa och säkra digitala lösningar för framtidens utmaningar."
-                    </p>
-                  </div>
+                  <p className="text-gray-600">Min unika kompetens ligger i att överbrygga klyftan mellan affärsmål och tekniska lösningar, vilket möjliggör sömlös integration och optimering av digitala strategier, samtidigt som jag säkerställer robusta säkerhetslösningar för att skydda verksamheten.</p>
                 </div>
               </div>
             </CardContent>
