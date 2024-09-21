@@ -2,6 +2,12 @@ import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Card, CardContent } from "@/components/ui/card";
 import { Shield, Briefcase, Lightbulb } from 'lucide-react';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const About = () => {
   const { scrollY } = useScroll();
@@ -125,12 +131,19 @@ const About = () => {
           </h2>
           <Card className="shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
             <CardContent className="p-6">
-              <p className="mb-4 text-gray-600">
-                I en tid då digitala hot blir allt mer sofistikerade, är min expertis inom cybersäkerhet en avgörande del av de tjänster jag erbjuder. Jag hjälper organisationer att stärka sin säkerhetspostur, implementera robusta lösningar och utveckla omfattande strategier för att skydda verksamheten mot moderna cyberhot.
-              </p>
-              <p className="text-gray-600">
-                Min approach till cybersäkerhet är holistisk, där säkerhetstänkandet integreras i varje aspekt av den digitala strategin och infrastrukturen, för att säkerställa ett proaktivt och heltäckande skydd.
-              </p>
+              <Accordion type="single" collapsible>
+                <AccordionItem value="item-1">
+                  <AccordionTrigger>Läs mer om vår cybersäkerhetsexpertis</AccordionTrigger>
+                  <AccordionContent>
+                    <p className="mb-4 text-gray-600">
+                      I en tid då digitala hot blir allt mer sofistikerade, är min expertis inom cybersäkerhet en avgörande del av de tjänster jag erbjuder. Jag hjälper organisationer att stärka sin säkerhetspostur, implementera robusta lösningar och utveckla omfattande strategier för att skydda verksamheten mot moderna cyberhot.
+                    </p>
+                    <p className="text-gray-600">
+                      Min approach till cybersäkerhet är holistisk, där säkerhetstänkandet integreras i varje aspekt av den digitala strategin och infrastrukturen, för att säkerställa ett proaktivt och heltäckande skydd.
+                    </p>
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
             </CardContent>
           </Card>
         </motion.section>
@@ -149,15 +162,22 @@ const About = () => {
           </h2>
           <Card className="shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
             <CardContent className="p-6">
-              <p className="mb-4 text-gray-600">
-                Vår vision är att forma en digital framtid där innovation möter säkerhet, och där varje företag kan blomstra i den digitala eran. Genom att kombinera cutting-edge teknologi med strategisk insikt, strävar vi efter att vara katalysatorn för positiv förändring i företagsvärlden.
-              </p>
-              <p className="mb-4 text-gray-600">
-                Vi ser en framtid där digitala lösningar inte bara effektiviserar verksamheter, utan också öppnar upp för nya möjligheter och affärsmodeller. Samtidigt är vår vision djupt rotad i övertygelsen om att denna digitala transformation måste ske på ett säkert och ansvarsfullt sätt.
-              </p>
-              <p className="text-gray-600">
-                För större uppdrag samarbetar vi med ett nätverk av konsulter, var och en med egen spetskompetens och egna företag. Detta möjliggör att vi alltid kan erbjuda skräddarsydda och högkvalitativa lösningar, anpassade efter varje kunds unika behov.
-              </p>
+              <Accordion type="single" collapsible>
+                <AccordionItem value="item-1">
+                  <AccordionTrigger>Läs mer om vår vision</AccordionTrigger>
+                  <AccordionContent>
+                    <p className="mb-4 text-gray-600">
+                      Vår vision är att forma en digital framtid där innovation möter säkerhet, och där varje företag kan blomstra i den digitala eran. Genom att kombinera cutting-edge teknologi med strategisk insikt, strävar vi efter att vara katalysatorn för positiv förändring i företagsvärlden.
+                    </p>
+                    <p className="mb-4 text-gray-600">
+                      Vi ser en framtid där digitala lösningar inte bara effektiviserar verksamheter, utan också öppnar upp för nya möjligheter och affärsmodeller. Samtidigt är vår vision djupt rotad i övertygelsen om att denna digitala transformation måste ske på ett säkert och ansvarsfullt sätt.
+                    </p>
+                    <p className="text-gray-600">
+                      För större uppdrag samarbetar vi med ett nätverk av konsulter, var och en med egen spetskompetens och egna företag. Detta möjliggör att vi alltid kan erbjuda skräddarsydda och högkvalitativa lösningar, anpassade efter varje kunds unika behov.
+                    </p>
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
             </CardContent>
           </Card>
         </motion.section>
