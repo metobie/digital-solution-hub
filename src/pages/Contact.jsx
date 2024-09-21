@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Linkedin } from 'lucide-react';
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -7,8 +7,6 @@ import Confetti from 'react-confetti';
 
 const Contact = () => {
   const [showConfetti, setShowConfetti] = useState(false);
-  const { scrollY } = useScroll();
-  const y = useTransform(scrollY, [0, 500], [0, 150]);
 
   const handleEmailClick = () => {
     setShowConfetti(true);
@@ -35,21 +33,11 @@ const Contact = () => {
   );
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
       {showConfetti && <Confetti />}
-      <motion.div 
-        className="absolute inset-0 z-0"
-        style={{
-          backgroundImage: "url('https://i.imgur.com/2dexfVJ.jpeg')",
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          y
-        }}
-      />
-      <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
-      <div className="container mx-auto px-6 py-12 relative z-20">
+      <div className="container mx-auto px-6 py-12">
         <motion.h1 
-          className="text-4xl font-bold mb-8 text-center text-white"
+          className="text-4xl font-bold mb-8 text-center text-gray-800"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
