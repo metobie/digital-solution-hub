@@ -107,6 +107,26 @@ const Contact = () => {
                     transition={{ type: "spring", stiffness: 400, damping: 10 }}
                   >
                     <IconWrapper>
+                      <Linkedin className="w-6 h-6 text-white" />
+                    </IconWrapper>
+                    <div>
+                      <h3 className="font-semibold text-gray-800">LinkedIn</h3>
+                      <a 
+                        href="https://www.linkedin.com/company/renew-io/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-gray-600 hover:text-[#346D7B] transition-colors duration-300"
+                      >
+                        Renew I/O
+                      </a>
+                    </div>
+                  </motion.div>
+                  <motion.div 
+                    className="flex items-center"
+                    whileHover={{ scale: 1.05 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                  >
+                    <IconWrapper>
                       <MapPin className="w-6 h-6 text-white" />
                     </IconWrapper>
                     <div>
