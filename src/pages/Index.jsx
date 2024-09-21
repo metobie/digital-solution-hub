@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { motion, useScroll, useTransform, useAnimation } from 'framer-motion';
+import React from 'react';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -9,23 +9,12 @@ import { Separator } from "@/components/ui/separator";
 const Index = () => {
   const { scrollY } = useScroll();
   const y = useTransform(scrollY, [0, 500], [0, 150]);
-  const controls = useAnimation();
-  const [animationComplete, setAnimationComplete] = useState(false);
-
-  useEffect(() => {
-    controls.start({
-      y: [50, 0],
-      opacity: [0, 1],
-      transition: { duration: 1, ease: "easeOut" }
-    }).then(() => setAnimationComplete(true));
-  }, [controls]);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
       <motion.section 
         className="relative h-screen flex items-center justify-center overflow-hidden mb-12"
-        animate={controls}
-        style={{ y: animationComplete ? y : 0 }}
+        style={{ y }}
       >
         <motion.div 
           className="absolute inset-0 z-0"
@@ -33,7 +22,7 @@ const Index = () => {
             backgroundImage: "url('https://i.imgur.com/2dexfVJ.jpeg')",
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            y: animationComplete ? useTransform(scrollY, [0, 500], [0, 150]) : 0,
+            y: useTransform(scrollY, [0, 500], [0, 150]),
           }}
         />
         <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
@@ -53,6 +42,10 @@ const Index = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
+          <br />
+          <br />
+          <br />
+          <br />
           <h2 className="text-2xl font-semibold mb-4 text-center text-gray-700">Förnya din verksamhet med vår hjälp</h2>
           <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300 bg-white">
             <CardContent className="p-6">
