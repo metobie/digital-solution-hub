@@ -42,6 +42,7 @@ const Index = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
+          <br /> {/* Added line break here */}
           <h2 className="text-2xl font-semibold mb-4 text-center text-gray-700">Förnya din verksamhet med vår hjälp</h2>
           <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300 bg-white">
             <CardContent className="p-6">
