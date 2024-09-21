@@ -20,7 +20,7 @@ const Index = () => {
           <div className="relative z-10">
             <h1 className="text-3xl md:text-6xl font-extrabold mb-4 text-gray-800 tracking-tight flex flex-col md:flex-row justify-center items-center">
               <span className="mb-2 md:mb-0 md:mr-4">Välkommen till</span>
-              <img src="https://i.imgur.com/Fmh6crC.png" alt="Renew I/O Logo" className="h-12 md:h-16" />
+              <img src="https://i.imgur.com/Fmh6crC.png" alt="Renew I/O Logo" className="h-16 md:h-24" />
             </h1>
             <p className="text-xl text-gray-600">Din partner för digital transformation, strategisk utveckling och cybersäkerhet</p>
           </div>
