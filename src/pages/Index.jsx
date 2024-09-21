@@ -42,16 +42,16 @@ const Index = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
-          <br /> {/* 1st line break */}
-          <br /> {/* 2nd line break added here */}
-          <br /> {/* 3rd line break added here */}
-          <br /> {/* 4th line break added here */}
+          <br />
+          <br />
+          <br />
+          <br />
           <h2 className="text-2xl font-semibold mb-4 text-center text-gray-700">Förnya din verksamhet med vår hjälp</h2>
           <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300 bg-white">
             <CardContent className="p-6">
               <div className="flex flex-col md:flex-row items-center">
                 <motion.div
-                  className="w-48 h-48 bg-gradient-to-br from-gray-200 to-gray-300 rounded-full flex items-center justify-center mb-4 md:mb-0 md:mr-6 flex-shrink-0"
+                  className="w-48 h-48 bg-gradient-to-br from-[#346D7B] to-[#75347B] rounded-full flex items-center justify-center mb-4 md:mb-0 md:mr-6 flex-shrink-0"
                   animate={{
                     scale: [1, 1.05, 1],
                   }}
@@ -63,7 +63,7 @@ const Index = () => {
                     repeatDelay: 0
                   }}
                 >
-                  <Server className="w-20 h-20 text-blue-500" />
+                  <Server className="w-20 h-20 text-white" />
                 </motion.div>
                 <Separator orientation="vertical" className="h-48 mx-6 hidden md:block" />
                 <div className="md:ml-6 flex-grow">
