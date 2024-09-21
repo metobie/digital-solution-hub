@@ -1,28 +1,16 @@
 import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Card, CardContent } from "@/components/ui/card";
-import { Briefcase, Shield, Lightbulb } from 'lucide-react';
+import { Shield, Briefcase, Lightbulb } from 'lucide-react';
 
 const About = () => {
   const { scrollY } = useScroll();
   const y = useTransform(scrollY, [0, 500], [0, 150]);
 
   const IconWrapper = ({ children }) => (
-    <motion.div
-      className="w-8 h-8 bg-white rounded-full flex items-center justify-center mr-2 border border-gray-200"
-      animate={{
-        scale: [1, 1.05, 1],
-      }}
-      transition={{
-        duration: 4,
-        ease: "easeInOut",
-        times: [0, 0.5, 1],
-        repeat: Infinity,
-        repeatDelay: 0
-      }}
-    >
+    <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center mr-2 border border-gray-200">
       {children}
-    </motion.div>
+    </div>
   );
 
   return (
@@ -42,14 +30,33 @@ const About = () => {
         />
         <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
         <div className="relative z-20 text-center px-6 max-w-3xl">
-          <h1 className="text-4xl md:text-6xl font-extrabold mb-4 text-white tracking-tight">Om Grundaren</h1>
-          <p className="text-xl text-gray-200 mb-8">Lär känna personen bakom Renew I/O</p>
-          <p className="text-lg text-gray-300">
+          <motion.h1 
+            className="text-4xl md:text-6xl font-extrabold mb-4 text-white tracking-tight"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            Om Grundaren
+          </motion.h1>
+          <motion.p 
+            className="text-xl text-gray-200 mb-8"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
+            Lär känna personen bakom Renew I/O
+          </motion.p>
+          <motion.p 
+            className="text-lg text-gray-300"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+          >
             Med över ett decennium av erfarenhet inom IT, digital strategi och cybersäkerhet, 
             har Tobias Karlsson lett projekt från små startups till stora multinationella företag. 
             Hans unika förmåga att överbrygga klyftan mellan affärsmål och tekniska lösningar 
             gör Renew I/O till en ovärderlig partner i din digitala transformation.
-          </p>
+          </motion.p>
         </div>
       </motion.section>
 
