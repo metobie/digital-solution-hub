@@ -96,7 +96,7 @@ const Privacy = () => {
               <Separator className="my-4" />
 
               <p className="text-sm text-gray-500 mt-4">
-                Denna integritetspolicy uppdaterades senast den 1 april 2024.
+                Denna integritetspolicy uppdaterades senast den 21 September 2024.
               </p>
             </CardContent>
           </Card>
