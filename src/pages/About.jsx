@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Card, CardContent } from "@/components/ui/card";
-import { Shield, Briefcase } from 'lucide-react';
+import { Shield, Briefcase, Lightbulb } from 'lucide-react';
 
 const About = () => {
   return (
@@ -61,7 +61,7 @@ const About = () => {
         </motion.section>
 
         <motion.section
-          className="mt-12"
+          className="mt-12 mb-12"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
@@ -80,6 +80,29 @@ const About = () => {
               </p>
             </CardContent>
           </Card>
+        </motion.section>
+
+        <motion.section
+          className="mt-12"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.8 }}
+        >
+          <h2 className="text-2xl font-semibold mb-4 flex items-center text-gray-800">
+            <Lightbulb className="mr-2 text-blue-500" />
+            Vår Vision
+          </h2>
+          <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
+            <img src="https://i.imgur.com/SskhVPu.jpeg" alt="Renew I/O Vision" className="absolute inset-0 w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+              <div className="text-center text-white p-6">
+                <h3 className="text-3xl font-bold mb-4">Framtidens Digitala Landskap</h3>
+                <p className="text-xl">
+                  Vår vision är att forma en digital framtid där innovation möter säkerhet, och där varje företag kan blomstra i den digitala eran. Genom att kombinera cutting-edge teknologi med strategisk insikt, strävar vi efter att vara katalysatorn för positiv förändring i företagsvärlden.
+                </p>
+              </div>
+            </div>
+          </div>
         </motion.section>
       </div>
     </div>
