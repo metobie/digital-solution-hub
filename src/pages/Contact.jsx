@@ -8,7 +8,7 @@ import Confetti from 'react-confetti';
 const Contact = () => {
   const [showConfetti, setShowConfetti] = useState(false);
   const { scrollY } = useScroll();
-  const y = useTransform(scrollY, [0, 500], [0, -150]);
+  const y = useTransform(scrollY, [0, 500], [0, 150]);
 
   const handleEmailClick = () => {
     setShowConfetti(true);
@@ -38,7 +38,7 @@ const Contact = () => {
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 relative overflow-hidden">
       {showConfetti && <Confetti />}
       <motion.div 
-        className="absolute inset-0 z-0 rotate-180"
+        className="absolute inset-0 z-0"
         style={{
           backgroundImage: "url('https://i.imgur.com/2dexfVJ.jpeg')",
           backgroundSize: 'cover',
