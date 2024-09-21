@@ -44,6 +44,7 @@ const Index = () => {
         >
           <br /> {/* First line break */}
           <br /> {/* Second line break added here */}
+          <br /> {/* Third line break added here */}
           <h2 className="text-2xl font-semibold mb-4 text-center text-gray-700">Förnya din verksamhet med vår hjälp</h2>
           <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300 bg-white">
             <CardContent className="p-6">
