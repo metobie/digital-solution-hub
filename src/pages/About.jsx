@@ -2,12 +2,14 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Card, CardContent } from "@/components/ui/card";
 import { Shield, Briefcase, Lightbulb } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Button } from "@/components/ui/button";
 
 const About = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
       <motion.section 
-        className="relative h-[50vh] flex items-center justify-center overflow-hidden mb-12"
+        className="relative h-screen flex items-center justify-center overflow-hidden mb-12"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
@@ -24,9 +26,20 @@ const About = () => {
           transition={{ duration: 0.5 }}
         />
         <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
-        <div className="relative z-20 text-center px-6">
+        <div className="relative z-20 text-center px-6 max-w-3xl">
           <h1 className="text-4xl md:text-6xl font-extrabold mb-4 text-white tracking-tight">Om Grundaren</h1>
           <p className="text-xl text-gray-200 mb-8">Lär känna personen bakom Renew I/O</p>
+          <p className="text-lg text-gray-300 mb-8">
+            Med över ett decennium av erfarenhet inom IT, digital strategi och cybersäkerhet, 
+            har Tobias Karlsson lett projekt från små startups till stora multinationella företag. 
+            Hans unika förmåga att överbrygga klyftan mellan affärsmål och tekniska lösningar 
+            gör Renew I/O till en ovärderlig partner i din digitala transformation.
+          </p>
+          <Link to="/contact">
+            <Button size="lg" className="bg-gradient-to-br from-[#5A9AAB] to-[#AA5AAB] text-white hover:from-[#3E7A8B] hover:to-[#8A3A8B] transition-all duration-300">
+              Kontakta oss
+            </Button>
+          </Link>
         </div>
       </motion.section>
 
