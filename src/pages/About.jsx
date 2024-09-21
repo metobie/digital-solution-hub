@@ -99,13 +99,13 @@ const About = () => {
           <Card className="mb-4 shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
             <CardContent className="p-6">
               <p className="mb-4 text-gray-600">
-                Med över ett decennium av erfarenhet inom IT, digital strategi och cybersäkerhet har jag haft förmånen att arbeta med en mängd olika företag och organisationer. Min resa började inom teknisk support och utvecklades snabbt till bl.a. tekniska roller inom workplace-lösningar, storskaliga infrastruktur-implementationer, cloud och strategisk rådgivning.
+                Med över ett decennium av erfarenhet inom IT, digital strategi och cybersäkerhet har jag haft förmånen att arbeta med en mängd olika företag och organisationer. Min resa började inom teknisk support och utvecklades snabbt till bland annat tekniska roller inom workplace-lösningar, storskaliga infrastrukturimplementationer, molntjänster och strategisk rådgivning.
               </p>
               <p className="mb-4 text-gray-600">
-                Genom åren har jag lett projekt som sträckt sig från små till stora multinationella företag, alltid med fokus på att leverera skräddarsydda lösningar som driver verklig affärsnytta och säkerställer robust säkerhet och stabilitet. Min passion ligger i att se bortom de omedelbara tekniska utmaningarna och istället fokusera på de långsiktiga strategiska målen.
+                Genom åren har jag lett projekt för både små och stora multinationella företag, alltid med fokus på att leverera skräddarsydda lösningar som skapar verklig affärsnytta och säkerställer robust säkerhet och stabilitet. Min passion ligger i att se bortom de omedelbara tekniska utmaningarna och istället fokusera på de långsiktiga strategiska målen.
               </p>
               <p className="text-gray-600">
-                Som grundare av Renew I/O är mitt mål att dela denna expertis och hjälpa företag att inte bara hålla jämna steg med den digitala utvecklingen, utan att faktiskt leda den på ett säkert sätt. Jag tror starkt på kraften i samarbete och kontinuerligt lärande, och ser varje nytt projekt som en möjlighet att både dela med mig av min kunskap och lära mig något nytt.
+                Som grundare av Renew I/O är mitt mål att dela med mig av denna expertis och hjälpa företag att inte bara hålla jämna steg med den digitala utvecklingen, utan att faktiskt leda den på ett säkert sätt. Jag tror starkt på kraften i samarbete och kontinuerligt lärande, och ser varje nytt projekt som en möjlighet att både dela med mig av min kunskap och lära mig något nytt.
               </p>
             </CardContent>
           </Card>
