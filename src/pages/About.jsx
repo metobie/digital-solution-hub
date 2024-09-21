@@ -11,6 +11,7 @@ const About = () => {
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
       <motion.section 
         className="relative h-screen flex items-center justify-center overflow-hidden mb-12"
+        initial={{ y: 0 }}
         style={{ y }}
       >
         <motion.div 
@@ -21,6 +22,7 @@ const About = () => {
             backgroundPosition: 'center',
             y: useTransform(scrollY, [0, 500], [0, 150]),
           }}
+          initial={{ y: 0 }}
         />
         <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
         <div className="relative z-20 text-center px-6 max-w-3xl">
