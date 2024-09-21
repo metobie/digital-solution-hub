@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
@@ -9,21 +9,12 @@ import { Separator } from "@/components/ui/separator";
 const Index = () => {
   const { scrollY } = useScroll();
   const y = useTransform(scrollY, [0, 500], [0, 150]);
-  const [animationComplete, setAnimationComplete] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setAnimationComplete(true);
-    }, 500); // Adjust this time to match your initial animation duration
-
-    return () => clearTimeout(timer);
-  }, []);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
       <motion.section 
         className="relative h-screen flex items-center justify-center overflow-hidden mb-12"
-        style={{ y: animationComplete ? y : 0 }}
+        style={{ y }}
       >
         <motion.div 
           className="absolute inset-0 z-0"
@@ -31,13 +22,16 @@ const Index = () => {
             backgroundImage: "url('https://i.imgur.com/2dexfVJ.jpeg')",
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            y: animationComplete ? useTransform(scrollY, [0, 500], [0, 150]) : 0,
+            y: useTransform(scrollY, [0, 500], [0, 150]),
           }}
         />
         <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
         <div className="relative z-20 text-center px-6">
           <h1 className="text-4xl md:text-6xl font-extrabold mb-4 text-white tracking-tight">Välkommen till Renew I/O</h1>
           <p className="text-xl text-gray-200 mb-8">Din partner för digital transformation, strategisk utveckling och cybersäkerhet</p>
+          <Link to="/contact">
+            <Button size="lg" className="bg-gradient-to-br from-[#3E7A8B] to-[#8A3A8B] text-white hover:from-[#5A9AAB] hover:to-[#AA5AAB] transition-all duration-300">Kontakta oss nu</Button>
+          </Link>
         </div>
       </motion.section>
 
