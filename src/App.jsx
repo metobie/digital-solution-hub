@@ -26,7 +26,7 @@ const ScrollToTop = () => {
 const AppContent = () => {
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
+      <header className="bg-white fixed top-0 left-0 right-0 z-50">
         <nav className="container mx-auto px-6 py-3">
           <div className="flex items-center justify-between">
             <Link to="/">
@@ -53,7 +53,7 @@ const AppContent = () => {
         </nav>
       </header>
       <ScrollToTop />
-      <main className="flex-grow mt-20">
+      <main className="flex-grow pt-16">
         <Routes>
           {navItems.map(({ to, page }) => (
             <Route key={to} path={to} element={page} />
