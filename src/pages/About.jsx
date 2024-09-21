@@ -1,16 +1,17 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import { Card, CardContent } from "@/components/ui/card";
 import { Shield, Briefcase, Lightbulb } from 'lucide-react';
 
 const About = () => {
+  const { scrollY } = useScroll();
+  const y = useTransform(scrollY, [0, 500], [0, 150]);
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
       <motion.section 
         className="relative h-screen flex items-center justify-center overflow-hidden mb-12"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.5 }}
+        style={{ y }}
       >
         <motion.div 
           className="absolute inset-0 z-0"
@@ -18,10 +19,8 @@ const About = () => {
             backgroundImage: "url('https://i.imgur.com/PBAVzJh.jpeg')",
             backgroundSize: 'cover',
             backgroundPosition: 'center',
+            y: useTransform(scrollY, [0, 500], [0, 150]),
           }}
-          initial={{ scale: 1.1 }}
-          animate={{ scale: 1 }}
-          transition={{ duration: 0.5 }}
         />
         <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
         <div className="relative z-20 text-center px-6 max-w-3xl">
