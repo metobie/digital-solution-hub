@@ -36,10 +36,6 @@ const About = () => {
       </motion.section>
 
       <div className="container mx-auto px-6 py-8">
-        <br />
-        <br />
-        <br />
-        <br />
         <motion.section 
           className="mb-12"
           initial={{ opacity: 0, y: 20 }}
