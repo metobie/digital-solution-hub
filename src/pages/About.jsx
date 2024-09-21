@@ -42,7 +42,21 @@ const About = () => {
           transition={{ duration: 0.5, delay: 0.4 }}
         >
           <h2 className="text-2xl font-semibold mb-4 flex items-center text-gray-800">
-            <Briefcase className="mr-2 text-blue-500" />
+            <motion.div
+              className="w-12 h-12 bg-gradient-to-br from-[#346D7B] to-[#75347B] rounded-full flex items-center justify-center mr-2"
+              animate={{
+                scale: [1, 1.05, 1],
+              }}
+              transition={{
+                duration: 4,
+                ease: "easeInOut",
+                times: [0, 0.5, 1],
+                repeat: Infinity,
+                repeatDelay: 0
+              }}
+            >
+              <Briefcase className="w-6 h-6 text-white" />
+            </motion.div>
             Min Bakgrund
           </h2>
           <Card className="mb-4 shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
@@ -67,7 +81,21 @@ const About = () => {
           transition={{ duration: 0.5, delay: 0.6 }}
         >
           <h2 className="text-2xl font-semibold mb-4 flex items-center text-gray-800">
-            <Shield className="mr-2 text-blue-500" />
+            <motion.div
+              className="w-12 h-12 bg-gradient-to-br from-[#346D7B] to-[#75347B] rounded-full flex items-center justify-center mr-2"
+              animate={{
+                scale: [1, 1.05, 1],
+              }}
+              transition={{
+                duration: 4,
+                ease: "easeInOut",
+                times: [0, 0.5, 1],
+                repeat: Infinity,
+                repeatDelay: 0
+              }}
+            >
+              <Shield className="w-6 h-6 text-white" />
+            </motion.div>
             Cybersäkerhetsexpertis
           </h2>
           <Card className="shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
@@ -89,7 +117,21 @@ const About = () => {
           transition={{ duration: 0.5, delay: 0.8 }}
         >
           <h2 className="text-2xl font-semibold mb-4 flex items-center text-gray-800">
-            <Lightbulb className="mr-2 text-blue-500" />
+            <motion.div
+              className="w-12 h-12 bg-gradient-to-br from-[#346D7B] to-[#75347B] rounded-full flex items-center justify-center mr-2"
+              animate={{
+                scale: [1, 1.05, 1],
+              }}
+              transition={{
+                duration: 4,
+                ease: "easeInOut",
+                times: [0, 0.5, 1],
+                repeat: Infinity,
+                repeatDelay: 0
+              }}
+            >
+              <Lightbulb className="w-6 h-6 text-white" />
+            </motion.div>
             Vår Vision
           </h2>
           <Card className="shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
