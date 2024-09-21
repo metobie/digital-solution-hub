@@ -152,8 +152,11 @@ const About = () => {
               <p className="mb-4 text-gray-600">
                 Vår vision är att forma en digital framtid där innovation möter säkerhet, och där varje företag kan blomstra i den digitala eran. Genom att kombinera cutting-edge teknologi med strategisk insikt, strävar vi efter att vara katalysatorn för positiv förändring i företagsvärlden.
               </p>
-              <p className="text-gray-600">
+              <p className="mb-4 text-gray-600">
                 Vi ser en framtid där digitala lösningar inte bara effektiviserar verksamheter, utan också öppnar upp för nya möjligheter och affärsmodeller. Samtidigt är vår vision djupt rotad i övertygelsen om att denna digitala transformation måste ske på ett säkert och ansvarsfullt sätt.
+              </p>
+              <p className="text-gray-600">
+                För större uppdrag samarbetar vi med ett nätverk av konsulter, var och en med egen spetskompetens och egna företag. Detta möjliggör att vi alltid kan erbjuda skräddarsydda och högkvalitativa lösningar, anpassade efter varje kunds unika behov.
               </p>
             </CardContent>
           </Card>
