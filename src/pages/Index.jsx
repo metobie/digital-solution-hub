@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -7,35 +7,22 @@ import { Shield, Star, Server } from 'lucide-react';
 import { Separator } from "@/components/ui/separator";
 
 const Index = () => {
-  const { scrollY } = useScroll();
-  const y = useTransform(scrollY, [0, 500], [0, 150]);
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
-      <motion.section 
-        className="relative h-screen flex items-center justify-center overflow-hidden mb-12"
-        style={{ y }}
-      >
-        <motion.div 
-          className="absolute inset-0 z-0"
-          style={{
-            backgroundImage: "url('https://i.imgur.com/2dexfVJ.jpeg')",
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            y: useTransform(scrollY, [0, 500], [0, 150]),
-          }}
-        />
-        <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
-        <div className="relative z-20 text-center px-6">
-          <h1 className="text-4xl md:text-6xl font-extrabold mb-4 text-white tracking-tight">Välkommen till Renew I/O</h1>
-          <p className="text-xl text-gray-200 mb-8">Din partner för digital transformation, strategisk utveckling och cybersäkerhet</p>
-          <Link to="/contact">
-            <Button size="lg" className="bg-blue-500 hover:bg-blue-600 text-white">Kontakta oss nu</Button>
-          </Link>
-        </div>
-      </motion.section>
-
       <main className="container mx-auto px-6 py-8">
+        <motion.section 
+          className="text-center mb-12 relative overflow-hidden rounded-lg p-8"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 opacity-50"></div>
+          <div className="relative z-10">
+            <h1 className="text-3xl md:text-6xl font-extrabold mb-4 text-gray-800 tracking-tight">Välkommen till Renew I/O</h1>
+            <p className="text-xl text-gray-600">Din partner för digital transformation, strategisk utveckling och cybersäkerhet</p>
+          </div>
+        </motion.section>
+
         <motion.section 
           className="mb-12"
           initial={{ opacity: 0, y: 20 }}
