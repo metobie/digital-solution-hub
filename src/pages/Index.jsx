@@ -91,7 +91,7 @@ const Index = () => {
         >
           <h2 className="text-2xl font-semibold mb-4 flex items-center justify-center text-gray-700">
             <motion.div
-              className="w-12 h-12 bg-gradient-to-br from-[#346D7B] to-[#75347B] rounded-full flex items-center justify-center mr-2"
+              className="w-8 h-8 bg-gradient-to-br from-[#346D7B] to-[#75347B] rounded-full flex items-center justify-center mr-2"
               animate={{
                 scale: [1, 1.05, 1],
               }}
@@ -103,7 +103,7 @@ const Index = () => {
                 repeatDelay: 0
               }}
             >
-              <Star className="w-6 h-6 text-white" />
+              <Star className="w-4 h-4 text-white" />
             </motion.div>
             Rekommendationer
           </h2>
@@ -131,7 +131,7 @@ const Index = () => {
         >
           <h2 className="text-2xl font-semibold mb-4 text-center flex items-center justify-center text-gray-700">
             <motion.div
-              className="w-12 h-12 bg-gradient-to-br from-[#346D7B] to-[#75347B] rounded-full flex items-center justify-center mr-2"
+              className="w-8 h-8 bg-gradient-to-br from-[#346D7B] to-[#75347B] rounded-full flex items-center justify-center mr-2"
               animate={{
                 scale: [1, 1.05, 1],
               }}
@@ -143,7 +143,7 @@ const Index = () => {
                 repeatDelay: 0
               }}
             >
-              <Shield className="w-6 h-6 text-white" />
+              <Shield className="w-4 h-4 text-white" />
             </motion.div>
             Cybersäkerhet i fokus
           </h2>
