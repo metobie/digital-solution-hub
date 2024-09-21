@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import Footer from "./components/Footer";
 import MobileMenu from "./components/MobileMenu";
+import CookieConsentBanner from "./components/CookieConsent";
 
 const queryClient = new QueryClient();
 
@@ -59,6 +60,7 @@ const AppContent = () => {
         </Routes>
       </main>
       <Footer />
+      <CookieConsentBanner />
     </div>
   );
 };
