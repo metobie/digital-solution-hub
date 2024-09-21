@@ -60,7 +60,7 @@ const Contact = () => {
                   </p>
                   <Button 
                     onClick={handleEmailClick}
-                    className="w-full mb-4 bg-blue-500 hover:bg-blue-600 text-white"
+                    className="w-full mb-4 bg-gradient-to-br from-[#346D7B] to-[#75347B] text-white hover:from-[#2a5a66] hover:to-[#5f2a66] transition-all duration-300"
                   >
                     Maila oss
                   </Button>
