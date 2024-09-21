@@ -14,6 +14,24 @@ const Contact = () => {
     window.location.href = "mailto:info@renew-io.se?subject=Förfrågan%20från%20webbplatsen&body=Hej%20Renew%20I/O,%0D%0A%0D%0AJag%20skulle%20vilja%20veta%20mer%20om%20era%20tjänster.";
   };
 
+  const IconWrapper = ({ children }) => (
+    <motion.div
+      className="w-12 h-12 bg-gradient-to-br from-[#346D7B] to-[#75347B] rounded-full flex items-center justify-center mr-4"
+      animate={{
+        scale: [1, 1.05, 1],
+      }}
+      transition={{
+        duration: 4,
+        ease: "easeInOut",
+        times: [0, 0.5, 1],
+        repeat: Infinity,
+        repeatDelay: 0
+      }}
+    >
+      {children}
+    </motion.div>
+  );
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
       {showConfetti && <Confetti />}
@@ -62,7 +80,9 @@ const Contact = () => {
                     whileHover={{ scale: 1.05 }}
                     transition={{ type: "spring", stiffness: 400, damping: 10 }}
                   >
-                    <Mail className="w-8 h-8 mr-4 text-blue-500" />
+                    <IconWrapper>
+                      <Mail className="w-6 h-6 text-white" />
+                    </IconWrapper>
                     <div>
                       <h3 className="font-semibold text-gray-800">E-post</h3>
                       <p className="text-gray-600">info@renew-io.se</p>
@@ -73,7 +93,9 @@ const Contact = () => {
                     whileHover={{ scale: 1.05 }}
                     transition={{ type: "spring", stiffness: 400, damping: 10 }}
                   >
-                    <Phone className="w-8 h-8 mr-4 text-blue-500" />
+                    <IconWrapper>
+                      <Phone className="w-6 h-6 text-white" />
+                    </IconWrapper>
                     <div>
                       <h3 className="font-semibold text-gray-800">Telefon</h3>
                       <p className="text-gray-600">+46 73 035 28 88</p>
@@ -84,7 +106,9 @@ const Contact = () => {
                     whileHover={{ scale: 1.05 }}
                     transition={{ type: "spring", stiffness: 400, damping: 10 }}
                   >
-                    <MapPin className="w-8 h-8 mr-4 text-blue-500" />
+                    <IconWrapper>
+                      <MapPin className="w-6 h-6 text-white" />
+                    </IconWrapper>
                     <div>
                       <h3 className="font-semibold text-gray-800">Plats</h3>
                       <p className="text-gray-600">Kristianstad, Sverige</p>
