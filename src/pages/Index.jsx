@@ -8,14 +8,13 @@ import { Separator } from "@/components/ui/separator";
 
 const Index = () => {
   const { scrollY } = useScroll();
-  const y1 = useTransform(scrollY, [0, 500], [0, 150]);
-  const y2 = useTransform(scrollY, [0, 500], [0, -150]);
+  const y = useTransform(scrollY, [0, 500], [0, 150]);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
       <motion.section 
-        className="relative h-screen flex items-center justify-center overflow-hidden"
-        style={{ y: y1 }}
+        className="relative h-screen flex items-center justify-center overflow-hidden mb-12"
+        style={{ y }}
       >
         <motion.div 
           className="absolute inset-0 z-0"
@@ -36,27 +35,7 @@ const Index = () => {
         </div>
       </motion.section>
 
-      <motion.section 
-        className="relative h-screen flex items-center justify-center overflow-hidden"
-        style={{ y: y2 }}
-      >
-        <motion.div 
-          className="absolute inset-0 z-0"
-          style={{
-            backgroundImage: "url('https://i.imgur.com/HnORICF.jpeg')",
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            y: useTransform(scrollY, [500, 1000], [0, -150]),
-          }}
-        />
-        <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
-        <div className="relative z-20 text-center px-6">
-          <h2 className="text-4xl md:text-5xl font-extrabold mb-4 text-white tracking-tight">Framtidssäkra din verksamhet</h2>
-          <p className="text-xl text-gray-200 mb-8">Med vår expertis inom digital transformation och cybersäkerhet</p>
-        </div>
-      </motion.section>
-
-      <main className="container mx-auto px-6 py-8 relative z-30 bg-gradient-to-br from-gray-50 to-gray-100">
+      <main className="container mx-auto px-6 py-8">
         <motion.section 
           className="mb-12"
           initial={{ opacity: 0, y: 20 }}
