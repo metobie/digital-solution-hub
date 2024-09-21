@@ -6,16 +6,31 @@ import { Shield, Briefcase, Lightbulb } from 'lucide-react';
 const About = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
-      <div className="container mx-auto px-6 py-8">
-        <motion.h1 
-          className="text-4xl font-bold mb-8 text-center text-gray-800"
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
+      <motion.section 
+        className="relative h-[50vh] flex items-center justify-center overflow-hidden mb-12"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+      >
+        <motion.div 
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage: "url('https://i.imgur.com/PBAVzJh.jpeg')",
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+          initial={{ scale: 1.1 }}
+          animate={{ scale: 1 }}
           transition={{ duration: 0.5 }}
-        >
-          Om Grundaren
-        </motion.h1>
+        />
+        <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
+        <div className="relative z-20 text-center px-6">
+          <h1 className="text-4xl md:text-6xl font-extrabold mb-4 text-white tracking-tight">Om Grundaren</h1>
+          <p className="text-xl text-gray-200 mb-8">Lär känna personen bakom Renew I/O</p>
+        </div>
+      </motion.section>
 
+      <div className="container mx-auto px-6 py-8">
         <motion.section 
           className="mb-12"
           initial={{ opacity: 0, y: 20 }}
