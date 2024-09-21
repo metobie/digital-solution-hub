@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 import Footer from "./components/Footer";
 import MobileMenu from "./components/MobileMenu";
 import CookieConsentBanner from "./components/CookieConsent";
+import Privacy from "./pages/Privacy";
 
 const queryClient = new QueryClient();
 
@@ -57,6 +58,7 @@ const AppContent = () => {
           {navItems.map(({ to, page }) => (
             <Route key={to} path={to} element={page} />
           ))}
+          <Route path="/privacy" element={<Privacy />} />
         </Routes>
       </main>
       <Footer />
