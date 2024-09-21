@@ -92,11 +92,13 @@ const About = () => {
             <Lightbulb className="mr-2 text-blue-500" />
             Vår Vision
           </h2>
-          <Card className="shadow-xl bg-white">
+          <Card className="shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
             <CardContent className="p-6">
-              <h3 className="text-3xl font-bold mb-4 text-gray-800">Framtidens Digitala Landskap</h3>
-              <p className="text-xl text-gray-600">
+              <p className="mb-4 text-gray-600">
                 Vår vision är att forma en digital framtid där innovation möter säkerhet, och där varje företag kan blomstra i den digitala eran. Genom att kombinera cutting-edge teknologi med strategisk insikt, strävar vi efter att vara katalysatorn för positiv förändring i företagsvärlden.
+              </p>
+              <p className="text-gray-600">
+                Vi ser en framtid där digitala lösningar inte bara effektiviserar verksamheter, utan också öppnar upp för nya möjligheter och affärsmodeller. Samtidigt är vår vision djupt rotad i övertygelsen om att denna digitala transformation måste ske på ett säkert och ansvarsfullt sätt.
               </p>
             </CardContent>
           </Card>
