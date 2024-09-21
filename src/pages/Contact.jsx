@@ -16,7 +16,7 @@ const Contact = () => {
 
   const IconWrapper = ({ children }) => (
     <motion.div
-      className="w-8 h-8 bg-gradient-to-br from-[#4A8A9B] to-[#9A4A9B] rounded-full flex items-center justify-center mr-4"
+      className="w-12 h-12 bg-gradient-to-br from-[#3E7A8B] to-[#8A3A8B] rounded-full flex items-center justify-center mr-4"
       animate={{
         scale: [1, 1.05, 1],
       }}
@@ -61,7 +61,8 @@ const Contact = () => {
                   </p>
                   <Button 
                     onClick={handleEmailClick}
-                    className="w-full mb-4 bg-gradient-to-br from-[#4A8A9B] to-[#9A4A9B] text-white hover:from-[#3E7A8B] hover:to-[#8A3A8B] transition-all duration-300"
+                    className="w-full mb-4 bg-gradient-to-br from-[#3E7A8B] to-[#8A3A8B] text-white hover:from-[#5A9AAB] hover:to-[#AA5AAB] transition-all duration-300"
+                    size="lg"
                   >
                     Maila oss
                   </Button>
@@ -82,7 +83,7 @@ const Contact = () => {
                     transition={{ type: "spring", stiffness: 400, damping: 10 }}
                   >
                     <IconWrapper>
-                      <Mail className="w-4 h-4 text-white" />
+                      <Mail className="w-6 h-6 text-white" />
                     </IconWrapper>
                     <div>
                       <h3 className="font-semibold text-white">E-post</h3>
@@ -95,7 +96,7 @@ const Contact = () => {
                     transition={{ type: "spring", stiffness: 400, damping: 10 }}
                   >
                     <IconWrapper>
-                      <Phone className="w-4 h-4 text-white" />
+                      <Phone className="w-6 h-6 text-white" />
                     </IconWrapper>
                     <div>
                       <h3 className="font-semibold text-white">Telefon</h3>
@@ -108,7 +109,7 @@ const Contact = () => {
                     transition={{ type: "spring", stiffness: 400, damping: 10 }}
                   >
                     <IconWrapper>
-                      <Linkedin className="w-4 h-4 text-white" />
+                      <Linkedin className="w-6 h-6 text-white" />
                     </IconWrapper>
                     <div>
                       <h3 className="font-semibold text-white">LinkedIn</h3>
@@ -128,7 +129,7 @@ const Contact = () => {
                     transition={{ type: "spring", stiffness: 400, damping: 10 }}
                   >
                     <IconWrapper>
-                      <MapPin className="w-4 h-4 text-white" />
+                      <MapPin className="w-6 h-6 text-white" />
                     </IconWrapper>
                     <div>
                       <h3 className="font-semibold text-white">Plats</h3>
