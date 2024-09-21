@@ -16,7 +16,7 @@ const Contact = () => {
 
   const IconWrapper = ({ children }) => (
     <motion.div
-      className="w-8 h-8 bg-gradient-to-br from-[#346D7B] to-[#75347B] rounded-full flex items-center justify-center mr-4"
+      className="w-8 h-8 bg-gradient-to-br from-[#4A8A9B] to-[#9A4A9B] rounded-full flex items-center justify-center mr-4"
       animate={{
         scale: [1, 1.05, 1],
       }}
@@ -60,7 +60,7 @@ const Contact = () => {
                   </p>
                   <Button 
                     onClick={handleEmailClick}
-                    className="w-full mb-4 bg-gradient-to-br from-[#346D7B] to-[#75347B] text-white hover:from-[#2a5a66] hover:to-[#5f2a66] transition-all duration-300"
+                    className="w-full mb-4 bg-gradient-to-br from-[#4A8A9B] to-[#9A4A9B] text-white hover:from-[#3E7A8B] hover:to-[#8A3A8B] transition-all duration-300"
                   >
                     Maila oss
                   </Button>
@@ -115,7 +115,7 @@ const Contact = () => {
                         href="https://www.linkedin.com/company/renew-io/" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="text-gray-600 hover:text-[#346D7B] transition-colors duration-300"
+                        className="text-gray-600 hover:text-[#4A8A9B] transition-colors duration-300"
                       >
                         Renew I/O
                       </a>

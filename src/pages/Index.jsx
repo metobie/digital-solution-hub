@@ -30,7 +30,7 @@ const Index = () => {
           <h1 className="text-4xl md:text-6xl font-extrabold mb-4 text-white tracking-tight">Välkommen till Renew I/O</h1>
           <p className="text-xl text-gray-200 mb-8">Din partner för digital transformation, strategisk utveckling och cybersäkerhet</p>
           <Link to="/contact">
-            <Button size="lg" className="bg-gradient-to-br from-[#346D7B] to-[#75347B] text-white hover:from-[#2a5a66] hover:to-[#5f2a66] transition-all duration-300">Kontakta oss nu</Button>
+            <Button size="lg" className="bg-gradient-to-br from-[#4A8A9B] to-[#9A4A9B] text-white hover:from-[#3E7A8B] hover:to-[#8A3A8B] transition-all duration-300">Kontakta oss nu</Button>
           </Link>
         </div>
       </motion.section>
@@ -51,7 +51,7 @@ const Index = () => {
             <CardContent className="p-6">
               <div className="flex flex-col md:flex-row items-center">
                 <motion.div
-                  className="w-48 h-48 bg-gradient-to-br from-[#346D7B] to-[#75347B] rounded-full flex items-center justify-center mb-4 md:mb-0 md:mr-6 flex-shrink-0"
+                  className="w-48 h-48 bg-gradient-to-br from-[#4A8A9B] to-[#9A4A9B] rounded-full flex items-center justify-center mb-4 md:mb-0 md:mr-6 flex-shrink-0"
                   animate={{
                     scale: [1, 1.05, 1],
                   }}
@@ -91,7 +91,7 @@ const Index = () => {
         >
           <h2 className="text-2xl font-semibold mb-4 flex items-center justify-center text-gray-700">
             <motion.div
-              className="w-8 h-8 bg-gradient-to-br from-[#346D7B] to-[#75347B] rounded-full flex items-center justify-center mr-2"
+              className="w-8 h-8 bg-gradient-to-br from-[#4A8A9B] to-[#9A4A9B] rounded-full flex items-center justify-center mr-2"
               animate={{
                 scale: [1, 1.05, 1],
               }}
@@ -131,7 +131,7 @@ const Index = () => {
         >
           <h2 className="text-2xl font-semibold mb-4 text-center flex items-center justify-center text-gray-700">
             <motion.div
-              className="w-8 h-8 bg-gradient-to-br from-[#346D7B] to-[#75347B] rounded-full flex items-center justify-center mr-2"
+              className="w-8 h-8 bg-gradient-to-br from-[#4A8A9B] to-[#9A4A9B] rounded-full flex items-center justify-center mr-2"
               animate={{
                 scale: [1, 1.05, 1],
               }}
@@ -154,7 +154,7 @@ const Index = () => {
               </p>
               <div className="flex justify-center mt-4">
                 <Link to="/about">
-                  <Button size="lg" className="bg-gradient-to-br from-[#346D7B] to-[#75347B] text-white hover:from-[#2a5a66] hover:to-[#5f2a66] transition-all duration-300">Läs mer</Button>
+                  <Button size="lg" className="bg-gradient-to-br from-[#4A8A9B] to-[#9A4A9B] text-white hover:from-[#3E7A8B] hover:to-[#8A3A8B] transition-all duration-300">Läs mer</Button>
                 </Link>
               </div>
             </CardContent>
@@ -170,7 +170,7 @@ const Index = () => {
           <h2 className="text-2xl font-semibold mb-4 text-gray-700">Redo att ta nästa steg?</h2>
           <p className="mb-4 text-gray-600">Låt oss tillsammans utforska hur Renew I/O kan hjälpa ditt företag att nå nya höjder inom digital innovation, effektivitet och säkerhet.</p>
           <Link to="/contact">
-            <Button size="lg" className="bg-gradient-to-br from-[#346D7B] to-[#75347B] text-white hover:from-[#2a5a66] hover:to-[#5f2a66] transition-all duration-300">Kontakta oss nu</Button>
+            <Button size="lg" className="bg-gradient-to-br from-[#4A8A9B] to-[#9A4A9B] text-white hover:from-[#3E7A8B] hover:to-[#8A3A8B] transition-all duration-300">Kontakta oss nu</Button>
           </Link>
         </motion.section>
       </main>
