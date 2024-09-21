@@ -30,7 +30,7 @@ const Index = () => {
           <h1 className="text-4xl md:text-6xl font-extrabold mb-4 text-white tracking-tight">Välkommen till Renew I/O</h1>
           <p className="text-xl text-gray-200 mb-8">Din partner för digital transformation, strategisk utveckling och cybersäkerhet</p>
           <Link to="/contact">
-            <Button size="lg" className="bg-blue-500 hover:bg-blue-600 text-white">Kontakta oss nu</Button>
+            <Button size="lg" className="bg-gradient-to-br from-[#346D7B] to-[#75347B] text-white hover:from-[#2a5a66] hover:to-[#5f2a66] transition-all duration-300">Kontakta oss nu</Button>
           </Link>
         </div>
       </motion.section>
@@ -154,7 +154,7 @@ const Index = () => {
               </p>
               <div className="flex justify-center mt-4">
                 <Link to="/about">
-                  <Button size="lg" className="bg-blue-500 hover:bg-blue-600 text-white">Läs mer</Button>
+                  <Button size="lg" className="bg-gradient-to-br from-[#346D7B] to-[#75347B] text-white hover:from-[#2a5a66] hover:to-[#5f2a66] transition-all duration-300">Läs mer</Button>
                 </Link>
               </div>
             </CardContent>
@@ -170,7 +170,7 @@ const Index = () => {
           <h2 className="text-2xl font-semibold mb-4 text-gray-700">Redo att ta nästa steg?</h2>
           <p className="mb-4 text-gray-600">Låt oss tillsammans utforska hur Renew I/O kan hjälpa ditt företag att nå nya höjder inom digital innovation, effektivitet och säkerhet.</p>
           <Link to="/contact">
-            <Button size="lg" className="bg-blue-500 hover:bg-blue-600 text-white">Kontakta oss nu</Button>
+            <Button size="lg" className="bg-gradient-to-br from-[#346D7B] to-[#75347B] text-white hover:from-[#2a5a66] hover:to-[#5f2a66] transition-all duration-300">Kontakta oss nu</Button>
           </Link>
         </motion.section>
       </main>
