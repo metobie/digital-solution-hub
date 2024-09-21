@@ -120,7 +120,7 @@ const Index = () => {
               </p>
               <div className="flex justify-center mt-4">
                 <Link to="/about">
-                  <Button size="lg" className="bg-gradient-to-br from-[#5A9AAB] to-[#AA5AAB] text-white hover:from-[#3E7A8B] hover:to-[#8A3A8B] transition-all duration-300">Läs mer</Button>
+                  <Button size="lg" className="bg-gray-100 text-gray-800 hover:bg-gray-200 transition-all duration-300 shadow-sm">Läs mer</Button>
                 </Link>
               </div>
             </CardContent>
@@ -136,7 +136,7 @@ const Index = () => {
           <h2 className="text-2xl font-semibold mb-4 text-gray-700">Redo att ta nästa steg?</h2>
           <p className="mb-4 text-gray-600">Låt oss tillsammans utforska hur Renew I/O kan hjälpa ditt företag att nå nya höjder inom digital innovation, effektivitet och säkerhet.</p>
           <Link to="/contact">
-            <Button size="lg" className="bg-gradient-to-br from-[#5A9AAB] to-[#AA5AAB] text-white hover:from-[#3E7A8B] hover:to-[#8A3A8B] transition-all duration-300">Kontakta oss nu</Button>
+            <Button size="lg" className="bg-gray-100 text-gray-800 hover:bg-gray-200 transition-all duration-300 shadow-sm">Kontakta oss nu</Button>
           </Link>
         </motion.section>
       </main>
