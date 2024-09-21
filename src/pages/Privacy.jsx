@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Card, CardContent } from "@/components/ui/card";
+import { Separator } from "@/components/ui/separator";
 
 const Privacy = () => {
   return (
@@ -21,21 +22,81 @@ const Privacy = () => {
         >
           <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white">
             <CardContent className="p-8">
-              <h2 className="text-2xl font-semibold mb-4 text-gray-800">Vår integritetspolicy</h2>
+              <h2 className="text-2xl font-semibold mb-4 text-gray-800">Renew I/O:s Integritetspolicy</h2>
+              
               <p className="mb-4 text-gray-600">
-                På Renew I/O värnar vi om din integritet. Denna policy beskriver hur vi samlar in, använder och skyddar dina personuppgifter.
+                Renew I/O värnar om din personliga integritet och eftersträvar alltid en hög nivå av dataskydd. Denna integritetspolicy förklarar hur vi samlar in och använder din personliga information. Den beskriver också dina rättigheter och hur du kan göra dem gällande.
               </p>
-              <h3 className="text-xl font-semibold mb-2 text-gray-700">Insamling av information</h3>
+
+              <h3 className="text-xl font-semibold mb-2 text-gray-700">Personuppgiftsansvarig</h3>
               <p className="mb-4 text-gray-600">
-                Vi samlar endast in information som är nödvändig för att tillhandahålla våra tjänster och förbättra din upplevelse på vår webbplats.
+                Renew I/O är personuppgiftsansvarig för behandlingen av dina personuppgifter och ansvarar för att sådan behandling sker i enlighet med tillämplig lagstiftning.
               </p>
-              <h3 className="text-xl font-semibold mb-2 text-gray-700">Användning av information</h3>
+
+              <Separator className="my-4" />
+
+              <h3 className="text-xl font-semibold mb-2 text-gray-700">När behandlar vi dina personuppgifter?</h3>
               <p className="mb-4 text-gray-600">
-                Den information vi samlar in används för att förbättra våra tjänster, kommunicera med dig och säkerställa att vi uppfyller våra juridiska skyldigheter.
+                Renew I/O samlar in och behandlar personuppgifter om dig när du:
               </p>
-              <h3 className="text-xl font-semibold mb-2 text-gray-700">Skydd av information</h3>
+              <ul className="list-disc list-inside mb-4 text-gray-600">
+                <li>Kontaktar oss via vårt kontaktformulär eller e-post</li>
+                <li>Ingår ett avtal med oss</li>
+                <li>Besöker vår webbplats (via cookies och liknande tekniker)</li>
+              </ul>
+
+              <h3 className="text-xl font-semibold mb-2 text-gray-700">Vilka personuppgifter behandlar vi?</h3>
+              <p className="mb-4 text-gray-600">
+                De personuppgifter vi behandlar kan inkludera:
+              </p>
+              <ul className="list-disc list-inside mb-4 text-gray-600">
+                <li>Namn och kontaktuppgifter</li>
+                <li>Företagsuppgifter</li>
+                <li>Korrespondens med oss</li>
+                <li>Teknisk information om hur du interagerar med vår webbplats</li>
+              </ul>
+
+              <h3 className="text-xl font-semibold mb-2 text-gray-700">Varför behandlar vi dina personuppgifter?</h3>
+              <p className="mb-4 text-gray-600">
+                Vi behandlar dina personuppgifter för följande ändamål:
+              </p>
+              <ul className="list-disc list-inside mb-4 text-gray-600">
+                <li>För att kommunicera med dig och besvara dina förfrågningar</li>
+                <li>För att fullgöra våra avtalsenliga förpliktelser</li>
+                <li>För att förbättra och utveckla våra tjänster och vår webbplats</li>
+                <li>För att följa tillämplig lagstiftning</li>
+              </ul>
+
+              <h3 className="text-xl font-semibold mb-2 text-gray-700">Hur länge sparar vi dina personuppgifter?</h3>
+              <p className="mb-4 text-gray-600">
+                Vi sparar dina personuppgifter endast så länge som det är nödvändigt för de ändamål för vilka de samlades in eller så länge som krävs enligt lag.
+              </p>
+
+              <h3 className="text-xl font-semibold mb-2 text-gray-700">Dina rättigheter</h3>
+              <p className="mb-4 text-gray-600">
+                Du har rätt att:
+              </p>
+              <ul className="list-disc list-inside mb-4 text-gray-600">
+                <li>Begära information om vilka personuppgifter vi har om dig</li>
+                <li>Begära rättelse av felaktiga eller ofullständiga uppgifter</li>
+                <li>Begära radering eller begränsning av behandlingen av dina personuppgifter</li>
+                <li>Invända mot behandlingen av dina personuppgifter</li>
+                <li>Begära dataportabilitet</li>
+              </ul>
+
+              <h3 className="text-xl font-semibold mb-2 text-gray-700">Kontakta oss</h3>
+              <p className="mb-4 text-gray-600">
+                Om du har frågor om hur vi behandlar dina personuppgifter eller vill utöva dina rättigheter, vänligen kontakta oss på:
+              </p>
               <p className="text-gray-600">
-                Vi vidtar alla nödvändiga åtgärder för att skydda din information och säkerställa att den hanteras säkert och i enlighet med denna integritetspolicy.
+                E-post: info@renew-io.se<br />
+                Telefon: +46 73 035 28 88
+              </p>
+
+              <Separator className="my-4" />
+
+              <p className="text-sm text-gray-500 mt-4">
+                Denna integritetspolicy uppdaterades senast den 1 april 2024.
               </p>
             </CardContent>
           </Card>
