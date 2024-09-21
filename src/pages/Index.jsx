@@ -8,13 +8,14 @@ import { Separator } from "@/components/ui/separator";
 
 const Index = () => {
   const { scrollY } = useScroll();
-  const y = useTransform(scrollY, [0, 500], [0, 150]);
+  const y1 = useTransform(scrollY, [0, 500], [0, 150]);
+  const y2 = useTransform(scrollY, [500, 1000], [0, 150]);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
       <motion.section 
         className="relative h-screen flex items-center justify-center overflow-hidden mb-12"
-        style={{ y }}
+        style={{ y: y1 }}
       >
         <motion.div 
           className="absolute inset-0 z-0"
@@ -31,6 +32,29 @@ const Index = () => {
           <p className="text-xl text-gray-200 mb-8">Din partner för digital transformation, strategisk utveckling och cybersäkerhet</p>
           <Link to="/contact">
             <Button size="lg" className="bg-blue-500 hover:bg-blue-600 text-white">Kontakta oss nu</Button>
+          </Link>
+        </div>
+      </motion.section>
+
+      <motion.section 
+        className="relative h-screen flex items-center justify-center overflow-hidden mb-12"
+        style={{ y: y2 }}
+      >
+        <motion.div 
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage: "url('https://i.imgur.com/HnORICF.jpeg')",
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            y: useTransform(scrollY, [500, 1000], [0, 150]),
+          }}
+        />
+        <div className="absolute inset-0 bg-black opacity-40 z-10"></div>
+        <div className="relative z-20 text-center px-6 max-w-4xl">
+          <h2 className="text-3xl md:text-5xl font-bold mb-4 text-white tracking-tight">Framtidssäkra din verksamhet</h2>
+          <p className="text-xl text-gray-200 mb-8">Med Renew I/O får du tillgång till expertis inom digital transformation och cybersäkerhet som hjälper ditt företag att navigera den digitala eran med trygghet och innovation.</p>
+          <Link to="/about">
+            <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white">Lär känna oss</Button>
           </Link>
         </div>
       </motion.section>
