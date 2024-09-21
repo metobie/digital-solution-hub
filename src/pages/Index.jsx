@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
 import { motion, useScroll, useTransform, useAnimation } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
@@ -8,9 +8,12 @@ import { Separator } from "@/components/ui/separator";
 
 const Index = () => {
   const { scrollY } = useScroll();
-  const y = useTransform(scrollY, [0, 500], [0, 150]);
   const controls = useAnimation();
   const [animationComplete, setAnimationComplete] = useState(false);
+
+  const y = useMemo(() => {
+    return useTransform(scrollY, [0, 500], [0, 150]);
+  }, [scrollY]);
 
   useEffect(() => {
     controls.start({
@@ -33,7 +36,7 @@ const Index = () => {
             backgroundImage: "url('https://i.imgur.com/2dexfVJ.jpeg')",
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            y: animationComplete ? useTransform(scrollY, [0, 500], [0, 150]) : 0,
+            y: animationComplete ? y : 0,
           }}
         />
         <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
