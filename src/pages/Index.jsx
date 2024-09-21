@@ -18,7 +18,10 @@ const Index = () => {
         >
           <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-gray-200 opacity-50"></div>
           <div className="relative z-10">
-            <h1 className="text-3xl md:text-6xl font-extrabold mb-4 text-gray-800 tracking-tight">Välkommen till Renew I/O</h1>
+            <h1 className="text-3xl md:text-6xl font-extrabold mb-4 text-gray-800 tracking-tight flex justify-center items-center">
+              <span className="sr-only">Välkommen till Renew I/O</span>
+              <img src="https://i.imgur.com/Fmh6crC.png" alt="Renew I/O Logo" className="h-16 md:h-24 mx-auto" />
+            </h1>
             <p className="text-xl text-gray-600">Din partner för digital transformation, strategisk utveckling och cybersäkerhet</p>
           </div>
         </motion.section>
