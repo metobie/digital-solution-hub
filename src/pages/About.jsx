@@ -23,11 +23,11 @@ const About = () => {
           animate={{ scale: 1 }}
           transition={{ duration: 0.5 }}
         />
-        <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#4A8A9B] to-[#9A4A9B] opacity-70 z-10"></div>
         <div className="relative z-20 text-center px-6 max-w-3xl">
           <h1 className="text-4xl md:text-6xl font-extrabold mb-4 text-white tracking-tight">Om Grundaren</h1>
           <p className="text-xl text-gray-200 mb-8">Lär känna personen bakom Renew I/O</p>
-          <p className="text-lg text-gray-300">
+          <p className="text-lg text-gray-100">
             Med över ett decennium av erfarenhet inom IT, digital strategi och cybersäkerhet, 
             har Tobias Karlsson lett projekt från små startups till stora multinationella företag. 
             Hans unika förmåga att överbrygga klyftan mellan affärsmål och tekniska lösningar 
