@@ -93,7 +93,7 @@ const About = () => {
             Vår Vision
           </h2>
           <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
-            <img src="https://i.imgur.com/2dexfVJ.jpeg" alt="Renew I/O Vision" className="absolute inset-0 w-full h-full object-cover" />
+            <img src="https://i.imgur.com/SskhVPu.jpeg" alt="Renew I/O Vision" className="absolute inset-0 w-full h-full object-cover" />
             <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
               <div className="text-center text-white p-6">
                 <h3 className="text-3xl font-bold mb-4">Framtidens Digitala Landskap</h3>
