@@ -1,11 +1,29 @@
 import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Card, CardContent } from "@/components/ui/card";
-import { Shield, Briefcase, Lightbulb } from 'lucide-react';
+import { Briefcase, Shield, Lightbulb } from 'lucide-react';
 
 const About = () => {
   const { scrollY } = useScroll();
   const y = useTransform(scrollY, [0, 500], [0, 150]);
+
+  const IconWrapper = ({ children }) => (
+    <motion.div
+      className="w-8 h-8 bg-white rounded-full flex items-center justify-center mr-2 border border-gray-200"
+      animate={{
+        scale: [1, 1.05, 1],
+      }}
+      transition={{
+        duration: 4,
+        ease: "easeInOut",
+        times: [0, 0.5, 1],
+        repeat: Infinity,
+        repeatDelay: 0
+      }}
+    >
+      {children}
+    </motion.div>
+  );
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
@@ -66,21 +84,9 @@ const About = () => {
           transition={{ duration: 0.5, delay: 0.4 }}
         >
           <h2 className="text-2xl font-semibold mb-4 flex items-center text-gray-800">
-            <motion.div
-              className="w-8 h-8 bg-gradient-to-br from-[#4A8A9B] to-[#9A4A9B] rounded-full flex items-center justify-center mr-2"
-              animate={{
-                scale: [1, 1.05, 1],
-              }}
-              transition={{
-                duration: 4,
-                ease: "easeInOut",
-                times: [0, 0.5, 1],
-                repeat: Infinity,
-                repeatDelay: 0
-              }}
-            >
-              <Briefcase className="w-4 h-4 text-white" />
-            </motion.div>
+            <IconWrapper>
+              <Briefcase className="w-4 h-4 text-black" />
+            </IconWrapper>
             Min Bakgrund
           </h2>
           <Card className="mb-4 shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
@@ -105,21 +111,9 @@ const About = () => {
           transition={{ duration: 0.5, delay: 0.6 }}
         >
           <h2 className="text-2xl font-semibold mb-4 flex items-center text-gray-800">
-            <motion.div
-              className="w-8 h-8 bg-gradient-to-br from-[#4A8A9B] to-[#9A4A9B] rounded-full flex items-center justify-center mr-2"
-              animate={{
-                scale: [1, 1.05, 1],
-              }}
-              transition={{
-                duration: 4,
-                ease: "easeInOut",
-                times: [0, 0.5, 1],
-                repeat: Infinity,
-                repeatDelay: 0
-              }}
-            >
-              <Shield className="w-4 h-4 text-white" />
-            </motion.div>
+            <IconWrapper>
+              <Shield className="w-4 h-4 text-black" />
+            </IconWrapper>
             Cybersäkerhetsexpertis
           </h2>
           <Card className="shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
@@ -141,21 +135,9 @@ const About = () => {
           transition={{ duration: 0.5, delay: 0.8 }}
         >
           <h2 className="text-2xl font-semibold mb-4 flex items-center text-gray-800">
-            <motion.div
-              className="w-8 h-8 bg-gradient-to-br from-[#4A8A9B] to-[#9A4A9B] rounded-full flex items-center justify-center mr-2"
-              animate={{
-                scale: [1, 1.05, 1],
-              }}
-              transition={{
-                duration: 4,
-                ease: "easeInOut",
-                times: [0, 0.5, 1],
-                repeat: Infinity,
-                repeatDelay: 0
-              }}
-            >
-              <Lightbulb className="w-4 h-4 text-white" />
-            </motion.div>
+            <IconWrapper>
+              <Lightbulb className="w-4 h-4 text-black" />
+            </IconWrapper>
             Vår Vision
           </h2>
           <Card className="shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
