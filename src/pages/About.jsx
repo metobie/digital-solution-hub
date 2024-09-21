@@ -92,17 +92,14 @@ const About = () => {
             <Lightbulb className="mr-2 text-blue-500" />
             Vår Vision
           </h2>
-          <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
-            <img src="https://i.imgur.com/2dexfVJ.jpeg" alt="Renew I/O Vision" className="absolute inset-0 w-full h-full object-cover" />
-            <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-              <div className="text-center text-white p-6">
-                <h3 className="text-3xl font-bold mb-4">Framtidens Digitala Landskap</h3>
-                <p className="text-xl">
-                  Vår vision är att forma en digital framtid där innovation möter säkerhet, och där varje företag kan blomstra i den digitala eran. Genom att kombinera cutting-edge teknologi med strategisk insikt, strävar vi efter att vara katalysatorn för positiv förändring i företagsvärlden.
-                </p>
-              </div>
-            </div>
-          </div>
+          <Card className="shadow-xl bg-white">
+            <CardContent className="p-6">
+              <h3 className="text-3xl font-bold mb-4 text-gray-800">Framtidens Digitala Landskap</h3>
+              <p className="text-xl text-gray-600">
+                Vår vision är att forma en digital framtid där innovation möter säkerhet, och där varje företag kan blomstra i den digitala eran. Genom att kombinera cutting-edge teknologi med strategisk insikt, strävar vi efter att vara katalysatorn för positiv förändring i företagsvärlden.
+              </p>
+            </CardContent>
+          </Card>
         </motion.section>
       </div>
     </div>
