@@ -44,7 +44,15 @@ const About = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Din partner för digital transformation och cybersäkerhet
+            Lär känna personen bakom Renew I/O
+          </motion.p>
+          <motion.p 
+            className="text-lg text-gray-200"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+          >
+            Med över ett decennium av erfarenhet inom IT, digital strategi och cybersäkerhet, har Tobias Karlsson lett projekt från små företag till stora multinationella företag. Hans unika förmåga att överbrygga klyftan mellan affärsmål och tekniska lösningar gör Renew I/O till en ovärderlig partner i din digitala transformation.
           </motion.p>
         </div>
       </motion.section>
