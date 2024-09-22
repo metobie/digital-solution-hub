@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
+import ServiceCatalog from '../components/ServiceCatalog';
 
 const Index = () => {
   const { scrollY } = useScroll();
@@ -40,7 +40,7 @@ const Index = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Din partner för digital transformation, strategisk utveckling och cybersäkerhet
+            Din partner för digital transformation och cybersäkerhet
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: -20 }}
@@ -61,50 +61,8 @@ const Index = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
-          <br />
-          <br />
-          <br />
-          <br />
-          <h2 className="text-2xl font-semibold mb-4 text-center text-gray-700">Förnya din verksamhet med vår hjälp</h2>
-          <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300 bg-white">
-            <CardContent className="p-6">
-              <div className="flex flex-col md:flex-row items-center">
-                <motion.div
-                  className="w-48 h-48 bg-gradient-to-br from-[#5A9AAB] to-[#AA5AAB] rounded-full flex items-center justify-center mb-4 md:mb-0 md:mr-6 flex-shrink-0"
-                  animate={{
-                    scale: [1, 1.05, 1],
-                  }}
-                  transition={{
-                    duration: 4,
-                    ease: "easeInOut",
-                    times: [0, 0.5, 1],
-                    repeat: Infinity,
-                    repeatDelay: 0
-                  }}
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" className="w-20 h-20 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-                    <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-                    <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                    <line x1="6" y1="18" x2="6.01" y2="18"></line>
-                  </svg>
-                </motion.div>
-                <Separator orientation="vertical" className="h-48 mx-6 hidden md:block" />
-                <div className="md:ml-6 flex-grow">
-                  <h3 className="text-xl font-semibold mb-2 text-gray-700">Skräddarsydda digitala lösningar för din framgång</h3>
-                  <p className="mb-2 text-gray-600">Hos Renew I/O förstår vi att varje företag är unikt. Vår expertis ligger i att skapa skräddarsydda digitala strategier som driver tillväxt, effektiviserar processer och ger er ett konkurrenskraftigt övertag på marknaden.</p>
-                  <p className="text-gray-600">Med vår djupa tekniska kunskap och affärsstrategiska insikter hjälper vi er att:</p>
-                  <ul className="list-disc list-inside mt-4 space-y-2 text-gray-600">
-                    <li>Optimera er digitala infrastruktur för ökad effektivitet</li>
-                    <li>Implementera innovativa lösningar som driver affärsvärde</li>
-                    <li>Överbrygga klyftan mellan IT och affärsmål</li>
-                    <li>Navigera den digitala transformationen med säkerhet och precision</li>
-                    <li>Stärka er cybersäkerhet för att skydda verksamheten</li>
-                  </ul>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+          <h2 className="text-2xl font-semibold mb-4 text-center text-gray-700">Våra Tjänster</h2>
+          <ServiceCatalog />
         </motion.section>
 
         <motion.section 
@@ -113,17 +71,17 @@ const Index = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          <h2 className="text-2xl font-semibold mb-4 text-center text-gray-700">Rekommendationer</h2>
+          <h2 className="text-2xl font-semibold mb-4 text-center text-gray-700">Vad Våra Kunder Säger</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <Card className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
               <CardContent>
-                <p className="italic mb-2 text-gray-600">"Vi på Nakof vill varmt tacka för ovärderliga insatser under utvärdering av vår ljudprogramvara. Renew I/O's tekniska expertis och breda kunskaper förbättrade både funktionalitet och design. Noggrann och analytisk feedback var avgörande för att höja kvaliteten."</p>
+                <p className="italic mb-2 text-gray-600">"Renew I/O's tekniska expertis och breda kunskaper förbättrade både funktionalitet och design av vår ljudprogramvara."</p>
                 <p className="font-semibold text-gray-700">- Robert Nesta Nuhu, Grundare, Nakof</p>
               </CardContent>
             </Card>
             <Card className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
               <CardContent>
-                <p className="italic mb-2 text-gray-600">"Vi har haft nöjet att arbeta med Renew I/O under ett omfattande IT-projekt. Deras tekniska expertis och förmåga att lösa komplexa problem imponerade stort. Deras insikter och rådgivning bidrog direkt till projektets framgång. Rekommenderas starkt för teknisk rådgivning och implementation."</p>
+                <p className="italic mb-2 text-gray-600">"Deras tekniska expertis och förmåga att lösa komplexa problem imponerade stort. Rekommenderas starkt för teknisk rådgivning och implementation."</p>
                 <p className="font-semibold text-gray-700">- Tim Omorogieva, VD, Rider</p>
               </CardContent>
             </Card>
@@ -131,34 +89,13 @@ const Index = () => {
         </motion.section>
 
         <motion.section
-          className="mb-12"
+          className="text-center"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.8 }}
         >
-          <h2 className="text-2xl font-semibold mb-4 text-center text-gray-700">Cybersäkerhet i fokus</h2>
-          <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300 bg-gradient-to-r from-gray-50 to-gray-100">
-            <CardContent className="p-6">
-              <p className="text-center mb-4 text-gray-600">
-                I dagens digitala landskap är cybersäkerhet avgörande för varje verksamhet. Renew I/O erbjuder omfattande cybersäkerhetslösningar för att skydda ditt företag mot moderna hot.
-              </p>
-              <div className="flex justify-center mt-4">
-                <Link to="/about">
-                  <Button size="lg" className="bg-gray-100 text-gray-800 hover:bg-gray-200 transition-all duration-300 border border-gray-900/10 hover:border-gray-900/20">Läs mer</Button>
-                </Link>
-              </div>
-            </CardContent>
-          </Card>
-        </motion.section>
-
-        <motion.section
-          className="text-center"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 1 }}
-        >
           <h2 className="text-2xl font-semibold mb-4 text-gray-700">Redo att ta nästa steg?</h2>
-          <p className="mb-4 text-gray-600">Låt oss tillsammans utforska hur Renew I/O kan hjälpa ditt företag att nå nya höjder inom digital innovation, effektivitet och säkerhet.</p>
+          <p className="mb-4 text-gray-600">Låt oss tillsammans utforska hur Renew I/O kan hjälpa ditt företag att nå nya höjder.</p>
           <Link to="/contact">
             <Button size="lg" className="bg-gray-100 text-gray-800 hover:bg-gray-200 transition-all duration-300 border border-gray-900/10 hover:border-gray-900/20">Kontakta oss nu</Button>
           </Link>
