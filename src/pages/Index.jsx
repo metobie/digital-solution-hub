@@ -55,6 +55,10 @@ const Index = () => {
       </motion.section>
 
       <main className="container mx-auto px-6 py-8">
+
+
+
+
         <motion.section 
           className="mb-12"
           initial={{ opacity: 0, y: 20 }}
