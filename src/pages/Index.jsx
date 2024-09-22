@@ -35,20 +35,12 @@ const Index = () => {
             Välkommen till Renew I/O
           </motion.h1>
           <motion.p 
-            className="text-xl text-gray-200 mb-2"
+            className="text-xl text-gray-200 mb-8"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             Din partner för digital transformation, strategisk utveckling och cybersäkerhet
-          </motion.p>
-          <motion.p 
-            className="text-sm text-gray-300 mb-8 italic"
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-          >
-            Företagsnamnet uttalas som 'Rih-nyoo Ai Oh'
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: -20 }}
