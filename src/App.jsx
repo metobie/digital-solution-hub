@@ -53,7 +53,7 @@ const AppContent = () => {
         </nav>
       </header>
       <ScrollToTop />
-      <main className="flex-grow">
+      <main className="flex-grow pt-16">
         <Routes>
           {navItems.map(({ to, page }) => (
             <Route key={to} path={to} element={page} />
