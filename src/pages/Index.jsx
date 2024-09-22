@@ -72,7 +72,7 @@ const Index = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
           >
-            <h2 className="text-2xl font-semibold mb-4 text-center text-gray-700">Vad Våra Kunder Säger</h2>
+            <h2 className="text-2xl font-semibold mb-4 text-center text-gray-700">Vad våra kunder säger</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
                 <CardContent>
