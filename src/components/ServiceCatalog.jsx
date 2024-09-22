@@ -19,7 +19,7 @@ const ServiceCatalog = () => {
     {
       icon: <Shield className="w-8 h-8 text-white" />,
       title: "Cybersäkerhet",
-      description: "Skydda din verksamhet mot moderna digitala hot med våra omfattande säkerhetslösningar."
+      description: "Implementera och optimera marknadsledande säkerhetslösningar för att skydda din verksamhet mot dagens avancerade cyberhot."
     },
     {
       icon: <Cloud className="w-8 h-8 text-white" />,
