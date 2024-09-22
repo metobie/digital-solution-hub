@@ -1,13 +1,7 @@
 import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Card, CardContent } from "@/components/ui/card";
-import { Shield, Briefcase, Lightbulb } from 'lucide-react';
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { Shield, Briefcase, Lightbulb, GraduationCap, Users } from 'lucide-react';
 
 const About = () => {
   const { scrollY } = useScroll();
@@ -95,6 +89,7 @@ const About = () => {
                 <li>Molnlösningar och infrastrukturoptimering</li>
                 <li>Systemutveckling och integration</li>
                 <li>IT-konsulttjänster och projektledning</li>
+                <li>Utbildning</li>
               </ul>
             </CardContent>
           </Card>
@@ -116,6 +111,27 @@ const About = () => {
             <CardContent className="p-6">
               <p className="text-gray-600">
                 Vår vision är att forma en digital framtid där innovation möter säkerhet. Vi strävar efter att vara katalysatorn för positiv förändring i företagsvärlden, där digitala lösningar inte bara effektiviserar verksamheter utan också öppnar upp för nya möjligheter och affärsmodeller.
+              </p>
+            </CardContent>
+          </Card>
+        </motion.section>
+
+        <motion.section
+          className="mb-12"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.8 }}
+        >
+          <h2 className="text-2xl font-semibold mb-4 flex items-center text-gray-800">
+            <IconWrapper>
+              <Users className="w-4 h-4 text-black" />
+            </IconWrapper>
+            Vårt Nätverk
+          </h2>
+          <Card className="shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
+            <CardContent className="p-6">
+              <p className="text-gray-600">
+                För större uppdrag samarbetar vi med ett nätverk av konsulter, var och en med egen spetskompetens och egna företag. Detta möjliggör att vi alltid kan erbjuda skräddarsydda och högkvalitativa lösningar, anpassade efter varje kunds unika behov.
               </p>
             </CardContent>
           </Card>
