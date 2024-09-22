@@ -12,7 +12,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
       <motion.section 
-        className="relative h-screen flex items-center justify-center overflow-hidden mb-12"
+        className="relative h-screen flex items-center justify-center overflow-hidden"
         style={{ y }}
       >
         <motion.div 
@@ -54,52 +54,54 @@ const Index = () => {
         </div>
       </motion.section>
 
-      <main className="container mx-auto px-6 py-8">
-        <motion.section 
-          className="mb-12"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-        >
-          <h2 className="text-2xl font-semibold mb-4 text-center text-gray-700">Våra Tjänster</h2>
-          <ServiceCatalog />
-        </motion.section>
+      <main className="relative z-30 bg-gradient-to-br from-gray-50 to-gray-100">
+        <div className="container mx-auto px-6 py-16">
+          <motion.section 
+            className="mb-12"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+          >
+            <h2 className="text-2xl font-semibold mb-4 text-center text-gray-700">Våra Tjänster</h2>
+            <ServiceCatalog />
+          </motion.section>
 
-        <motion.section 
-          className="mb-12"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.6 }}
-        >
-          <h2 className="text-2xl font-semibold mb-4 text-center text-gray-700">Vad Våra Kunder Säger</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <Card className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-              <CardContent>
-                <p className="italic mb-2 text-gray-600">"Renew I/O's tekniska expertis och breda kunskaper förbättrade både funktionalitet och design av vår ljudprogramvara."</p>
-                <p className="font-semibold text-gray-700">- Robert Nesta Nuhu, Grundare, Nakof</p>
-              </CardContent>
-            </Card>
-            <Card className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-              <CardContent>
-                <p className="italic mb-2 text-gray-600">"Deras tekniska expertis och förmåga att lösa komplexa problem imponerade stort. Rekommenderas starkt för teknisk rådgivning och implementation."</p>
-                <p className="font-semibold text-gray-700">- Tim Omorogieva, VD, Rider</p>
-              </CardContent>
-            </Card>
-          </div>
-        </motion.section>
+          <motion.section 
+            className="mb-12"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+          >
+            <h2 className="text-2xl font-semibold mb-4 text-center text-gray-700">Vad Våra Kunder Säger</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <Card className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                <CardContent>
+                  <p className="italic mb-2 text-gray-600">"Renew I/O's tekniska expertis och breda kunskaper förbättrade både funktionalitet och design av vår ljudprogramvara."</p>
+                  <p className="font-semibold text-gray-700">- Robert Nesta Nuhu, Grundare, Nakof</p>
+                </CardContent>
+              </Card>
+              <Card className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                <CardContent>
+                  <p className="italic mb-2 text-gray-600">"Deras tekniska expertis och förmåga att lösa komplexa problem imponerade stort. Rekommenderas starkt för teknisk rådgivning och implementation."</p>
+                  <p className="font-semibold text-gray-700">- Tim Omorogieva, VD, Rider</p>
+                </CardContent>
+              </Card>
+            </div>
+          </motion.section>
 
-        <motion.section
-          className="text-center"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.8 }}
-        >
-          <h2 className="text-2xl font-semibold mb-4 text-gray-700">Redo att ta nästa steg?</h2>
-          <p className="mb-4 text-gray-600">Låt oss tillsammans utforska hur Renew I/O kan hjälpa ditt företag att nå nya höjder.</p>
-          <Link to="/contact">
-            <Button size="lg" className="bg-gray-100 text-gray-800 hover:bg-gray-200 transition-all duration-300 border border-gray-900/10 hover:border-gray-900/20">Kontakta oss nu</Button>
-          </Link>
-        </motion.section>
+          <motion.section
+            className="text-center"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.8 }}
+          >
+            <h2 className="text-2xl font-semibold mb-4 text-gray-700">Redo att ta nästa steg?</h2>
+            <p className="mb-4 text-gray-600">Låt oss tillsammans utforska hur Renew I/O kan hjälpa ditt företag att nå nya höjder.</p>
+            <Link to="/contact">
+              <Button size="lg" className="bg-gray-100 text-gray-800 hover:bg-gray-200 transition-all duration-300 border border-gray-900/10 hover:border-gray-900/20">Kontakta oss nu</Button>
+            </Link>
+          </motion.section>
+        </div>
       </main>
     </div>
   );
