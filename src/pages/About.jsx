@@ -31,7 +31,7 @@ const About = () => {
         <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
         <div className="relative z-20 text-center px-6 max-w-3xl">
           <motion.h1 
-            className="text-4xl md:text-6xl font-extrabold mb-4 text-white tracking-tight"
+            className="text-4xl md:text-6xl font-extrabold mb-2 text-white tracking-tight"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -39,10 +39,18 @@ const About = () => {
             Om Renew I/O
           </motion.h1>
           <motion.p 
+            className="text-sm text-gray-300 mb-4"
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
+            Företagsnamnet uttalas som 'Rih-nyoo Ai Oh'
+          </motion.p>
+          <motion.p 
             className="text-xl text-gray-200 mb-8"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
           >
             Lär känna personen bakom företaget
           </motion.p>
