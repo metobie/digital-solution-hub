@@ -52,10 +52,19 @@ const About = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            Med över ett decennium av erfarenhet inom IT, digital strategi och cybersäkerhet, har Tobias Karlsson lett projekt från små företag till stora multinationella företag. Hans unika förmåga att överbrygga klyftan mellan affärsmål och tekniska lösningar gör Renew I/O till en ovärderlig partner i din digitala transformation.
+            Som teknisk expert kombinerar jag min erfarenhet inom storskalig infrastruktur med förmågan att kommunicera effektivt på både företags- och teknisk nivå.
+
+Min unika kompetens ligger i att överbrygga klyftan mellan affärsmål och tekniska lösningar, vilket möjliggör sömlös integration och optimering av digitala strategier, samtidigt som jag säkerställer robusta säkerhetslösningar för att skydda verksamheten.
           </motion.p>
         </div>
       </motion.section>
+
+
+
+
+
+
+
 
       <div className="container mx-auto px-6 py-8">
         <motion.section 
