@@ -32,7 +32,7 @@ const Index = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            Välkommen till Renew I/O
+            Välkommen till RENEW I/O
           </motion.h1>
           <motion.p 
             className="text-xl text-gray-200 mb-8"
