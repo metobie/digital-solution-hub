@@ -2,6 +2,7 @@ import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Card, CardContent } from "@/components/ui/card";
 import { Shield, Briefcase, Lightbulb, GraduationCap, Users } from 'lucide-react';
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
 const About = () => {
   const { scrollY } = useScroll();
@@ -52,7 +53,7 @@ const About = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            Lär känna personen bakom företaget
+            Lär känna personerna bakom företaget
           </motion.p>
           <motion.p 
             className="text-lg text-gray-200"
@@ -60,7 +61,7 @@ const About = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            Med över ett decennium av erfarenhet inom IT, digital strategi och cybersäkerhet, har Tobias Karlsson lett projekt från små företag till stora multinationella företag. Hans unika förmåga att överbrygga klyftan mellan affärsmål och tekniska lösningar gör Renew I/O till en ovärderlig partner i din digitala transformation.
+            Med över ett decennium av erfarenhet inom IT, digital strategi och cybersäkerhet, har vårt team lett projekt från små företag till stora multinationella företag. Vår unika förmåga att överbrygga klyftan mellan affärsmål och tekniska lösningar gör Renew I/O till en ovärderlig partner i din digitala transformation.
           </motion.p>
         </div>
       </motion.section>
@@ -73,7 +74,7 @@ const About = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <Card className="overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
+            <Card className="overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 bg-white mb-8">
               <CardContent className="p-6">
                 <div className="flex flex-col md:flex-row items-center">
                   <img src="https://i.imgur.com/PBAVzJh.jpeg" alt="Profilbild" className="w-48 h-48 rounded-full mb-4 md:mb-0 md:mr-6" />
@@ -82,6 +83,22 @@ const About = () => {
                     <p className="text-gray-600">Som teknisk expert kombinerar jag min erfarenhet inom storskalig infrastruktur med förmågan att kommunicera effektivt på både företags- och teknisk nivå.
 
 Min unika kompetens ligger i att överbrygga klyftan mellan affärsmål och tekniska lösningar, vilket möjliggör sömlös integration och optimering av digitala strategier, samtidigt som jag säkerställer robusta säkerhetslösningar för att skydda verksamheten.</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
+              <CardContent className="p-6">
+                <div className="flex flex-col md:flex-row items-center">
+                  <Avatar className="w-48 h-48 mb-4 md:mb-0 md:mr-6">
+                    <AvatarFallback className="bg-gray-300 text-gray-600 text-4xl">PB</AvatarFallback>
+                  </Avatar>
+                  <div>
+                    <h2 className="text-2xl font-semibold mb-2 text-gray-800">Patrik Berg - Teknisk Strateg</h2>
+                    <p className="text-gray-600">Med en djup teknisk förståelse och en eftertänksam approach till problemlösning, bidrar Patrik med ovärderlig insikt till våra projekt. Hans förmåga att analysera komplexa system och förutse framtida teknologiska trender gör honom till en nyckelspelare i vår strategiska planering.
+
+Patriks kombination av teknisk expertis och ett klokt, långsiktigt perspektiv säkerställer att våra lösningar inte bara möter dagens behov, utan också är framtidssäkrade för morgondagens utmaningar. Hans lugna och metodiska tillvägagångssätt skapar en solid grund för innovation och hållbar teknisk utveckling.</p>
                   </div>
                 </div>
               </CardContent>
