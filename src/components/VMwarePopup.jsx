@@ -29,7 +29,7 @@ const VMwarePopup = ({ heroHeight }) => {
       <AnimatePresence>
         {showBubble && (
           <motion.div 
-            className="fixed top-32 right-4 z-50 bg-white bg-opacity-80 text-black p-2 rounded-full cursor-pointer shadow-lg hover:bg-opacity-100 transition-colors duration-300 text-sm flex items-center"
+            className="fixed top-32 right-8 z-50 bg-white bg-opacity-80 text-black p-2 rounded-full cursor-pointer shadow-lg hover:bg-opacity-100 transition-colors duration-300 text-sm flex items-center"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
