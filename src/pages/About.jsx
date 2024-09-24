@@ -1,31 +1,17 @@
 import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Card, CardContent } from "@/components/ui/card";
-import { Shield, Briefcase, Lightbulb, GraduationCap, Users, Network } from 'lucide-react';
+import { Shield, Briefcase, Lightbulb, GraduationCap, Users } from 'lucide-react';
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
 const About = () => {
   const { scrollY } = useScroll();
   const y = useTransform(scrollY, [0, 500], [0, 150]);
 
-  const IconWrapper = ({ children, color }) => (
-    <div className={`w-12 h-12 ${color} rounded-full flex items-center justify-center mr-4 shadow-lg`}>
+  const IconWrapper = ({ children }) => (
+    <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center mr-2 border border-gray-200">
       {children}
     </div>
-  );
-
-  const FeatureCard = ({ icon, title, description, color }) => (
-    <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-      <CardContent className="p-6">
-        <div className="flex items-start">
-          <IconWrapper color={color}>{icon}</IconWrapper>
-          <div>
-            <h3 className="text-xl font-semibold mb-2 text-gray-800">{title}</h3>
-            <p className="text-gray-600">{description}</p>
-          </div>
-        </div>
-      </CardContent>
-    </Card>
   );
 
   return (
@@ -53,6 +39,20 @@ const About = () => {
           >
             Om RENEW I/O
           </motion.h1>
+          <motion.p 
+            className="text-sm text-gray-300 mb-4"
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
+            <motion.span
+              initial={{ opacity: 0 }}
+              animate={{ opacity: [0, 1, 0, 1] }}
+              transition={{ duration: 2, times: [0, 0.2, 0.8, 1], repeat: 1 }}
+            >
+              Företagsnamnet uttalas som 'Rih-nyoo Ai Oh'
+            </motion.span>
+          </motion.p>
           <motion.p 
             className="text-xl text-gray-200 mb-8"
             initial={{ opacity: 0, y: -20 }}
@@ -86,7 +86,9 @@ const About = () => {
                   <img src="https://i.imgur.com/PBAVzJh.jpeg" alt="Profilbild" className="w-48 h-48 rounded-full mb-4 md:mb-0 md:mr-6" />
                   <div>
                     <h2 className="text-2xl font-semibold mb-2 text-gray-800">Tobias Karlsson - Grundare</h2>
-                    <p className="text-gray-600">Som teknisk expert kombinerar jag min erfarenhet inom storskalig infrastruktur med förmågan att kommunicera effektivt på både företags- och teknisk nivå. Min unika kompetens ligger i att överbrygga klyftan mellan affärsmål och tekniska lösningar, vilket möjliggör sömlös integration och optimering av digitala strategier, samtidigt som jag säkerställer robusta säkerhetslösningar för att skydda verksamheten.</p>
+                    <p className="text-gray-600">Som teknisk expert kombinerar jag min erfarenhet inom storskalig infrastruktur med förmågan att kommunicera effektivt på både företags- och teknisk nivå.
+
+Min unika kompetens ligger i att överbrygga klyftan mellan affärsmål och tekniska lösningar, vilket möjliggör sömlös integration och optimering av digitala strategier, samtidigt som jag säkerställer robusta säkerhetslösningar för att skydda verksamheten.</p>
                   </div>
                 </div>
               </CardContent>
@@ -108,29 +110,71 @@ const About = () => {
           </motion.section>
 
           <motion.section
-            className="mb-12 grid grid-cols-1 md:grid-cols-3 gap-6"
+            className="mb-12"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            <FeatureCard
-              icon={<Briefcase className="w-6 h-6 text-white" />}
-              title="Vår Expertis"
-              description="Vi specialiserar oss på digital transformation, cybersäkerhet, molnlösningar och strategisk IT-rådgivning."
-              color="bg-blue-500"
-            />
-            <FeatureCard
-              icon={<Lightbulb className="w-6 h-6 text-white" />}
-              title="Vår Vision"
-              description="Att forma en digital framtid där innovation möter säkerhet, och där varje företag kan nå sin fulla potential."
-              color="bg-yellow-500"
-            />
-            <FeatureCard
-              icon={<Network className="w-6 h-6 text-white" />}
-              title="Vårt Nätverk"
-              description="Ett omfattande nätverk av experter som möjliggör skräddarsydda lösningar för varje unikt behov."
-              color="bg-green-500"
-            />
+            <h2 className="text-2xl font-semibold mb-4 flex items-center text-gray-800">
+              <IconWrapper>
+                <Briefcase className="w-4 h-4 text-black" />
+              </IconWrapper>
+              Vår Expertis
+            </h2>
+            <Card className="shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
+              <CardContent className="p-6">
+                <ul className="list-disc list-inside space-y-2 text-gray-600">
+                  <li>Digital transformation och strategiutveckling</li>
+                  <li>Cybersäkerhet och riskhantering</li>
+                  <li>Molnlösningar och infrastrukturoptimering</li>
+                  <li>Systemutveckling och integration</li>
+                  <li>IT-konsulttjänster och projektledning</li>
+                  <li>Utbildning</li>
+                </ul>
+              </CardContent>
+            </Card>
+          </motion.section>
+
+          <motion.section
+            className="mb-12"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+          >
+            <h2 className="text-2xl font-semibold mb-4 flex items-center text-gray-800">
+              <IconWrapper>
+                <Lightbulb className="w-4 h-4 text-black" />
+              </IconWrapper>
+              Vår Vision
+            </h2>
+            <Card className="shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
+              <CardContent className="p-6">
+                <p className="text-gray-600">
+                  Vår vision är att forma en digital framtid där innovation möter säkerhet. Vi strävar efter att vara katalysatorn för positiv förändring i företagsvärlden, där digitala lösningar inte bara effektiviserar verksamheter utan också öppnar upp för nya möjligheter och affärsmodeller.
+                </p>
+              </CardContent>
+            </Card>
+          </motion.section>
+
+          <motion.section
+            className="mb-12"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.8 }}
+          >
+            <h2 className="text-2xl font-semibold mb-4 flex items-center text-gray-800">
+              <IconWrapper>
+                <Users className="w-4 h-4 text-black" />
+              </IconWrapper>
+              Vårt Nätverk
+            </h2>
+            <Card className="shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
+              <CardContent className="p-6">
+                <p className="text-gray-600">
+                  För större uppdrag samarbetar vi med ett nätverk av konsulter, var och en med egen spetskompetens och egna företag. Detta möjliggör att vi alltid kan erbjuda skräddarsydda och högkvalitativa lösningar, anpassade efter varje kunds unika behov.
+                </p>
+              </CardContent>
+            </Card>
           </motion.section>
         </div>
       </div>
