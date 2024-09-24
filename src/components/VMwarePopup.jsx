@@ -79,7 +79,7 @@ const VMwarePopup = ({ heroHeight }) => {
                   <Button
                     className="bg-gradient-to-br from-[#3E7A8B] to-[#8A3A8B] text-white px-6 py-2 rounded-full hover:from-[#5A9AAB] hover:to-[#AA5AAB] transition-all duration-300"
                   >
-                    Kontakta oss för en gratis konsultation
+                    Kontakta oss för att veta mer
                   </Button>
                 </Link>
                 <Link
