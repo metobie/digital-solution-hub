@@ -12,7 +12,7 @@ const VMwareInfo = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          VMware-licenspriser: Vad du behöver veta
+          VMware-licenssituationen: Vad du behöver veta
         </motion.h1>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -21,32 +21,32 @@ const VMwareInfo = () => {
         >
           <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white">
             <CardContent className="p-8">
-              <h2 className="text-2xl font-semibold mb-4 text-gray-800">Broadcoms uppköp av VMware: Konsekvenser för licenspriser</h2>
+              <h2 className="text-2xl font-semibold mb-4 text-gray-800">Broadcoms uppköp av VMware: Potentiella konsekvenser</h2>
               
               <p className="mb-4 text-gray-600">
-                Broadcoms uppköp av VMware har skapat oro i IT-branschen, särskilt när det gäller framtida licenspriser. Här är vad du behöver veta:
+                Även om det för närvarande inte finns några officiella och slutgiltiga förändringar, finns det indikationer på potentiella prisökningar för VMware-licenser, särskilt för små och medelstora företag.
               </p>
 
               <ul className="list-disc list-inside mb-6 text-gray-600">
-                <li>Många företag rapporterar prishöjningar på upp till 40% vid licensförnyelse.</li>
-                <li>Broadcom har indikerat att de kommer att fokusera på de 600 största VMware-kunderna, vilket kan leda till minskad support och högre priser för mindre kunder.</li>
-                <li>Nya licensmodeller kan introduceras, vilket potentiellt kan öka kostnaderna ytterligare.</li>
-                <li>Minskade investeringar i forskning och utveckling kan påverka produktkvaliteten på lång sikt.</li>
+                <li>Broadcoms historik visar en tendens att driva upp priser och omstrukturera licensmodeller för att öka lönsamheten.</li>
+                <li>Kunder bör vara uppmärksamma på eventuella kommande förändringar i licensstrukturen.</li>
+                <li>Det kan bli nödvändigt att vara beredd på att förhandla eller överväga alternativa lösningar.</li>
+                <li>Små och medelstora företag kan potentiellt påverkas mer av eventuella förändringar.</li>
               </ul>
 
-              <h3 className="text-xl font-semibold mb-2 text-gray-700">Alternativ: Nutanix (HCI)</h3>
+              <h3 className="text-xl font-semibold mb-2 text-gray-700">Förbered dig för framtiden</h3>
               <p className="mb-4 text-gray-600">
-                Nutanix erbjuder en kostnadseffektiv och stabil alternativ till VMware:
+                I ljuset av denna osäkerhet är det klokt att:
               </p>
               <ul className="list-disc list-inside mb-6 text-gray-600">
-                <li>Enklare licensmodell med potentiellt lägre totalkostnad.</li>
-                <li>Integrerad lösning som kan minska komplexiteten i din IT-infrastruktur.</li>
-                <li>Stark fokus på innovation och kundservice.</li>
-                <li>Skalbarhet som passar både små och stora företag.</li>
+                <li>Granska dina nuvarande VMware-licensavtal och användning.</li>
+                <li>Utforska alternativa lösningar som Nutanix (HCI) för att diversifiera din IT-infrastruktur.</li>
+                <li>Hålla en öppen dialog med din IT-leverantör om framtida strategier och kostnadsoptimering.</li>
+                <li>Överväga att låsa in nuvarande priser genom långsiktiga avtal, om möjligt.</li>
               </ul>
 
               <p className="font-semibold text-gray-800">
-                Renew I/O kan hjälpa dig att navigera dessa förändringar och hitta den bästa lösningen för ditt företag. Kontakta oss för en gratis konsultation och låt oss visa hur vi kan optimera din IT-infrastruktur för framtiden.
+                Renew I/O står redo att hjälpa dig navigera dessa osäkra tider. Vi kan assistera med att analysera din nuvarande situation, utforska kostnadseffektiva alternativ och utveckla en framtidssäker IT-strategi som passar ditt företags behov och budget.
               </p>
             </CardContent>
           </Card>

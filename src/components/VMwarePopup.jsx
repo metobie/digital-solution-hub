@@ -38,15 +38,13 @@ const VMwarePopup = () => {
             </button>
             <h2 className="text-2xl font-bold mb-4 text-gray-800 text-center">Viktigt meddelande för VMware-kunder!</h2>
             <p className="mb-4 text-gray-600">
-              Visste du att Broadcoms uppköp av VMware kan leda till dramatiska kostnadsökningar för dina licenser?
-              Många företag står inför chockhöjningar på upp till 40% vid nästa förnyelse!
+              Även om inga officiella förändringar har tillkännagivits, finns det indikationer på potentiella prisökningar för VMware-licenser, särskilt för små och medelstora företag.
             </p>
             <p className="mb-4 text-gray-600">
-              Men oroa dig inte - vi har lösningen! Renew I/O erbjuder expertis inom Nutanix (HCI), 
-              en stabil och kostnadseffektiv alternativ som kan spara dig miljoner.
+              Broadcoms historik tyder på en tendens att omstrukturera licensmodeller för ökad lönsamhet. Det är viktigt att vara förberedd på eventuella förändringar.
             </p>
             <p className="font-semibold text-gray-800 mb-6">
-              Låt oss hjälpa dig navigera denna förändring och optimera din IT-infrastruktur för framtiden.
+              Låt Renew I/O hjälpa dig navigera dessa osäkra tider och utforska kostnadseffektiva alternativ som Nutanix (HCI).
             </p>
             <div className="flex flex-col items-center space-y-4">
               <Button
@@ -59,7 +57,7 @@ const VMwarePopup = () => {
                 to="/vmware-info"
                 className="text-[#3E7A8B] hover:text-[#5A9AAB] transition-colors duration-300"
               >
-                Läs mer om VMware-licenspriser
+                Läs mer om VMware-licenssituationen
               </Link>
             </div>
           </div>
