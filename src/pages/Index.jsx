@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import ServiceCatalog from '../components/ServiceCatalog';
+import VMwarePopup from '../components/VMwarePopup';
 
 const Index = () => {
   const { scrollY } = useScroll();
@@ -11,6 +12,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
+      <VMwarePopup />
       <motion.section 
         className="relative h-screen flex items-center justify-center overflow-hidden"
         style={{ y }}
