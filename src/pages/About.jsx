@@ -86,9 +86,7 @@ const About = () => {
                   <img src="https://i.imgur.com/PBAVzJh.jpeg" alt="Profilbild" className="w-48 h-48 rounded-full mb-4 md:mb-0 md:mr-6" />
                   <div>
                     <h2 className="text-2xl font-semibold mb-2 text-gray-800">Tobias Karlsson - Grundare</h2>
-                    <p className="text-gray-600">Som teknisk expert kombinerar jag min erfarenhet inom storskalig infrastruktur med förmågan att kommunicera effektivt på både företags- och teknisk nivå.
-
-Min unika kompetens ligger i att överbrygga klyftan mellan affärsmål och tekniska lösningar, vilket möjliggör sömlös integration och optimering av digitala strategier, samtidigt som jag säkerställer robusta säkerhetslösningar för att skydda verksamheten.</p>
+                    <p className="text-gray-600">Som teknisk expert kombinerar Tobias sin erfarenhet inom storskalig infrastruktur med förmågan att kommunicera effektivt på både företags- och teknisk nivå. Hans unika kompetens ligger i att överbrygga klyftan mellan affärsmål och tekniska lösningar, vilket möjliggör sömlös integration och optimering av digitala strategier. Samtidigt säkerställer han robusta säkerhetslösningar för att skydda verksamheten. Tobias expertis gör honom till en värdefull tillgång för företag som strävar efter att navigera i den komplexa digitala landskapet.</p>
                   </div>
                 </div>
               </CardContent>
