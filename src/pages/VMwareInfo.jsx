@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const VMwareInfo = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-12">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 pt-24 pb-12"> {/* Added pt-24 for top padding */}
       <div className="container mx-auto px-4">
         <motion.h1 
           className="text-4xl font-bold mb-8 text-center text-gray-800"
