@@ -38,7 +38,7 @@ const VMwarePopup = ({ heroHeight }) => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
           >
-            <span onClick={togglePopup}>Psst. Är du VMware kund?</span>
+            <span onClick={togglePopup}>Psst! VMware-kund? Viktigt uppdatering!</span>
             <button 
               onClick={hideBubble} 
               className="ml-2 p-1 rounded-full hover:bg-gray-200 transition-colors duration-300"
