@@ -29,7 +29,7 @@ const About = () => {
             y: useTransform(scrollY, [0, 500], [0, 150]),
           }}
         />
-        <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#3E7A8B] to-[#8A3A8B] opacity-75 z-10"></div>
         <div className="relative z-20 text-center px-6 max-w-3xl">
           <motion.h1 
             className="text-4xl md:text-6xl font-extrabold mb-2 text-white tracking-tight"
@@ -40,7 +40,7 @@ const About = () => {
             Om Renew I/O
           </motion.h1>
           <motion.p 
-            className="text-sm text-gray-300 mb-4"
+            className="text-sm text-gray-200 mb-4"
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -54,7 +54,7 @@ const About = () => {
             </motion.span>
           </motion.p>
           <motion.p 
-            className="text-xl text-gray-200 mb-8"
+            className="text-xl text-gray-100 mb-8"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
