@@ -23,7 +23,7 @@ const About = () => {
         <motion.div 
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: "url('https://i.imgur.com/PBAVzJh.jpeg')",
+            backgroundImage: "url('https://i.imgur.com/3OD3zl7.jpeg')",
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             y: useTransform(scrollY, [0, 500], [0, 150]),
