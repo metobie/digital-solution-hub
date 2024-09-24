@@ -12,7 +12,7 @@ const VMwarePopup = () => {
   return (
     <>
       <div 
-        className="fixed top-20 right-4 z-50 bg-blue-500 text-white p-2 rounded-full cursor-pointer shadow-lg hover:bg-blue-600 transition-colors duration-300"
+        className="fixed top-24 right-4 z-50 bg-white bg-opacity-80 text-black p-2 rounded-full cursor-pointer shadow-lg hover:bg-opacity-100 transition-colors duration-300 text-sm"
         onClick={togglePopup}
       >
         Psst. Är du VMware kund?
