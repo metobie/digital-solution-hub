@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
@@ -9,11 +9,20 @@ import VMwarePopup from '../components/VMwarePopup';
 const Index = () => {
   const { scrollY } = useScroll();
   const y = useTransform(scrollY, [0, 500], [0, 150]);
+  const heroRef = useRef(null);
+  const [heroHeight, setHeroHeight] = useState(0);
+
+  useEffect(() => {
+    if (heroRef.current) {
+      setHeroHeight(heroRef.current.offsetHeight);
+    }
+  }, []);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
-      <VMwarePopup />
+      <VMwarePopup heroHeight={heroHeight} />
       <motion.section 
+        ref={heroRef}
         className="relative h-screen flex items-center justify-center overflow-hidden"
         style={{ y }}
       >

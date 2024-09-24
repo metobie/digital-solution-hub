@@ -1,12 +1,25 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, useScroll } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 
-const VMwarePopup = () => {
+const VMwarePopup = ({ heroHeight }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [showBubble, setShowBubble] = useState(true);
+  const { scrollY } = useScroll();
+
+  useEffect(() => {
+    const unsubscribe = scrollY.onChange(latest => {
+      if (latest > heroHeight) {
+        setShowBubble(false);
+      } else {
+        setShowBubble(true);
+      }
+    });
+
+    return () => unsubscribe();
+  }, [scrollY, heroHeight]);
 
   const togglePopup = () => setIsOpen(!isOpen);
   const hideBubble = () => setShowBubble(false);
@@ -16,7 +29,7 @@ const VMwarePopup = () => {
       <AnimatePresence>
         {showBubble && (
           <motion.div 
-            className="fixed top-28 right-4 z-50 bg-white bg-opacity-80 text-black p-2 rounded-full cursor-pointer shadow-lg hover:bg-opacity-100 transition-colors duration-300 text-sm flex items-center"
+            className="fixed top-32 right-4 z-50 bg-white bg-opacity-80 text-black p-2 rounded-full cursor-pointer shadow-lg hover:bg-opacity-100 transition-colors duration-300 text-sm flex items-center"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
