@@ -12,6 +12,7 @@ import MobileMenu from "./components/MobileMenu";
 import CookieConsentBanner from "./components/CookieConsent";
 import Privacy from "./pages/Privacy";
 import VMwareInfo from "./pages/VMwareInfo";
+import { MobileMenuProvider } from "./context/MobileMenuContext";
 
 const queryClient = new QueryClient();
 
@@ -76,7 +77,9 @@ const App = () => (
       <TooltipProvider>
         <Toaster />
         <BrowserRouter>
-          <AppContent />
+          <MobileMenuProvider>
+            <AppContent />
+          </MobileMenuProvider>
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>

@@ -1,20 +1,21 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { navItems } from "../nav-items";
+import { useMobileMenu } from "../context/MobileMenuContext";
 
 const MobileMenu = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const { isMobileMenuOpen, setIsMobileMenuOpen } = useMobileMenu();
 
-  const toggleMenu = () => setIsOpen(!isOpen);
+  const toggleMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
 
   return (
     <div className="md:hidden">
       <Button variant="ghost" onClick={toggleMenu} className="p-2">
-        {isOpen ? <X size={24} /> : <Menu size={24} />}
+        {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
       </Button>
-      {isOpen && (
+      {isMobileMenuOpen && (
         <div className="absolute top-16 left-0 right-0 bg-white shadow-md z-50">
           <nav className="flex flex-col p-4">
             {navItems.map(({ title, to, icon }) => (

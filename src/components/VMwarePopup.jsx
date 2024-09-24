@@ -3,11 +3,13 @@ import { X } from 'lucide-react';
 import { motion, AnimatePresence, useScroll } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
+import { useMobileMenu } from "../context/MobileMenuContext";
 
 const VMwarePopup = ({ heroHeight }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [showBubble, setShowBubble] = useState(true);
   const { scrollY } = useScroll();
+  const { isMobileMenuOpen } = useMobileMenu();
 
   useEffect(() => {
     const unsubscribe = scrollY.onChange(latest => {
@@ -24,12 +26,14 @@ const VMwarePopup = ({ heroHeight }) => {
   const togglePopup = () => setIsOpen(!isOpen);
   const hideBubble = () => setShowBubble(false);
 
+  const bubblePosition = isMobileMenuOpen ? 'top-64' : 'top-32';
+
   return (
     <>
       <AnimatePresence>
         {showBubble && (
           <motion.div 
-            className="fixed top-32 right-8 z-50 bg-white bg-opacity-80 text-black p-2 rounded-full cursor-pointer shadow-lg hover:bg-opacity-100 transition-colors duration-300 text-sm flex items-center"
+            className={`fixed ${bubblePosition} right-8 z-50 bg-white bg-opacity-80 text-black p-2 rounded-full cursor-pointer shadow-lg hover:bg-opacity-100 transition-colors duration-300 text-sm flex items-center`}
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
