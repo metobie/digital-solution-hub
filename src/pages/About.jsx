@@ -86,7 +86,9 @@ const About = () => {
                   <img src="https://i.imgur.com/PBAVzJh.jpeg" alt="Profilbild" className="w-48 h-48 rounded-full mb-4 md:mb-0 md:mr-6" />
                   <div>
                     <h2 className="text-2xl font-semibold mb-2 text-gray-800">Tobias Karlsson - Grundare</h2>
-                    <p className="text-gray-600">Som teknisk expert kombinerar Tobias sin erfarenhet inom storskalig infrastruktur med förmågan att kommunicera effektivt på både företags- och teknisk nivå. Hans unika kompetens ligger i att överbrygga klyftan mellan affärsmål och tekniska lösningar, vilket möjliggör sömlös integration och optimering av digitala strategier. Samtidigt säkerställer han robusta säkerhetslösningar för att skydda verksamheten. Tobias expertis gör honom till en värdefull tillgång för företag som strävar efter att navigera i den komplexa digitala landskapet.</p>
+                    <p className="text-gray-600 mb-2">Som teknisk expert kombinerar Tobias sin erfarenhet inom storskalig infrastruktur med förmågan att kommunicera effektivt på både företags- och teknisk nivå. Hans unika kompetens ligger i att överbrygga klyftan mellan affärsmål och tekniska lösningar, vilket möjliggör sömlös integration och optimering av digitala strategier. Samtidigt säkerställer han robusta säkerhetslösningar för att skydda verksamheten. Tobias expertis gör honom till en värdefull tillgång för företag som strävar efter att navigera i det komplexa digitala landskapet.</p>
+                    <p className="text-gray-600">E-post: tobias@renew-io.se</p>
+                    <p className="text-gray-600">Lokation: Kristianstad</p>
                   </div>
                 </div>
               </CardContent>
@@ -100,7 +102,9 @@ const About = () => {
                   </Avatar>
                   <div>
                     <h2 className="text-2xl font-semibold mb-2 text-gray-800">Patrik Berg - Teknisk Strateg</h2>
-                    <p className="text-gray-600">Med djup teknisk förståelse och eftertänksam problemlösning bidrar Patrik med ovärderlig insikt till våra projekt. Hans förmåga att analysera komplexa system och förutse teknologiska trender gör honom till en nyckelspelare i vår strategiska planering. Patriks expertis och långsiktiga perspektiv säkerställer att våra lösningar är framtidssäkrade och innovativa.</p>
+                    <p className="text-gray-600 mb-2">Med djup teknisk förståelse och eftertänksam problemlösning bidrar Patrik med ovärderlig insikt till våra projekt. Hans förmåga att analysera komplexa system och förutse teknologiska trender gör honom till en nyckelspelare i vår strategiska planering. Patriks expertis och långsiktiga perspektiv säkerställer att våra lösningar är framtidssäkrade och innovativa.</p>
+                    <p className="text-gray-600">E-post: patrik@renew-io.se</p>
+                    <p className="text-gray-600">Lokation: Stockholm</p>
                   </div>
                 </div>
               </CardContent>
