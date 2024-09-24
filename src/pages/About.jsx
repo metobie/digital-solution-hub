@@ -87,13 +87,15 @@ const About = () => {
                   <div>
                     <h2 className="text-2xl font-semibold mb-2 text-gray-800">Tobias Karlsson - Grundare</h2>
                     <p className="text-gray-600 mb-2">Som teknisk expert kombinerar Tobias sin erfarenhet inom storskalig infrastruktur med förmågan att kommunicera effektivt på både företags- och teknisk nivå. Hans unika kompetens ligger i att överbrygga klyftan mellan affärsmål och tekniska lösningar, vilket möjliggör sömlös integration och optimering av digitala strategier. Samtidigt säkerställer han robusta säkerhetslösningar för att skydda verksamheten. Tobias expertis gör honom till en värdefull tillgång för företag som strävar efter att navigera i det komplexa digitala landskapet.</p>
-                    <div className="flex items-center mb-1">
-                      <Mail className="w-4 h-4 mr-2 text-gray-600" />
-                      <p className="text-gray-600">tobias@renew-io.se</p>
-                    </div>
-                    <div className="flex items-center">
-                      <MapPin className="w-4 h-4 mr-2 text-gray-600" />
-                      <p className="text-gray-600">Kristianstad</p>
+                    <div className="flex items-center space-x-4">
+                      <div className="flex items-center">
+                        <Mail className="w-4 h-4 mr-2 text-gray-600" />
+                        <p className="text-gray-600">tobias@renew-io.se</p>
+                      </div>
+                      <div className="flex items-center">
+                        <MapPin className="w-4 h-4 mr-2 text-gray-600" />
+                        <p className="text-gray-600">Kristianstad</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -109,13 +111,15 @@ const About = () => {
                   <div>
                     <h2 className="text-2xl font-semibold mb-2 text-gray-800">Patrik Berg - Teknisk Strateg</h2>
                     <p className="text-gray-600 mb-2">Med djup teknisk förståelse och eftertänksam problemlösning bidrar Patrik med ovärderlig insikt till våra projekt. Hans förmåga att analysera komplexa system och förutse teknologiska trender gör honom till en nyckelspelare i vår strategiska planering. Patriks expertis och långsiktiga perspektiv säkerställer att våra lösningar är framtidssäkrade och innovativa.</p>
-                    <div className="flex items-center mb-1">
-                      <Mail className="w-4 h-4 mr-2 text-gray-600" />
-                      <p className="text-gray-600">patrik@renew-io.se</p>
-                    </div>
-                    <div className="flex items-center">
-                      <MapPin className="w-4 h-4 mr-2 text-gray-600" />
-                      <p className="text-gray-600">Stockholm</p>
+                    <div className="flex items-center space-x-4">
+                      <div className="flex items-center">
+                        <Mail className="w-4 h-4 mr-2 text-gray-600" />
+                        <p className="text-gray-600">patrik@renew-io.se</p>
+                      </div>
+                      <div className="flex items-center">
+                        <MapPin className="w-4 h-4 mr-2 text-gray-600" />
+                        <p className="text-gray-600">Stockholm</p>
+                      </div>
                     </div>
                   </div>
                 </div>
