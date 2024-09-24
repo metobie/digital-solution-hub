@@ -17,6 +17,7 @@ const Footer = () => {
               <li className="mb-2"><Link to="/about" className="hover:text-gray-300 transition-colors duration-300">Om oss</Link></li>
               <li className="mb-2"><Link to="/contact" className="hover:text-gray-300 transition-colors duration-300">Kontakt</Link></li>
               <li className="mb-2"><Link to="/privacy" className="hover:text-gray-300 transition-colors duration-300">Integritetspolicy</Link></li>
+              <li className="mb-2"><Link to="/vmware-info" className="hover:text-gray-300 transition-colors duration-300">VMware-licensinformation</Link></li>
             </ul>
           </div>
           <div className="col-span-1">

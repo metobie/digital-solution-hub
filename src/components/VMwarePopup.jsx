@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const VMwarePopup = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -43,15 +44,23 @@ const VMwarePopup = () => {
               Men oroa dig inte - vi har lösningen! Renew I/O erbjuder expertis inom Nutanix (HCI), 
               en stabil och kostnadseffektiv alternativ som kan spara dig miljoner.
             </p>
-            <p className="font-semibold text-gray-800">
+            <p className="font-semibold text-gray-800 mb-6">
               Låt oss hjälpa dig navigera denna förändring och optimera din IT-infrastruktur för framtiden.
             </p>
-            <button
-              onClick={handleClose}
-              className="mt-6 bg-gradient-to-br from-[#3E7A8B] to-[#8A3A8B] text-white px-6 py-2 rounded-full hover:from-[#5A9AAB] hover:to-[#AA5AAB] transition-all duration-300"
-            >
-              Kontakta oss för en gratis konsultation
-            </button>
+            <div className="flex flex-col items-center space-y-4">
+              <button
+                onClick={handleClose}
+                className="bg-gradient-to-br from-[#3E7A8B] to-[#8A3A8B] text-white px-6 py-2 rounded-full hover:from-[#5A9AAB] hover:to-[#AA5AAB] transition-all duration-300"
+              >
+                Kontakta oss för en gratis konsultation
+              </button>
+              <Link
+                to="/vmware-info"
+                className="text-[#3E7A8B] hover:text-[#5A9AAB] transition-colors duration-300"
+              >
+                Läs mer om VMware-licenspriser
+              </Link>
+            </div>
           </div>
         </motion.div>
       )}

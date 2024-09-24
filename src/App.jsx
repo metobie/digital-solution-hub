@@ -11,6 +11,7 @@ import Footer from "./components/Footer";
 import MobileMenu from "./components/MobileMenu";
 import CookieConsentBanner from "./components/CookieConsent";
 import Privacy from "./pages/Privacy";
+import VMwareInfo from "./pages/VMwareInfo";
 
 const queryClient = new QueryClient();
 
@@ -60,6 +61,7 @@ const AppContent = () => {
             <Route key={to} path={to} element={page} />
           ))}
           <Route path="/privacy" element={<Privacy />} />
+          <Route path="/vmware-info" element={<VMwareInfo />} />
         </Routes>
       </main>
       <Footer />
