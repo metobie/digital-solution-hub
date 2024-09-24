@@ -24,25 +24,43 @@ const VMwareInfo = () => {
               <h2 className="text-2xl font-semibold mb-4 text-gray-800">Broadcoms uppköp av VMware: Potentiella konsekvenser</h2>
               
               <p className="mb-4 text-gray-600">
-                Även om det för närvarande inte finns några officiella och slutgiltiga förändringar, finns det indikationer på potentiella prisökningar för VMware-licenser, särskilt för små och medelstora företag.
+                Broadcoms förvärv av VMware har skapat osäkerhet kring framtida licensmodeller och kostnader. Baserat på Broadcoms tidigare affärsstrategier och liknande situationer, finns det flera potentiella scenarier som kan påverka VMware-kunder:
               </p>
 
-              <ul className="list-disc list-inside mb-6 text-gray-600">
-                <li>Broadcoms historik visar en tendens att driva upp priser och omstrukturera licensmodeller för att öka lönsamheten.</li>
-                <li>Kunder bör vara uppmärksamma på eventuella kommande förändringar i licensstrukturen.</li>
-                <li>Det kan bli nödvändigt att vara beredd på att förhandla eller överväga alternativa lösningar.</li>
-                <li>Små och medelstora företag kan potentiellt påverkas mer av eventuella förändringar.</li>
-              </ul>
+              <h3 className="text-xl font-semibold mb-2 text-gray-700">1. Prisökningar</h3>
+              <p className="mb-4 text-gray-600">
+                Historiskt sett har Broadcom ökat priserna efter förvärv. Det finns en risk för höjda kostnader, särskilt för små och medelstora företag, genom omstrukturering av licensmodeller.
+              </p>
+
+              <h3 className="text-xl font-semibold mb-2 text-gray-700">2. Strömlinjeformade produktutbud</h3>
+              <p className="mb-4 text-gray-600">
+                Broadcom tenderar att fokusera på kärnprodukter, vilket kan leda till ett förenklat produktutbud. Kunder kan behöva övergå till mer omfattande lösningar, vilket potentiellt ökar totalkostnaderna.
+              </p>
+
+              <h3 className="text-xl font-semibold mb-2 text-gray-700">3. Paketerade licenslösningar</h3>
+              <p className="mb-4 text-gray-600">
+                Möjlig omstrukturering till större licenspaket med fler tjänster och funktioner. Detta kan gynna större företag men öka kostnaderna för mindre kunder som tidigare valt specifika lösningar.
+              </p>
+
+              <h3 className="text-xl font-semibold mb-2 text-gray-700">4. Långsiktiga kontrakt och volymrabatter</h3>
+              <p className="mb-4 text-gray-600">
+                Broadcom kan erbjuda fler långsiktiga avtal och volymrabatter för att behålla större kunder. Detta kan skapa prispress för mindre företag, medan större kunder kan få bättre villkor genom flerårsavtal.
+              </p>
+
+              <h3 className="text-xl font-semibold mb-2 text-gray-700">5. Fokus på företagskunder</h3>
+              <p className="mb-4 text-gray-600">
+                Broadcom har en stark inriktning på stora företagskunder. Mindre kunder kan uppleva minskad prioritet och ökade kostnader, medan större kunder kan få mer skräddarsydda lösningar, dock potentiellt till högre totalkostnader.
+              </p>
 
               <h3 className="text-xl font-semibold mb-2 text-gray-700">Förbered dig för framtiden</h3>
               <p className="mb-4 text-gray-600">
-                I ljuset av denna osäkerhet är det klokt att:
+                I ljuset av denna osäkerhet rekommenderar vi att:
               </p>
               <ul className="list-disc list-inside mb-6 text-gray-600">
-                <li>Granska dina nuvarande VMware-licensavtal och användning.</li>
-                <li>Utforska alternativa lösningar som Nutanix (HCI) för att diversifiera din IT-infrastruktur.</li>
-                <li>Hålla en öppen dialog med din IT-leverantör om framtida strategier och kostnadsoptimering.</li>
-                <li>Överväga att låsa in nuvarande priser genom långsiktiga avtal, om möjligt.</li>
+                <li>Granska dina nuvarande VMware-licensavtal och användning</li>
+                <li>Utforska alternativa lösningar som Nutanix (HCI) för att diversifiera din IT-infrastruktur</li>
+                <li>Hålla en öppen dialog med din IT-leverantör om framtida strategier och kostnadsoptimering</li>
+                <li>Överväga att låsa in nuvarande priser genom långsiktiga avtal, om möjligt</li>
               </ul>
 
               <p className="font-semibold text-gray-800">
