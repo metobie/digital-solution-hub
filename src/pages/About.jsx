@@ -92,13 +92,11 @@ Min unika kompetens ligger i att överbrygga klyftan mellan affärsmål och tekn
               <CardContent className="p-6">
                 <div className="flex flex-col md:flex-row items-center">
                   <Avatar className="w-48 h-48 mb-4 md:mb-0 md:mr-6">
-                    <AvatarFallback className="bg-gray-300 text-gray-600 text-5xl">PB</AvatarFallback>
+                    <AvatarFallback className="bg-gray-300 text-gray-600 text-4xl">PB</AvatarFallback>
                   </Avatar>
                   <div>
                     <h2 className="text-2xl font-semibold mb-2 text-gray-800">Patrik Berg - Teknisk Strateg</h2>
-                    <p className="text-gray-600">Med en djup teknisk förståelse och en eftertänksam approach till problemlösning, bidrar Patrik med ovärderlig insikt till våra projekt. Hans förmåga att analysera komplexa system och förutse framtida teknologiska trender gör honom till en nyckelspelare i vår strategiska planering.
-
-Patriks kombination av teknisk expertis och ett klokt, långsiktigt perspektiv säkerställer att våra lösningar inte bara möter dagens behov, utan också är framtidssäkrade för morgondagens utmaningar. Hans lugna och metodiska tillvägagångssätt skapar en solid grund för innovation och hållbar teknisk utveckling.</p>
+                    <p className="text-gray-600">Med djup teknisk förståelse och eftertänksam problemlösning bidrar Patrik med ovärderlig insikt till våra projekt. Hans förmåga att analysera komplexa system och förutse teknologiska trender gör honom till en nyckelspelare i vår strategiska planering. Patriks expertis och långsiktiga perspektiv säkerställer att våra lösningar är framtidssäkrade och innovativa.</p>
                   </div>
                 </div>
               </CardContent>
