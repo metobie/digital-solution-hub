@@ -5,14 +5,10 @@ import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 
 const VMwarePopup = () => {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
-    const hasSeenPopup = localStorage.getItem('hasSeenVMwarePopup');
-    if (!hasSeenPopup) {
-      setIsVisible(true);
-      localStorage.setItem('hasSeenVMwarePopup', 'true');
-    }
+    setIsVisible(true);
   }, []);
 
   const handleClose = () => {
@@ -38,10 +34,10 @@ const VMwarePopup = () => {
             </button>
             <h2 className="text-2xl font-bold mb-4 text-gray-800 text-center">Viktigt meddelande för VMware-kunder!</h2>
             <p className="mb-4 text-gray-600">
-              Även om inga officiella förändringar har tillkännagivits, finns det indikationer på potentiella prisökningar för VMware-licenser, särskilt för små och medelstora företag.
+              Även om det inte finns några officiella och slutgiltiga förändringar just nu, tyder mycket på att det finns en möjlighet för ökade licenskostnader, särskilt för små och medelstora företag.
             </p>
             <p className="mb-4 text-gray-600">
-              Broadcoms historik tyder på en tendens att omstrukturera licensmodeller för ökad lönsamhet. Det är viktigt att vara förberedd på eventuella förändringar.
+              Broadcoms historik visar på en tendens att driva upp priser och omstrukturera licensmodeller för att öka lönsamheten. Det är viktigt att vara förberedd på eventuella förändringar.
             </p>
             <p className="font-semibold text-gray-800 mb-6">
               Låt Renew I/O hjälpa dig navigera dessa osäkra tider och utforska kostnadseffektiva alternativ som Nutanix (HCI).
