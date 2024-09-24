@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
-import { Shield, Briefcase, Lightbulb, Cloud, Code, LineChart } from 'lucide-react';
+import { Shield, Briefcase, Lightbulb, Cloud, LineChart } from 'lucide-react';
 
 const ServiceItem = ({ icon, title, description }) => (
   <Card className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
@@ -23,13 +23,8 @@ const ServiceCatalog = () => {
     },
     {
       icon: <Cloud className="w-8 h-8 text-white" />,
-      title: "Molntjänster",
-      description: "Optimera din infrastruktur med skalbara och säkra molnlösningar anpassade för din verksamhet."
-    },
-    {
-      icon: <Code className="w-8 h-8 text-white" />,
-      title: "Systemutveckling",
-      description: "Skräddarsydda mjukvarulösningar som effektiviserar dina processer och driver innovation."
+      title: "Hyperconverged Infrastructure (HCI)",
+      description: "Expertis inom moderna HCI-lösningar, med särskilt fokus på Nutanix för effektiv och skalbar infrastruktur."
     },
     {
       icon: <LineChart className="w-8 h-8 text-white" />,
