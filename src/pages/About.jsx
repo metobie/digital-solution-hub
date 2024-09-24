@@ -1,8 +1,9 @@
 import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Card, CardContent } from "@/components/ui/card";
-import { Shield, Briefcase, Lightbulb, GraduationCap, Users, Network } from 'lucide-react';
+import { Briefcase, Lightbulb, Network } from 'lucide-react';
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import InteractiveCard from '../components/InteractiveCard';
 
 const About = () => {
   const { scrollY } = useScroll();
@@ -12,20 +13,6 @@ const About = () => {
     <div className={`w-12 h-12 ${color} rounded-full flex items-center justify-center mr-4 shadow-lg`}>
       {children}
     </div>
-  );
-
-  const FeatureCard = ({ icon, title, description, color }) => (
-    <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-      <CardContent className="p-6">
-        <div className="flex items-start">
-          <IconWrapper color={color}>{icon}</IconWrapper>
-          <div>
-            <h3 className="text-xl font-semibold mb-2 text-gray-800">{title}</h3>
-            <p className="text-gray-600">{description}</p>
-          </div>
-        </div>
-      </CardContent>
-    </Card>
   );
 
   return (
@@ -108,29 +95,32 @@ const About = () => {
           </motion.section>
 
           <motion.section
-            className="mb-12 grid grid-cols-1 md:grid-cols-3 gap-6"
+            className="mb-12"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            <FeatureCard
-              icon={<Briefcase className="w-6 h-6 text-white" />}
-              title="Vår Expertis"
-              description="Vi specialiserar oss på digital transformation, cybersäkerhet, molnlösningar och strategisk IT-rådgivning."
-              color="bg-blue-500"
-            />
-            <FeatureCard
-              icon={<Lightbulb className="w-6 h-6 text-white" />}
-              title="Vår Vision"
-              description="Att forma en digital framtid där innovation möter säkerhet, och där varje företag kan nå sin fulla potential."
-              color="bg-yellow-500"
-            />
-            <FeatureCard
-              icon={<Network className="w-6 h-6 text-white" />}
-              title="Vårt Nätverk"
-              description="Ett omfattande nätverk av experter som möjliggör skräddarsydda lösningar för varje unikt behov."
-              color="bg-green-500"
-            />
+            <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">Vår Kärna</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <InteractiveCard
+                icon={Briefcase}
+                title="Vår Expertis"
+                description="Vi specialiserar oss på digital transformation, cybersäkerhet, molnlösningar och strategisk IT-rådgivning."
+                color="bg-gradient-to-br from-blue-500 to-blue-700"
+              />
+              <InteractiveCard
+                icon={Lightbulb}
+                title="Vår Vision"
+                description="Att forma en digital framtid där innovation möter säkerhet, och där varje företag kan nå sin fulla potential."
+                color="bg-gradient-to-br from-yellow-500 to-yellow-700"
+              />
+              <InteractiveCard
+                icon={Network}
+                title="Vårt Nätverk"
+                description="Ett omfattande nätverk av experter som möjliggör skräddarsydda lösningar för varje unikt behov."
+                color="bg-gradient-to-br from-green-500 to-green-700"
+              />
+            </div>
           </motion.section>
         </div>
       </div>
