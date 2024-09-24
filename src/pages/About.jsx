@@ -92,7 +92,7 @@ Min unika kompetens ligger i att överbrygga klyftan mellan affärsmål och tekn
               <CardContent className="p-6">
                 <div className="flex flex-col md:flex-row items-center">
                   <Avatar className="w-48 h-48 mb-4 md:mb-0 md:mr-6">
-                    <AvatarFallback className="bg-gray-300 text-gray-600 text-4xl">PB</AvatarFallback>
+                    <AvatarFallback className="bg-gray-300 text-gray-600 text-5xl">PB</AvatarFallback>
                   </Avatar>
                   <div>
                     <h2 className="text-2xl font-semibold mb-2 text-gray-800">Patrik Berg - Teknisk Strateg</h2>
