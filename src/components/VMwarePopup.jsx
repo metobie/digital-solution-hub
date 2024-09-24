@@ -6,17 +6,31 @@ import { Button } from "@/components/ui/button";
 
 const VMwarePopup = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [showBubble, setShowBubble] = useState(true);
 
   const togglePopup = () => setIsOpen(!isOpen);
+  const hideBubble = () => setShowBubble(false);
 
   return (
     <>
-      <div 
-        className="fixed top-24 right-4 z-50 bg-white bg-opacity-80 text-black p-2 rounded-full cursor-pointer shadow-lg hover:bg-opacity-100 transition-colors duration-300 text-sm"
-        onClick={togglePopup}
-      >
-        Psst. Är du VMware kund?
-      </div>
+      <AnimatePresence>
+        {showBubble && (
+          <motion.div 
+            className="fixed top-28 right-4 z-50 bg-white bg-opacity-80 text-black p-2 rounded-full cursor-pointer shadow-lg hover:bg-opacity-100 transition-colors duration-300 text-sm flex items-center"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+          >
+            <span onClick={togglePopup}>Psst. Är du VMware kund?</span>
+            <button 
+              onClick={hideBubble} 
+              className="ml-2 p-1 rounded-full hover:bg-gray-200 transition-colors duration-300"
+            >
+              <X size={14} />
+            </button>
+          </motion.div>
+        )}
+      </AnimatePresence>
       <AnimatePresence>
         {isOpen && (
           <motion.div
