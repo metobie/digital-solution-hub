@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import { Card, CardContent } from "@/components/ui/card";
 import { Shield, Briefcase, Lightbulb, GraduationCap, Users, Mail, MapPin } from 'lucide-react';
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
