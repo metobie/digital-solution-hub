@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import { Button } from "@/components/ui/button";
 
 const VMwarePopup = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -35,7 +36,7 @@ const VMwarePopup = () => {
             >
               <X size={24} />
             </button>
-            <h2 className="text-2xl font-bold mb-4 text-gray-800">Viktigt meddelande för VMware-användare!</h2>
+            <h2 className="text-2xl font-bold mb-4 text-gray-800 text-center">Viktigt meddelande för VMware-kunder!</h2>
             <p className="mb-4 text-gray-600">
               Visste du att Broadcoms uppköp av VMware kan leda till dramatiska kostnadsökningar för dina licenser?
               Många företag står inför chockhöjningar på upp till 40% vid nästa förnyelse!
@@ -48,12 +49,12 @@ const VMwarePopup = () => {
               Låt oss hjälpa dig navigera denna förändring och optimera din IT-infrastruktur för framtiden.
             </p>
             <div className="flex flex-col items-center space-y-4">
-              <button
+              <Button
                 onClick={handleClose}
                 className="bg-gradient-to-br from-[#3E7A8B] to-[#8A3A8B] text-white px-6 py-2 rounded-full hover:from-[#5A9AAB] hover:to-[#AA5AAB] transition-all duration-300"
               >
                 Kontakta oss för en gratis konsultation
-              </button>
+              </Button>
               <Link
                 to="/vmware-info"
                 className="text-[#3E7A8B] hover:text-[#5A9AAB] transition-colors duration-300"
