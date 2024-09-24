@@ -43,12 +43,13 @@ const VMwarePopup = () => {
               Låt Renew I/O hjälpa dig navigera dessa osäkra tider och utforska kostnadseffektiva alternativ som Nutanix (HCI).
             </p>
             <div className="flex flex-col items-center space-y-4">
-              <Button
-                onClick={handleClose}
-                className="bg-gradient-to-br from-[#3E7A8B] to-[#8A3A8B] text-white px-6 py-2 rounded-full hover:from-[#5A9AAB] hover:to-[#AA5AAB] transition-all duration-300"
-              >
-                Kontakta oss för en gratis konsultation
-              </Button>
+              <Link to="/contact">
+                <Button
+                  className="bg-gradient-to-br from-[#3E7A8B] to-[#8A3A8B] text-white px-6 py-2 rounded-full hover:from-[#5A9AAB] hover:to-[#AA5AAB] transition-all duration-300"
+                >
+                  Kontakta oss för en gratis konsultation
+                </Button>
+              </Link>
               <Link
                 to="/vmware-info"
                 className="text-[#3E7A8B] hover:text-[#5A9AAB] transition-colors duration-300"
