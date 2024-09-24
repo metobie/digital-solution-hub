@@ -74,35 +74,33 @@ const About = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <Card className="overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 bg-white mb-8 md:mb-0">
-                <CardContent className="p-6">
-                  <div className="flex flex-col md:flex-row items-center">
-                    <img src="https://i.imgur.com/PBAVzJh.jpeg" alt="Profilbild" className="w-48 h-48 rounded-full mb-4 md:mb-0 md:mr-6" />
-                    <div>
-                      <h2 className="text-2xl font-semibold mb-2 text-gray-800">Tobias Karlsson - Grundare</h2>
-                      <p className="text-gray-600">Som teknisk expert kombinerar jag min erfarenhet inom storskalig infrastruktur med förmågan att kommunicera effektivt på både företags- och teknisk nivå.
+            <Card className="overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 bg-white mb-8">
+              <CardContent className="p-6">
+                <div className="flex flex-col md:flex-row items-center">
+                  <img src="https://i.imgur.com/PBAVzJh.jpeg" alt="Profilbild" className="w-48 h-48 rounded-full mb-4 md:mb-0 md:mr-6" />
+                  <div>
+                    <h2 className="text-2xl font-semibold mb-2 text-gray-800">Tobias Karlsson - Grundare</h2>
+                    <p className="text-gray-600">Som teknisk expert kombinerar jag min erfarenhet inom storskalig infrastruktur med förmågan att kommunicera effektivt på både företags- och teknisk nivå.
 
 Min unika kompetens ligger i att överbrygga klyftan mellan affärsmål och tekniska lösningar, vilket möjliggör sömlös integration och optimering av digitala strategier, samtidigt som jag säkerställer robusta säkerhetslösningar för att skydda verksamheten.</p>
-                    </div>
                   </div>
-                </CardContent>
-              </Card>
+                </div>
+              </CardContent>
+            </Card>
 
-              <Card className="overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
-                <CardContent className="p-6">
-                  <div className="flex flex-col md:flex-row items-center">
-                    <Avatar className="w-48 h-48 mb-4 md:mb-0 md:mr-6">
-                      <AvatarFallback className="bg-gray-300 text-gray-600 text-4xl">PB</AvatarFallback>
-                    </Avatar>
-                    <div>
-                      <h2 className="text-2xl font-semibold mb-2 text-gray-800">Patrik Berg - Teknisk Strateg</h2>
-                      <p className="text-gray-600">Med djup teknisk förståelse bidrar Patrik med ovärderlig insikt till våra projekt. Hans förmåga att analysera komplexa system och förutse teknologiska trender gör honom till en nyckelspelare i vår strategiska planering.</p>
-                    </div>
+            <Card className="overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
+              <CardContent className="p-6">
+                <div className="flex flex-col md:flex-row items-center">
+                  <Avatar className="w-48 h-48 mb-4 md:mb-0 md:mr-6">
+                    <AvatarFallback className="bg-gray-300 text-gray-600 text-4xl">PB</AvatarFallback>
+                  </Avatar>
+                  <div>
+                    <h2 className="text-2xl font-semibold mb-2 text-gray-800">Patrik Berg - Teknisk Strateg</h2>
+                    <p className="text-gray-600">Med djup teknisk förståelse och eftertänksam problemlösning bidrar Patrik med ovärderlig insikt till våra projekt. Hans förmåga att analysera komplexa system och förutse teknologiska trender gör honom till en nyckelspelare i vår strategiska planering. Patriks expertis och långsiktiga perspektiv säkerställer att våra lösningar är framtidssäkrade och innovativa.</p>
                   </div>
-                </CardContent>
-              </Card>
-            </div>
+                </div>
+              </CardContent>
+            </Card>
           </motion.section>
 
           <motion.section
