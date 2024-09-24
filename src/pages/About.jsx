@@ -97,7 +97,7 @@ Min unika kompetens ligger i att överbrygga klyftan mellan affärsmål och tekn
                     </Avatar>
                     <div>
                       <h2 className="text-2xl font-semibold mb-2 text-gray-800">Patrik Berg - Teknisk Strateg</h2>
-                      <p className="text-gray-600">Med djup teknisk förståelse bidrar Patrik med ovärderlig insikt till våra projekt. Hans förmåga att analysera komplexa system och förutse teknologiska trender gör honom till en nyckelspelare i vår strategiska planering.</p>
+                      <p className="text-gray-600">Med över 15 års erfarenhet inom IT och systemutveckling bidrar Patrik med djup teknisk förståelse och strategisk insikt till våra projekt. Hans expertis sträcker sig från komplexa systemanalyser till implementering av cutting-edge teknologier. Patriks förmåga att förutse teknologiska trender och omsätta dem till praktiska lösningar gör honom till en nyckelspelare i vår strategiska planering och projektgenomförande. Hans passion för kontinuerligt lärande och innovation driver ständigt Renew I/O framåt i den snabbt föränderliga tech-världen.</p>
                     </div>
                   </div>
                 </CardContent>
