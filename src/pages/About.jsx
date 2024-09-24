@@ -45,7 +45,13 @@ const About = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Företagsnamnet uttalas som 'Rih-nyoo Ai Oh'
+            <motion.span
+              initial={{ opacity: 0 }}
+              animate={{ opacity: [0, 1, 0, 1] }}
+              transition={{ duration: 2, times: [0, 0.2, 0.8, 1], repeat: 1 }}
+            >
+              Företagsnamnet uttalas som 'Rih-nyoo Ai Oh'
+            </motion.span>
           </motion.p>
           <motion.p 
             className="text-xl text-gray-200 mb-8"
