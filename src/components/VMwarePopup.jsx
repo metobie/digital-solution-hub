@@ -13,7 +13,7 @@ const VMwarePopup = ({ heroHeight }) => {
 
   useEffect(() => {
     const unsubscribe = scrollY.onChange(latest => {
-      if (latest > heroHeight) {
+      if (latest > heroHeight / 2) {
         setShowBubble(false);
       } else {
         setShowBubble(true);
