@@ -22,7 +22,7 @@ const About = () => {
       email: "tobias@renew-io.se",
       location: "Kristianstad",
       imageClassName: "object-top object-[50%_30%]",
-      tags: ["#InfrastrukturExpert", "#StrategiskRådgivning", "#DigitalTransformation"]
+      tags: ["#infrastruktur", "#cybersecurity", "#strategi", "#rådgivning", "#transformation"]
     },
     {
       name: "Patrik Berg",
