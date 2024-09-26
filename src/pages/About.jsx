@@ -67,8 +67,7 @@ const About = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <TeamMember
-              name="Tobias Olsson"
-              role="Teknisk Expert & Grundare"
+              name="Tobias Karlsson"
               imageSrc="https://i.imgur.com/PBAVzJh.jpeg"
               description="Som teknisk expert kombinerar Tobias sin erfarenhet inom storskalig infrastruktur med förmågan att kommunicera effektivt på både företags- och teknisk nivå. Hans unika kompetens ligger i att överbrygga klyftan mellan affärsmål och tekniska lösningar, vilket möjliggör sömlös integration och optimering av digitala strategier. Samtidigt säkerställer han robusta säkerhetslösningar för att skydda verksamheten."
               email="tobias@renew-io.se"
@@ -76,8 +75,7 @@ const About = () => {
             />
 
             <TeamMember
-              name="Patrik Bergström"
-              role="Teknisk Strateg"
+              name="Patrik Berg"
               description="Med djup teknisk förståelse och eftertänksam problemlösning bidrar Patrik med ovärderlig insikt till våra projekt. Hans förmåga att analysera komplexa system och förutse teknologiska trender gör honom till en nyckelspelare i vår strategiska planering. Patriks expertis och långsiktiga perspektiv säkerställer att våra lösningar är framtidssäkrade och innovativa."
               email="patrik@renew-io.se"
               location="Stockholm"
@@ -85,7 +83,6 @@ const About = () => {
 
             <TeamMember
               name="Robert Nesta Nuhu"
-              role="Digital Innovatör"
               imageSrc="https://i.imgur.com/JKev6yM.png"
               description="Som en rising star inom digital innovation, bringer Robert en fräsch och dynamisk energi till teamet. Hans unika perspektiv och naturliga fallenhet för att förstå framtidens teknologier gör honom till en katalysator för kreativitet och nytänkande. När han får en tydlig målbild, transformerar han visioner till verklighet med imponerande hastighet och precision."
               email="robert@renew-io.se"
@@ -94,7 +91,6 @@ const About = () => {
 
             <TeamMember
               name="Tim Omorogieva"
-              role="Strategisk Utvecklare & Hållbarhetsexpert"
               description="Tim är en mästare på att bygga och vårda relationer, med en unik förmåga att coacha och inspirera både team och kunder. Hans expertis inom innovation och strategisk utveckling, kombinerat med ett starkt fokus på hållbarhet, gör honom till en ovärderlig tillgång i vår strävan att skapa framtidssäkrade lösningar. Tims förmåga att se helheten och driva positiv förändring är central i vårt arbete med att hjälpa företag att nå sina mål på ett hållbart och innovativt sätt."
               email="tim@renew-io.se"
               location="Kristianstad"
@@ -102,7 +98,6 @@ const About = () => {
 
             <TeamMember
               name="Emelie Nylander"
-              role="Digital Marknadsföring & Innehållsstrateg"
               description="Emelie är vår expert inom digital marknadsföring och sociala medier. Med en unik förmåga att skapa autentiskt och engagerande innehåll, bringer hon en ny dimension till våra kunders digitala närvaro. Hennes talang för att fånga äkta ögonblick genom film och foto, kombinerat med en djup förståelse för moderna marknadsföringsstrategier, gör henne till en ovärderlig tillgång i vår strävan att bygga starka och hållbara kundrelationer. Emelies approach visar att effektiv digital kommunikation handlar mer om äkthet och kreativitet än om dyr utrustning."
               email="emelie@renew-io.se"
               location="Kristianstad"
