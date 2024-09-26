@@ -85,7 +85,7 @@ const About = () => {
                 <div className="flex flex-col md:flex-row items-center">
                   <img src="https://i.imgur.com/PBAVzJh.jpeg" alt="Profilbild" className="w-48 h-48 rounded-full mb-4 md:mb-0 md:mr-6" />
                   <div>
-                    <h2 className="text-2xl font-semibold mb-2 text-gray-800">Tobias Karlsson - Grundare</h2>
+                    <h2 className="text-2xl font-semibold mb-2 text-gray-800">Tobias Karlsson</h2>
                     <p className="text-gray-600 mb-2">Som teknisk expert kombinerar Tobias sin erfarenhet inom storskalig infrastruktur med förmågan att kommunicera effektivt på både företags- och teknisk nivå. Hans unika kompetens ligger i att överbrygga klyftan mellan affärsmål och tekniska lösningar, vilket möjliggör sömlös integration och optimering av digitala strategier. Samtidigt säkerställer han robusta säkerhetslösningar för att skydda verksamheten. Tobias expertis gör honom till en värdefull tillgång för företag som strävar efter att navigera i det komplexa digitala landskapet.</p>
                     <div className="flex items-center space-x-4">
                       <div className="flex items-center">
@@ -109,7 +109,7 @@ const About = () => {
                     <AvatarFallback className="bg-gray-300 text-gray-600 text-6xl">PB</AvatarFallback>
                   </Avatar>
                   <div>
-                    <h2 className="text-2xl font-semibold mb-2 text-gray-800">Patrik Berg - Teknisk Strateg</h2>
+                    <h2 className="text-2xl font-semibold mb-2 text-gray-800">Patrik Berg</h2>
                     <p className="text-gray-600 mb-2">Med djup teknisk förståelse och eftertänksam problemlösning bidrar Patrik med ovärderlig insikt till våra projekt. Hans förmåga att analysera komplexa system och förutse teknologiska trender gör honom till en nyckelspelare i vår strategiska planering. Patriks expertis och långsiktiga perspektiv säkerställer att våra lösningar är framtidssäkrade och innovativa.</p>
                     <div className="flex items-center space-x-4">
                       <div className="flex items-center">
@@ -131,9 +131,9 @@ const About = () => {
                 <div className="flex flex-col md:flex-row items-center">
                   <img src="https://i.imgur.com/JKev6yM.png" alt="Robert Nesta Nuhu profile" className="w-48 h-48 rounded-full mb-4 md:mb-0 md:mr-6 object-cover" />
                   <div>
-                    <h2 className="text-2xl font-semibold mb-2 text-gray-800">Robert Nesta Nuhu - Digital Innovatör</h2>
+                    <h2 className="text-2xl font-semibold mb-2 text-gray-800">Robert Nesta Nuhu</h2>
                     <p className="text-gray-600 mb-2">
-                      Som en rising star inom digital innovation, bringer Robert en fräsch och dynamisk energi till teamet. Trots sin unga ålder har han redan visat en enastående förmåga att tänka utanför boxen och leverera banbrytande digitala lösningar. Roberts unika perspektiv och naturliga fallenhet för att förstå framtidens teknologier gör honom till en katalysator för kreativitet och nytänkande. När han får en tydlig målbild, transformerar han visioner till verklighet med imponerande hastighet och precision.
+                      Som en rising star inom digital innovation, bringer Robert en fräsch och dynamisk energi till teamet. Hans unika perspektiv och naturliga fallenhet för att förstå framtidens teknologier gör honom till en katalysator för kreativitet och nytänkande. När han får en tydlig målbild, transformerar han visioner till verklighet med imponerande hastighet och precision.
                     </p>
                     <div className="flex items-center space-x-4">
                       <div className="flex items-center">
