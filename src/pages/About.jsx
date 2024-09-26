@@ -41,7 +41,7 @@ const About = () => {
     {
       name: "Tim Omorogieva",
       imageSrc: "https://i.imgur.com/VUh5uU0.png",
-      description: "Tim är en mästare på att bygga och vårda relationer, med en unik förmåga att coacha och inspirera både team och kunder. Hans expertis inom innovation och personlig utveckling, kombinerat med ett starkt fokus på hållbarhet, gör honom till en ovärderlig tillgång i vår strävan att skapa nästa generations ledarskap. Tims förmåga att se helheten och driva positiv förändring är central i vårt arbete med att hjälpa företag att nå sina mål på ett hållbart och innovativt sätt.",
+      description: "Tim är en mästare på att bygga och vårda relationer, med en unik förmåga att coacha och inspirera både team och kunder. Hans expertis inom innovation och personlig utveckling, kombinerat med ett starkt fokus på hållbarhet, gör honom till en ovärderlig tillgång i vår strävan att skapa nästa generations ledarskap. Tims förmåga att se helheten och driva positiv förändring är central i vårt arbete med att hjälpa företag att nå sina mål på ett unikt sätt.",
       email: "tim@renew-io.se",
       location: "Kristianstad",
       imageClassName: "object-[50%_40%]"
