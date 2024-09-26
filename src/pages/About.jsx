@@ -47,7 +47,7 @@ const About = () => {
       email: "tim@renew-io.se",
       location: "Kristianstad",
       imageClassName: "object-[50%_40%]",
-      expandedTitle: "Client Relations & Sustainability Strategist"
+      expandedTitle: "People Development"
     },
     {
       name: "Emelie Nylander",
