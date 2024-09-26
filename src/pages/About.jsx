@@ -129,9 +129,7 @@ const About = () => {
             <Card className="overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
               <CardContent className="p-6">
                 <div className="flex flex-col md:flex-row items-center">
-                  <Avatar className="w-48 h-48 mb-4 md:mb-0 md:mr-6">
-                    <AvatarFallback className="bg-gray-300 text-gray-600 text-6xl">RN</AvatarFallback>
-                  </Avatar>
+                  <img src="https://i.imgur.com/JKev6yM.png" alt="Robert Nesta Nuhu profile" className="w-48 h-48 rounded-full mb-4 md:mb-0 md:mr-6 object-cover" />
                   <div>
                     <h2 className="text-2xl font-semibold mb-2 text-gray-800">Robert Nesta Nuhu - Digital Innovatör</h2>
                     <p className="text-gray-600 mb-2">
