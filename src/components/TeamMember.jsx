@@ -3,14 +3,14 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Mail, MapPin } from 'lucide-react';
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
-const TeamMember = ({ name, imageSrc, description, email, location }) => {
+const TeamMember = ({ name, imageSrc, description, email, location, imageClassName = "" }) => {
   return (
     <Card className="overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 bg-white mb-8">
       <CardContent className="p-6">
         <div className="flex flex-col md:flex-row items-center">
           <div className="w-48 h-48 mb-4 md:mb-0 md:mr-6 flex-shrink-0">
             {imageSrc ? (
-              <img src={imageSrc} alt={`${name} profile`} className="w-full h-full rounded-full object-cover" />
+              <img src={imageSrc} alt={`${name} profile`} className={`w-full h-full rounded-full object-cover ${imageClassName}`} />
             ) : (
               <Avatar className="w-full h-full">
                 <AvatarFallback className="bg-gray-300 text-gray-600 text-6xl flex items-center justify-center w-full h-full">
