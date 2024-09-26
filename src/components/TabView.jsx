@@ -7,12 +7,12 @@ const TabView = ({ tabs }) => {
 
   return (
     <div className="w-full">
-      <div className="flex justify-center mb-4">
+      <div className="flex flex-wrap justify-center mb-4 gap-2">
         {tabs.map((tab, index) => (
           <Button
             key={index}
             onClick={() => setActiveTab(index)}
-            className={`mx-2 ${
+            className={`text-sm sm:text-base px-3 py-2 ${
               activeTab === index
                 ? 'bg-gradient-to-br from-[#3E7A8B] to-[#8A3A8B] text-white'
                 : 'bg-gray-200 text-gray-800'
