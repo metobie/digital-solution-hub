@@ -35,7 +35,7 @@ const Index = () => {
             y: useTransform(scrollY, [0, 500], [0, 150]),
           }}
         />
-        <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#3E7A8B]/90 via-[#8A3A8B]/90 to-black/90 z-10"></div>
         <div className="relative z-20 text-center px-6">
           <motion.h1 
             className="text-4xl md:text-6xl font-extrabold mb-4 text-white tracking-tight"
