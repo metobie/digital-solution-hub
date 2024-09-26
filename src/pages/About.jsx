@@ -102,7 +102,7 @@ const About = () => {
               </CardContent>
             </Card>
 
-            <Card className="overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
+            <Card className="overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 bg-white mb-8">
               <CardContent className="p-6">
                 <div className="flex flex-col md:flex-row items-center">
                   <Avatar className="w-48 h-48 mb-4 md:mb-0 md:mr-6">
@@ -119,6 +119,32 @@ const About = () => {
                       <div className="flex items-center">
                         <MapPin className="w-4 h-4 mr-2 text-gray-600" />
                         <p className="text-gray-600">Stockholm</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
+              <CardContent className="p-6">
+                <div className="flex flex-col md:flex-row items-center">
+                  <Avatar className="w-48 h-48 mb-4 md:mb-0 md:mr-6">
+                    <AvatarFallback className="bg-gray-300 text-gray-600 text-6xl">RN</AvatarFallback>
+                  </Avatar>
+                  <div>
+                    <h2 className="text-2xl font-semibold mb-2 text-gray-800">Robert Nesta Nuhu - Digital Innovatör</h2>
+                    <p className="text-gray-600 mb-2">
+                      Som en rising star inom digital innovation, bringer Robert en fräsch och dynamisk energi till teamet. Trots sin unga ålder har han redan visat en enastående förmåga att tänka utanför boxen och leverera banbrytande digitala lösningar. Roberts unika perspektiv och naturliga fallenhet för att förstå framtidens teknologier gör honom till en katalysator för kreativitet och nytänkande. När han får en tydlig målbild, transformerar han visioner till verklighet med en imponerande hastighet och precision. Hans ungdomliga entusiasm kombinerad med en mogen förståelse för affärsbehov gör Robert till en ovärderlig tillgång i vår strävan att ligga i framkant av den digitala revolutionen.
+                    </p>
+                    <div className="flex items-center space-x-4">
+                      <div className="flex items-center">
+                        <Mail className="w-4 h-4 mr-2 text-gray-600" />
+                        <p className="text-gray-600">robert@renew-io.se</p>
+                      </div>
+                      <div className="flex items-center">
+                        <MapPin className="w-4 h-4 mr-2 text-gray-600" />
+                        <p className="text-gray-600">Malmö</p>
                       </div>
                     </div>
                   </div>
