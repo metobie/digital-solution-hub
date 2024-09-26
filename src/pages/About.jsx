@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Card, CardContent } from "@/components/ui/card";
-import { Shield, Briefcase, Lightbulb, GraduationCap, Users, Mail, MapPin, Code, Globe } from 'lucide-react';
+import { Shield, Briefcase, Lightbulb, Cloud, Server, LineChart } from 'lucide-react';
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
 const About = () => {
@@ -40,26 +40,12 @@ const About = () => {
             Vi är Renew I/O
           </motion.h1>
           <motion.p 
-            className="text-sm text-gray-300 mb-4"
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
-            <motion.span
-              initial={{ opacity: 0 }}
-              animate={{ opacity: [0, 1, 0, 1] }}
-              transition={{ duration: 2, times: [0, 0.2, 0.8, 1], repeat: 1 }}
-            >
-              Uttalas som 'Rih-nyoo Ai Oh' - men du kan kalla oss för dina tech-genier
-            </motion.span>
-          </motion.p>
-          <motion.p 
             className="text-2xl text-gray-100 mb-8"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            Möt hjärnorna bakom kodmagin
+            Din partner för digital transformation
           </motion.p>
           <motion.p 
             className="text-xl text-gray-200"
@@ -67,7 +53,7 @@ const About = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            Med över ett decennium av erfarenhet inom IT, digital strategi, cybersäkerhet, utveckling och webbutveckling, har vårt team lett projekt från startup-drömmar till multinationella tech-imperier. Vår superkraft? Att översätta komplexa affärsmål till banbrytande tekniska lösningar. Vi är Renew I/O - din hemliga ingrediens för digital dominans.
+            Med över ett decennium av erfarenhet inom IT, digital strategi, cybersäkerhet och utveckling, har vårt team lett projekt från startup-visioner till multinationella tech-lösningar. Vår styrka ligger i att översätta komplexa affärsmål till effektiva tekniska lösningar.
           </motion.p>
         </div>
       </motion.section>
@@ -86,17 +72,7 @@ const About = () => {
                   <img src="https://i.imgur.com/PBAVzJh.jpeg" alt="Profilbild" className="w-48 h-48 rounded-full mb-4 md:mb-0 md:mr-6" />
                   <div>
                     <h2 className="text-2xl font-bold mb-2 text-white">Tobias Karlsson</h2>
-                    <p className="text-gray-300 mb-4">Tech-maestro och digital strateg. Tobias jonglerar enterprise-infrastruktur som en cirkusartist och talar flytande både C-suite och kodspråk. Hans superkraft? Att förvandla komplexa affärsmål till strömlinjeformade tekniska lösningar som får konkurrenterna att tappa hakan. Med Tobias vid rodret navigerar ditt företag genom det digitala landskapet som en Tesla på autopilot - snabbt, smart och alltid ett steg före.</p>
-                    <div className="flex items-center space-x-4">
-                      <div className="flex items-center">
-                        <Mail className="w-4 h-4 mr-2 text-purple-400" />
-                        <p className="text-gray-300">tobias@renew-io.se</p>
-                      </div>
-                      <div className="flex items-center">
-                        <MapPin className="w-4 h-4 mr-2 text-blue-400" />
-                        <p className="text-gray-300">Kristianstad</p>
-                      </div>
-                    </div>
+                    <p className="text-gray-300 mb-4">Med en djup förståelse för både affärsstrategi och avancerad teknologi, leder Tobias våra kunder genom komplexa digitala transformationer. Hans expertis inom enterprise-infrastruktur och strategisk planering säkerställer att våra lösningar inte bara möter dagens behov utan också är redo för morgondagens utmaningar.</p>
                   </div>
                 </div>
               </CardContent>
@@ -110,17 +86,7 @@ const About = () => {
                   </Avatar>
                   <div>
                     <h2 className="text-2xl font-bold mb-2 text-white">Patrik Berg</h2>
-                    <p className="text-gray-300 mb-4">Vår tech-orakel och kodningens Gandalf. Patrik dissekerar komplexa system som en kirurg och förutspår tech-trender som en digital Nostradamus. Hans analytiska sinne och långsiktiga vision säkerställer att våra lösningar inte bara är cutting-edge idag, utan fortsätter att vara relevanta långt in i framtiden. Med Patrik i teamet är din tech-strategi lika framtidssäkrad som en tidkapsel på Mars.</p>
-                    <div className="flex items-center space-x-4">
-                      <div className="flex items-center">
-                        <Mail className="w-4 h-4 mr-2 text-purple-400" />
-                        <p className="text-gray-300">patrik@renew-io.se</p>
-                      </div>
-                      <div className="flex items-center">
-                        <MapPin className="w-4 h-4 mr-2 text-blue-400" />
-                        <p className="text-gray-300">Stockholm</p>
-                      </div>
-                    </div>
+                    <p className="text-gray-300 mb-4">Patrik är vår visionär inom teknisk arkitektur och innovation. Hans förmåga att analysera komplexa system och förutse teknologiska trender säkerställer att våra lösningar inte bara är cutting-edge idag, utan fortsätter att leverera värde långt in i framtiden.</p>
                   </div>
                 </div>
               </CardContent>
@@ -133,18 +99,8 @@ const About = () => {
                   <div>
                     <h2 className="text-2xl font-bold mb-2 text-white">Robert Nesta Nuhu</h2>
                     <p className="text-gray-300 mb-4">
-                      Vår digitala alkemist och kodens poet. Robert förvandlar vilda idéer till elegant kod snabbare än du kan säga "Hello World". Hans unika perspektiv och naturliga fallenhet för framtidens teknologier gör honom till vår hemliga ingrediens i innovationssoppan. När Robert får en vision, blir den verklighet med en hastighet och precision som får Usain Bolt att se ut som en sengångare.
+                      Robert är vår kreativa kraft inom utveckling och innovation. Hans expertis inom systemutveckling och webblösningar, kombinerat med en passion för nya teknologier, driver oss att skapa skräddarsydda lösningar som inte bara möter utan överträffar våra kunders förväntningar.
                     </p>
-                    <div className="flex items-center space-x-4">
-                      <div className="flex items-center">
-                        <Mail className="w-4 h-4 mr-2 text-purple-400" />
-                        <p className="text-gray-300">robert@renew-io.se</p>
-                      </div>
-                      <div className="flex items-center">
-                        <MapPin className="w-4 h-4 mr-2 text-blue-400" />
-                        <p className="text-gray-300">Kristianstad</p>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </CardContent>
@@ -161,18 +117,18 @@ const About = () => {
               <IconWrapper>
                 <Briefcase className="w-4 h-4 text-white" />
               </IconWrapper>
-              Vår Tech-Arsenal
+              Vår Expertis
             </h2>
             <Card className="shadow-xl hover:shadow-2xl transition-shadow duration-300 bg-gray-800 border border-blue-500">
               <CardContent className="p-6">
                 <ul className="list-disc list-inside space-y-2 text-gray-300">
-                  <li>Digital transformation och strategi som får Elon Musk att bli imponerad</li>
-                  <li>Cybersäkerhet så robust att till och med James Bond skulle bli avundsjuk</li>
-                  <li>Molnlösningar som får dina data att sväva högre än en astronaut</li>
-                  <li>Systemutveckling som är mer precis än en schweizisk klocka</li>
-                  <li>Webbutveckling som får dina konkurrenters sidor att se ut som GeoCities</li>
-                  <li>IT-konsulttjänster som är mer värdefulla än krypto under en bull run</li>
-                  <li>Utbildning som gör ditt team smartare än en AI på steroider</li>
+                  <li>Strategisk digital transformation som driver affärsvärde</li>
+                  <li>Robust cybersäkerhet för att skydda dina viktigaste tillgångar</li>
+                  <li>Skalbara och flexibla molnlösningar</li>
+                  <li>Skräddarsydd systemutveckling för unika affärsbehov</li>
+                  <li>Moderna och effektiva webblösningar</li>
+                  <li>Omfattande IT-konsulttjänster för optimerad verksamhet</li>
+                  <li>Innovationsledning för att hålla dig i framkant</li>
                 </ul>
               </CardContent>
             </Card>
@@ -188,12 +144,12 @@ const About = () => {
               <IconWrapper>
                 <Lightbulb className="w-4 h-4 text-white" />
               </IconWrapper>
-              Vår Tech-Vision
+              Vår Vision
             </h2>
             <Card className="shadow-xl hover:shadow-2xl transition-shadow duration-300 bg-gray-800 border border-purple-500">
               <CardContent className="p-6">
                 <p className="text-gray-300 text-lg">
-                  Vi ser en framtid där teknologi och innovation dansar tango, och vi leder dansen. Vår vision är att vara katalysatorn som förvandlar vanliga företag till tech-superhjältar. Vi strävar efter att skapa en digital värld där varje rad kod, varje molntjänst och varje säkerhetslösning inte bara effektiviserar verksamheter, utan öppnar portaler till nya dimensioner av möjligheter. Med Renew I/O vid rodret blir science fiction till business fact.
+                  Vi strävar efter att vara den ledande partnern för företag som söker att navigera och utnyttja den digitala erans möjligheter. Genom att kombinera djup teknisk expertis med strategisk affärsförståelse, arbetar vi för att skapa innovativa lösningar som inte bara möter dagens utmaningar, utan också lägger grunden för framtida framgångar.
                 </p>
               </CardContent>
             </Card>
@@ -207,14 +163,14 @@ const About = () => {
           >
             <h2 className="text-3xl font-bold mb-8 flex items-center text-white">
               <IconWrapper>
-                <Users className="w-4 h-4 text-white" />
+                <Server className="w-4 h-4 text-white" />
               </IconWrapper>
-              Vårt Tech-Nätverk
+              Vårt Nätverk
             </h2>
             <Card className="shadow-xl hover:shadow-2xl transition-shadow duration-300 bg-gray-800 border border-blue-500">
               <CardContent className="p-6">
                 <p className="text-gray-300 text-lg">
-                  Tänk dig Avengers, fast för tech-världen. För de riktigt episka uppdragen aktiverar vi vårt nätverk av tech-superhjältar - varje konsult med sin egen unika superkraft och sitt eget företag. Detta betyder att vi alltid kan leverera skräddarsydda, högkvalitativa lösningar som passar perfekt, som en spandex-dräkt på en superhjälte. Oavsett om ditt projekt kräver en Iron Man-nivå av innovation eller en Spider-Man-grad av flexibilitet, har vi rätt hjälte för jobbet.
+                  Renew I/O är stolt över att ha byggt ett omfattande nätverk av experter inom olika teknologiska domäner. Detta nätverk ger oss möjligheten att ta oss an komplexa projekt och leverera helhetslösningar som spänner över flera tekniska discipliner. Oavsett om ditt projekt kräver djup specialistkunskap eller bred teknisk kompetens, har vi resurserna för att leverera resultat av högsta kvalitet.
                 </p>
               </CardContent>
             </Card>

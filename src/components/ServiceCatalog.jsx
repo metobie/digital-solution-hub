@@ -17,44 +17,44 @@ const ServiceItem = ({ icon, title, description }) => (
 const ServiceCatalog = () => {
   const services = [
     {
-      icon: <Shield className="w-8 h-8 text-white" />,
-      title: "Cybersäkerhet 2.0",
-      description: "Vi bygger digitala fort Knox. Dina data är säkrare än guld i våra händer."
-    },
-    {
-      icon: <Cloud className="w-8 h-8 text-white" />,
-      title: "Molnlösningar på Steroider",
-      description: "Vi lyfter din infrastruktur till skyarna. Bokstavligt talat."
-    },
-    {
       icon: <Server className="w-8 h-8 text-white" />,
-      title: "HCI - Framtidens Infrastruktur",
-      description: "Vi gör din IT-infrastruktur lika smidig som en Tesla och lika kraftfull som en raket."
+      title: "Infrastrukturoptimering",
+      description: "Vi designar och implementerar skalbara, säkra och effektiva IT-infrastrukturer som möter dagens behov och morgondagens utmaningar."
     },
     {
       icon: <LineChart className="w-8 h-8 text-white" />,
-      title: "Digital Strategi med Turbo",
-      description: "Vi navigerar digitala landskap som proffs. Din roadmap till tech-dominans börjar här."
+      title: "Digital Strategi",
+      description: "Vi hjälper dig att utveckla en omfattande digital strategi som driver innovation, effektivitet och tillväxt i din verksamhet."
+    },
+    {
+      icon: <Cloud className="w-8 h-8 text-white" />,
+      title: "Molnlösningar",
+      description: "Skräddarsydda molnstrategier och implementeringar som ökar flexibilitet, skalbarhet och kostnadseffektivitet."
+    },
+    {
+      icon: <Shield className="w-8 h-8 text-white" />,
+      title: "Cybersäkerhet",
+      description: "Omfattande säkerhetslösningar som skyddar din verksamhet mot dagens och morgondagens cyberhot."
     },
     {
       icon: <Code className="w-8 h-8 text-white" />,
-      title: "Utveckling i Warp-hastighet",
-      description: "Vi kodar snabbare än ljuset och levererar lösningar som får dina konkurrenter att blekna."
+      title: "Systemutveckling",
+      description: "Skräddarsydda mjukvarulösningar som effektiviserar dina processer och driver innovation."
     },
     {
       icon: <Globe className="w-8 h-8 text-white" />,
-      title: "Webbutveckling på Steroider",
-      description: "Vi skapar webbplatser som är snabbare än Usain Bolt och snyggare än en catwalk-modell."
+      title: "Webbutveckling",
+      description: "Moderna, responsiva och användarvänliga webbplatser och applikationer som stärker din digitala närvaro."
     },
     {
       icon: <Briefcase className="w-8 h-8 text-white" />,
-      title: "IT-Konsulting Deluxe",
-      description: "Vi är som tech-whisperers. Vi talar flytande IT och översätter det till affärsframgång."
+      title: "IT-Konsulttjänster",
+      description: "Strategisk rådgivning och support för att optimera din IT-infrastruktur och processer."
     },
     {
       icon: <Lightbulb className="w-8 h-8 text-white" />,
-      title: "Innovationsledning på Steroider",
-      description: "Vi föder idéer snabbare än kaniner och odlar dem till tech-unicorns."
+      title: "Innovationsledning",
+      description: "Vi hjälper dig att identifiera och implementera nya teknologier som ger konkurrensfördelar."
     }
   ];
 
