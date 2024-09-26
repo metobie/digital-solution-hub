@@ -10,6 +10,7 @@ const TeamMember = ({ name, imageSrc, description, email, location, imageClassNa
             src={imageSrc} 
             alt={`${name} profile`} 
             className={`w-full h-64 object-cover rounded-lg ${imageClassName || ''}`}
+            style={{ objectPosition: '50% 20%' }}  // This line is added to move the image up
           />
         </div>
       )}
