@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Mail, MapPin, ChevronDown, ChevronUp } from 'lucide-react';
 
-const AnimatedTeamMember = ({ name, imageSrc, initials, description, email, location, imageClassName }) => {
+const AnimatedTeamMember = ({ name, imageSrc, initials, description, email, location, imageClassName, tags }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
@@ -55,6 +55,15 @@ const AnimatedTeamMember = ({ name, imageSrc, initials, description, email, loca
             className="mt-4"
           >
             <p className="text-gray-600 mb-4">{description}</p>
+            {tags && tags.length > 0 && (
+              <div className="flex flex-wrap gap-2 mb-4">
+                {tags.map((tag, index) => (
+                  <span key={index} className="bg-gray-200 text-gray-700 px-2 py-1 rounded-full text-sm">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            )}
             <div className="flex items-center space-x-4">
               <div className="flex items-center">
                 <Mail className="w-4 h-4 mr-2 text-gray-600" />
