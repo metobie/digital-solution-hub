@@ -43,7 +43,8 @@ const About = () => {
       imageSrc: "https://i.imgur.com/vLxN6At.jpeg",
       description: "Tim är en mästare på att bygga och vårda relationer, med en unik förmåga att coacha och inspirera både team och kunder. Hans expertis inom innovation och strategisk utveckling, kombinerat med ett starkt fokus på hållbarhet, gör honom till en ovärderlig tillgång i vår strävan att skapa framtidssäkrade lösningar. Tims förmåga att se helheten och driva positiv förändring är central i vårt arbete med att hjälpa företag att nå sina mål på ett hållbart och innovativt sätt.",
       email: "tim@renew-io.se",
-      location: "Kristianstad"
+      location: "Kristianstad",
+      imageClassName: "object-[50%_40%]"
     },
     {
       name: "Emelie Nylander",
