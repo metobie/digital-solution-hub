@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Shield, Briefcase, Lightbulb, Cloud, Code, LineChart, Users, Camera, Megaphone } from 'lucide-react';
 import TeamMember from '../components/TeamMember';
+import AnimatedTeamMember from '../components/AnimatedTeamMember';
 
 const About = () => {
   const { scrollY } = useScroll();
@@ -109,8 +110,9 @@ const About = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <h2 className="text-2xl font-semibold mb-6 text-center text-gray-800">Vårt Team</h2>
+            <AnimatedTeamMember {...teamMembers[0]} />
             <Accordion type="single" collapsible className="w-full">
-              {teamMembers.map((member, index) => (
+              {teamMembers.slice(1).map((member, index) => (
                 <AccordionItem value={`item-${index}`} key={index}>
                   <AccordionTrigger className="text-left">
                     <div className="flex items-center">
