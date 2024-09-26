@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Mail, MapPin } from 'lucide-react';
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
-const TeamMember = ({ name, role, imageSrc, description, email, location }) => {
+const TeamMember = ({ name, imageSrc, description, email, location }) => {
   return (
     <Card className="overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 bg-white mb-8">
       <CardContent className="p-6">
@@ -20,7 +20,7 @@ const TeamMember = ({ name, role, imageSrc, description, email, location }) => {
             )}
           </div>
           <div>
-            <h2 className="text-2xl font-semibold mb-2 text-gray-800">{name} - {role}</h2>
+            <h2 className="text-2xl font-semibold mb-2 text-gray-800">{name}</h2>
             <p className="text-gray-600 mb-2">{description}</p>
             <div className="flex items-center space-x-4">
               <div className="flex items-center">
