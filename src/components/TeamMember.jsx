@@ -2,6 +2,13 @@ import React from 'react';
 import { Mail, MapPin } from 'lucide-react';
 
 const TeamMember = ({ name, imageSrc, description, email, location, imageClassName }) => {
+  const getImageStyle = () => {
+    if (name === "Tobias Karlsson" || name === "Robert Nesta Nuhu") {
+      return { objectPosition: '50% 20%' };
+    }
+    return {};
+  };
+
   return (
     <div className="flex flex-col md:flex-row items-start mt-4">
       {imageSrc && (
@@ -10,7 +17,7 @@ const TeamMember = ({ name, imageSrc, description, email, location, imageClassNa
             src={imageSrc} 
             alt={`${name} profile`} 
             className={`w-full h-64 object-cover rounded-lg ${imageClassName || ''}`}
-            style={{ objectPosition: '50% 20%' }}  // This line is added to move the image up
+            style={getImageStyle()}
           />
         </div>
       )}
