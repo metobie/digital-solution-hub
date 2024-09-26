@@ -85,7 +85,6 @@ const About = () => {
                 <div className="flex flex-col md:flex-row items-center">
                   <img src="https://i.imgur.com/PBAVzJh.jpeg" alt="Profilbild" className="w-48 h-48 rounded-full mb-4 md:mb-0 md:mr-6" />
                   <div>
-                    <h2 className="text-2xl font-semibold mb-2 text-gray-800">Tobias Karlsson</h2>
                     <p className="text-gray-600 mb-2">Som teknisk expert kombinerar Tobias sin erfarenhet inom storskalig infrastruktur med förmågan att kommunicera effektivt på både företags- och teknisk nivå. Hans unika kompetens ligger i att överbrygga klyftan mellan affärsmål och tekniska lösningar, vilket möjliggör sömlös integration och optimering av digitala strategier. Samtidigt säkerställer han robusta säkerhetslösningar för att skydda verksamheten. Tobias expertis gör honom till en värdefull tillgång för företag som strävar efter att navigera i det komplexa digitala landskapet.</p>
                     <div className="flex items-center space-x-4">
                       <div className="flex items-center">
@@ -109,7 +108,6 @@ const About = () => {
                     <AvatarFallback className="bg-gray-300 text-gray-600 text-6xl">PB</AvatarFallback>
                   </Avatar>
                   <div>
-                    <h2 className="text-2xl font-semibold mb-2 text-gray-800">Patrik Berg</h2>
                     <p className="text-gray-600 mb-2">Med djup teknisk förståelse och eftertänksam problemlösning bidrar Patrik med ovärderlig insikt till våra projekt. Hans förmåga att analysera komplexa system och förutse teknologiska trender gör honom till en nyckelspelare i vår strategiska planering. Patriks expertis och långsiktiga perspektiv säkerställer att våra lösningar är framtidssäkrade och innovativa.</p>
                     <div className="flex items-center space-x-4">
                       <div className="flex items-center">
@@ -126,12 +124,11 @@ const About = () => {
               </CardContent>
             </Card>
 
-            <Card className="overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
+            <Card className="overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 bg-white mb-8">
               <CardContent className="p-6">
                 <div className="flex flex-col md:flex-row items-center">
                   <img src="https://i.imgur.com/JKev6yM.png" alt="Robert Nesta Nuhu profile" className="w-48 h-48 rounded-full mb-4 md:mb-0 md:mr-6 object-cover" />
                   <div>
-                    <h2 className="text-2xl font-semibold mb-2 text-gray-800">Robert Nesta Nuhu</h2>
                     <p className="text-gray-600 mb-2">
                       Som en rising star inom digital innovation, bringer Robert en fräsch och dynamisk energi till teamet. Hans unika perspektiv och naturliga fallenhet för att förstå framtidens teknologier gör honom till en katalysator för kreativitet och nytänkande. När han får en tydlig målbild, transformerar han visioner till verklighet med imponerande hastighet och precision.
                     </p>
@@ -139,6 +136,31 @@ const About = () => {
                       <div className="flex items-center">
                         <Mail className="w-4 h-4 mr-2 text-gray-600" />
                         <p className="text-gray-600">robert@renew-io.se</p>
+                      </div>
+                      <div className="flex items-center">
+                        <MapPin className="w-4 h-4 mr-2 text-gray-600" />
+                        <p className="text-gray-600">Kristianstad</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 bg-white mb-8">
+              <CardContent className="p-6">
+                <div className="flex flex-col md:flex-row items-center">
+                  <Avatar className="w-48 h-48 mb-4 md:mb-0 md:mr-6">
+                    <AvatarFallback className="bg-gray-300 text-gray-600 text-6xl">TO</AvatarFallback>
+                  </Avatar>
+                  <div>
+                    <p className="text-gray-600 mb-2">
+                      Tim är en mästare på att bygga och vårda relationer, med en unik förmåga att coacha och inspirera både team och kunder. Hans expertis inom innovation och strategisk utveckling, kombinerat med ett starkt fokus på hållbarhet, gör honom till en ovärderlig tillgång i vår strävan att skapa framtidssäkrade lösningar. Tims förmåga att se helheten och driva positiv förändring är central i vårt arbete med att hjälpa företag att nå sina mål på ett hållbart och innovativt sätt.
+                    </p>
+                    <div className="flex items-center space-x-4">
+                      <div className="flex items-center">
+                        <Mail className="w-4 h-4 mr-2 text-gray-600" />
+                        <p className="text-gray-600">tim@renew-io.se</p>
                       </div>
                       <div className="flex items-center">
                         <MapPin className="w-4 h-4 mr-2 text-gray-600" />
@@ -171,7 +193,8 @@ const About = () => {
                   <li>Molnlösningar och infrastrukturoptimering</li>
                   <li>Systemutveckling och integration</li>
                   <li>IT-konsulttjänster och projektledning</li>
-                  <li>Utbildning</li>
+                  <li>Utbildning och coachning</li>
+                  <li>Innovationsledning och hållbar utveckling</li>
                 </ul>
               </CardContent>
             </Card>
@@ -192,7 +215,7 @@ const About = () => {
             <Card className="shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
               <CardContent className="p-6">
                 <p className="text-gray-600">
-                  Vår vision är att forma en digital framtid där innovation möter säkerhet. Vi strävar efter att vara katalysatorn för positiv förändring i företagsvärlden, där digitala lösningar inte bara effektiviserar verksamheter utan också öppnar upp för nya möjligheter och affärsmodeller.
+                  Vår vision är att forma en digital framtid där innovation möter säkerhet och hållbarhet. Vi strävar efter att vara katalysatorn för positiv förändring i företagsvärlden, där digitala lösningar inte bara effektiviserar verksamheter utan också öppnar upp för nya möjligheter och affärsmodeller som är både innovativa och hållbara.
                 </p>
               </CardContent>
             </Card>
@@ -213,7 +236,7 @@ const About = () => {
             <Card className="shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
               <CardContent className="p-6">
                 <p className="text-gray-600">
-                  För större uppdrag samarbetar vi med ett nätverk av konsulter, var och en med egen spetskompetens och egna företag. Detta möjliggör att vi alltid kan erbjuda skräddarsydda och högkvalitativa lösningar, anpassade efter varje kunds unika behov.
+                  För större uppdrag samarbetar vi med ett nätverk av konsulter, var och en med egen spetskompetens och egna företag. Detta möjliggör att vi alltid kan erbjuda skräddarsydda och högkvalitativa lösningar, anpassade efter varje kunds unika behov och utmaningar inom digital transformation och hållbar utveckling.
                 </p>
               </CardContent>
             </Card>
