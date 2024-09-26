@@ -1,8 +1,8 @@
 import React from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Card, CardContent } from "@/components/ui/card";
-import { Shield, Briefcase, Lightbulb, GraduationCap, Users, Mail, MapPin } from 'lucide-react';
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { Shield, Briefcase, Lightbulb, Cloud, Code, LineChart } from 'lucide-react';
+import TeamMember from '../components/TeamMember';
 
 const About = () => {
   const { scrollY } = useScroll();
@@ -40,20 +40,6 @@ const About = () => {
             Om Renew I/O
           </motion.h1>
           <motion.p 
-            className="text-sm text-gray-200 mb-4"
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
-            <motion.span
-              initial={{ opacity: 0 }}
-              animate={{ opacity: [0, 1, 0, 1] }}
-              transition={{ duration: 2, times: [0, 0.2, 0.8, 1], repeat: 1 }}
-            >
-              Företagsnamnet uttalas som 'Rih-nyoo Ai Oh'
-            </motion.span>
-          </motion.p>
-          <motion.p 
             className="text-xl text-gray-100 mb-8"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -80,97 +66,47 @@ const About = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <Card className="overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 bg-white mb-8">
-              <CardContent className="p-6">
-                <div className="flex flex-col md:flex-row items-center">
-                  <img src="https://i.imgur.com/PBAVzJh.jpeg" alt="Profilbild" className="w-48 h-48 rounded-full mb-4 md:mb-0 md:mr-6" />
-                  <div>
-                    <p className="text-gray-600 mb-2">Som teknisk expert kombinerar Tobias sin erfarenhet inom storskalig infrastruktur med förmågan att kommunicera effektivt på både företags- och teknisk nivå. Hans unika kompetens ligger i att överbrygga klyftan mellan affärsmål och tekniska lösningar, vilket möjliggör sömlös integration och optimering av digitala strategier. Samtidigt säkerställer han robusta säkerhetslösningar för att skydda verksamheten. Tobias expertis gör honom till en värdefull tillgång för företag som strävar efter att navigera i det komplexa digitala landskapet.</p>
-                    <div className="flex items-center space-x-4">
-                      <div className="flex items-center">
-                        <Mail className="w-4 h-4 mr-2 text-gray-600" />
-                        <p className="text-gray-600">tobias@renew-io.se</p>
-                      </div>
-                      <div className="flex items-center">
-                        <MapPin className="w-4 h-4 mr-2 text-gray-600" />
-                        <p className="text-gray-600">Kristianstad</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+            <TeamMember
+              name="Tobias Olsson"
+              role="Teknisk Expert & Grundare"
+              imageSrc="https://i.imgur.com/PBAVzJh.jpeg"
+              description="Som teknisk expert kombinerar Tobias sin erfarenhet inom storskalig infrastruktur med förmågan att kommunicera effektivt på både företags- och teknisk nivå. Hans unika kompetens ligger i att överbrygga klyftan mellan affärsmål och tekniska lösningar, vilket möjliggör sömlös integration och optimering av digitala strategier. Samtidigt säkerställer han robusta säkerhetslösningar för att skydda verksamheten."
+              email="tobias@renew-io.se"
+              location="Kristianstad"
+            />
 
-            <Card className="overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 bg-white mb-8">
-              <CardContent className="p-6">
-                <div className="flex flex-col md:flex-row items-center">
-                  <Avatar className="w-48 h-48 mb-4 md:mb-0 md:mr-6">
-                    <AvatarFallback className="bg-gray-300 text-gray-600 text-6xl">PB</AvatarFallback>
-                  </Avatar>
-                  <div>
-                    <p className="text-gray-600 mb-2">Med djup teknisk förståelse och eftertänksam problemlösning bidrar Patrik med ovärderlig insikt till våra projekt. Hans förmåga att analysera komplexa system och förutse teknologiska trender gör honom till en nyckelspelare i vår strategiska planering. Patriks expertis och långsiktiga perspektiv säkerställer att våra lösningar är framtidssäkrade och innovativa.</p>
-                    <div className="flex items-center space-x-4">
-                      <div className="flex items-center">
-                        <Mail className="w-4 h-4 mr-2 text-gray-600" />
-                        <p className="text-gray-600">patrik@renew-io.se</p>
-                      </div>
-                      <div className="flex items-center">
-                        <MapPin className="w-4 h-4 mr-2 text-gray-600" />
-                        <p className="text-gray-600">Stockholm</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+            <TeamMember
+              name="Patrik Bergström"
+              role="Teknisk Strateg"
+              description="Med djup teknisk förståelse och eftertänksam problemlösning bidrar Patrik med ovärderlig insikt till våra projekt. Hans förmåga att analysera komplexa system och förutse teknologiska trender gör honom till en nyckelspelare i vår strategiska planering. Patriks expertis och långsiktiga perspektiv säkerställer att våra lösningar är framtidssäkrade och innovativa."
+              email="patrik@renew-io.se"
+              location="Stockholm"
+            />
 
-            <Card className="overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 bg-white mb-8">
-              <CardContent className="p-6">
-                <div className="flex flex-col md:flex-row items-center">
-                  <img src="https://i.imgur.com/JKev6yM.png" alt="Robert Nesta Nuhu profile" className="w-48 h-48 rounded-full mb-4 md:mb-0 md:mr-6 object-cover" />
-                  <div>
-                    <p className="text-gray-600 mb-2">
-                      Som en rising star inom digital innovation, bringer Robert en fräsch och dynamisk energi till teamet. Hans unika perspektiv och naturliga fallenhet för att förstå framtidens teknologier gör honom till en katalysator för kreativitet och nytänkande. När han får en tydlig målbild, transformerar han visioner till verklighet med imponerande hastighet och precision.
-                    </p>
-                    <div className="flex items-center space-x-4">
-                      <div className="flex items-center">
-                        <Mail className="w-4 h-4 mr-2 text-gray-600" />
-                        <p className="text-gray-600">robert@renew-io.se</p>
-                      </div>
-                      <div className="flex items-center">
-                        <MapPin className="w-4 h-4 mr-2 text-gray-600" />
-                        <p className="text-gray-600">Kristianstad</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+            <TeamMember
+              name="Robert Nesta Nuhu"
+              role="Digital Innovatör"
+              imageSrc="https://i.imgur.com/JKev6yM.png"
+              description="Som en rising star inom digital innovation, bringer Robert en fräsch och dynamisk energi till teamet. Hans unika perspektiv och naturliga fallenhet för att förstå framtidens teknologier gör honom till en katalysator för kreativitet och nytänkande. När han får en tydlig målbild, transformerar han visioner till verklighet med imponerande hastighet och precision."
+              email="robert@renew-io.se"
+              location="Kristianstad"
+            />
 
-            <Card className="overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 bg-white mb-8">
-              <CardContent className="p-6">
-                <div className="flex flex-col md:flex-row items-center">
-                  <Avatar className="w-48 h-48 mb-4 md:mb-0 md:mr-6">
-                    <AvatarFallback className="bg-gray-300 text-gray-600 text-6xl">TO</AvatarFallback>
-                  </Avatar>
-                  <div>
-                    <p className="text-gray-600 mb-2">
-                      Tim är en mästare på att bygga och vårda relationer, med en unik förmåga att coacha och inspirera både team och kunder. Hans expertis inom innovation och strategisk utveckling, kombinerat med ett starkt fokus på hållbarhet, gör honom till en ovärderlig tillgång i vår strävan att skapa framtidssäkrade lösningar. Tims förmåga att se helheten och driva positiv förändring är central i vårt arbete med att hjälpa företag att nå sina mål på ett hållbart och innovativt sätt.
-                    </p>
-                    <div className="flex items-center space-x-4">
-                      <div className="flex items-center">
-                        <Mail className="w-4 h-4 mr-2 text-gray-600" />
-                        <p className="text-gray-600">tim@renew-io.se</p>
-                      </div>
-                      <div className="flex items-center">
-                        <MapPin className="w-4 h-4 mr-2 text-gray-600" />
-                        <p className="text-gray-600">Kristianstad</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+            <TeamMember
+              name="Tim Omorogieva"
+              role="Strategisk Utvecklare & Hållbarhetsexpert"
+              description="Tim är en mästare på att bygga och vårda relationer, med en unik förmåga att coacha och inspirera både team och kunder. Hans expertis inom innovation och strategisk utveckling, kombinerat med ett starkt fokus på hållbarhet, gör honom till en ovärderlig tillgång i vår strävan att skapa framtidssäkrade lösningar. Tims förmåga att se helheten och driva positiv förändring är central i vårt arbete med att hjälpa företag att nå sina mål på ett hållbart och innovativt sätt."
+              email="tim@renew-io.se"
+              location="Kristianstad"
+            />
+
+            <TeamMember
+              name="Emelie Nylander"
+              role="Digital Marknadsföring & Innehållsstrateg"
+              description="Emelie är vår expert inom digital marknadsföring och sociala medier. Med en unik förmåga att skapa autentiskt och engagerande innehåll, bringer hon en ny dimension till våra kunders digitala närvaro. Hennes talang för att fånga äkta ögonblick genom film och foto, kombinerat med en djup förståelse för moderna marknadsföringsstrategier, gör henne till en ovärderlig tillgång i vår strävan att bygga starka och hållbara kundrelationer. Emelies approach visar att effektiv digital kommunikation handlar mer om äkthet och kreativitet än om dyr utrustning."
+              email="emelie@renew-io.se"
+              location="Kristianstad"
+            />
           </motion.section>
 
           <motion.section
@@ -193,8 +129,9 @@ const About = () => {
                   <li>Molnlösningar och infrastrukturoptimering</li>
                   <li>Systemutveckling och integration</li>
                   <li>IT-konsulttjänster och projektledning</li>
-                  <li>Utbildning och coachning</li>
-                  <li>Innovationsledning och hållbar utveckling</li>
+                  <li>Digital marknadsföring och innehållsstrategier</li>
+                  <li>Hållbar utveckling och innovationsledning</li>
+                  <li>Relationsbyggande och kundengagemang</li>
                 </ul>
               </CardContent>
             </Card>
@@ -215,7 +152,7 @@ const About = () => {
             <Card className="shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
               <CardContent className="p-6">
                 <p className="text-gray-600">
-                  Vår vision är att forma en digital framtid där innovation möter säkerhet och hållbarhet. Vi strävar efter att vara katalysatorn för positiv förändring i företagsvärlden, där digitala lösningar inte bara effektiviserar verksamheter utan också öppnar upp för nya möjligheter och affärsmodeller som är både innovativa och hållbara.
+                  Vår vision är att forma en digital framtid där innovation möter säkerhet, hållbarhet och autentisk kommunikation. Vi strävar efter att vara katalysatorn för positiv förändring i företagsvärlden, där digitala lösningar inte bara effektiviserar verksamheter utan också öppnar upp för nya möjligheter och affärsmodeller som är både innovativa, hållbara och genuint engagerande för kunder och intressenter.
                 </p>
               </CardContent>
             </Card>
@@ -236,7 +173,7 @@ const About = () => {
             <Card className="shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
               <CardContent className="p-6">
                 <p className="text-gray-600">
-                  För större uppdrag samarbetar vi med ett nätverk av konsulter, var och en med egen spetskompetens och egna företag. Detta möjliggör att vi alltid kan erbjuda skräddarsydda och högkvalitativa lösningar, anpassade efter varje kunds unika behov och utmaningar inom digital transformation och hållbar utveckling.
+                  För större uppdrag samarbetar vi med ett nätverk av konsulter, var och en med egen spetskompetens och egna företag. Detta möjliggör att vi alltid kan erbjuda skräddarsydda och högkvalitativa lösningar, anpassade efter varje kunds unika behov och utmaningar inom digital transformation, hållbar utveckling och effektiv marknadskommunikation.
                 </p>
               </CardContent>
             </Card>
