@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Card, CardContent } from "@/components/ui/card";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Shield, Briefcase, Lightbulb, Cloud, Code, LineChart, Users, Camera, Megaphone } from 'lucide-react';
 import TeamMember from '../components/TeamMember';
 
@@ -13,6 +14,43 @@ const About = () => {
       {children}
     </div>
   );
+
+  const teamMembers = [
+    {
+      name: "Tobias Karlsson",
+      imageSrc: "https://i.imgur.com/PBAVzJh.jpeg",
+      description: "Som teknisk expert kombinerar Tobias sin erfarenhet inom storskalig infrastruktur med förmågan att kommunicera effektivt på både företags- och teknisk nivå. Hans unika kompetens ligger i att överbrygga klyftan mellan affärsmål och tekniska lösningar, vilket möjliggör sömlös integration och optimering av digitala strategier. Samtidigt säkerställer han robusta säkerhetslösningar för att skydda verksamheten.",
+      email: "tobias@renew-io.se",
+      location: "Kristianstad"
+    },
+    {
+      name: "Patrik Berg",
+      description: "Med djup teknisk förståelse och eftertänksam problemlösning bidrar Patrik med ovärderlig insikt till våra projekt. Hans förmåga att analysera komplexa system och förutse teknologiska trender gör honom till en nyckelspelare i vår strategiska planering. Patriks expertis och långsiktiga perspektiv säkerställer att våra lösningar är framtidssäkrade och innovativa.",
+      email: "patrik@renew-io.se",
+      location: "Stockholm"
+    },
+    {
+      name: "Robert Nesta Nuhu",
+      imageSrc: "https://i.imgur.com/JKev6yM.png",
+      description: "Som en rising star inom digital innovation, bringer Robert en fräsch och dynamisk energi till teamet. Hans unika perspektiv och naturliga fallenhet för att förstå framtidens teknologier gör honom till en katalysator för kreativitet och nytänkande. När han får en tydlig målbild, transformerar han visioner till verklighet med imponerande hastighet och precision.",
+      email: "robert@renew-io.se",
+      location: "Kristianstad"
+    },
+    {
+      name: "Tim Omorogieva",
+      description: "Tim är en mästare på att bygga och vårda relationer, med en unik förmåga att coacha och inspirera både team och kunder. Hans expertis inom innovation och strategisk utveckling, kombinerat med ett starkt fokus på hållbarhet, gör honom till en ovärderlig tillgång i vår strävan att skapa framtidssäkrade lösningar. Tims förmåga att se helheten och driva positiv förändring är central i vårt arbete med att hjälpa företag att nå sina mål på ett hållbart och innovativt sätt.",
+      email: "tim@renew-io.se",
+      location: "Kristianstad"
+    },
+    {
+      name: "Emelie Nylander",
+      imageSrc: "https://i.imgur.com/9akoW1T.jpeg",
+      description: "Emelie är vår expert inom digital marknadsföring och sociala medier. Med en unik förmåga att skapa autentiskt och engagerande innehåll, bringer hon en ny dimension till våra kunders digitala närvaro. Hennes talang för att fånga äkta ögonblick genom film och foto, kombinerat med en djup förståelse för moderna marknadsföringsstrategier, gör henne till en ovärderlig tillgång i vår strävan att bygga starka och hållbara kundrelationer. Emelies approach visar att effektiv digital kommunikation handlar mer om äkthet och kreativitet än om dyr utrustning.",
+      email: "emelie@renew-io.se",
+      location: "Kristianstad",
+      imageClassName: "object-right-top object-[80%_20%]"
+    }
+  ];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
@@ -66,43 +104,31 @@ const About = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <TeamMember
-              name="Tobias Karlsson"
-              imageSrc="https://i.imgur.com/PBAVzJh.jpeg"
-              description="Som teknisk expert kombinerar Tobias sin erfarenhet inom storskalig infrastruktur med förmågan att kommunicera effektivt på både företags- och teknisk nivå. Hans unika kompetens ligger i att överbrygga klyftan mellan affärsmål och tekniska lösningar, vilket möjliggör sömlös integration och optimering av digitala strategier. Samtidigt säkerställer han robusta säkerhetslösningar för att skydda verksamheten."
-              email="tobias@renew-io.se"
-              location="Kristianstad"
-            />
-
-            <TeamMember
-              name="Patrik Berg"
-              description="Med djup teknisk förståelse och eftertänksam problemlösning bidrar Patrik med ovärderlig insikt till våra projekt. Hans förmåga att analysera komplexa system och förutse teknologiska trender gör honom till en nyckelspelare i vår strategiska planering. Patriks expertis och långsiktiga perspektiv säkerställer att våra lösningar är framtidssäkrade och innovativa."
-              email="patrik@renew-io.se"
-              location="Stockholm"
-            />
-
-            <TeamMember
-              name="Robert Nesta Nuhu"
-              imageSrc="https://i.imgur.com/JKev6yM.png"
-              description="Som en rising star inom digital innovation, bringer Robert en fräsch och dynamisk energi till teamet. Hans unika perspektiv och naturliga fallenhet för att förstå framtidens teknologier gör honom till en katalysator för kreativitet och nytänkande. När han får en tydlig målbild, transformerar han visioner till verklighet med imponerande hastighet och precision."
-              email="robert@renew-io.se"
-              location="Kristianstad"
-            />
-
-            <TeamMember
-              name="Tim Omorogieva"
-              description="Tim är en mästare på att bygga och vårda relationer, med en unik förmåga att coacha och inspirera både team och kunder. Hans expertis inom innovation och strategisk utveckling, kombinerat med ett starkt fokus på hållbarhet, gör honom till en ovärderlig tillgång i vår strävan att skapa framtidssäkrade lösningar. Tims förmåga att se helheten och driva positiv förändring är central i vårt arbete med att hjälpa företag att nå sina mål på ett hållbart och innovativt sätt."
-              email="tim@renew-io.se"
-              location="Kristianstad"
-            />
-
-            <TeamMember
-              name="Emelie Nylander"
-              imageSrc="https://i.imgur.com/9akoW1T.jpeg"
-              description="Emelie är vår expert inom digital marknadsföring och sociala medier. Med en unik förmåga att skapa autentiskt och engagerande innehåll, bringer hon en ny dimension till våra kunders digitala närvaro. Hennes talang för att fånga äkta ögonblick genom film och foto, kombinerat med en djup förståelse för moderna marknadsföringsstrategier, gör henne till en ovärderlig tillgång i vår strävan att bygga starka och hållbara kundrelationer. Emelies approach visar att effektiv digital kommunikation handlar mer om äkthet och kreativitet än om dyr utrustning."
-              email="emelie@renew-io.se"
-              location="Kristianstad"
-            />
+            <h2 className="text-2xl font-semibold mb-6 text-center text-gray-800">Vårt Team</h2>
+            <Accordion type="single" collapsible className="w-full">
+              {teamMembers.map((member, index) => (
+                <AccordionItem value={`item-${index}`} key={index}>
+                  <AccordionTrigger className="text-left">
+                    <div className="flex items-center">
+                      {member.imageSrc && (
+                        <img 
+                          src={member.imageSrc} 
+                          alt={`${member.name} profile`} 
+                          className="w-12 h-12 rounded-full object-cover mr-4"
+                        />
+                      )}
+                      <div>
+                        <h3 className="text-lg font-semibold">{member.name}</h3>
+                        <p className="text-sm text-gray-600">{member.location}</p>
+                      </div>
+                    </div>
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    <TeamMember {...member} />
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
           </motion.section>
 
           <motion.section
