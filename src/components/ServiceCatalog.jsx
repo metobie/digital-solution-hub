@@ -1,20 +1,9 @@
-import React, { useCallback } from 'react';
-import useEmblaCarousel from 'embla-carousel-react';
+import React from 'react';
 import { Shield, Briefcase, Lightbulb, Cloud, Server, LineChart, Users, Camera, Megaphone } from 'lucide-react';
 import CarouselCard from './CarouselCard';
-import { Button } from "@/components/ui/button";
+import TabView from './TabView';
 
 const ServiceCatalog = () => {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: 'start' });
-
-  const scrollPrev = useCallback(() => {
-    if (emblaApi) emblaApi.scrollPrev();
-  }, [emblaApi]);
-
-  const scrollNext = useCallback(() => {
-    if (emblaApi) emblaApi.scrollNext();
-  }, [emblaApi]);
-
   const services = [
     {
       icon: Shield,
@@ -63,33 +52,40 @@ const ServiceCatalog = () => {
     }
   ];
 
-  return (
-    <div className="relative">
-      <div className="overflow-hidden" ref={emblaRef}>
-        <div className="flex">
-          {services.map((service, index) => (
-            <div key={index} className="flex-[0_0_100%] min-w-0 sm:flex-[0_0_50%] lg:flex-[0_0_33.33%] pl-4">
-              <CarouselCard {...service} />
-            </div>
+  const tabs = [
+    {
+      title: "Tekniska Lösningar",
+      content: (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {services.slice(0, 3).map((service, index) => (
+            <CarouselCard key={index} {...service} />
           ))}
         </div>
-      </div>
-      <Button
-        onClick={scrollPrev}
-        className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white text-gray-800 rounded-full p-2 shadow-lg z-10"
-        aria-label="Previous slide"
-      >
-        ←
-      </Button>
-      <Button
-        onClick={scrollNext}
-        className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white text-gray-800 rounded-full p-2 shadow-lg z-10"
-        aria-label="Next slide"
-      >
-        →
-      </Button>
-    </div>
-  );
+      )
+    },
+    {
+      title: "Strategiska Tjänster",
+      content: (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {services.slice(3, 6).map((service, index) => (
+            <CarouselCard key={index} {...service} />
+          ))}
+        </div>
+      )
+    },
+    {
+      title: "Kreativa Tjänster",
+      content: (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {services.slice(6).map((service, index) => (
+            <CarouselCard key={index} {...service} />
+          ))}
+        </div>
+      )
+    }
+  ];
+
+  return <TabView tabs={tabs} />;
 };
 
 export default ServiceCatalog;
