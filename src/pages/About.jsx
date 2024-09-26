@@ -21,7 +21,8 @@ const About = () => {
       imageSrc: "https://i.imgur.com/PBAVzJh.jpeg",
       description: "Som teknisk expert kombinerar Tobias sin erfarenhet inom storskalig infrastruktur med förmågan att kommunicera effektivt på både företags- och teknisk nivå. Hans unika kompetens ligger i att överbrygga klyftan mellan affärsmål och tekniska lösningar, vilket möjliggör sömlös integration och optimering av digitala strategier. Samtidigt säkerställer han robusta säkerhetslösningar för att skydda verksamheten.",
       email: "tobias@renew-io.se",
-      location: "Kristianstad"
+      location: "Kristianstad",
+      imageClassName: "object-top" // Changed from default to move image down
     },
     {
       name: "Patrik Berg",
@@ -50,7 +51,7 @@ const About = () => {
       description: "Emelie är vår expert inom digital marknadsföring och sociala medier. Med en unik förmåga att skapa autentiskt och engagerande innehåll, bringer hon en ny dimension till våra kunders digitala närvaro. Hennes talang för att fånga äkta ögonblick genom film och foto, kombinerat med en djup förståelse för moderna marknadsföringsstrategier, gör henne till en ovärderlig tillgång i vår strävan att bygga starka och hållbara kundrelationer. Emelies approach visar att effektiv digital kommunikation handlar mer om äkthet och kreativitet än om dyr utrustning.",
       email: "emelie@renew-io.se",
       location: "Kristianstad",
-      imageClassName: "object-right-top object-[80%_20%]"
+      imageClassName: "object-[80%_10%]" // Changed from object-[80%_20%] to move image up
     }
   ];
 
