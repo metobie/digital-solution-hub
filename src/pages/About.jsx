@@ -21,8 +21,7 @@ const About = () => {
       description: "Tobias är en teknisk expert med fokus på storskalig infrastruktur och strategisk rådgivning. Med förmågan att överbrygga klyftan mellan affärsmål och tekniska lösningar, arbetar han på hög nivå för att säkerställa att företagets digitala strategi är både hållbar och framtidssäkrad. Hans visionära tänkande hjälper företag att navigera komplexa IT-utmaningar, med ett särskilt fokus på sömlös integration och robusta säkerhetslösningar.",
       email: "tobias@renew-io.se",
       location: "Kristianstad",
-      imageClassName: "object-top object-[50%_30%]",
-      tags: ["#infrastruktur", "#cybersecurity", "#strategi", "#rådgivning", "#transformation"]
+      imageClassName: "object-top object-[50%_30%]"
     },
     {
       name: "Patrik Berg",
