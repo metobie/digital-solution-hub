@@ -52,7 +52,7 @@ const About = () => {
       description: "Emelie är vår expert inom digital marknadsföring och sociala medier. Med en unik förmåga att skapa autentiskt och engagerande innehåll bringar hon en ny dimension till våra kunders digitala närvaro. Hennes talang för att fånga äkta ögonblick genom film och foto, kombinerat med en djup förståelse för moderna marknadsföringsstrategier, gör henne till en ovärderlig tillgång i vår strävan att bygga starka och hållbara kundrelationer. Emelies approach visar att effektiv digital kommunikation handlar mer om äkthet och kreativitet än om dyr utrustning.",
       email: "emelie@renew-io.se",
       location: "Kristianstad",
-      imageClassName: "object-[50%_40%]"
+      imageClassName: "object-[50%_20%]"
     }
   ];
 
