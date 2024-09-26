@@ -27,7 +27,7 @@ const About = () => {
     {
       name: "Patrik Berg",
       initials: "PB",
-      description: "Med djup teknisk förståelse och eftertänksam problemlösning bidrar Patrik med ovärderlig insikt till våra projekt och kunder. Hans förmåga att analysera komplexa system och förutse teknologiska trender gör honom till en nyckelspelare i vår strategiska planering. Patriks expertis och långsiktiga perspektiv säkerställer att våra lösningar är framtidssäkrade och innovativa.",
+      description: "Patrik är vår tekniska expert som med sin djupa förståelse för systemarkitektur och detaljerade problemlösning levererar innovativa lösningar. Han är särskilt skicklig på att analysera komplexa tekniska system och identifiera optimeringsmöjligheter på en låg nivå. Patrik säkerställer att våra tekniska implementeringar inte bara är funktionella utan även optimerade för långsiktig prestanda och hållbarhet.",
       email: "patrik@renew-io.se",
       location: "Stockholm"
     },
