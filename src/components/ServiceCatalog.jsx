@@ -1,73 +1,93 @@
-import React from 'react';
-import { Card, CardContent } from "@/components/ui/card";
+import React, { useCallback } from 'react';
+import useEmblaCarousel from 'embla-carousel-react';
 import { Shield, Briefcase, Lightbulb, Cloud, Server, LineChart, Users, Camera, Megaphone } from 'lucide-react';
-
-const ServiceItem = ({ icon, title, description }) => (
-  <Card className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-    <CardContent className="flex flex-col items-center text-center">
-      <div className="w-16 h-16 bg-gradient-to-br from-[#3E7A8B] to-[#8A3A8B] rounded-full flex items-center justify-center mb-4">
-        {icon}
-      </div>
-      <h3 className="text-xl font-semibold mb-2 text-gray-800">{title}</h3>
-      <p className="text-gray-600">{description}</p>
-    </CardContent>
-  </Card>
-);
+import CarouselCard from './CarouselCard';
+import { Button } from "@/components/ui/button";
 
 const ServiceCatalog = () => {
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: 'start' });
+
+  const scrollPrev = useCallback(() => {
+    if (emblaApi) emblaApi.scrollPrev();
+  }, [emblaApi]);
+
+  const scrollNext = useCallback(() => {
+    if (emblaApi) emblaApi.scrollNext();
+  }, [emblaApi]);
+
   const services = [
     {
-      icon: <Shield className="w-8 h-8 text-white" />,
+      icon: Shield,
       title: "Cybersäkerhet",
       description: "Implementera och optimera marknadsledande säkerhetslösningar för att skydda din verksamhet mot dagens avancerade cyberhot."
     },
     {
-      icon: <Cloud className="w-8 h-8 text-white" />,
+      icon: Cloud,
       title: "Molntjänster",
       description: "Optimera din infrastruktur med skalbara och säkra molnlösningar anpassade för din verksamhet."
     },
     {
-      icon: <Server className="w-8 h-8 text-white" />,
+      icon: Server,
       title: "Hyperconverged Infrastructure (HCI)",
       description: "Implementera och optimera HCI-lösningar med fokus på Nutanix för effektiv, skalbar och flexibel infrastruktur."
     },
     {
-      icon: <LineChart className="w-8 h-8 text-white" />,
+      icon: LineChart,
       title: "Digital Strategi",
       description: "Utveckla en framtidssäkrad digital strategi som ger din verksamhet konkurrensfördelar."
     },
     {
-      icon: <Briefcase className="w-8 h-8 text-white" />,
+      icon: Briefcase,
       title: "IT-Konsulttjänster",
       description: "Expert rådgivning och support för att optimera din IT-infrastruktur och processer."
     },
     {
-      icon: <Lightbulb className="w-8 h-8 text-white" />,
+      icon: Lightbulb,
       title: "Innovationsledning",
       description: "Främja en kultur av innovation och teknologisk framåtanda i din organisation."
     },
     {
-      icon: <Users className="w-8 h-8 text-white" />,
+      icon: Users,
       title: "Ledarskapsutbildning",
       description: "Skräddarsydda utbildningsprogram för att utveckla framtidens ledare i en digital värld."
     },
     {
-      icon: <Camera className="w-8 h-8 text-white" />,
+      icon: Camera,
       title: "Kreativ Innehållsproduktion",
       description: "Professionell foto- och videoproduktion för att förstärka din digitala närvaro och varumärke."
     },
     {
-      icon: <Megaphone className="w-8 h-8 text-white" />,
+      icon: Megaphone,
       title: "Digital Marknadsföring",
       description: "Strategisk digital marknadsföring och sociala medier-hantering för att öka din synlighet och kundengagemang."
     }
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {services.map((service, index) => (
-        <ServiceItem key={index} {...service} />
-      ))}
+    <div className="relative">
+      <div className="overflow-hidden" ref={emblaRef}>
+        <div className="flex">
+          {services.map((service, index) => (
+            <div key={index} className="flex-[0_0_100%] min-w-0 sm:flex-[0_0_50%] lg:flex-[0_0_33.33%] pl-4">
+              <CarouselCard {...service} />
+            </div>
+          ))}
+        </div>
+      </div>
+      <Button
+        onClick={scrollPrev}
+        className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white text-gray-800 rounded-full p-2 shadow-lg z-10"
+        aria-label="Previous slide"
+      >
+        ←
+      </Button>
+      <Button
+        onClick={scrollNext}
+        className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white text-gray-800 rounded-full p-2 shadow-lg z-10"
+        aria-label="Next slide"
+      >
+        →
+      </Button>
     </div>
   );
 };
