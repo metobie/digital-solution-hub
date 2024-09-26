@@ -57,7 +57,7 @@ const Contact = () => {
                 <div>
                   <h2 className="text-2xl font-semibold mb-4 text-white">Vi ser fram emot att höra från dig</h2>
                   <p className="mb-6 text-gray-200">
-                    Oavsett om du har en specifik fråga eller bara vill utforska möjligheterna, är vi här för att hjälpa. Låt oss tillsammans ta ditt företag till nästa nivå inom digital innovation och säkerhet.
+                    Oavsett om du söker teknisk expertis, strategisk rådgivning eller kreativa lösningar, är vi här för att hjälpa. Låt oss tillsammans ta ditt företag till nästa nivå inom digital innovation, hållbarhet och effektiv kommunikation.
                   </p>
                   <Button 
                     onClick={handleEmailClick}
