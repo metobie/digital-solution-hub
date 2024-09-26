@@ -25,6 +25,7 @@ const About = () => {
     },
     {
       name: "Patrik Berg",
+      initials: "PB",
       description: "Med djup teknisk förståelse och eftertänksam problemlösning bidrar Patrik med ovärderlig insikt till våra projekt. Hans förmåga att analysera komplexa system och förutse teknologiska trender gör honom till en nyckelspelare i vår strategiska planering. Patriks expertis och långsiktiga perspektiv säkerställer att våra lösningar är framtidssäkrade och innovativa.",
       email: "patrik@renew-io.se",
       location: "Stockholm"
@@ -38,6 +39,7 @@ const About = () => {
     },
     {
       name: "Tim Omorogieva",
+      initials: "TO",
       description: "Tim är en mästare på att bygga och vårda relationer, med en unik förmåga att coacha och inspirera både team och kunder. Hans expertis inom innovation och strategisk utveckling, kombinerat med ett starkt fokus på hållbarhet, gör honom till en ovärderlig tillgång i vår strävan att skapa framtidssäkrade lösningar. Tims förmåga att se helheten och driva positiv förändring är central i vårt arbete med att hjälpa företag att nå sina mål på ett hållbart och innovativt sätt.",
       email: "tim@renew-io.se",
       location: "Kristianstad"
@@ -110,13 +112,17 @@ const About = () => {
                 <AccordionItem value={`item-${index}`} key={index}>
                   <AccordionTrigger className="text-left">
                     <div className="flex items-center">
-                      {member.imageSrc && (
+                      {member.imageSrc ? (
                         <img 
                           src={member.imageSrc} 
                           alt={`${member.name} profile`} 
                           className="w-12 h-12 rounded-full object-cover mr-4"
                         />
-                      )}
+                      ) : member.initials ? (
+                        <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#3E7A8B] to-[#8A3A8B] flex items-center justify-center mr-4">
+                          <span className="text-white font-bold">{member.initials}</span>
+                        </div>
+                      ) : null}
                       <div>
                         <h3 className="text-lg font-semibold">{member.name}</h3>
                         <p className="text-sm text-gray-600">{member.location}</p>
