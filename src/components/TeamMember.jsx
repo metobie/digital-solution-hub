@@ -14,7 +14,7 @@ const TeamMember = ({ name, imageSrc, description, email, location, imageClassNa
         </div>
       )}
       <div className="w-full md:w-2/3">
-        <p className="text-gray-600 mb-4">{description}</p>
+        <p className="text-gray-600 mb-2">{description}</p>
         <div className="flex items-center space-x-4">
           <div className="flex items-center">
             <Mail className="w-4 h-4 mr-2 text-gray-600" />
