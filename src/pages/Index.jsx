@@ -51,7 +51,7 @@ const Index = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Din partner för digital transformation, strategisk utveckling, innovation och ledarskap
+            Ett kooperativ för digital transformation, innovation, ledarskap och teknisk excellens
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: -20 }}
@@ -107,7 +107,7 @@ const Index = () => {
             transition={{ duration: 0.5, delay: 0.8 }}
           >
             <h2 className="text-2xl font-semibold mb-4 text-gray-700">Redo att ta nästa steg?</h2>
-            <p className="mb-4 text-gray-600">Låt oss tillsammans utforska hur Renew I/O kan hjälpa ditt företag att nå nya höjder.</p>
+            <p className="mb-4 text-gray-600">Låt oss tillsammans utforska hur Renew I/O kan hjälpa ditt företag att nå nya höjder inom teknik, innovation och ledarskap.</p>
             <Link to="/contact">
               <Button size="lg" className="bg-gray-100 text-gray-800 hover:bg-gray-200 transition-all duration-300 border border-gray-900/10 hover:border-gray-900/20">Kontakta oss nu</Button>
             </Link>

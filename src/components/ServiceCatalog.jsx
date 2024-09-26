@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
-import { Shield, Briefcase, Lightbulb, Cloud, Server, LineChart } from 'lucide-react';
+import { Shield, Briefcase, Lightbulb, Cloud, Server, LineChart, Users, Camera, Megaphone } from 'lucide-react';
 
 const ServiceItem = ({ icon, title, description }) => (
   <Card className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
@@ -45,6 +45,21 @@ const ServiceCatalog = () => {
       icon: <Lightbulb className="w-8 h-8 text-white" />,
       title: "Innovationsledning",
       description: "Främja en kultur av innovation och teknologisk framåtanda i din organisation."
+    },
+    {
+      icon: <Users className="w-8 h-8 text-white" />,
+      title: "Ledarskapsutbildning",
+      description: "Skräddarsydda utbildningsprogram för att utveckla framtidens ledare i en digital värld."
+    },
+    {
+      icon: <Camera className="w-8 h-8 text-white" />,
+      title: "Kreativ Innehållsproduktion",
+      description: "Professionell foto- och videoproduktion för att förstärka din digitala närvaro och varumärke."
+    },
+    {
+      icon: <Megaphone className="w-8 h-8 text-white" />,
+      title: "Digital Marknadsföring",
+      description: "Strategisk digital marknadsföring och sociala medier-hantering för att öka din synlighet och kundengagemang."
     }
   ];
 

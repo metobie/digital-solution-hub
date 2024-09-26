@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Card, CardContent } from "@/components/ui/card";
-import { Shield, Briefcase, Lightbulb, Cloud, Code, LineChart, Users } from 'lucide-react';
+import { Shield, Briefcase, Lightbulb, Cloud, Code, LineChart, Users, Camera, Megaphone } from 'lucide-react';
 import TeamMember from '../components/TeamMember';
 
 const About = () => {
@@ -45,7 +45,7 @@ const About = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            Lär känna personerna bakom företaget
+            Ett kooperativ av experter inom teknik, innovation och ledarskap
           </motion.p>
           <motion.p 
             className="text-lg text-gray-200"
@@ -53,7 +53,7 @@ const About = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            Med över ett decennium av erfarenhet inom IT, digital strategi och cybersäkerhet, har vårt team lett projekt från små företag till stora multinationella företag. Vår unika förmåga att överbrygga klyftan mellan affärsmål och tekniska lösningar gör Renew I/O till en ovärderlig partner i din digitala transformation.
+            Renew I/O är ett unikt kooperativ som samlar experter inom teknik, innovation, ledarskap och digital strategi. Vår styrka ligger i vår mångfald av kompetenser, vilket gör oss till en ovärderlig partner i din digitala transformation och organisatoriska utveckling.
           </motion.p>
         </div>
       </motion.section>
@@ -127,7 +127,8 @@ const About = () => {
                   <li>IT-konsulttjänster och projektledning</li>
                   <li>Digital marknadsföring och innehållsstrategier</li>
                   <li>Hållbar utveckling och innovationsledning</li>
-                  <li>Relationsbyggande och kundengagemang</li>
+                  <li>Ledarskapsutbildning och organisationsutveckling</li>
+                  <li>Kreativ innehållsproduktion (foto och video)</li>
                 </ul>
               </CardContent>
             </Card>
@@ -148,7 +149,7 @@ const About = () => {
             <Card className="shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
               <CardContent className="p-6">
                 <p className="text-gray-600">
-                  Vår vision är att forma en digital framtid där innovation möter säkerhet, hållbarhet och autentisk kommunikation. Vi strävar efter att vara katalysatorn för positiv förändring i företagsvärlden, där digitala lösningar inte bara effektiviserar verksamheter utan också öppnar upp för nya möjligheter och affärsmodeller som är både innovativa, hållbara och genuint engagerande för kunder och intressenter.
+                  Vår vision är att forma en digital framtid där innovation möter säkerhet, hållbarhet och autentisk kommunikation. Som ett kooperativ av experter strävar vi efter att vara katalysatorn för positiv förändring i företagsvärlden, där digitala lösningar inte bara effektiviserar verksamheter utan också öppnar upp för nya möjligheter och affärsmodeller som är både innovativa, hållbara och genuint engagerande för kunder och intressenter.
                 </p>
               </CardContent>
             </Card>
@@ -169,7 +170,7 @@ const About = () => {
             <Card className="shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
               <CardContent className="p-6">
                 <p className="text-gray-600">
-                  För större uppdrag samarbetar vi med ett nätverk av konsulter, var och en med egen spetskompetens och egna företag. Detta möjliggör att vi alltid kan erbjuda skräddarsydda och högkvalitativa lösningar, anpassade efter varje kunds unika behov och utmaningar inom digital transformation, hållbar utveckling och effektiv marknadskommunikation.
+                  Som ett kooperativ av experter samarbetar vi med ett brett nätverk av specialister, var och en med egen spetskompetens och egna företag. Detta möjliggör att vi alltid kan erbjuda skräddarsydda och högkvalitativa lösningar, anpassade efter varje kunds unika behov och utmaningar inom digital transformation, hållbar utveckling, ledarskap och effektiv marknadskommunikation.
                 </p>
               </CardContent>
             </Card>
