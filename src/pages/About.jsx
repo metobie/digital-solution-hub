@@ -36,8 +36,7 @@ const About = () => {
       imageSrc: "https://i.imgur.com/JKev6yM.png",
       description: "Som en rising star inom digital innovation bringar Robert en fräsch och dynamisk energi till teamet. Hans unika perspektiv och naturliga fallenhet för att förstå nya teknologier gör honom till en drivkraft för kreativitet och nytänkande. När han får en tydlig målbild, transformerar han visioner till verklighet med imponerande hastighet och precision.",
       email: "robert@renew-io.se",
-      location: "Kristianstad",
-      imageClassName: "object-[50%_35%]"
+      location: "Kristianstad"
     },
     {
       name: "Tim Omorogieva",
