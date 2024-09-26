@@ -19,6 +19,13 @@ const About = () => {
       name: "Tobias Karlsson",
       imageSrc: "https://i.imgur.com/PBAVzJh.jpeg",
       description: "Tobias är en teknisk expert med fokus på storskalig infrastruktur och strategisk rådgivning. Med förmågan att överbrygga klyftan mellan affärsmål och tekniska lösningar, arbetar han på hög nivå för att säkerställa att företagets digitala strategi är både hållbar och framtidssäkrad. Hans visionära tänkande hjälper företag att navigera komplexa IT-utmaningar, med ett särskilt fokus på sömlös integration och robusta säkerhetslösningar.",
+      examples: [
+        "Utveckla och implementera skalbara molnlösningar för att optimera verksamheten",
+        "Utforma och implementera robusta cybersäkerhetsstrategier",
+        "Leda digital transformation genom att integrera AI och maskininlärning i affärsprocesser",
+        "Optimera IT-infrastruktur för ökad effektivitet och kostnadsbesparing",
+        "Skapa datastrategier för att utnyttja big data och analytik för affärsbeslut"
+      ],
       email: "tobias@renew-io.se",
       location: "Kristianstad",
       imageClassName: "object-top object-[50%_30%]",
@@ -114,7 +121,19 @@ const About = () => {
           >
             <h2 className="text-2xl font-semibold mb-6 text-center text-gray-800">Vårt Team</h2>
             {teamMembers.map((member, index) => (
-              <AnimatedTeamMember key={index} {...member} />
+              <React.Fragment key={index}>
+                <AnimatedTeamMember {...member} />
+                {member.examples && (
+                  <div className="mt-4 ml-8">
+                    <h4 className="text-lg font-semibold mb-2 text-gray-700">Exempel på tjänster:</h4>
+                    <ul className="list-disc list-inside text-gray-600">
+                      {member.examples.map((example, exIndex) => (
+                        <li key={exIndex}>{example}</li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </React.Fragment>
             ))}
           </motion.section>
 
