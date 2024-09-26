@@ -55,7 +55,7 @@ const About = () => {
       description: "Emelie är en expert på att fånga ögonblick som skapar starka visuella avtryck. Med sin talang för fotografering och filmning hjälper hon företag att bygga genuina och minnesvärda profiler på sociala medier. Hennes kreativa öga och känsla för detaljer ger varje projekt en autentisk och engagerande ton, vilket skapar en omedelbar koppling till målgruppen. Genom att kombinera äkthet med strategiskt tänkande hjälper Emelie våra kunder att inte bara synas, utan också lämna ett bestående intryck i den digitala världen.",
       email: "emelie@renew-io.se",
       location: "Kristianstad",
-      imageClassName: "object-[50%_40%]",
+      imageClassName: "object-[50%_20%] object-left-top",
       expandedTitle: "Content Creator"
     }
   ];
