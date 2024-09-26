@@ -38,7 +38,7 @@ const About = () => {
       description: "Robert är en expert på att strukturera och koda, vilket ger vårt team ett stabilt och innovativt fundament. Med sin förmåga att snabbt sätta sig in i nya teknologier och omvandla komplexa visioner till konkreta lösningar, är han en central drivkraft i vårt arbete. Hans kombination av teknisk precision och kreativa angreppssätt säkerställer att varje projekt når sin fulla potential.",
       email: "robert@renew-io.se",
       location: "Kristianstad",
-      expandedTitle: "Developer"
+      expandedTitle: "Digital Product Developer"
     },
     {
       name: "Tim Omorogieva",
@@ -75,7 +75,7 @@ const About = () => {
             y: useTransform(scrollY, [0, 500], [0, 150]),
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-[#1C4A5B] to-[#5A1A5B] opacity-80 z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#0C2A3B] to-[#3A0A3B] opacity-90 z-10"></div>
         <div className="relative z-20 text-center px-6 max-w-3xl">
           <motion.h1 
             className="text-4xl md:text-6xl font-extrabold mb-2 text-white tracking-tight"
