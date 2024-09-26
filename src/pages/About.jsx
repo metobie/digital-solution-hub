@@ -34,7 +34,7 @@ const About = () => {
     {
       name: "Robert Nesta Nuhu",
       imageSrc: "https://i.imgur.com/JKev6yM.png",
-      description: "Som en rising star inom digital innovation bringar Robert en fräsch och dynamisk energi till teamet. Hans unika perspektiv och naturliga fallenhet för att förstå nya teknologier gör honom till en drivkraft för kreativitet och nytänkande. När han får en tydlig målbild, transformerar han visioner till verklighet med imponerande hastighet och precision.",
+      description: "Robert är en expert på att strukturera och koda, vilket ger vårt team ett stabilt och innovativt fundament. Med sin förmåga att snabbt sätta sig in i nya teknologier och omvandla komplexa visioner till konkreta lösningar, är han en central drivkraft i vårt arbete. Hans kombination av teknisk precision och kreativa angreppssätt säkerställer att varje projekt når sin fulla potential.",
       email: "robert@renew-io.se",
       location: "Kristianstad"
     },
