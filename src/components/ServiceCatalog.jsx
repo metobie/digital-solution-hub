@@ -1,15 +1,15 @@
 import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
-import { Shield, Briefcase, Lightbulb, Cloud, Server, LineChart, Code, Globe } from 'lucide-react';
+import { Shield, Briefcase, Lightbulb, Cloud, Server, LineChart } from 'lucide-react';
 
 const ServiceItem = ({ icon, title, description }) => (
-  <Card className="bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 border border-purple-500 hover:border-blue-500">
+  <Card className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
     <CardContent className="flex flex-col items-center text-center">
-      <div className="w-16 h-16 bg-gradient-to-br from-purple-600 to-blue-500 rounded-full flex items-center justify-center mb-4">
+      <div className="w-16 h-16 bg-gradient-to-br from-[#3E7A8B] to-[#8A3A8B] rounded-full flex items-center justify-center mb-4">
         {icon}
       </div>
-      <h3 className="text-xl font-bold mb-2 text-white">{title}</h3>
-      <p className="text-gray-300">{description}</p>
+      <h3 className="text-xl font-semibold mb-2 text-gray-800">{title}</h3>
+      <p className="text-gray-600">{description}</p>
     </CardContent>
   </Card>
 );
@@ -17,49 +17,39 @@ const ServiceItem = ({ icon, title, description }) => (
 const ServiceCatalog = () => {
   const services = [
     {
+      icon: <Shield className="w-8 h-8 text-white" />,
+      title: "Cybersäkerhet",
+      description: "Implementera och optimera marknadsledande säkerhetslösningar för att skydda din verksamhet mot dagens avancerade cyberhot."
+    },
+    {
+      icon: <Cloud className="w-8 h-8 text-white" />,
+      title: "Molntjänster",
+      description: "Optimera din infrastruktur med skalbara och säkra molnlösningar anpassade för din verksamhet."
+    },
+    {
       icon: <Server className="w-8 h-8 text-white" />,
-      title: "Infrastrukturoptimering",
-      description: "Vi designar och implementerar skalbara, säkra och effektiva IT-infrastrukturer som möter dagens behov och morgondagens utmaningar."
+      title: "Hyperconverged Infrastructure (HCI)",
+      description: "Implementera och optimera HCI-lösningar med fokus på Nutanix för effektiv, skalbar och flexibel infrastruktur."
     },
     {
       icon: <LineChart className="w-8 h-8 text-white" />,
       title: "Digital Strategi",
-      description: "Vi hjälper dig att utveckla en omfattande digital strategi som driver innovation, effektivitet och tillväxt i din verksamhet."
-    },
-    {
-      icon: <Cloud className="w-8 h-8 text-white" />,
-      title: "Molnlösningar",
-      description: "Skräddarsydda molnstrategier och implementeringar som ökar flexibilitet, skalbarhet och kostnadseffektivitet."
-    },
-    {
-      icon: <Shield className="w-8 h-8 text-white" />,
-      title: "Cybersäkerhet",
-      description: "Omfattande säkerhetslösningar som skyddar din verksamhet mot dagens och morgondagens cyberhot."
-    },
-    {
-      icon: <Code className="w-8 h-8 text-white" />,
-      title: "Systemutveckling",
-      description: "Skräddarsydda mjukvarulösningar som effektiviserar dina processer och driver innovation."
-    },
-    {
-      icon: <Globe className="w-8 h-8 text-white" />,
-      title: "Webbutveckling",
-      description: "Moderna, responsiva och användarvänliga webbplatser och applikationer som stärker din digitala närvaro."
+      description: "Utveckla en framtidssäkrad digital strategi som ger din verksamhet konkurrensfördelar."
     },
     {
       icon: <Briefcase className="w-8 h-8 text-white" />,
       title: "IT-Konsulttjänster",
-      description: "Strategisk rådgivning och support för att optimera din IT-infrastruktur och processer."
+      description: "Expert rådgivning och support för att optimera din IT-infrastruktur och processer."
     },
     {
       icon: <Lightbulb className="w-8 h-8 text-white" />,
       title: "Innovationsledning",
-      description: "Vi hjälper dig att identifiera och implementera nya teknologier som ger konkurrensfördelar."
+      description: "Främja en kultur av innovation och teknologisk framåtanda i din organisation."
     }
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {services.map((service, index) => (
         <ServiceItem key={index} {...service} />
       ))}

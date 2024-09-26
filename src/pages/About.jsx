@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Card, CardContent } from "@/components/ui/card";
-import { Shield, Briefcase, Lightbulb, Cloud, Server, LineChart } from 'lucide-react';
+import { Shield, Briefcase, Lightbulb, GraduationCap, Users, Mail, MapPin } from 'lucide-react';
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
 const About = () => {
@@ -9,13 +9,13 @@ const About = () => {
   const y = useTransform(scrollY, [0, 500], [0, 150]);
 
   const IconWrapper = ({ children }) => (
-    <div className="w-8 h-8 bg-gradient-to-br from-purple-600 to-blue-500 rounded-full flex items-center justify-center mr-2">
+    <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center mr-2 border border-gray-200">
       {children}
     </div>
   );
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
       <motion.section 
         className="relative h-screen flex items-center justify-center overflow-hidden"
         style={{ y }}
@@ -29,78 +29,122 @@ const About = () => {
             y: useTransform(scrollY, [0, 500], [0, 150]),
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/90 via-blue-900/90 to-black/90 z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#3E7A8B]/90 via-[#8A3A8B]/90 to-black/90 z-10"></div>
         <div className="relative z-20 text-center px-6 max-w-3xl">
           <motion.h1 
-            className="text-5xl md:text-7xl font-extrabold mb-2 text-white tracking-tight"
+            className="text-4xl md:text-6xl font-extrabold mb-2 text-white tracking-tight"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            Vi är Renew I/O
+            Om Renew I/O
           </motion.h1>
           <motion.p 
-            className="text-2xl text-gray-100 mb-8"
+            className="text-sm text-gray-200 mb-4"
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
+            <motion.span
+              initial={{ opacity: 0 }}
+              animate={{ opacity: [0, 1, 0, 1] }}
+              transition={{ duration: 2, times: [0, 0.2, 0.8, 1], repeat: 1 }}
+            >
+              Företagsnamnet uttalas som 'Rih-nyoo Ai Oh'
+            </motion.span>
+          </motion.p>
+          <motion.p 
+            className="text-xl text-gray-100 mb-8"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            Din partner för digital transformation
+            Lär känna personerna bakom företaget
           </motion.p>
           <motion.p 
-            className="text-xl text-gray-200"
+            className="text-lg text-gray-200"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            Med över ett decennium av erfarenhet inom IT, digital strategi, cybersäkerhet och utveckling, har vårt team lett projekt från startup-visioner till multinationella tech-lösningar. Vår styrka ligger i att översätta komplexa affärsmål till effektiva tekniska lösningar.
+            Med över ett decennium av erfarenhet inom IT, digital strategi och cybersäkerhet, har vårt team lett projekt från små företag till stora multinationella företag. Vår unika förmåga att överbrygga klyftan mellan affärsmål och tekniska lösningar gör Renew I/O till en ovärderlig partner i din digitala transformation.
           </motion.p>
         </div>
       </motion.section>
 
-      <div className="relative z-30 bg-gradient-to-br from-gray-900 to-gray-800">
+      <div className="relative z-30 bg-gradient-to-br from-gray-50 to-gray-100">
         <div className="container mx-auto px-6 py-12">
           <motion.section 
-            className="mb-20"
+            className="mb-12"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <Card className="overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300 bg-gray-800 border border-purple-500 mb-8">
+            <Card className="overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 bg-white mb-8">
               <CardContent className="p-6">
                 <div className="flex flex-col md:flex-row items-center">
                   <img src="https://i.imgur.com/PBAVzJh.jpeg" alt="Profilbild" className="w-48 h-48 rounded-full mb-4 md:mb-0 md:mr-6" />
                   <div>
-                    <h2 className="text-2xl font-bold mb-2 text-white">Tobias Karlsson</h2>
-                    <p className="text-gray-300 mb-4">Med en djup förståelse för både affärsstrategi och avancerad teknologi, leder Tobias våra kunder genom komplexa digitala transformationer. Hans expertis inom enterprise-infrastruktur och strategisk planering säkerställer att våra lösningar inte bara möter dagens behov utan också är redo för morgondagens utmaningar.</p>
+                    <h2 className="text-2xl font-semibold mb-2 text-gray-800">Tobias Karlsson</h2>
+                    <p className="text-gray-600 mb-2">Som teknisk expert kombinerar Tobias sin erfarenhet inom storskalig infrastruktur med förmågan att kommunicera effektivt på både företags- och teknisk nivå. Hans unika kompetens ligger i att överbrygga klyftan mellan affärsmål och tekniska lösningar, vilket möjliggör sömlös integration och optimering av digitala strategier. Samtidigt säkerställer han robusta säkerhetslösningar för att skydda verksamheten. Tobias expertis gör honom till en värdefull tillgång för företag som strävar efter att navigera i det komplexa digitala landskapet.</p>
+                    <div className="flex items-center space-x-4">
+                      <div className="flex items-center">
+                        <Mail className="w-4 h-4 mr-2 text-gray-600" />
+                        <p className="text-gray-600">tobias@renew-io.se</p>
+                      </div>
+                      <div className="flex items-center">
+                        <MapPin className="w-4 h-4 mr-2 text-gray-600" />
+                        <p className="text-gray-600">Kristianstad</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            <Card className="overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300 bg-gray-800 border border-blue-500 mb-8">
+            <Card className="overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 bg-white mb-8">
               <CardContent className="p-6">
                 <div className="flex flex-col md:flex-row items-center">
                   <Avatar className="w-48 h-48 mb-4 md:mb-0 md:mr-6">
-                    <AvatarFallback className="bg-gradient-to-br from-purple-600 to-blue-500 text-white text-6xl">PB</AvatarFallback>
+                    <AvatarFallback className="bg-gray-300 text-gray-600 text-6xl">PB</AvatarFallback>
                   </Avatar>
                   <div>
-                    <h2 className="text-2xl font-bold mb-2 text-white">Patrik Berg</h2>
-                    <p className="text-gray-300 mb-4">Patrik är vår visionär inom teknisk arkitektur och innovation. Hans förmåga att analysera komplexa system och förutse teknologiska trender säkerställer att våra lösningar inte bara är cutting-edge idag, utan fortsätter att leverera värde långt in i framtiden.</p>
+                    <h2 className="text-2xl font-semibold mb-2 text-gray-800">Patrik Berg</h2>
+                    <p className="text-gray-600 mb-2">Med djup teknisk förståelse och eftertänksam problemlösning bidrar Patrik med ovärderlig insikt till våra projekt. Hans förmåga att analysera komplexa system och förutse teknologiska trender gör honom till en nyckelspelare i vår strategiska planering. Patriks expertis och långsiktiga perspektiv säkerställer att våra lösningar är framtidssäkrade och innovativa.</p>
+                    <div className="flex items-center space-x-4">
+                      <div className="flex items-center">
+                        <Mail className="w-4 h-4 mr-2 text-gray-600" />
+                        <p className="text-gray-600">patrik@renew-io.se</p>
+                      </div>
+                      <div className="flex items-center">
+                        <MapPin className="w-4 h-4 mr-2 text-gray-600" />
+                        <p className="text-gray-600">Stockholm</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            <Card className="overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300 bg-gray-800 border border-purple-500">
+            <Card className="overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
               <CardContent className="p-6">
                 <div className="flex flex-col md:flex-row items-center">
                   <img src="https://i.imgur.com/JKev6yM.png" alt="Robert Nesta Nuhu profile" className="w-48 h-48 rounded-full mb-4 md:mb-0 md:mr-6 object-cover" />
                   <div>
-                    <h2 className="text-2xl font-bold mb-2 text-white">Robert Nesta Nuhu</h2>
-                    <p className="text-gray-300 mb-4">
-                      Robert är vår kreativa kraft inom utveckling och innovation. Hans expertis inom systemutveckling och webblösningar, kombinerat med en passion för nya teknologier, driver oss att skapa skräddarsydda lösningar som inte bara möter utan överträffar våra kunders förväntningar.
+                    <h2 className="text-2xl font-semibold mb-2 text-gray-800">Robert Nesta Nuhu</h2>
+                    <p className="text-gray-600 mb-2">
+                      Som en rising star inom digital innovation, bringer Robert en fräsch och dynamisk energi till teamet. Hans unika perspektiv och naturliga fallenhet för att förstå framtidens teknologier gör honom till en katalysator för kreativitet och nytänkande. När han får en tydlig målbild, transformerar han visioner till verklighet med imponerande hastighet och precision.
                     </p>
+                    <div className="flex items-center space-x-4">
+                      <div className="flex items-center">
+                        <Mail className="w-4 h-4 mr-2 text-gray-600" />
+                        <p className="text-gray-600">robert@renew-io.se</p>
+                      </div>
+                      <div className="flex items-center">
+                        <MapPin className="w-4 h-4 mr-2 text-gray-600" />
+                        <p className="text-gray-600">Kristianstad</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </CardContent>
@@ -108,69 +152,68 @@ const About = () => {
           </motion.section>
 
           <motion.section
-            className="mb-20"
+            className="mb-12"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            <h2 className="text-3xl font-bold mb-8 flex items-center text-white">
+            <h2 className="text-2xl font-semibold mb-4 flex items-center text-gray-800">
               <IconWrapper>
-                <Briefcase className="w-4 h-4 text-white" />
+                <Briefcase className="w-4 h-4 text-black" />
               </IconWrapper>
               Vår Expertis
             </h2>
-            <Card className="shadow-xl hover:shadow-2xl transition-shadow duration-300 bg-gray-800 border border-blue-500">
+            <Card className="shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
               <CardContent className="p-6">
-                <ul className="list-disc list-inside space-y-2 text-gray-300">
-                  <li>Strategisk digital transformation som driver affärsvärde</li>
-                  <li>Robust cybersäkerhet för att skydda dina viktigaste tillgångar</li>
-                  <li>Skalbara och flexibla molnlösningar</li>
-                  <li>Skräddarsydd systemutveckling för unika affärsbehov</li>
-                  <li>Moderna och effektiva webblösningar</li>
-                  <li>Omfattande IT-konsulttjänster för optimerad verksamhet</li>
-                  <li>Innovationsledning för att hålla dig i framkant</li>
+                <ul className="list-disc list-inside space-y-2 text-gray-600">
+                  <li>Digital transformation och strategiutveckling</li>
+                  <li>Cybersäkerhet och riskhantering</li>
+                  <li>Molnlösningar och infrastrukturoptimering</li>
+                  <li>Systemutveckling och integration</li>
+                  <li>IT-konsulttjänster och projektledning</li>
+                  <li>Utbildning</li>
                 </ul>
               </CardContent>
             </Card>
           </motion.section>
 
           <motion.section
-            className="mb-20"
+            className="mb-12"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
           >
-            <h2 className="text-3xl font-bold mb-8 flex items-center text-white">
+            <h2 className="text-2xl font-semibold mb-4 flex items-center text-gray-800">
               <IconWrapper>
-                <Lightbulb className="w-4 h-4 text-white" />
+                <Lightbulb className="w-4 h-4 text-black" />
               </IconWrapper>
               Vår Vision
             </h2>
-            <Card className="shadow-xl hover:shadow-2xl transition-shadow duration-300 bg-gray-800 border border-purple-500">
+            <Card className="shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
               <CardContent className="p-6">
-                <p className="text-gray-300 text-lg">
-                  Vi strävar efter att vara den ledande partnern för företag som söker att navigera och utnyttja den digitala erans möjligheter. Genom att kombinera djup teknisk expertis med strategisk affärsförståelse, arbetar vi för att skapa innovativa lösningar som inte bara möter dagens utmaningar, utan också lägger grunden för framtida framgångar.
+                <p className="text-gray-600">
+                  Vår vision är att forma en digital framtid där innovation möter säkerhet. Vi strävar efter att vara katalysatorn för positiv förändring i företagsvärlden, där digitala lösningar inte bara effektiviserar verksamheter utan också öppnar upp för nya möjligheter och affärsmodeller.
                 </p>
               </CardContent>
             </Card>
           </motion.section>
 
           <motion.section
-            className="mb-20"
+            className="mb-12"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.8 }}
           >
-            <h2 className="text-3xl font-bold mb-8 flex items-center text-white">
+            <h2 className="text-2xl font-semibold mb-4 flex items-center text-gray-800">
               <IconWrapper>
-                <Server className="w-4 h-4 text-white" />
+                <Users className="w-4 h-4 text-black" />
               </IconWrapper>
               Vårt Nätverk
             </h2>
-            <Card className="shadow-xl hover:shadow-2xl transition-shadow duration-300 bg-gray-800 border border-blue-500">
+            <Card className="shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
               <CardContent className="p-6">
-                <p className="text-gray-300 text-lg">
-                  Renew I/O är stolt över att ha byggt ett omfattande nätverk av experter inom olika teknologiska domäner. Detta nätverk ger oss möjligheten att ta oss an komplexa projekt och leverera helhetslösningar som spänner över flera tekniska discipliner. Oavsett om ditt projekt kräver djup specialistkunskap eller bred teknisk kompetens, har vi resurserna för att leverera resultat av högsta kvalitet.
+                <p className="text-gray-600">
+                  För större uppdrag samarbetar vi med ett nätverk av konsulter, var och en med egen spetskompetens och egna företag. Detta möjliggör att vi alltid kan erbjuda skräddarsydda och högkvalitativa lösningar, anpassade efter varje kunds unika behov.
                 </p>
               </CardContent>
             </Card>
