@@ -135,7 +135,7 @@ const About = () => {
                   <div>
                     <h2 className="text-2xl font-semibold mb-2 text-gray-800">Robert Nesta Nuhu - Digital Innovatör</h2>
                     <p className="text-gray-600 mb-2">
-                      Som en rising star inom digital innovation, bringer Robert en fräsch och dynamisk energi till teamet. Trots sin unga ålder har han redan visat en enastående förmåga att tänka utanför boxen och leverera banbrytande digitala lösningar. Roberts unika perspektiv och naturliga fallenhet för att förstå framtidens teknologier gör honom till en katalysator för kreativitet och nytänkande. När han får en tydlig målbild, transformerar han visioner till verklighet med en imponerande hastighet och precision. Hans ungdomliga entusiasm kombinerad med en mogen förståelse för affärsbehov gör Robert till en ovärderlig tillgång i vår strävan att ligga i framkant av den digitala revolutionen.
+                      Som en rising star inom digital innovation, bringer Robert en fräsch och dynamisk energi till teamet. Trots sin unga ålder har han redan visat en enastående förmåga att tänka utanför boxen och leverera banbrytande digitala lösningar. Roberts unika perspektiv och naturliga fallenhet för att förstå framtidens teknologier gör honom till en katalysator för kreativitet och nytänkande. När han får en tydlig målbild, transformerar han visioner till verklighet med imponerande hastighet och precision.
                     </p>
                     <div className="flex items-center space-x-4">
                       <div className="flex items-center">
@@ -144,7 +144,7 @@ const About = () => {
                       </div>
                       <div className="flex items-center">
                         <MapPin className="w-4 h-4 mr-2 text-gray-600" />
-                        <p className="text-gray-600">Malmö</p>
+                        <p className="text-gray-600">Kristianstad</p>
                       </div>
                     </div>
                   </div>
