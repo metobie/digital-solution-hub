@@ -22,7 +22,7 @@ const About = () => {
       description: "Som teknisk expert kombinerar Tobias sin erfarenhet inom storskalig infrastruktur med förmågan att kommunicera effektivt på både företags- och teknisk nivå. Hans unika kompetens ligger i att överbrygga klyftan mellan affärsmål och tekniska lösningar, vilket möjliggör sömlös integration och optimering av digitala strategier. Samtidigt säkerställer han robusta säkerhetslösningar för att skydda verksamheten.",
       email: "tobias@renew-io.se",
       location: "Kristianstad",
-      imageClassName: "object-top"
+      imageClassName: "object-top object-[50%_30%]"
     },
     {
       name: "Patrik Berg",
@@ -117,7 +117,7 @@ const About = () => {
                         <img 
                           src={member.imageSrc} 
                           alt={`${member.name} profile`} 
-                          className="w-12 h-12 rounded-full object-cover mr-4"
+                          className={`w-12 h-12 rounded-full object-cover mr-4 ${member.imageClassName || ''}`}
                         />
                       ) : member.initials ? (
                         <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#3E7A8B] to-[#8A3A8B] flex items-center justify-center mr-4">
