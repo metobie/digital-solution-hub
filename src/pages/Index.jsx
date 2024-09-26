@@ -43,7 +43,8 @@ const Index = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            Välkommen till Renew I/O
+            <span className="block">Välkommen till</span>
+            <span className="block">Renew I/O</span>
           </motion.h1>
           <motion.p 
             className="text-xl text-gray-200 mb-8"
