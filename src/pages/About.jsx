@@ -1,7 +1,7 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import { Card, CardContent } from "@/components/ui/card";
-import { Shield, Briefcase, Lightbulb, Cloud, Code, LineChart } from 'lucide-react';
+import { Shield, Briefcase, Lightbulb, Cloud, Code, LineChart, Users } from 'lucide-react';
 import TeamMember from '../components/TeamMember';
 
 const About = () => {
