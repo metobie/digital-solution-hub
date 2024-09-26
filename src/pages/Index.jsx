@@ -51,7 +51,7 @@ const Index = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Din partner för digital transformation, strategisk utveckling och cybersäkerhet
+            Din partner för digital transformation, strategisk utveckling, innovation och ledarskap
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: -20 }}
