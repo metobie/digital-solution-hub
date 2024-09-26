@@ -1,9 +1,7 @@
 import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Card, CardContent } from "@/components/ui/card";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Shield, Briefcase, Lightbulb, Cloud, Code, LineChart, Users, Camera, Megaphone } from 'lucide-react';
-import TeamMember from '../components/TeamMember';
 import AnimatedTeamMember from '../components/AnimatedTeamMember';
 
 const About = () => {
@@ -110,35 +108,9 @@ const About = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <h2 className="text-2xl font-semibold mb-6 text-center text-gray-800">Vårt Team</h2>
-            <AnimatedTeamMember {...teamMembers[0]} />
-            <Accordion type="single" collapsible className="w-full">
-              {teamMembers.slice(1).map((member, index) => (
-                <AccordionItem value={`item-${index}`} key={index}>
-                  <AccordionTrigger className="text-left">
-                    <div className="flex items-center">
-                      {member.imageSrc ? (
-                        <img 
-                          src={member.imageSrc} 
-                          alt={`${member.name} profile`} 
-                          className={`w-12 h-12 rounded-full object-cover mr-4 ${member.imageClassName || ''}`}
-                        />
-                      ) : member.initials ? (
-                        <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#3E7A8B] to-[#8A3A8B] flex items-center justify-center mr-4">
-                          <span className="text-white font-bold">{member.initials}</span>
-                        </div>
-                      ) : null}
-                      <div>
-                        <h3 className="text-lg font-semibold">{member.name}</h3>
-                        <p className="text-sm text-gray-600">{member.location}</p>
-                      </div>
-                    </div>
-                  </AccordionTrigger>
-                  <AccordionContent>
-                    <TeamMember {...member} />
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
+            {teamMembers.map((member, index) => (
+              <AnimatedTeamMember key={index} {...member} />
+            ))}
           </motion.section>
 
           <motion.section

@@ -2,40 +2,49 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Mail, MapPin, ChevronDown, ChevronUp } from 'lucide-react';
 
-const AnimatedTeamMember = ({ name, imageSrc, description, email, location, imageClassName }) => {
+const AnimatedTeamMember = ({ name, imageSrc, initials, description, email, location, imageClassName }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
     <div className="mb-6">
-      <div
+      <motion.div
         className="flex items-center cursor-pointer justify-between"
         onClick={() => setIsExpanded(!isExpanded)}
       >
-        <div className="flex items-center">
+        <motion.div
+          layout
+          className="flex items-center"
+        >
           <motion.div
             layout
             className={`rounded-full overflow-hidden ${isExpanded ? 'w-24 h-24' : 'w-12 h-12'} mr-4`}
           >
-            <motion.img
-              src={imageSrc}
-              alt={`${name} profile`}
-              className={`w-full h-full object-cover ${imageClassName || ''}`}
-              style={{ objectPosition: '50% 20%' }}
-              layout
-            />
+            {imageSrc ? (
+              <motion.img
+                src={imageSrc}
+                alt={`${name} profile`}
+                className={`w-full h-full object-cover ${imageClassName || ''}`}
+                style={{ objectPosition: '50% 20%' }}
+                layout
+              />
+            ) : initials ? (
+              <div className="w-full h-full bg-gradient-to-br from-[#3E7A8B] to-[#8A3A8B] flex items-center justify-center">
+                <span className="text-white font-bold">{initials}</span>
+              </div>
+            ) : null}
           </motion.div>
           <motion.div layout>
             <h3 className="text-lg font-semibold">{name}</h3>
             <p className="text-sm text-gray-600">{location}</p>
           </motion.div>
-        </div>
+        </motion.div>
         <motion.div
           animate={{ rotate: isExpanded ? 180 : 0 }}
           transition={{ duration: 0.3 }}
         >
           {isExpanded ? <ChevronUp className="w-6 h-6 text-gray-600" /> : <ChevronDown className="w-6 h-6 text-gray-600" />}
         </motion.div>
-      </div>
+      </motion.div>
       <AnimatePresence>
         {isExpanded && (
           <motion.div
