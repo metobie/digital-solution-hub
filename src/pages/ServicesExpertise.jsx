@@ -16,6 +16,7 @@ const ServicesExpertise = () => {
   };
 
   const services = [
+  const services = [
     {
       icon: Shield,
       title: "Cybersäkerhet",
@@ -117,20 +118,21 @@ const ServicesExpertise = () => {
           )
         },
         {
-          title: "Optimering av Nutanix HCI-miljöer",
+          title: "Implementering av Nutanix (HCI)",
           content: (
             <div>
               <p>Nutanix HCI (Hyperconverged Infrastructure) erbjuder en kraftfull plattform för att förenkla och effektivisera datacenteroperationer.</p>
-              <h3 className="font-semibold mt-2 mb-1">Optimering av Nutanix HCI-miljöer omfattar:</h3>
+              <h3 className="font-semibold mt-2 mb-1">Implementering av Nutanix HCI omfattar:</h3>
               <ul className="list-disc pl-5">
-                <li>Finjustering av resursallokering för optimal prestanda</li>
-                <li>Implementering av automatiserade arbetsflöden för effektiv hantering</li>
-                <li>Konfiguration av avancerade lagringsfunktioner som deduplicering och komprimering</li>
-                <li>Säkerställande av effektiv skalning och kapacitetsplanering</li>
-                <li>Implementering av robusta backup- och återställningslösningar</li>
-                <li>Optimering av nätverkskonfigurationer för maximal throughput</li>
+                <li>Utvärdering av nuvarande infrastruktur och krav</li>
+                <li>Design av Nutanix-kluster baserat på organisationens behov</li>
+                <li>Installation och konfiguration av Nutanix-noder</li>
+                <li>Migrering av befintliga arbetsbelastningar till Nutanix-plattformen</li>
+                <li>Konfiguration av avancerade funktioner som deduplicering, komprimering och erasure coding</li>
+                <li>Integrering med befintliga system och nätverk</li>
+                <li>Utbildning av IT-personal i Nutanix-administration</li>
               </ul>
-              <p className="mt-2">Genom att optimera Nutanix HCI-miljön kan organisationer uppnå högre prestanda, bättre resursanvändning och förenklad IT-hantering.</p>
+              <p className="mt-2">Genom att implementera Nutanix HCI kan organisationer uppnå högre prestanda, bättre resursanvändning och förenklad IT-hantering, samtidigt som de drar nytta av funktioner som stöd för flera hypervisors (AHV, VMware, Hyper-V) och avancerad dataoptimering.</p>
             </div>
           )
         }
@@ -615,8 +617,8 @@ const ServicesExpertise = () => {
       ],
       experts: ["Emelie Nylander", "Tim Omorogieva"]
     }
-    // ... (remaining code stays the same)
   ];
+
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
@@ -698,6 +700,11 @@ const ServicesExpertise = () => {
         content={popupContent.content}
       />
     </div>
+  );
+};
+
+  return (
+    // ... (JSX remains the same)
   );
 };
 
