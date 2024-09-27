@@ -136,136 +136,6 @@ const ServicesExpertise = () => {
       experts: ["Tobias Karlsson", "Patrik Berg"]
     },
     {
-      icon: Code,
-      title: "Systemutveckling",
-      description: "Skräddarsydda mjukvarulösningar för effektivisering och innovation.",
-      examples: [
-        {
-          title: "Utveckling av kundanpassade affärssystem",
-          content: (
-            <div>
-              <p>Utveckling av kundanpassade affärssystem innebär att skapa skräddarsydda lösningar som perfekt matchar en organisations unika processer och behov.</p>
-              <h3 className="font-semibold mt-2 mb-1">Processen inkluderar vanligtvis:</h3>
-              <ul className="list-disc pl-5">
-                <li>Detaljerad behovsanalys och kravspecifikation</li>
-                <li>Design av systemarkitektur och användargränssnitt</li>
-                <li>Agil utvecklingsprocess med kontinuerlig kundåterkoppling</li>
-                <li>Integration med befintliga system och databaser</li>
-                <li>Omfattande testning och kvalitetssäkring</li>
-                <li>Användarutbildning och dokumentation</li>
-                <li>Löpande support och vidareutveckling</li>
-              </ul>
-              <p className="mt-2">Ett välutvecklat kundanpassat affärssystem kan dramatiskt förbättra effektiviteten, beslutsfattandet och konkurrenskraften för en organisation.</p>
-            </div>
-          )
-        },
-        {
-          title: "Skapande av API:er för systemintegration",
-          content: (
-            <div>
-              <p>Skapande av API:er (Application Programming Interfaces) är avgörande för att möjliggöra sömlös integration mellan olika system och applikationer.</p>
-              <h3 className="font-semibold mt-2 mb-1">Viktiga aspekter vid API-utveckling:</h3>
-              <ul className="list-disc pl-5">
-                <li>Design av tydliga och konsistenta API-endpoints</li>
-                <li>Implementering av robust autentisering och auktorisering</li>
-                <li>Hantering av dataformat och serialisering (t.ex. JSON, XML)</li>
-                <li>Versionshantering för att stödja bakåtkompatibilitet</li>
-                <li>Implementering av felhantering och loggning</li>
-                <li>Optimering av prestanda och skalbarhet</li>
-                <li>Skapande av omfattande API-dokumentation</li>
-              </ul>
-              <p className="mt-2">Väldesignade API:er möjliggör effektiv datautbyte mellan system, förbättrar flexibiliteten i IT-infrastrukturen och underlättar framtida integrationer och utveckling.</p>
-            </div>
-          )
-        },
-        {
-          title: "Modernisering av legacy-system",
-          content: (
-            <div>
-              <p>Modernisering av legacy-system är en kritisk process för att hålla organisationens IT-infrastruktur uppdaterad, säker och effektiv.</p>
-              <h3 className="font-semibold mt-2 mb-1">Moderniseringsprocessen kan omfatta:</h3>
-              <ul className="list-disc pl-5">
-                <li>Utvärdering av befintliga system och identifiering av förbättringsområden</li>
-                <li>Migrering från föråldrade teknologier till moderna plattformar</li>
-                <li>Refaktorering av kod för förbättrad underhållbarhet och prestanda</li>
-                <li>Implementering av moderna arkitekturmönster (t.ex. mikroservices)</li>
-                <li>Förbättring av användargränssnitt och användarupplevelse</li>
-                <li>Integration med moderna molntjänster och API:er</li>
-                <li>Uppdatering av säkerhetsfunktioner och dataskydd</li>
-              </ul>
-              <p className="mt-2">Genom att modernisera legacy-system kan organisationer öka sin operativa effektivitet, förbättra säkerheten och bättre möta moderna affärskrav.</p>
-            </div>
-          )
-        }
-      ],
-      experts: ["Robert Nesta Nuhu", "Patrik Berg"]
-    },
-    {
-      icon: LineChart,
-      title: "Digital Strategi",
-      description: "Utveckla framtidssäkrade digitala strategier för konkurrensfördelar.",
-      examples: [
-        {
-          title: "Utformning av digital transformationsplan",
-          content: (
-            <div>
-              <p>En digital transformationsplan är en omfattande strategi för att integrera digital teknologi i alla aspekter av en verksamhet, vilket fundamentalt förändrar hur organisationen opererar och levererar värde till kunder.</p>
-              <h3 className="font-semibold mt-2 mb-1">Nyckelkomponenter i en digital transformationsplan:</h3>
-              <ul className="list-disc pl-5">
-                <li>Nulägesanalys och identifiering av digitala möjligheter</li>
-                <li>Definiering av tydliga mål och KPI:er för digital transformation</li>
-                <li>Kartläggning av nödvändiga teknologiska investeringar</li>
-                <li>Planering för organisatorisk förändring och kulturell anpassning</li>
-                <li>Strategi för datadrivet beslutsfattande</li>
-                <li>Utveckling av digitala kompetenser och talanger</li>
-                <li>Implementeringsplan med tydliga milstolpar och ansvarsområden</li>
-              </ul>
-              <p className="mt-2">En väl utformad digital transformationsplan hjälper organisationer att navigera den digitala eran, öka sin konkurrenskraft och skapa nya affärsmöjligheter.</p>
-            </div>
-          )
-        },
-        {
-          title: "Analys av digitala trender och möjligheter",
-          content: (
-            <div>
-              <p>Analys av digitala trender och möjligheter är avgörande för att organisationer ska kunna förutse förändringar i marknaden och positionera sig för framtida framgång.</p>
-              <h3 className="font-semibold mt-2 mb-1">Denna process omfattar vanligtvis:</h3>
-              <ul className="list-disc pl-5">
-                <li>Kontinuerlig övervakning av teknologiska innovationer och branschspecifika trender</li>
-                <li>Utvärdering av potentiella disruptiva teknologier (t.ex. AI, blockchain, IoT)</li>
-                <li>Analys av konkurrenters digitala initiativ och strategier</li>
-                <li>Identifiering av nya digitala affärsmodeller och intäktsmöjligheter</li>
-                <li>Bedömning av kundbeteenden och förväntningar i den digitala sfären</li>
-                <li>Utvärdering av potentiella partnerskap och ekosystem</li>
-                <li>Scenarioplanering för olika digitala framtider</li>
-              </ul>
-              <p className="mt-2">Genom att noggrant analysera digitala trender och möjligheter kan organisationer fatta välgrundade beslut om investeringar, produktutveckling och strategiska initiativ.</p>
-            </div>
-          )
-        },
-        {
-          title: "Utveckling av datadriven beslutsfattningsprocess",
-          content: (
-            <div>
-              <p>Utveckling av en datadriven beslutsfattningsprocess innebär att systematiskt använda data och analyser för att informera och styra strategiska och operativa beslut inom organisationen.</p>
-              <h3 className="font-semibold mt-2 mb-1">Viktiga steg i utvecklingen av en datadriven beslutsprocess:</h3>
-              <ul className="list-disc pl-5">
-                <li>Identifiering och prioritering av nyckeldata för beslutsfattande</li>
-                <li>Implementering av robusta datainsamlings- och lagringsprocesser</li>
-                <li>Utveckling av avancerade analysverktyg och dashboards</li>
-                <li>Utbildning av personal i dataanalys och tolkning</li>
-                <li>Integration av prediktiva och preskriptiva analysmodeller</li>
-                <li>Etablering av en datadriven organisationskultur</li>
-                <li>Kontinuerlig utvärdering och förbättring av datamodeller och processer</li>
-              </ul>
-              <p className="mt-2">En effektiv datadriven beslutsfattningsprocess möjliggör snabbare, mer precisa och objektiva beslut, vilket leder till förbättrade affärsresultat och ökad konkurrenskraft.</p>
-            </div>
-          )
-        }
-      ],
-      experts: ["Tobias Karlsson", "Tim Omorogieva"]
-    },
-    {
       icon: Briefcase,
       title: "IT-Konsulttjänster",
       description: "Expert rådgivning för optimering av IT-infrastruktur och processer.",
@@ -326,6 +196,26 @@ const ServicesExpertise = () => {
                 <li>Förbättring av IT Service Management (ITSM) processer</li>
               </ul>
               <p className="mt-2">Genom att implementera dessa strategier kan organisationer signifikant reducera sina IT-kostnader samtidigt som de upprätthåller eller förbättrar servicekvaliteten och innovationsförmågan.</p>
+            </div>
+          )
+        },
+        {
+          title: "Lifecycle Management (LCM) för IT-system",
+          content: (
+            <div>
+              <p>Lifecycle Management (LCM) för IT-system är en strategisk approach för att hantera hela livscykeln för IT-tillgångar, från anskaffning till avveckling.</p>
+              <h3 className="font-semibold mt-2 mb-1">Nyckelkomponenter i LCM inkluderar:</h3>
+              <ul className="list-disc pl-5">
+                <li>Strategisk planering och behovsanalys</li>
+                <li>Anskaffning och implementering av nya system</li>
+                <li>Kontinuerlig övervakning och optimering av prestanda</li>
+                <li>Regelbundna uppdateringar och uppgraderingar</li>
+                <li>Säkerhetshantering och patchning</li>
+                <li>Kapacitetsplanering och skalning</li>
+                <li>End-of-life hantering och säker avveckling</li>
+                <li>Datamigration och systemövergångar</li>
+              </ul>
+              <p className="mt-2">Effektiv LCM säkerställer att IT-systemen förblir aktuella, säkra och kostnadseffektiva under hela sin livstid, samtidigt som de stödjer organisationens föränderliga behov och mål.</p>
             </div>
           )
         }
@@ -443,7 +333,6 @@ const ServicesExpertise = () => {
         {
           title: "Utveckling av digitala ledarskapskompetenser",
           content: (
-            
             <div>
               <p>Utveckling av digitala ledarskapskompetenser är avgörande för att ledare ska kunna utnyttja digitala teknologier effektivt och leda i en digital affärsmiljö.</p>
               <h3 className="font-semibold mt-2 mb-1">Viktiga digitala ledarskapskompetenser inkluderar:</h3>
