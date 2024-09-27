@@ -70,30 +70,6 @@ const ServicesExpertise = () => {
               <p className="mt-2">Genom regelbunden utbildning och uppdatering kan organisationen väsentligt minska risken för säkerhetsincidenter orsakade av mänskliga faktorer.</p>
             </div>
           )
-        },
-        {
-          title: "Implementering av Multi-Factor Authentication",
-          content: (
-            <div>
-              <p>Multi-Factor Authentication (MFA) är en kritisk säkerhetsåtgärd som avsevärt förbättrar skyddet av användarnas konton och organisationens data.</p>
-              <h3 className="font-semibold mt-2 mb-1">Fördelar med MFA:</h3>
-              <ul className="list-disc pl-5">
-                <li>Ökad säkerhet: Kräver flera verifieringsmetoder, vilket gör det mycket svårare för obehöriga att få åtkomst.</li>
-                <li>Skydd mot lösenordsstölder: Även om ett lösenord komprometteras, förblir kontot säkert.</li>
-                <li>Regelefterlevnad: Hjälper organisationer att uppfylla olika säkerhetsstandarder och regelverk.</li>
-                <li>Flexibilitet: Kan implementeras på olika sätt (t.ex. SMS, appar, biometriska data) för att passa organisationens behov.</li>
-              </ul>
-              <h3 className="font-semibold mt-2 mb-1">Implementeringsprocess:</h3>
-              <ul className="list-disc pl-5">
-                <li>Utvärdering av organisationens behov och val av lämplig MFA-lösning</li>
-                <li>Integrering med befintliga system och applikationer</li>
-                <li>Utbildning av användare i hur man använder MFA</li>
-                <li>Gradvis utrullning och testning</li>
-                <li>Kontinuerlig övervakning och uppdatering av MFA-policyer</li>
-              </ul>
-              <p className="mt-2">Genom att implementera MFA kan organisationer signifikant förbättra sin säkerhetsposition och minska risken för obehörig åtkomst och dataintrång.</p>
-            </div>
-          )
         }
       ],
       experts: ["Tobias Karlsson", "Patrik Berg"]
@@ -444,62 +420,62 @@ const ServicesExpertise = () => {
     {
       icon: Users,
       title: "Ledarskapsutbildning",
-      description: "Skräddarsydda program för att utveckla framtidens ledare i en digital värld.",
+      description: "Skräddarsydda program för att utveckla framtidens ledare i en komplex och föränderlig värld.",
       examples: [
         {
-          title: "Ledarskapsutbildning med fokus på digital transformation",
+          title: "Transformativt ledarskap för framtiden",
           content: (
             <div>
-              <p>Ledarskapsutbildning med fokus på digital transformation syftar till att utrusta ledare med de kunskaper och färdigheter som krävs för att navigera och driva organisationer i en allt mer digitaliserad värld.</p>
-              <h3 className="font-semibold mt-2 mb-1">Nyckelområden i utbildningen kan inkludera:</h3>
+              <p>Vår utbildning i transformativt ledarskap förbereder ledare för att navigera och leda i en värld präglad av snabb förändring och komplexitet.</p>
+              <h3 className="font-semibold mt-2 mb-1">Nyckelområden i utbildningen inkluderar:</h3>
               <ul className="list-disc pl-5">
-                <li>Förståelse för digitala teknologier och deras affärspåverkan</li>
-                <li>Strategier för att leda digital förändring och innovation</li>
-                <li>Utveckling av en digital vision och roadmap</li>
-                <li>Hantering av digitala risker och cybersäkerhet</li>
-                <li>Datadriven beslutsfattning och analys</li>
-                <li>Agila och flexibla ledarskapsmetoder</li>
-                <li>Skapande av en digital kultur och främjande av digitala kompetenser</li>
+                <li>Utveckling av en inspirerande och engagerande ledarskapsfilosofi</li>
+                <li>Strategier för att leda förändring och innovation i organisationer</li>
+                <li>Utveckling av emotionell intelligens och empatiskt ledarskap</li>
+                <li>Tekniker för effektiv kommunikation och påverkan</li>
+                <li>Skapande av en inkluderande och högpresterande organisationskultur</li>
+                <li>Beslutsfattande under osäkerhet och komplexitet</li>
+                <li>Balansering av kortsiktiga resultat med långsiktig hållbarhet</li>
               </ul>
-              <p className="mt-2">Genom denna utbildning kan ledare effektivt driva digital transformation, utnyttja nya teknologier och skapa konkurrensfördelar i den digitala eran.</p>
+              <p className="mt-2">Genom denna utbildning utvecklar ledare förmågan att inspirera, engagera och leda sina team genom utmaningar och mot gemensamma mål.</p>
             </div>
           )
         },
         {
-          title: "Coachning i förändringsledning",
+          title: "Utveckling av autentiskt ledarskap",
           content: (
             <div>
-              <p>Coachning i förändringsledning är designad för att hjälpa ledare att effektivt navigera och driva organisatoriska förändringar, särskilt i samband med digital transformation.</p>
-              <h3 className="font-semibold mt-2 mb-1">Coachningen fokuserar ofta på:</h3>
+              <p>Utveckling av autentiskt ledarskap fokuserar på att hjälpa ledare att upptäcka och förstärka sin unika ledarstil baserad på personliga värderingar, styrkor och erfarenheter.</p>
+              <h3 className="font-semibold mt-2 mb-1">Viktiga aspekter av autentiskt ledarskap inkluderar:</h3>
               <ul className="list-disc pl-5">
-                <li>Utveckling av en tydlig förändringsvisio och -strategi</li>
-                <li>Hantering av motstånd mot förändring</li>
-                <li>Effektiv kommunikation under förändringsprocesser</li>
-                <li>Skapande av engagemang och motivation hos medarbetare</li>
-                <li>Identifiering och hantering av förändringens påverkan på olika intressenter</li>
-                <li>Implementering av förändringsmodeller och -metoder</li>
-                <li>Mätning och uppföljning av förändringens framgång</li>
+                <li>Självmedvetenhet och personlig utveckling</li>
+                <li>Identifiering och levande efter personliga värderingar</li>
+                <li>Utveckling av en stark etisk kompass för beslutsfattande</li>
+                <li>Byggande av genuina relationer och förtroende inom organisationen</li>
+                <li>Främjande av öppenhet, ärlighet och transparens i kommunikation</li>
+                <li>Balansering av personlig integritet med organisatoriska krav</li>
+                <li>Skapande av en kultur av äkthet och psykologisk trygghet</li>
               </ul>
-              <p className="mt-2">Genom personlig coachning kan ledare utveckla de färdigheter och insikter som krävs för att framgångsrikt leda organisationen genom komplexa förändringsprocesser.</p>
+              <p className="mt-2">Genom att utveckla autentiskt ledarskap kan ledare skapa djupare engagemang, förtroende och lojalitet inom sina team, vilket leder till ökad organisatorisk effektivitet och välmående.</p>
             </div>
           )
         },
         {
-          title: "Utveckling av digitala ledarskapskompetenser",
+          title: "Strategiskt ledarskap och organisatorisk framgång",
           content: (
             <div>
-              <p>Utveckling av digitala ledarskapskompetenser är avgörande för att ledare ska kunna utnyttja digitala teknologier effektivt och leda i en digital affärsmiljö.</p>
-              <h3 className="font-semibold mt-2 mb-1">Viktiga digitala ledarskapskompetenser inkluderar:</h3>
+              <p>Vår utbildning i strategiskt ledarskap ger ledare verktygen för att forma organisationens framtid och driva långsiktig framgång.</p>
+              <h3 className="font-semibold mt-2 mb-1">Nyckelkomponenter i programmet:</h3>
               <ul className="list-disc pl-5">
-                <li>Digital affärsmodellsinnovation</li>
-                <li>Datadriven beslutsfattning och analys</li>
-                <li>Förståelse för och tillämpning av AI och maskininlärning</li>
-                <li>Cybersäkerhet och digital riskhantering</li>
-                <li>Digitalt samarbete och virtuell teamledning</li>
-                <li>Hantering av digitala kundupplevelser</li>
-                <li>Agil projektledning och kontinuerlig leverans</li>
+                <li>Utveckling av strategiskt tänkande och långsiktig vision</li>
+                <li>Analys av omvärldsförändringar och deras påverkan på organisationen</li>
+                <li>Skapande och implementering av effektiva organisationsstrategier</li>
+                <li>Balansering av innovation och riskhantering</li>
+                <li>Ledning av tvärfunktionella team för strategisk implementering</li>
+                <li>Utveckling av en lärande organisation för kontinuerlig anpassning</li>
+                <li>Mätning och utvärdering av strategiska initiativ</li>
               </ul>
-              <p className="mt-2">Genom att utveckla dessa kompetenser kan ledare effektivt driva digital innovation, optimera processer och skapa värde i en snabbt föränderlig digital värld.</p>
+              <p className="mt-2">Genom att bemästra strategiskt ledarskap kan ledare positionera sina organisationer för hållbar tillväxt och framgång i en komplex affärsmiljö.</p>
             </div>
           )
         }
