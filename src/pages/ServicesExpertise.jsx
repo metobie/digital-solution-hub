@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Shield, Briefcase, Lightbulb, Cloud, Code, LineChart, Users, Camera, Megaphone } from 'lucide-react';
 import ExpandableServiceCard from '../components/ExpandableServiceCard';
 
 const ServicesExpertise = () => {
+  const [expandedRows, setExpandedRows] = useState([false, false, false]);
+
   const services = [
     {
       icon: Shield,
@@ -107,6 +109,12 @@ const ServicesExpertise = () => {
     }
   ];
 
+  const toggleRowExpansion = (rowIndex) => {
+    const newExpandedRows = [...expandedRows];
+    newExpandedRows[rowIndex] = !newExpandedRows[rowIndex];
+    setExpandedRows(newExpandedRows);
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 pt-24 pb-12">
       <div className="container mx-auto px-4">
@@ -134,7 +142,11 @@ const ServicesExpertise = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <ExpandableServiceCard service={service} />
+              <ExpandableServiceCard 
+                service={service} 
+                isExpanded={expandedRows[Math.floor(index / 3)]}
+                onToggle={() => toggleRowExpansion(Math.floor(index / 3))}
+              />
             </motion.div>
           ))}
         </div>
