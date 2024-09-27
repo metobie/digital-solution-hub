@@ -4,7 +4,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Shield, Briefcase, Lightbulb, Cloud, Code, LineChart, Users, Camera, Megaphone } from 'lucide-react';
 import Popup from '../components/Popup';
 import ScrollIndicator from '../components/ScrollIndicator';
-import MailchimpSignup from '../components/MailchimpSignup';
 
 const ServicesExpertise = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -626,30 +625,32 @@ const ServicesExpertise = () => {
         className="relative h-screen flex items-center justify-center overflow-hidden"
         style={{ y }}
       >
-        <div className="absolute inset-0 z-0" style={{
-          backgroundImage: "url('https://i.imgur.com/2dexfVJ.jpeg')",
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          y: useTransform(scrollY, [0, 500], [0, 150]),
-        }} />
-        <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
-        <div className="relative z-20 text-center px-6">
+        <motion.div 
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage: "url('https://i.imgur.com/oYOGoMu.jpeg')",
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            y: useTransform(scrollY, [0, 500], [0, 150]),
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#0C2A3B] to-[#3A0A3B] opacity-90 z-10"></div>
+        <div className="relative z-20 text-center px-6 max-w-3xl">
           <motion.h1 
-            className="text-4xl md:text-6xl font-extrabold mb-4 text-white tracking-tight"
+            className="text-4xl md:text-6xl font-extrabold mb-2 text-white tracking-tight"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <span className="block">Välkommen till</span>
-            <span className="block">Renew I/O</span>
+            Framtidens lösningar, idag!
           </motion.h1>
           <motion.p 
-            className="text-xl text-gray-200 mb-8"
+            className="text-xl text-gray-100 mb-8"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
           >
-            Ett kooperativ för digital transformation, innovation, ledarskap och teknisk excellens
+            Upptäck hur Renew I/O:s innovativa tjänster och expertis kan utveckla din verksamhet.
           </motion.p>
         </div>
         <ScrollIndicator />
@@ -691,33 +692,6 @@ const ServicesExpertise = () => {
             </motion.div>
           ))}
         </div>
-
-        {/* Add the MailchimpSignup component here */}
-        <MailchimpSignup />
-
-        {/* Keep the existing "Vad våra kunder säger" section */}
-        <motion.section 
-          className="mb-12"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.6 }}
-        >
-          <h2 className="text-2xl font-semibold mb-4 text-center text-gray-700">Vad våra kunder säger</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <Card className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-              <CardContent>
-                <p className="italic mb-2 text-gray-600">"Renew I/O's tekniska expertis och breda kunskaper förbättrade både funktionalitet och design av vår ljudprogramvara."</p>
-                <p className="font-semibold text-gray-700">- Robert Nesta Nuhu, Grundare, Nakof</p>
-              </CardContent>
-            </Card>
-            <Card className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-              <CardContent>
-                <p className="italic mb-2 text-gray-600">"Deras tekniska expertis och förmåga att lösa komplexa problem imponerade stort. Rekommenderas starkt för teknisk rådgivning och implementation."</p>
-                <p className="font-semibold text-gray-700">- Tim Omorogieva, VD, Rider</p>
-              </CardContent>
-            </Card>
-          </div>
-        </motion.section>
       </div>
       <Popup
         isOpen={isPopupOpen}
