@@ -54,18 +54,10 @@ const Index = () => {
           >
             Ett kooperativ för digital transformation, innovation, ledarskap och teknisk excellens
           </motion.p>
-          <motion.p 
-            className="text-xl text-gray-200 mb-8"
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-          >
-            Upptäck hur Renew I/O:s innovativa tjänster och expertis kan utveckla din verksamhet.
-          </motion.p>
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.6 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
           >
             <Link to="/contact">
               <Button size="lg" className="bg-gradient-to-br from-[#3E7A8B] to-[#8A3A8B] text-white hover:from-[#5A9AAB] hover:to-[#AA5AAB] transition-all duration-300">Kontakta oss nu</Button>
