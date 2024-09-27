@@ -550,7 +550,7 @@ const ServicesExpertise = () => {
     {
       icon: Megaphone,
       title: "Digital Marknadsföring",
-      description: "Strategisk digital marknadsföring och sociala medier-hantering.",
+      description: "Strategisk digital marknadsföring, sociala medier-hantering och eventplanering.",
       examples: [
         {
           title: "Utveckling av innehållsstrategier för sociala medier",
@@ -591,27 +591,29 @@ const ServicesExpertise = () => {
           )
         },
         {
-          title: "Analys och optimering av digital marknadsföringsprestanda",
+          title: "Planering och genomförande av företagsevent",
           content: (
             <div>
-              <p>Analys och optimering av digital marknadsföringsprestanda är avgörande för att maximera avkastningen på marknadsföringsinvesteringar och kontinuerligt förbättra effektiviteten i digitala kampanjer.</p>
-              <h3 className="font-semibold mt-2 mb-1">Processen inkluderar vanligtvis:</h3>
+              <p>Planering och genomförande av företagsevent är en viktig del av marknadsförings- och kundrelationsstrategin för många företag.</p>
+              <h3 className="font-semibold mt-2 mb-1">Nyckelaspekter av eventplanering inkluderar:</h3>
               <ul className="list-disc pl-5">
-                <li>Implementering av robusta spårningsverktyg (t.ex. Google Analytics)</li>
-                <li>Definiering av relevanta KPI:er för olika marknadsföringskanaler</li>
-                <li>Regelbunden datainsamling och rapportering</li>
-                <li>Analys av användar- och kundbeteende</li>
-                <li>A/B-testning av olika innehålls- och annonsversioner</li>
-                <li>Identifiering av trender och insikter från data</li>
-                <li>Implementering av datadriven optimering av kampanjer</li>
+                <li>Definiering av eventets syfte och mål</li>
+                <li>Val av lämplig plats och datum</li>
+                <li>Budgetering och resursallokering</li>
+                <li>Utveckling av eventprogram och innehåll</li>
+                <li>Marknadsföring av eventet genom olika kanaler</li>
+                <li>Koordinering av logistik (catering, teknik, etc.)</li>
+                <li>Hantering av gästlista och registrering</li>
+                <li>Uppföljning och utvärdering efter eventet</li>
               </ul>
-              <p className="mt-2">Genom noggrann analys och kontinuerlig optimering kan företag förbättra prestandan i sina digitala marknadsföringsinsatser, öka ROI och fatta mer informerade beslut om resursallokering och strategier.</p>
+              <p className="mt-2">Framgångsrika företagsevent kan stärka kundrelationer, öka varumärkesmedvetenheten och generera nya affärsmöjligheter.</p>
             </div>
           )
         }
       ],
       experts: ["Emelie Nylander", "Tim Omorogieva"]
     }
+    // ... (remaining code stays the same)
   ];
 
   return (
