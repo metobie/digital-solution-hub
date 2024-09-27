@@ -16,7 +16,6 @@ const ServicesExpertise = () => {
   };
 
   const services = [
-  const services = [
     {
       icon: Shield,
       title: "Cybersäkerhet",
@@ -698,9 +697,6 @@ const ServicesExpertise = () => {
         title={popupContent.title}
         content={popupContent.content}
       />
-    </div>
-  );
-};
     </div>
   );
 };
