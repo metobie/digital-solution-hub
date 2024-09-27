@@ -227,62 +227,62 @@ const ServicesExpertise = () => {
     {
       icon: LineChart,
       title: "Digital Strategi",
-      description: "Utveckla framtidssäkrade digitala strategier för konkurrensfördelar.",
+      description: "Utveckla framtidssäkrade affärsstrategier med digital integration för ökad konkurrenskraft.",
       examples: [
         {
-          title: "Utformning av digital transformationsplan",
+          title: "Utveckling av digital affärsmodell",
           content: (
             <div>
-              <p>En digital transformationsplan är en omfattande strategi för att integrera digital teknologi i alla aspekter av en verksamhet, vilket fundamentalt förändrar hur organisationen opererar och levererar värde till kunder.</p>
-              <h3 className="font-semibold mt-2 mb-1">Nyckelkomponenter i en digital transformationsplan:</h3>
+              <p>Utveckling av en digital affärsmodell handlar om att omforma eller skapa nya sätt att generera värde genom digitala kanaler och teknologier.</p>
+              <h3 className="font-semibold mt-2 mb-1">Processen inkluderar:</h3>
               <ul className="list-disc pl-5">
-                <li>Nulägesanalys och identifiering av digitala möjligheter</li>
-                <li>Definiering av tydliga mål och KPI:er för digital transformation</li>
-                <li>Kartläggning av nödvändiga teknologiska investeringar</li>
-                <li>Planering för organisatorisk förändring och kulturell anpassning</li>
-                <li>Strategi för datadrivet beslutsfattande</li>
-                <li>Utveckling av digitala kompetenser och talanger</li>
-                <li>Implementeringsplan med tydliga milstolpar och ansvarsområden</li>
+                <li>Analys av nuvarande affärsmodell och marknadstrender</li>
+                <li>Identifiering av digitala möjligheter och hot</li>
+                <li>Utformning av nya värdeerbjudanden baserade på digital teknik</li>
+                <li>Utveckling av digitala kundrelationer och kanaler</li>
+                <li>Anpassning av interna processer och resurser för digital leverans</li>
+                <li>Skapande av nya intäktsströmmar genom digitala lösningar</li>
+                <li>Utvärdering och iterativ förbättring av den digitala affärsmodellen</li>
               </ul>
-              <p className="mt-2">En väl utformad digital transformationsplan hjälper organisationer att navigera den digitala eran, öka sin konkurrenskraft och skapa nya affärsmöjligheter.</p>
+              <p className="mt-2">En välutvecklad digital affärsmodell kan öppna nya marknader, förbättra kundupplevelsen och skapa långsiktig konkurrenskraft i en allt mer digitaliserad värld.</p>
             </div>
           )
         },
         {
-          title: "Analys av digitala trender och möjligheter",
+          title: "Digital transformationsplan för organisationen",
           content: (
             <div>
-              <p>Analys av digitala trender och möjligheter är avgörande för att organisationer ska kunna förutse förändringar i marknaden och positionera sig för framtida framgång.</p>
-              <h3 className="font-semibold mt-2 mb-1">Denna process omfattar vanligtvis:</h3>
+              <p>En digital transformationsplan är en omfattande strategi för att integrera digital teknik i alla aspekter av en verksamhet, vilket fundamentalt förändrar hur organisationen opererar och levererar värde.</p>
+              <h3 className="font-semibold mt-2 mb-1">Nyckelkomponenter i planen:</h3>
               <ul className="list-disc pl-5">
-                <li>Kontinuerlig övervakning av teknologiska innovationer och branschspecifika trender</li>
-                <li>Utvärdering av potentiella disruptiva teknologier (t.ex. AI, blockchain, IoT)</li>
-                <li>Analys av konkurrenters digitala initiativ och strategier</li>
-                <li>Identifiering av nya digitala affärsmodeller och intäktsmöjligheter</li>
-                <li>Bedömning av kundbeteenden och förväntningar i den digitala sfären</li>
-                <li>Utvärdering av potentiella partnerskap och ekosystem</li>
-                <li>Scenarioplanering för olika digitala framtider</li>
+                <li>Utvärdering av organisationens digitala mognad</li>
+                <li>Definiering av en tydlig digital vision och mål</li>
+                <li>Kartläggning av nödvändiga organisatoriska förändringar</li>
+                <li>Strategi för kompetensutveckling och kulturell förändring</li>
+                <li>Plan för teknologiska investeringar och infrastrukturutveckling</li>
+                <li>Omdesign av affärsprocesser för digital effektivitet</li>
+                <li>Utveckling av en datadriven beslutskultur</li>
               </ul>
-              <p className="mt-2">Genom att noggrant analysera digitala trender och möjligheter kan organisationer fatta välgrundade beslut om investeringar, produktutveckling och strategiska initiativ.</p>
+              <p className="mt-2">En väl genomförd digital transformationsplan hjälper organisationer att bli mer agila, kundcentrerade och innovativa i en snabbt föränderlig digital miljö.</p>
             </div>
           )
         },
         {
-          title: "Utveckling av datadriven beslutsfattningsprocess",
+          title: "Strategisk digital marknadsplanering",
           content: (
             <div>
-              <p>Utveckling av en datadriven beslutsfattningsprocess innebär att systematiskt använda data och analyser för att informera och styra strategiska och operativa beslut inom organisationen.</p>
-              <h3 className="font-semibold mt-2 mb-1">Viktiga steg i utvecklingen av en datadriven beslutsprocess:</h3>
+              <p>Strategisk digital marknadsplanering handlar om att utveckla en omfattande plan för att nå och engagera målgrupper genom digitala kanaler, integrerat med övergripande affärsmål.</p>
+              <h3 className="font-semibold mt-2 mb-1">Viktiga aspekter av planeringen:</h3>
               <ul className="list-disc pl-5">
-                <li>Identifiering och prioritering av nyckeldata för beslutsfattande</li>
-                <li>Implementering av robusta datainsamlings- och lagringsprocesser</li>
-                <li>Utveckling av avancerade analysverktyg och dashboards</li>
-                <li>Utbildning av personal i dataanalys och tolkning</li>
-                <li>Integration av prediktiva och preskriptiva analysmodeller</li>
-                <li>Etablering av en datadriven organisationskultur</li>
-                <li>Kontinuerlig utvärdering och förbättring av datamodeller och processer</li>
+                <li>Djupgående analys av målgrupper och digitala beteenden</li>
+                <li>Utveckling av en enhetlig digital varumärkesstrategi</li>
+                <li>Val och optimering av digitala marknadsföringskanaler</li>
+                <li>Skapande av en innehållsstrategi för digitala plattformar</li>
+                <li>Integrering av kunddata för personaliserad marknadsföring</li>
+                <li>Utformning av mätbara KPI:er för digital marknadsföring</li>
+                <li>Plan för kontinuerlig optimering baserad på datainsikter</li>
               </ul>
-              <p className="mt-2">En effektiv datadriven beslutsfattningsprocess möjliggör snabbare, mer precisa och objektiva beslut, vilket leder till förbättrade affärsresultat och ökad konkurrenskraft.</p>
+              <p className="mt-2">En effektiv digital marknadsplan ökar varumärkessynligheten, förbättrar kundengagemanget och driver affärstillväxt i den digitala sfären.</p>
             </div>
           )
         }
