@@ -72,7 +72,7 @@ const ServicesExpertise = () => {
           )
         },
         {
-          title: "Implementering av Multi-Factor Authentication (MFA)",
+          title: "Implementering av Multi-Factor Authentication",
           content: (
             <div>
               <p>Multi-Factor Authentication (MFA) är en kritisk säkerhetsåtgärd som avsevärt förbättrar skyddet av användarnas konton och organisationens data.</p>
