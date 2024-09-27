@@ -642,10 +642,10 @@ const ServicesExpertise = () => {
             transition={{ duration: 0.5 }}
           >
             <span className="block bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
-              Unleash Your Digital Potential
+              Frigör Din Digitala Potential
             </span>
             <span className="block mt-2 text-white">
-              with Our Cutting-Edge Expertise
+              med Vår Banbrytande Expertis
             </span>
           </motion.h1>
           <motion.p 
@@ -654,7 +654,7 @@ const ServicesExpertise = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            Dive into a world of innovation where your wildest tech dreams become reality. Ready to revolutionize your business?
+            Dyk in i en värld av innovation där dina vildaste teknikdrömmar blir verklighet. Är du redo att revolutionera din verksamhet?
           </motion.p>
         </div>
       </motion.section>
