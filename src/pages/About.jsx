@@ -122,35 +122,6 @@ const About = () => {
             className="mb-12"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-          >
-            <h2 className="text-2xl font-semibold mb-4 flex items-center text-gray-800">
-              <IconWrapper>
-                <Briefcase className="w-4 h-4 text-black" />
-              </IconWrapper>
-              Vår Expertis
-            </h2>
-            <Card className="shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
-              <CardContent className="p-6">
-                <ul className="list-disc list-inside space-y-2 text-gray-600">
-                  <li>Digital transformation och strategiutveckling</li>
-                  <li>Cybersäkerhet och riskhantering</li>
-                  <li>Molnlösningar och infrastrukturoptimering</li>
-                  <li>Systemutveckling och integration</li>
-                  <li>IT-konsulttjänster och projektledning</li>
-                  <li>Digital marknadsföring och innehållsstrategier</li>
-                  <li>Hållbar utveckling och innovationsledning</li>
-                  <li>Ledarskapsutbildning och organisationsutveckling</li>
-                  <li>Kreativ innehållsproduktion (foto och video)</li>
-                </ul>
-              </CardContent>
-            </Card>
-          </motion.section>
-
-          <motion.section
-            className="mb-12"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
           >
             <h2 className="text-2xl font-semibold mb-4 flex items-center text-gray-800">
