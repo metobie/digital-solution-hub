@@ -292,7 +292,7 @@ const ServicesExpertise = () => {
     {
       icon: Briefcase,
       title: "IT-Konsulttjänster",
-      description: "Expert rådgivning för optimering av IT-infrastruktur och processer.",
+      description: "Expert rådgivning för optimering av IT-infrastruktur, processer och livscykelhantering.",
       examples: [
         {
           title: "IT-infrastrukturanalys och optimeringsförslag",
@@ -300,7 +300,7 @@ const ServicesExpertise = () => {
             <div>
               <p>En IT-infrastrukturanalys och optimeringsförslag syftar till att utvärdera och förbättra en organisations tekniska fundament för att stödja affärsmål och operativ effektivitet.</p>
               <h3 className="font-semibold mt-2 mb-1">Processen inkluderar vanligtvis:</h3>
-              <ul className="list-disc pl-5">
+              <ul className="list-disc list-inside mb-4 text-gray-600">
                 <li>Genomgång av nuvarande hårdvara, mjukvara och nätverkskomponenter</li>
                 <li>Prestandaanalys och identifiering av flaskhalsar</li>
                 <li>Säkerhetsgenomgång och riskbedömning</li>
@@ -319,7 +319,7 @@ const ServicesExpertise = () => {
             <div>
               <p>Projektledning för IT-implementeringar är avgörande för att säkerställa framgångsrik leverans av komplexa teknologiska lösningar inom tid, budget och omfattning.</p>
               <h3 className="font-semibold mt-2 mb-1">Nyckelaspekter av IT-projektledning inkluderar:</h3>
-              <ul className="list-disc pl-5">
+              <ul className="list-disc list-inside mb-4 text-gray-600">
                 <li>Detaljerad projektplanering och scope-definition</li>
                 <li>Resursallokering och teamsammansättning</li>
                 <li>Riskhantering och beredskapsplanering</li>
@@ -334,12 +334,32 @@ const ServicesExpertise = () => {
           )
         },
         {
+          title: "Livscykelhantering (LCM) för IT-system",
+          content: (
+            <div>
+              <p>Livscykelhantering (LCM) för IT-system är en strategisk approach för att hantera alla aspekter av ett systems livscykel, från planering och implementering till avveckling.</p>
+              <h3 className="font-semibold mt-2 mb-1">Nyckelkomponenter i LCM inkluderar:</h3>
+              <ul className="list-disc list-inside mb-4 text-gray-600">
+                <li>Strategisk planering och behovsanalys</li>
+                <li>Design och utveckling av system</li>
+                <li>Implementering och driftsättning</li>
+                <li>Löpande underhåll och support</li>
+                <li>Regelbundna uppdateringar och uppgraderingar</li>
+                <li>Prestandaövervakning och optimering</li>
+                <li>Säkerhetshantering och patchning</li>
+                <li>Planering för avveckling och datamigration</li>
+              </ul>
+              <p className="mt-2">Effektiv LCM säkerställer att IT-system förblir effektiva, säkra och anpassade till verksamhetens behov under hela sin livstid, samtidigt som det optimerar investeringar och minimerar risker.</p>
+            </div>
+          )
+        },
+        {
           title: "Kostnadseffektivisering av IT-operationer",
           content: (
             <div>
               <p>Kostnadseffektivisering av IT-operationer handlar om att optimera användningen av teknologiska resurser för att maximera värdet och minimera onödiga utgifter.</p>
               <h3 className="font-semibold mt-2 mb-1">Strategier för kostnadseffektivisering kan inkludera:</h3>
-              <ul className="list-disc pl-5">
+              <ul className="list-disc list-inside mb-4 text-gray-600">
                 <li>Konsolidering och rationalisering av IT-infrastruktur</li>
                 <li>Implementering av automatisering och självbetjäningslösningar</li>
                 <li>Optimering av licenshantering och mjukvaruanvändning</li>
