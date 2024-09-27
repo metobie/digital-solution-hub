@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Card, CardContent } from "@/components/ui/card";
 import { Shield, Briefcase, Lightbulb, Cloud, Code, LineChart, Users, Camera, Megaphone } from 'lucide-react';
+import Popup from '../components/Popup';
 
 const ServicesExpertise = () => {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
   const services = [
     {
       icon: Shield,
@@ -11,7 +14,12 @@ const ServicesExpertise = () => {
       description: "Implementera och optimera marknadsledande säkerhetslösningar.",
       examples: [
         "Säkerhetsrevision och riskbedömning",
-        "Implementering av Zero Trust-arkitektur",
+        <span 
+          className="cursor-pointer text-blue-600 hover:underline" 
+          onClick={() => setIsPopupOpen(true)}
+        >
+          Implementering av Zero Trust-arkitektur
+        </span>,
         "Utbildning i cybersäkerhet för anställda"
       ],
       experts: ["Tobias Karlsson", "Patrik Berg"]
@@ -106,6 +114,21 @@ const ServicesExpertise = () => {
     }
   ];
 
+  const zeroTrustContent = (
+    <div>
+      <h3 className="font-semibold mb-2">Varför Zero Trust?</h3>
+      <p className="mb-4">
+        Zero Trust har blivit en alltmer populär strategi på grund av det ökade hotet från cyberattacker och den ökande användningen av molntjänster och distansarbete. Traditionella säkerhetsmodeller bygger på att en gång verifierade användare och enheter inom nätverkets gränser kan betraktas som betrodda, men Zero Trust anpassar sig till den moderna verkligheten där hot kan komma både inifrån och utifrån.
+      </p>
+      <h3 className="font-semibold mb-2">Fördelar:</h3>
+      <ul className="list-disc pl-5">
+        <li>Ökad säkerhet: Genom att alltid verifiera och begränsa tillgången till resurser, minskas risken för dataförluster och säkerhetsintrång.</li>
+        <li>Bättre kontroll över åtkomst: Striktare kontroll över vem som får tillgång till vad, vilket minskar potentiella sårbarheter.</li>
+        <li>Anpassad för moderna IT-miljöer: Zero Trust passar väl för moln- och hybridmiljöer där användare och enheter kommer från många olika platser.</li>
+      </ul>
+    </div>
+  );
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 pt-24 pb-12">
       <div className="container mx-auto px-4">
@@ -154,6 +177,12 @@ const ServicesExpertise = () => {
           ))}
         </div>
       </div>
+      <Popup
+        isOpen={isPopupOpen}
+        onClose={() => setIsPopupOpen(false)}
+        title="Zero Trust-arkitektur"
+        content={zeroTrustContent}
+      />
     </div>
   );
 };
