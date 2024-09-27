@@ -1,21 +1,35 @@
 import React, { useRef, useEffect, useState } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import ServiceCatalog from '../components/ServiceCatalog';
 import VMwarePopup from '../components/VMwarePopup';
+import { ChevronDown } from 'lucide-react';
 
 const Index = () => {
   const { scrollY } = useScroll();
   const y = useTransform(scrollY, [0, 500], [0, 150]);
   const heroRef = useRef(null);
   const [heroHeight, setHeroHeight] = useState(0);
+  const [showScrollIndicator, setShowScrollIndicator] = useState(true);
 
   useEffect(() => {
     if (heroRef.current) {
       setHeroHeight(heroRef.current.offsetHeight);
     }
+
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setShowScrollIndicator(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   return (
@@ -64,6 +78,19 @@ const Index = () => {
             </Link>
           </motion.div>
         </div>
+        <AnimatePresence>
+          {showScrollIndicator && (
+            <motion.div
+              className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-30"
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 10 }}
+              transition={{ duration: 0.3 }}
+            >
+              <ChevronDown className="w-8 h-8 text-white animate-bounce" />
+            </motion.div>
+          )}
+        </AnimatePresence>
       </motion.section>
 
       <main className="relative z-30 bg-gradient-to-br from-gray-50 to-gray-100">
