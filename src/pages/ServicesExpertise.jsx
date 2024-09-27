@@ -16,6 +16,7 @@ const ServicesExpertise = () => {
   };
 
   const services = [
+  const services = [
     {
       icon: Shield,
       title: "Cybersäkerhet",
@@ -641,7 +642,7 @@ const ServicesExpertise = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            Våra Tjänster & Expertiser
+            Framtidens Lösningar, Idag
           </motion.h1>
           <motion.p 
             className="text-xl text-gray-100 mb-8"
@@ -649,7 +650,7 @@ const ServicesExpertise = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            Utforska vårt breda utbud av tjänster och hur vi kan hjälpa ditt företag att växa och innovera
+            Upptäck hur Renew I/O:s innovativa tjänster och expertis kan revolutionera din verksamhet. Från cybersäkerhet till kreativ innehållsproduktion - vi är din partner för digital transformation och hållbar tillväxt.
           </motion.p>
         </div>
       </motion.section>
@@ -697,6 +698,9 @@ const ServicesExpertise = () => {
         title={popupContent.title}
         content={popupContent.content}
       />
+    </div>
+  );
+};
     </div>
   );
 };
