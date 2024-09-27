@@ -21,22 +21,23 @@ const CookieConsentBanner = () => {
 
   const handleConsent = () => {
     setConsent(true);
-    setMinimized(true);
+    setTimeout(() => setMinimized(true), 500); // Delay minimizing to allow exit animation
   };
 
   const toggleMinimized = () => {
     if (minimized) {
-      setConsent(false);
       setMinimized(false);
+      setTimeout(() => setConsent(false), 50); // Small delay to ensure smooth transition
     } else {
-      setMinimized(true);
+      handleConsent();
     }
   };
 
   return (
     <AnimatePresence>
-      {!consent && !minimized ? (
+      {!consent && (
         <motion.div
+          key="banner"
           variants={bannerVariants}
           initial="hidden"
           animate="visible"
@@ -56,8 +57,10 @@ const CookieConsentBanner = () => {
             Jag förstår
           </Button>
         </motion.div>
-      ) : minimized ? (
+      )}
+      {minimized && (
         <motion.div
+          key="icon"
           variants={iconVariants}
           initial="hidden"
           animate="visible"
@@ -67,7 +70,7 @@ const CookieConsentBanner = () => {
         >
           <Cookie size={24} />
         </motion.div>
-      ) : null}
+      )}
     </AnimatePresence>
   );
 };
