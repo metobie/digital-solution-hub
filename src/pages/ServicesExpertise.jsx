@@ -16,6 +16,7 @@ const ServicesExpertise = () => {
   };
 
   const services = [
+  const services = [
     {
       icon: Shield,
       title: "Cybersäkerhet",
@@ -617,6 +618,7 @@ const ServicesExpertise = () => {
       experts: ["Emelie Nylander", "Tim Omorogieva"]
     }
   ];
+  ];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
@@ -641,7 +643,7 @@ const ServicesExpertise = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            Framtidens Lösningar, Idag
+            Framtidens lösningar, idag.
           </motion.h1>
           <motion.p 
             className="text-xl text-gray-100 mb-8"
@@ -697,6 +699,9 @@ const ServicesExpertise = () => {
         title={popupContent.title}
         content={popupContent.content}
       />
+    </div>
+  );
+};
     </div>
   );
 };
