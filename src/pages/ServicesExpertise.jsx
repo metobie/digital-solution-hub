@@ -15,7 +15,7 @@ const ServicesExpertise = () => {
       examples: [
         "Säkerhetsrevision och riskbedömning",
         <span 
-          className="cursor-pointer text-gray-600 hover:underline" 
+          className="cursor-pointer text-blue-600 hover:underline" 
           onClick={() => setIsPopupOpen(true)}
         >
           Implementering av Zero Trust-arkitektur
@@ -24,7 +24,94 @@ const ServicesExpertise = () => {
       ],
       experts: ["Tobias Karlsson", "Patrik Berg"]
     },
-    // ... (resten av services-arrayen förblir oförändrad)
+    {
+      icon: Cloud,
+      title: "Molntjänster & HCI",
+      description: "Optimera infrastruktur med skalbara och säkra molnlösningar, särskilt Nutanix för HCI.",
+      examples: [
+        "Migrering från on-premise till molnbaserad infrastruktur",
+        "Implementering av hybrid molnlösningar",
+        "Optimering av Nutanix HCI-miljöer"
+      ],
+      experts: ["Tobias Karlsson", "Patrik Berg"]
+    },
+    {
+      icon: Code,
+      title: "Systemutveckling",
+      description: "Skräddarsydda mjukvarulösningar för effektivisering och innovation.",
+      examples: [
+        "Utveckling av kundanpassade affärssystem",
+        "Skapande av API:er för systemintegration",
+        "Modernisering av legacy-system"
+      ],
+      experts: ["Robert Nesta Nuhu", "Patrik Berg"]
+    },
+    {
+      icon: LineChart,
+      title: "Digital Strategi",
+      description: "Utveckla framtidssäkrade digitala strategier för konkurrensfördelar.",
+      examples: [
+        "Utformning av digital transformationsplan",
+        "Analys av digitala trender och möjligheter",
+        "Utveckling av datadriven beslutsfattningsprocess"
+      ],
+      experts: ["Tobias Karlsson", "Tim Omorogieva"]
+    },
+    {
+      icon: Briefcase,
+      title: "IT-Konsulttjänster",
+      description: "Expert rådgivning för optimering av IT-infrastruktur och processer.",
+      examples: [
+        "IT-infrastrukturanalys och optimeringsförslag",
+        "Projektledning för IT-implementeringar",
+        "Kostnadseffektivisering av IT-operationer"
+      ],
+      experts: ["Tobias Karlsson", "Patrik Berg"]
+    },
+    {
+      icon: Lightbulb,
+      title: "Innovationsledning",
+      description: "Främja en kultur av innovation och teknologisk framåtanda.",
+      examples: [
+        "Workshops för idégenerering och innovationsprocesser",
+        "Implementering av innovationsledningssystem",
+        "Utveckling av interna innovationsprogram"
+      ],
+      experts: ["Tim Omorogieva", "Robert Nesta Nuhu"]
+    },
+    {
+      icon: Users,
+      title: "Ledarskapsutbildning",
+      description: "Skräddarsydda program för att utveckla framtidens ledare i en digital värld.",
+      examples: [
+        "Ledarskapsutbildning med fokus på digital transformation",
+        "Coachning i förändringsledning",
+        "Utveckling av digitala ledarskapskompetenser"
+      ],
+      experts: ["Tim Omorogieva"]
+    },
+    {
+      icon: Camera,
+      title: "Kreativ Innehållsproduktion",
+      description: "Professionell foto- och videoproduktion för digital närvaro och varumärkesbyggande.",
+      examples: [
+        "Produktion av företagspresentationsvideos",
+        "Fotosessioner för personalporträtt och företagsmiljöer",
+        "Skapande av visuellt innehåll för sociala medier"
+      ],
+      experts: ["Emelie Nylander"]
+    },
+    {
+      icon: Megaphone,
+      title: "Digital Marknadsföring",
+      description: "Strategisk digital marknadsföring och sociala medier-hantering.",
+      examples: [
+        "Utveckling av innehållsstrategier för sociala medier",
+        "Skapande och hantering av digitala reklamkampanjer",
+        "Analys och optimering av digital marknadsföringsprestanda"
+      ],
+      experts: ["Emelie Nylander", "Tim Omorogieva"]
+    }
   ];
 
   const zeroTrustContent = (
