@@ -641,11 +641,7 @@ const ServicesExpertise = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600">
-              Innovativa Lösningar
-            </span>
-            <br />
-            <span className="text-white">för Din Digitala Framgång</span>
+            Våra Tjänster & Expertiser
           </motion.h1>
           <motion.p 
             className="text-xl text-gray-100 mb-8"
@@ -653,7 +649,7 @@ const ServicesExpertise = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            Utforska vårt breda utbud av tjänster och expertis som driver din verksamhet framåt i den digitala eran
+            Utforska vårt breda utbud av tjänster och hur vi kan hjälpa ditt företag att växa och innovera
           </motion.p>
         </div>
       </motion.section>
