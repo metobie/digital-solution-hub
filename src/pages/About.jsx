@@ -3,6 +3,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { Card, CardContent } from "@/components/ui/card";
 import { Shield, Briefcase, Lightbulb, Cloud, Code, LineChart, Users, Camera, Megaphone } from 'lucide-react';
 import AnimatedTeamMember from '../components/AnimatedTeamMember';
+import ScrollIndicator from '../components/ScrollIndicator';
 
 const About = () => {
   const { scrollY } = useScroll();
@@ -102,6 +103,7 @@ const About = () => {
             Renew I/O är ett unikt kooperativ som samlar experter inom teknik, innovation, ledarskap och digital strategi. Vår styrka ligger i vår mångfald av kompetenser, vilket gör oss till en ovärderlig partner i din digitala transformation och organisatoriska utveckling.
           </motion.p>
         </div>
+        <ScrollIndicator />
       </motion.section>
 
       <div className="relative z-30 bg-gradient-to-br from-gray-50 to-gray-100">

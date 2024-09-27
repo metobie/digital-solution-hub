@@ -3,6 +3,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { Card, CardContent } from "@/components/ui/card";
 import { Shield, Briefcase, Lightbulb, Cloud, Code, LineChart, Users, Camera, Megaphone } from 'lucide-react';
 import Popup from '../components/Popup';
+import ScrollIndicator from '../components/ScrollIndicator';
 
 const ServicesExpertise = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -652,6 +653,7 @@ const ServicesExpertise = () => {
             Upptäck hur Renew I/O:s innovativa tjänster och expertis kan utveckla din verksamhet.
           </motion.p>
         </div>
+        <ScrollIndicator />
       </motion.section>
 
       <div className="container mx-auto px-4 py-48">
