@@ -9,7 +9,7 @@ const CookieConsentBanner = () => {
       buttonText="Jag förstår"
       cookieName="renewIOCookieConsent"
       style={{
-        background: "linear-gradient(to right, #3E7A8B, #8A3A8B)",
+        background: "linear-gradient(to right, #0C2A3B, #3A0A3B)",
         color: "#ffffff",
       }}
       buttonStyle={{
