@@ -133,7 +133,7 @@ const About = () => {
             <Card className="shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
               <CardContent className="p-6">
                 <p className="text-gray-600">
-                  Vår vision är att forma en digital framtid där innovation möter säkerhet, hållbarhet och autentisk kommunikation. Som ett kooperativ av experter strävar vi efter att vara katalysatorn för positiv förändring i företagsvärlden, där digitala lösningar inte bara effektiviserar verksamheter utan också öppnar upp för nya möjligheter och affärsmodeller som är både innovativa, hållbara och genuint engagerande för kunder och intressenter.
+                  Vår vision är att vara den ledande kraften i att forma en digital framtid där innovation möter praktisk tillämpning. Som ett kooperativ av experter strävar vi efter att vara katalysatorn för positiv förändring i företagsvärlden. Vi fokuserar på att leverera skräddarsydda digitala lösningar som inte bara effektiviserar verksamheter, utan också öppnar upp för nya möjligheter och affärsmodeller. Genom att kombinera teknisk expertis med strategiskt tänkande, strävar vi efter att hjälpa våra kunder att navigera den digitala transformationen på ett sätt som är både innovativt och hållbart, samtidigt som vi skapar genuint värde och engagemang för deras intressenter.
                 </p>
               </CardContent>
             </Card>
