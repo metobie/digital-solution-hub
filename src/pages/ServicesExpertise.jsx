@@ -14,7 +14,6 @@ const ServicesExpertise = () => {
   };
 
   const services = [
-  const services = [
     {
       icon: Shield,
       title: "Cybersäkerhet",
@@ -442,7 +441,6 @@ const ServicesExpertise = () => {
       ],
       experts: ["Tim Omorogieva", "Robert Nesta Nuhu"]
     },
-
     {
       icon: Users,
       title: "Ledarskapsutbildning",
@@ -508,7 +506,6 @@ const ServicesExpertise = () => {
       ],
       experts: ["Tim Omorogieva"]
     },
-
     {
       icon: Megaphone,
       title: "Digital Marknadsföring",
@@ -575,9 +572,7 @@ const ServicesExpertise = () => {
       experts: ["Emelie Nylander", "Tim Omorogieva"]
     }
   ];
-  ];
 
-  return (
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 pt-24 pb-12">
       <div className="container mx-auto px-4">
@@ -640,8 +635,6 @@ const ServicesExpertise = () => {
         content={popupContent.content}
       />
     </div>
-  );
-};
   );
 };
 
