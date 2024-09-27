@@ -137,6 +137,9 @@ const About = () => {
                 <p className="text-gray-600">
                   Vår vision är att vara den ledande kraften i att forma en digital framtid där innovation möter praktisk tillämpning. Som ett kooperativ av experter strävar vi efter att vara katalysatorn för positiv förändring i företagsvärlden. Vi fokuserar på att leverera skräddarsydda digitala lösningar som inte bara effektiviserar verksamheter, utan också öppnar upp för nya möjligheter och affärsmodeller. Genom att kombinera teknisk expertis med strategiskt tänkande, strävar vi efter att hjälpa våra kunder att navigera den digitala transformationen på ett sätt som är både innovativt och hållbart, samtidigt som vi skapar genuint värde och engagemang för deras intressenter.
                 </p>
+                <p className="text-gray-600 mt-4">
+                  Kundnöjdhet står i centrum för allt vi gör. Vi är övertygade om att vår framgång är direkt kopplad till våra kunders framgång. Därför lägger vi stor vikt vid att förstå varje kunds unika behov och utmaningar, och arbetar outtröttligt för att överträffa deras förväntningar. Vår dedikation till kundnöjdhet genomsyrar varje aspekt av vårt arbete, från den initiala konsultationen till den slutliga leveransen och beyond. Vi strävar efter att bygga långsiktiga partnerskap med våra kunder, där deras tillfredsställelse och framgång är vårt yttersta mål.
+                </p>
               </CardContent>
             </Card>
           </motion.section>
