@@ -226,70 +226,396 @@ const ServicesExpertise = () => {
     },
     {
       icon: LineChart,
-      title: "Affärsstrategi & Utveckling",
-      description: "Utveckla framtidssäkrade affärsstrategier för ökad konkurrenskraft i en föränderlig marknad.",
+      title: "Digital Strategi",
+      description: "Utveckla framtidssäkrade affärsstrategier med digital integration för ökad konkurrenskraft.",
       examples: [
         {
-          title: "Utveckling av innovativa affärsmodeller",
+          title: "Utveckling av digital affärsmodell",
           content: (
             <div>
-              <p>Utveckling av innovativa affärsmodeller handlar om att omforma eller skapa nya sätt att generera värde i en föränderlig marknad.</p>
+              <p>Utveckling av en digital affärsmodell handlar om att omforma eller skapa nya sätt att generera värde genom digitala kanaler och teknologier.</p>
               <h3 className="font-semibold mt-2 mb-1">Processen inkluderar:</h3>
               <ul className="list-disc pl-5">
                 <li>Analys av nuvarande affärsmodell och marknadstrender</li>
-                <li>Identifiering av nya möjligheter och potentiella hot</li>
-                <li>Utformning av nya värdeerbjudanden</li>
-                <li>Utveckling av kundrelationer och kanaler</li>
-                <li>Anpassning av interna processer och resurser</li>
-                <li>Skapande av nya intäktsströmmar</li>
-                <li>Utvärdering och iterativ förbättring av affärsmodellen</li>
+                <li>Identifiering av digitala möjligheter och hot</li>
+                <li>Utformning av nya värdeerbjudanden baserade på digital teknik</li>
+                <li>Utveckling av digitala kundrelationer och kanaler</li>
+                <li>Anpassning av interna processer och resurser för digital leverans</li>
+                <li>Skapande av nya intäktsströmmar genom digitala lösningar</li>
+                <li>Utvärdering och iterativ förbättring av den digitala affärsmodellen</li>
               </ul>
-              <p className="mt-2">En välutvecklad innovativ affärsmodell kan öppna nya marknader, förbättra kundupplevelsen och skapa långsiktig konkurrenskraft.</p>
+              <p className="mt-2">En välutvecklad digital affärsmodell kan öppna nya marknader, förbättra kundupplevelsen och skapa långsiktig konkurrenskraft i en allt mer digitaliserad värld.</p>
             </div>
           )
         },
         {
-          title: "Strategisk transformationsplan",
+          title: "Digital transformationsplan för organisationen",
           content: (
             <div>
-              <p>En strategisk transformationsplan är en omfattande strategi för att anpassa organisationen till framtida utmaningar och möjligheter.</p>
+              <p>En digital transformationsplan är en omfattande strategi för att integrera digital teknik i alla aspekter av en verksamhet, vilket fundamentalt förändrar hur organisationen opererar och levererar värde.</p>
               <h3 className="font-semibold mt-2 mb-1">Nyckelkomponenter i planen:</h3>
               <ul className="list-disc pl-5">
-                <li>Utvärdering av organisationens nuvarande position</li>
-                <li>Definiering av en tydlig vision och mål</li>
+                <li>Utvärdering av organisationens digitala mognad</li>
+                <li>Definiering av en tydlig digital vision och mål</li>
                 <li>Kartläggning av nödvändiga organisatoriska förändringar</li>
                 <li>Strategi för kompetensutveckling och kulturell förändring</li>
-                <li>Plan för strategiska investeringar</li>
-                <li>Omdesign av affärsprocesser för ökad effektivitet</li>
+                <li>Plan för teknologiska investeringar och infrastrukturutveckling</li>
+                <li>Omdesign av affärsprocesser för digital effektivitet</li>
                 <li>Utveckling av en datadriven beslutskultur</li>
               </ul>
-              <p className="mt-2">En väl genomförd strategisk transformationsplan hjälper organisationer att bli mer agila, kundcentrerade och innovativa i en snabbt föränderlig miljö.</p>
+              <p className="mt-2">En väl genomförd digital transformationsplan hjälper organisationer att bli mer agila, kundcentrerade och innovativa i en snabbt föränderlig digital miljö.</p>
             </div>
           )
         },
         {
-          title: "Strategisk marknadsplanering",
+          title: "Strategisk digital marknadsplanering",
           content: (
             <div>
-              <p>Strategisk marknadsplanering handlar om att utveckla en omfattande plan för att nå och engagera målgrupper, integrerat med övergripande affärsmål.</p>
+              <p>Strategisk digital marknadsplanering handlar om att utveckla en omfattande plan för att nå och engagera målgrupper genom digitala kanaler, integrerat med övergripande affärsmål.</p>
               <h3 className="font-semibold mt-2 mb-1">Viktiga aspekter av planeringen:</h3>
               <ul className="list-disc pl-5">
-                <li>Djupgående analys av målgrupper och marknadstrender</li>
-                <li>Utveckling av en enhetlig varumärkesstrategi</li>
-                <li>Val och optimering av marknadsföringskanaler</li>
-                <li>Skapande av en innehållsstrategi</li>
+                <li>Djupgående analys av målgrupper och digitala beteenden</li>
+                <li>Utveckling av en enhetlig digital varumärkesstrategi</li>
+                <li>Val och optimering av digitala marknadsföringskanaler</li>
+                <li>Skapande av en innehållsstrategi för digitala plattformar</li>
                 <li>Integrering av kunddata för personaliserad marknadsföring</li>
-                <li>Utformning av mätbara KPI:er för marknadsföring</li>
-                <li>Plan för kontinuerlig optimering baserad på marknadsinsikter</li>
+                <li>Utformning av mätbara KPI:er för digital marknadsföring</li>
+                <li>Plan för kontinuerlig optimering baserad på datainsikter</li>
               </ul>
-              <p className="mt-2">En effektiv strategisk marknadsplan ökar varumärkessynligheten, förbättrar kundengagemanget och driver affärstillväxt.</p>
+              <p className="mt-2">En effektiv digital marknadsplan ökar varumärkessynligheten, förbättrar kundengagemanget och driver affärstillväxt i den digitala sfären.</p>
             </div>
           )
         }
       ],
       experts: ["Tobias Karlsson", "Tim Omorogieva"]
     },
-    // ... (remaining services stay the same)
+    {
+      icon: Briefcase,
+      title: "IT-Konsulttjänster",
+      description: "Expert rådgivning för optimering av IT-infrastruktur och processer.",
+      examples: [
+        {
+          title: "IT-infrastrukturanalys och optimeringsförslag",
+          content: (
+            <div>
+              <p>En IT-infrastrukturanalys och optimeringsförslag syftar till att utvärdera och förbättra en organisations tekniska fundament för att stödja affärsmål och operativ effektivitet.</p>
+              <h3 className="font-semibold mt-2 mb-1">Processen inkluderar vanligtvis:</h3>
+              <ul className="list-disc pl-5">
+                <li>Genomgång av nuvarande hårdvara, mjukvara och nätverkskomponenter</li>
+                <li>Prestandaanalys och identifiering av flaskhalsar</li>
+                <li>Säkerhetsgenomgång och riskbedömning</li>
+                <li>Utvärdering av skalbarhet och flexibilitet</li>
+                <li>Analys av kostnadseffektivitet och ROI för IT-investeringar</li>
+                <li>Rekommendationer för teknologiska uppgraderingar och förbättringar</li>
+                <li>Förslag på implementering av moderna IT-lösningar (t.ex. molntjänster, virtualisering)</li>
+              </ul>
+              <p className="mt-2">Ett väl genomfört optimeringsarbete kan leda till förbättrad prestanda, ökad säkerhet, lägre driftskostnader och bättre anpassning till organisationens långsiktiga mål.</p>
+            </div>
+          )
+        },
+        {
+          title: "Projektledning för IT-implementeringar",
+          content: (
+            <div>
+              <p>Projektledning för IT-implementeringar är avgörande för att säkerställa framgångsrik leverans av komplexa teknologiska lösningar inom tid, budget och omfattning.</p>
+              <h3 className="font-semibold mt-2 mb-1">Nyckelaspekter av IT-projektledning inkluderar:</h3>
+              <ul className="list-disc pl-5">
+                <li>Detaljerad projektplanering och scope-definition</li>
+                <li>Resursallokering och teamsammansättning</li>
+                <li>Riskhantering och beredskapsplanering</li>
+                <li>Kontinuerlig kommunikation med intressenter</li>
+                <li>Kvalitetssäkring och testning</li>
+                <li>Förändringsledning och användaracceptans</li>
+                <li>Budgetövervakning och kostnadskontroll</li>
+                <li>Dokumentation och kunskapsöverföring</li>
+              </ul>
+              <p className="mt-2">Effektiv projektledning säkerställer att IT-implementeringar levererar avsett värde, minimerar störningar i verksamheten och lägger grunden för framtida teknologisk utveckling.</p>
+            </div>
+          )
+        },
+        {
+          title: "Kostnadseffektivisering av IT-operationer",
+          content: (
+            <div>
+              <p>Kostnadseffektivisering av IT-operationer handlar om att optimera användningen av teknologiska resurser för att maximera värdet och minimera onödiga utgifter.</p>
+              <h3 className="font-semibold mt-2 mb-1">Strategier för kostnadseffektivisering kan inkludera:</h3>
+              <ul className="list-disc pl-5">
+                <li>Konsolidering och rationalisering av IT-infrastruktur</li>
+                <li>Implementering av automatisering och självbetjäningslösningar</li>
+                <li>Optimering av licenshantering och mjukvaruanvändning</li>
+                <li>Utvärdering och omförhandling av leverantörsavtal</li>
+                <li>Implementering av energieffektiva IT-lösningar</li>
+                <li>Adoption av molntjänster för flexibel resursanvändning</li>
+                <li>Standardisering av hårdvara och mjukvara</li>
+                <li>Förbättring av IT Service Management (ITSM) processer</li>
+              </ul>
+              <p className="mt-2">Genom att implementera dessa strategier kan organisationer signifikant reducera sina IT-kostnader samtidigt som de upprätthåller eller förbättrar servicekvaliteten och innovationsförmågan.</p>
+            </div>
+          )
+        }
+      ],
+      experts: ["Tobias Karlsson", "Patrik Berg"]
+    },
+    {
+      icon: Lightbulb,
+      title: "Innovationsledning",
+      description: "Främja en kultur av innovation och teknologisk framåtanda.",
+      examples: [
+        {
+          title: "Workshops för idégenerering och innovationsprocesser",
+          content: (
+            <div>
+              <p>Workshops för idégenerering och innovationsprocesser är kraftfulla verktyg för att stimulera kreativitet och driva fram nya lösningar inom en organisation.</p>
+              <h3 className="font-semibold mt-2 mb-1">Dessa workshops kan inkludera:</h3>
+              <ul className="list-disc pl-5">
+                <li>Brainstormingsessioner med olika kreativa tekniker</li>
+                <li>Design Thinking-övningar för användarcentrerad innovation</li>
+                <li>Scenarioplanering för framtida marknader och teknologier</li>
+                <li>Tvärfunktionella team-övningar för att bryta silos</li>
+                <li>Prototyping och snabb konceptutveckling</li>
+                <li>Utvärdering och prioritering av idéer</li>
+                <li>Utveckling av innovationsroadmaps</li>
+              </ul>
+              <p className="mt-2">Genom att regelbundet hålla sådana workshops kan organisationer skapa en kontinuerlig ström av innovativa idéer och lösningar som kan driva verksamheten framåt.</p>
+            </div>
+          )
+        },
+        {
+          title: "Implementering av innovationsledningssystem",
+          content: (
+            <div>
+              <p>Implementering av ett innovationsledningssystem syftar till att systematisera och optimera organisationens förmåga att generera, utvärdera och implementera innovativa idéer.</p>
+              <h3 className="font-semibold mt-2 mb-1">Nyckelkomponenter i ett innovationsledningssystem:</h3>
+              <ul className="list-disc pl-5">
+                <li>Etablering av en tydlig innovationsstrategi och mål</li>
+                <li>Skapande av strukturerade processer för idégenerering och -hantering</li>
+                <li>Implementering av verktyg för samarbete och idédelning</li>
+                <li>Utveckling av KPI:er för att mäta innovationsframgång</li>
+                <li>Allokering av resurser och budget för innovationsprojekt</li>
+                <li>Skapande av belöningssystem för innovativa bidrag</li>
+                <li>Etablering av partnerskap och öppna innovationsinitiativ</li>
+              </ul>
+              <p className="mt-2">Ett väl implementerat innovationsledningssystem kan dramatiskt öka en organisations förmåga att kontinuerligt innovera och anpassa sig till föränderliga marknadsförhållanden.</p>
+            </div>
+          )
+        },
+        {
+          title: "Utveckling av interna innovationsprogram",
+          content: (
+            <div>
+              <p>Utveckling av interna innovationsprogram syftar till att skapa en strukturerad miljö där medarbetare uppmuntras och ges möjlighet att bidra med innovativa idéer och lösningar.</p>
+              <h3 className="font-semibold mt-2 mb-1">Ett effektivt internt innovationsprogram kan inkludera:</h3>
+              <ul className="list-disc pl-5">
+                <li>Skapande av en dedikerad innovationsplattform eller portal</li>
+                <li>Regelbundna innovationsutmaningar eller hackathons</li>
+                <li>Mentorprogram för att stödja innovatörer</li>
+                <li>Tillhandahållande av resurser och tid för innovationsprojekt</li>
+                <li>Utbildning i innovationsmetoder och kreativt tänkande</li>
+                <li>Erkännande och belöning av framgångsrika innovationer</li>
+                <li>Skapande av tvärfunktionella innovationsteam</li>
+              </ul>
+              <p className="mt-2">Genom att implementera ett robust internt innovationsprogram kan organisationer frigöra den kreativa potentialen hos sina medarbetare och skapa en kultur av kontinuerlig förbättring och innovation.</p>
+            </div>
+          )
+        }
+      ],
+      experts: ["Tim Omorogieva", "Robert Nesta Nuhu"]
+    },
+    {
+      icon: Users,
+      title: "Ledarskapsutbildning",
+      description: "Skräddarsydda program för att utveckla framtidens ledare i en digital värld.",
+      examples: [
+        {
+          title: "Ledarskapsutbildning med fokus på digital transformation",
+          content: (
+            <div>
+              <p>Ledarskapsutbildning med fokus på digital transformation syftar till att utrusta ledare med de kunskaper och färdigheter som krävs för att navigera och driva organisationer i en allt mer digitaliserad värld.</p>
+              <h3 className="font-semibold mt-2 mb-1">Nyckelområden i utbildningen kan inkludera:</h3>
+              <ul className="list-disc pl-5">
+                <li>Förståelse för digitala teknologier och deras affärspåverkan</li>
+                <li>Strategier för att leda digital förändring och innovation</li>
+                <li>Utveckling av en digital vision och roadmap</li>
+                <li>Hantering av digitala risker och cybersäkerhet</li>
+                <li>Datadriven beslutsfattning och analys</li>
+                <li>Agila och flexibla ledarskapsmetoder</li>
+                <li>Skapande av en digital kultur och främjande av digitala kompetenser</li>
+              </ul>
+              <p className="mt-2">Genom denna utbildning kan ledare effektivt driva digital transformation, utnyttja nya teknologier och skapa konkurrensfördelar i den digitala eran.</p>
+            </div>
+          )
+        },
+        {
+          title: "Coachning i förändringsledning",
+          content: (
+            <div>
+              <p>Coachning i förändringsledning är designad för att hjälpa ledare att effektivt navigera och driva organisatoriska förändringar, särskilt i samband med digital transformation.</p>
+              <h3 className="font-semibold mt-2 mb-1">Coachningen fokuserar ofta på:</h3>
+              <ul className="list-disc pl-5">
+                <li>Utveckling av en tydlig förändringsvisio och -strategi</li>
+                <li>Hantering av motstånd mot förändring</li>
+                <li>Effektiv kommunikation under förändringsprocesser</li>
+                <li>Skapande av engagemang och motivation hos medarbetare</li>
+                <li>Identifiering och hantering av förändringens påverkan på olika intressenter</li>
+                <li>Implementering av förändringsmodeller och -metoder</li>
+                <li>Mätning och uppföljning av förändringens framgång</li>
+              </ul>
+              <p className="mt-2">Genom personlig coachning kan ledare utveckla de färdigheter och insikter som krävs för att framgångsrikt leda organisationen genom komplexa förändringsprocesser.</p>
+            </div>
+          )
+        },
+        {
+          title: "Utveckling av digitala ledarskapskompetenser",
+          content: (
+            <div>
+              <p>Utveckling av digitala ledarskapskompetenser är avgörande för att ledare ska kunna utnyttja digitala teknologier effektivt och leda i en digital affärsmiljö.</p>
+              <h3 className="font-semibold mt-2 mb-1">Viktiga digitala ledarskapskompetenser inkluderar:</h3>
+              <ul className="list-disc pl-5">
+                <li>Digital affärsmodellsinnovation</li>
+                <li>Datadriven beslutsfattning och analys</li>
+                <li>Förståelse för och tillämpning av AI och maskininlärning</li>
+                <li>Cybersäkerhet och digital riskhantering</li>
+                <li>Digitalt samarbete och virtuell teamledning</li>
+                <li>Hantering av digitala kundupplevelser</li>
+                <li>Agil projektledning och kontinuerlig leverans</li>
+              </ul>
+              <p className="mt-2">Genom att utveckla dessa kompetenser kan ledare effektivt driva digital innovation, optimera processer och skapa värde i en snabbt föränderlig digital värld.</p>
+            </div>
+          )
+        }
+      ],
+      experts: ["Tim Omorogieva"]
+    },
+    {
+      icon: Camera,
+      title: "Kreativ Innehållsproduktion",
+      description: "Professionell foto- och videoproduktion för digital närvaro och varumärkesbyggande.",
+      examples: [
+        {
+          title: "Produktion av företagspresentationsvideos",
+          content: (
+            <div>
+              <p>Produktion av företagspresentationsvideos är ett kraftfullt verktyg för att kommunicera ett företags värderingar, kultur och erbjudanden på ett engagerande sätt.</p>
+              <h3 className="font-semibold mt-2 mb-1">Processen för att skapa en effektiv företagspresentationsvideo inkluderar:</h3>
+              <ul className="list-disc pl-5">
+                <li>Utveckling av ett tydligt koncept och manus</li>
+                <li>Planering av inspelningsplatser och scenografi</li>
+                <li>Professionell videoinspelning med högkvalitativ utrustning</li>
+                <li>Intervjuer med nyckelpersoner inom företaget</li>
+                <li>Inkludering av företagets produkter eller tjänster i action</li>
+                <li>Professionell redigering och postproduktion</li>
+                <li>Tillägg av grafik, animationer och musik</li>
+              </ul>
+              <p className="mt-2">En välproducerad företagspresentationsvideo kan effektivt förmedla företagets budskap, bygga förtroende hos potentiella kunder och partners, samt stärka varumärket.</p>
+            </div>
+          )
+        },
+        {
+          title: "Fotosessioner för personalporträtt och företagsmiljöer",
+          content: (
+            <div>
+              <p>Professionella fotosessioner för personalporträtt och företagsmiljöer är viktiga för att skapa en konsekvent och professionell visuell identitet för företaget.</p>
+              <h3 className="font-semibold mt-2 mb-1">En typisk fotosession kan omfatta:</h3>
+              <ul className="list-disc pl-5">
+                <li>Planering av fotokoncept och stil i linje med företagets varumärke</li>
+                <li>Val av lämpliga bakgrunder och miljöer</li>
+                <li>Professionell belysning för att skapa önskad stämning</li>
+                <li>Individuella porträttfotograferingar av personal</li>
+                <li>Gruppfoton av team eller avdelningar</li>
+                <li>Fotografering av kontorsmiljöer och arbetssituationer</li>
+                <li>Bildbehandling och retuschering för konsekvent look</li>
+              </ul>
+              <p className="mt-2">Högkvalitativa personalporträtt och miljöbilder kan användas på företagets webbplats, i marknadsföringsmaterial och på sociala medier för att skapa en professionell och tilltalande bild av organisationen.</p>
+            </div>
+          )
+        },
+        {
+          title: "Skapande av visuellt innehåll för sociala medier",
+          content: (
+            <div>
+              <p>Skapande av visuellt innehåll för sociala medier är avgörande för att engagera följare, öka varumärkesmedvetenheten och driva interaktion på olika sociala plattformar.</p>
+              <h3 className="font-semibold mt-2 mb-1">Processen för att skapa effektivt visuellt innehåll inkluderar:</h3>
+              <ul className="list-disc pl-5">
+                <li>Utveckling av en konsekvent visuell strategi i linje med varumärket</li>
+                <li>Skapande av mallar för olika typer av inlägg</li>
+                <li>Fotografering och videoproduktion anpassad för sociala medier</li>
+                <li>Design av infografik och animerade GIFs</li>
+                <li>Redigering och optimering av bilder för olika plattformar</li>
+                <li>Skapande av engagerande bildtexter och call-to-actions</li>
+                <li>Planering av innehållskalender för konsekvent publicering</li>
+              </ul>
+              <p className="mt-2">Genom att skapa högkvalitativt och relevant visuellt innehåll kan företag öka sin synlighet, engagemang och följarantal på sociala medier, vilket i sin tur kan leda till ökad varumärkeslojalitet och försäljning.</p>
+            </div>
+          )
+        }
+      ],
+      experts: ["Emelie Nylander"]
+    },
+    {
+      icon: Megaphone,
+      title: "Digital Marknadsföring",
+      description: "Strategisk digital marknadsföring och sociala medier-hantering.",
+      examples: [
+        {
+          title: "Utveckling av innehållsstrategier för sociala medier",
+          content: (
+            <div>
+              <p>Utveckling av innehållsstrategier för sociala medier är avgörande för att skapa en konsekvent och engagerande närvaro på olika social plattformar.</p>
+              <h3 className="font-semibold mt-2 mb-1">En effektiv innehållsstrategi för sociala medier inkluderar:</h3>
+              <ul className="list-disc pl-5">
+                <li>Definiering av målgrupper och deras preferenser</li>
+                <li>Val av relevanta sociala medieplattformar</li>
+                <li>Skapande av en innehållskalender</li>
+                <li>Utveckling av olika innehållstyper (t.ex. bilder, videos, stories)</li>
+                <li>Anpassning av innehåll för varje plattform</li>
+                <li>Integrering av varumärkets röst och värderingar</li>
+                <li>Planering för interaktion och community management</li>
+              </ul>
+              <p className="mt-2">En välutformad innehållsstrategi hjälper företag att bygga starka relationer med sin målgrupp, öka engagemanget och driva affärsresultat genom sociala medier.</p>
+            </div>
+          )
+        },
+        {
+          title: "Skapande och hantering av digitala reklamkampanjer",
+          content: (
+            <div>
+              <p>Skapande och hantering av digitala reklamkampanjer är en komplex process som syftar till att nå rätt målgrupp med rätt budskap vid rätt tidpunkt.</p>
+              <h3 className="font-semibold mt-2 mb-1">Nyckelsteg i processen inkluderar:</h3>
+              <ul className="list-disc pl-5">
+                <li>Definiering av kampanjmål och KPI:er</li>
+                <li>Målgruppsanalys och segmentering</li>
+                <li>Val av lämpliga digitala reklamplattformar (t.ex. Google Ads, Facebook Ads)</li>
+                <li>Skapande av engagerande annonser (text, bild, video)</li>
+                <li>Implementering av målgruppsinriktning och budgivningsstrategier</li>
+                <li>Uppsättning av spårning och konverteringsmätning</li>
+                <li>Kontinuerlig optimering baserad på prestationsdata</li>
+              </ul>
+              <p className="mt-2">Genom att skapa och hantera effektiva digitala reklamkampanjer kan företag öka sin synlighet, driva trafik till sin webbplats och generera leads eller försäljning på ett kostnadseffektivt sätt.</p>
+            </div>
+          )
+        },
+        {
+          title: "Analys och optimering av digital marknadsföringsprestanda",
+          content: (
+            <div>
+              <p>Analys och optimering av digital marknadsföringsprestanda är avgörande för att maximera avkastningen på marknadsföringsinvesteringar och kontinuerligt förbättra effektiviteten i digitala kampanjer.</p>
+              <h3 className="font-semibold mt-2 mb-1">Processen inkluderar vanligtvis:</h3>
+              <ul className="list-disc pl-5">
+                <li>Implementering av robusta spårningsverktyg (t.ex. Google Analytics)</li>
+                <li>Definiering av relevanta KPI:er för olika marknadsföringskanaler</li>
+                <li>Regelbunden datainsamling och rapportering</li>
+                <li>Analys av användar- och kundbeteende</li>
+                <li>A/B-testning av olika innehålls- och annonsversioner</li>
+                <li>Identifiering av trender och insikter från data</li>
+                <li>Implementering av datadriven optimering av kampanjer</li>
+              </ul>
+              <p className="mt-2">Genom noggrann analys och kontinuerlig optimering kan företag förbättra prestandan i sina digitala marknadsföringsinsatser, öka ROI och fatta mer informerade beslut om resursallokering och strategier.</p>
+            </div>
+          )
+        }
+      ],
+      experts: ["Emelie Nylander", "Tim Omorogieva"]
+    }
   ];
 
   return (
