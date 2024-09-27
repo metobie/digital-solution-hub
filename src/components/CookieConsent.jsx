@@ -13,7 +13,12 @@ const CookieConsentBanner = () => {
   };
 
   const toggleMinimized = () => {
-    setMinimized(!minimized);
+    if (minimized) {
+      setConsent(false);
+      setMinimized(false);
+    } else {
+      setMinimized(true);
+    }
   };
 
   return (
