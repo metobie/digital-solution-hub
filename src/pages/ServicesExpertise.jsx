@@ -12,9 +12,9 @@ const ServicesExpertise = () => {
       title: "Cybersäkerhet",
       description: "Implementera och optimera marknadsledande säkerhetslösningar för att skydda din verksamhet mot dagens avancerade cyberhot.",
       examples: [
-        { title: "Säkerhetsrevision och riskbedömning" },
-        { title: "Implementering av Zero Trust-arkitektur" },
-        { title: "Utbildning i cybersäkerhet för anställda" }
+        { title: "Säkerhetsrevision och riskbedömning", description: "Genomför omfattande säkerhetsgranskningar för att identifiera sårbarheter och utveckla skräddarsydda åtgärdsplaner." },
+        { title: "Implementering av Zero Trust-arkitektur", description: "Designa och implementera en Zero Trust-säkerhetsmodell för att förbättra din organisations övergripande säkerhetsställning." },
+        { title: "Utbildning i cybersäkerhet för anställda", description: "Skapa och leverera skräddarsydda utbildningsprogram för att öka medvetenheten om cybersäkerhet bland personalen." }
       ],
       experts: ["Tobias Karlsson", "Patrik Berg"]
     },
@@ -23,9 +23,9 @@ const ServicesExpertise = () => {
       title: "Molntjänster & HCI",
       description: "Optimera infrastruktur med skalbara och säkra molnlösningar, särskilt Nutanix för HCI.",
       examples: [
-        { title: "Migrering från on-premise till molnbaserad infrastruktur" },
-        { title: "Implementering av hybrid molnlösningar" },
-        { title: "Optimering av Nutanix HCI-miljöer" }
+        { title: "Migrering från on-premise till molnbaserad infrastruktur", description: "Planera och genomför en sömlös migrering av befintliga system till molnbaserade lösningar för ökad flexibilitet och skalbarhet." },
+        { title: "Implementering av hybrid molnlösningar", description: "Designa och implementera en hybrid molnarkitektur som kombinerar fördelarna med både privata och offentliga molntjänster." },
+        { title: "Optimering av Nutanix HCI-miljöer", description: "Finjustera och optimera Nutanix HCI-implementeringar för maximal prestanda och resurseffektivitet." }
       ],
       experts: ["Tobias Karlsson", "Patrik Berg"]
     },
@@ -34,9 +34,9 @@ const ServicesExpertise = () => {
       title: "Systemutveckling",
       description: "Skräddarsydda mjukvarulösningar för effektivisering och innovation.",
       examples: [
-        { title: "Utveckling av kundanpassade affärssystem" },
-        { title: "Skapande av API:er för systemintegration" },
-        { title: "Modernisering av legacy-system" }
+        { title: "Utveckling av kundanpassade affärssystem", description: "Skapa skräddarsydda affärssystem som möter din organisations unika behov och processer." },
+        { title: "Skapande av API:er för systemintegration", description: "Utveckla robusta API:er för att möjliggöra sömlös integration mellan olika system och applikationer." },
+        { title: "Modernisering av legacy-system", description: "Uppdatera och modernisera äldre system för att förbättra prestanda, säkerhet och användarupplevelse." }
       ],
       experts: ["Robert Nesta Nuhu", "Patrik Berg"]
     },
@@ -45,9 +45,9 @@ const ServicesExpertise = () => {
       title: "Digital Strategi",
       description: "Utveckla framtidssäkrade affärsstrategier med digital integration för ökad konkurrenskraft.",
       examples: [
-        { title: "Utveckling av digital affärsmodell" },
-        { title: "Digital transformationsplan för organisationen" },
-        { title: "Strategisk digital marknadsplanering" }
+        { title: "Utveckling av digital affärsmodell", description: "Skapa en omfattande digital strategi som integrerar teknologi i alla aspekter av verksamheten för att driva tillväxt och innovation." },
+        { title: "Digital transformationsplan för organisationen", description: "Utforma en detaljerad plan för att guida din organisation genom en framgångsrik digital transformation." },
+        { title: "Strategisk digital marknadsplanering", description: "Utveckla en datadriven digital marknadsföringsstrategi för att öka varumärkessynlighet och kundengagemang." }
       ],
       experts: ["Tobias Karlsson", "Tim Omorogieva"]
     },
@@ -56,10 +56,10 @@ const ServicesExpertise = () => {
       title: "IT-Konsulttjänster",
       description: "Expert rådgivning för optimering av IT-infrastruktur, processer och livscykelhantering.",
       examples: [
-        { title: "IT-infrastrukturanalys och optimeringsförslag" },
-        { title: "Projektledning för IT-implementeringar" },
-        { title: "Livscykelhantering (LCM) för IT-system" },
-        { title: "Kostnadseffektivisering av IT-operationer" }
+        { title: "IT-infrastrukturanalys och optimeringsförslag", description: "Genomför en grundlig analys av befintlig IT-infrastruktur och ge rekommendationer för optimering och effektivisering." },
+        { title: "Projektledning för IT-implementeringar", description: "Leda och hantera komplexa IT-projekt från planering till framgångsrikt genomförande." },
+        { title: "Livscykelhantering (LCM) för IT-system", description: "Utveckla och implementera strategier för effektiv hantering av IT-systems hela livscykel." },
+        { title: "Kostnadseffektivisering av IT-operationer", description: "Identifiera områden för kostnadsbesparingar och implementera lösningar för att optimera IT-budgeten." }
       ],
       experts: ["Tobias Karlsson", "Patrik Berg"]
     },
@@ -68,9 +68,9 @@ const ServicesExpertise = () => {
       title: "Innovationsledning",
       description: "Främja en kultur av innovation och teknologisk framåtanda.",
       examples: [
-        { title: "Workshops för idégenerering och innovationsprocesser" },
-        { title: "Implementering av innovationsledningssystem" },
-        { title: "Utveckling av interna innovationsprogram" }
+        { title: "Workshops för idégenerering och innovationsprocesser", description: "Facilitera kreativa workshops för att stimulera nya idéer och utveckla innovativa lösningar." },
+        { title: "Implementering av innovationsledningssystem", description: "Utforma och implementera strukturerade system för att kontinuerligt driva och hantera innovation inom organisationen." },
+        { title: "Utveckling av interna innovationsprogram", description: "Skapa och lansera program som uppmuntrar och belönar innovativt tänkande bland anställda." }
       ],
       experts: ["Tim Omorogieva", "Robert Nesta Nuhu"]
     },
@@ -79,9 +79,9 @@ const ServicesExpertise = () => {
       title: "Ledarskapsutbildning",
       description: "Skräddarsydda program för att utveckla framtidens ledare i en komplex och föränderlig värld.",
       examples: [
-        { title: "Transformativt ledarskap för framtiden" },
-        { title: "Utveckling av autentiskt ledarskap" },
-        { title: "Strategiskt ledarskap och organisatorisk framgång" }
+        { title: "Transformativt ledarskap för framtiden", description: "Utbilda ledare i att driva förändring och inspirera innovation i en snabbt föränderlig digital miljö." },
+        { title: "Utveckling av autentiskt ledarskap", description: "Hjälp ledare att utveckla sin unika ledarstil och bygga förtroende genom autenticitet och integritet." },
+        { title: "Strategiskt ledarskap och organisatorisk framgång", description: "Träna ledare i att tänka strategiskt och fatta beslut som driver långsiktig organisatorisk framgång." }
       ],
       experts: ["Tim Omorogieva"]
     },
@@ -90,9 +90,9 @@ const ServicesExpertise = () => {
       title: "Kreativ Innehållsproduktion",
       description: "Professionell foto- och videoproduktion för digital närvaro och varumärkesbyggande.",
       examples: [
-        { title: "Produktion av företagspresentationsvideos" },
-        { title: "Fotosessioner för personalporträtt och företagsmiljöer" },
-        { title: "Skapande av visuellt innehåll för sociala medier" }
+        { title: "Produktion av företagspresentationsvideos", description: "Skapa engagerande och professionella videor som effektivt kommunicerar ditt företags värderingar och erbjudanden." },
+        { title: "Fotosessioner för personalporträtt och företagsmiljöer", description: "Genomför högkvalitativa fotosessioner för att fånga din organisations unika kultur och personalitet." },
+        { title: "Skapande av visuellt innehåll för sociala medier", description: "Producera attraktivt och delbart visuellt innehåll anpassat för olika sociala medieplattformar." }
       ],
       experts: ["Emelie Nylander"]
     },
@@ -101,9 +101,9 @@ const ServicesExpertise = () => {
       title: "Digital Marknadsföring",
       description: "Strategisk digital marknadsföring, sociala medier-hantering och eventplanering.",
       examples: [
-        { title: "Utveckling av innehållsstrategier för sociala medier" },
-        { title: "Skapande och hantering av digitala reklamkampanjer" },
-        { title: "Planering och genomförande av företagsevent" }
+        { title: "Utveckling av innehållsstrategier för sociala medier", description: "Skapa omfattande strategier för att maximera engagemang och räckvidd på sociala medieplattformar." },
+        { title: "Skapande och hantering av digitala reklamkampanjer", description: "Utforma, implementera och optimera digitala reklamkampanjer för att nå specifika målgrupper och driva konverteringar." },
+        { title: "Planering och genomförande av företagsevent", description: "Organisera och genomföra minnesvärda företagsevent som stärker varumärket och bygger relationer." }
       ],
       experts: ["Emelie Nylander", "Tim Omorogieva"]
     }
