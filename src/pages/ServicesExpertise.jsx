@@ -649,7 +649,7 @@ const ServicesExpertise = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            Upptäck hur Renew I/O:s innovativa tjänster och expertis kan revolutionera din verksamhet. Från cybersäkerhet till kreativ innehållsproduktion - vi är din partner för digital transformation och hållbar tillväxt.
+            Upptäck hur Renew I/O:s innovativa tjänster och expertis kan utveckla din verksamhet.
           </motion.p>
         </div>
       </motion.section>
