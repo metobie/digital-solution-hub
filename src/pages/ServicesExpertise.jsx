@@ -16,7 +16,6 @@ const ServicesExpertise = () => {
   };
 
   const services = [
-  const services = [
     {
       icon: Shield,
       title: "Cybersäkerhet",
@@ -619,7 +618,6 @@ const ServicesExpertise = () => {
     }
   ];
 
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
       <motion.section 
@@ -656,7 +654,7 @@ const ServicesExpertise = () => {
         </div>
       </motion.section>
 
-      <div className="container mx-auto px-4 py-48"> {/* Increased top padding here */}
+      <div className="container mx-auto px-4 py-48">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <motion.div
@@ -700,11 +698,6 @@ const ServicesExpertise = () => {
         content={popupContent.content}
       />
     </div>
-  );
-};
-
-  return (
-    // ... (JSX remains the same)
   );
 };
 
