@@ -634,23 +634,22 @@ const ServicesExpertise = () => {
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-br from-[#0C2A3B] to-[#3A0A3B] opacity-90 z-10"></div>
-        <div className="relative z-20 text-center px-6 max-w-4xl">
+        <div className="relative z-20 text-center px-6 max-w-3xl">
           <motion.h1 
-            className="text-5xl md:text-7xl font-extrabold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600"
+            className="text-4xl md:text-6xl font-extrabold mb-2 text-white tracking-tight"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <span className="block">Innovativa</span>
-            <span className="block">Lösningar</span>
+            Våra Tjänster & Expertiser
           </motion.h1>
           <motion.p 
-            className="text-xl md:text-2xl text-gray-300 mb-8 font-light"
+            className="text-xl text-gray-100 mb-8"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            Utforska vårt breda utbud av tjänster och expertis för att driva din verksamhet framåt
+            Utforska vårt breda utbud av tjänster och hur vi kan hjälpa ditt företag att växa och innovera
           </motion.p>
         </div>
       </motion.section>
