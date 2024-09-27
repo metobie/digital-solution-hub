@@ -444,24 +444,24 @@ const ServicesExpertise = () => {
     {
       icon: Users,
       title: "Ledarskapsutbildning",
-      description: "Skräddarsydda program för att utveckla framtidens ledare i en komplex och föränderlig värld.",
+      description: "Skräddarsydda program för att utveckla framtidens ledare i en digital värld.",
       examples: [
         {
-          title: "Transformativt ledarskap för framtiden",
+          title: "Ledarskapsutbildning med fokus på digital transformation",
           content: (
             <div>
-              <p>Vår utbildning i transformativt ledarskap förbereder ledare för att navigera och leda i en värld präglad av snabb förändring och komplexitet.</p>
-              <h3 className="font-semibold mt-2 mb-1">Nyckelområden i utbildningen inkluderar:</h3>
+              <p>Ledarskapsutbildning med fokus på digital transformation syftar till att utrusta ledare med de kunskaper och färdigheter som krävs för att navigera och driva organisationer i en allt mer digitaliserad värld.</p>
+              <h3 className="font-semibold mt-2 mb-1">Nyckelområden i utbildningen kan inkludera:</h3>
               <ul className="list-disc pl-5">
-                <li>Utveckling av en inspirerande och engagerande ledarskapsfilosofi</li>
-                <li>Strategier för att leda förändring och innovation i organisationer</li>
-                <li>Utveckling av emotionell intelligens och empatiskt ledarskap</li>
-                <li>Tekniker för effektiv kommunikation och påverkan</li>
-                <li>Skapande av en inkluderande och högpresterande organisationskultur</li>
-                <li>Beslutsfattande under osäkerhet och komplexitet</li>
-                <li>Balansering av kortsiktiga resultat med långsiktig hållbarhet</li>
+                <li>Förståelse för digitala teknologier och deras affärspåverkan</li>
+                <li>Strategier för att leda digital förändring och innovation</li>
+                <li>Utveckling av en digital vision och roadmap</li>
+                <li>Hantering av digitala risker och cybersäkerhet</li>
+                <li>Datadriven beslutsfattning och analys</li>
+                <li>Agila och flexibla ledarskapsmetoder</li>
+                <li>Skapande av en digital kultur och främjande av digitala kompetenser</li>
               </ul>
-              <p className="mt-2">Genom denna utbildning utvecklar ledare förmågan att inspirera, engagera och leda sina team genom utmaningar och mot gemensamma mål.</p>
+              <p className="mt-2">Genom denna utbildning kan ledare effektivt driva digital transformation, utnyttja nya teknologier och skapa konkurrensfördelar i den digitala eran.</p>
             </div>
           )
         },
@@ -469,7 +469,7 @@ const ServicesExpertise = () => {
           title: "Coachning i förändringsledning",
           content: (
             <div>
-              <p>Coachning i förändringsledning är designad för att hjälpa ledare att effektivt navigera och driva organisatoriska förändringar i en komplex affärsmiljö.</p>
+              <p>Coachning i förändringsledning är designad för att hjälpa ledare att effektivt navigera och driva organisatoriska förändringar, särskilt i samband med digital transformation.</p>
               <h3 className="font-semibold mt-2 mb-1">Coachningen fokuserar ofta på:</h3>
               <ul className="list-disc pl-5">
                 <li>Utveckling av en tydlig förändringsvisio och -strategi</li>
@@ -485,26 +485,91 @@ const ServicesExpertise = () => {
           )
         },
         {
-          title: "Utveckling av autentiskt ledarskap",
+          title: "Utveckling av digitala ledarskapskompetenser",
           content: (
             <div>
-              <p>Utveckling av autentiskt ledarskap fokuserar på att hjälpa ledare att upptäcka och förstärka sin unika ledarstil baserad på personliga värderingar, styrkor och erfarenheter.</p>
-              <h3 className="font-semibold mt-2 mb-1">Viktiga aspekter av autentiskt ledarskap inkluderar:</h3>
+              <p>Utveckling av digitala ledarskapskompetenser är avgörande för att ledare ska kunna utnyttja digitala teknologier effektivt och leda i en digital affärsmiljö.</p>
+              <h3 className="font-semibold mt-2 mb-1">Viktiga digitala ledarskapskompetenser inkluderar:</h3>
               <ul className="list-disc pl-5">
-                <li>Självmedvetenhet och personlig utveckling</li>
-                <li>Identifiering och levande efter personliga värderingar</li>
-                <li>Utveckling av en stark etisk kompass för beslutsfattande</li>
-                <li>Byggande av genuina relationer och förtroende inom organisationen</li>
-                <li>Främjande av öppenhet, ärlighet och transparens i kommunikation</li>
-                <li>Balansering av personlig integritet med organisatoriska krav</li>
-                <li>Skapande av en kultur av äkthet och psykologisk trygghet</li>
+                <li>Digital affärsmodellsinnovation</li>
+                <li>Datadriven beslutsfattning och analys</li>
+                <li>Förståelse för och tillämpning av AI och maskininlärning</li>
+                <li>Cybersäkerhet och digital riskhantering</li>
+                <li>Digitalt samarbete och virtuell teamledning</li>
+                <li>Hantering av digitala kundupplevelser</li>
+                <li>Agil projektledning och kontinuerlig leverans</li>
               </ul>
-              <p className="mt-2">Genom att utveckla autentiskt ledarskap kan ledare skapa djupare engagemang, förtroende och lojalitet inom sina team, vilket leder till ökad organisatorisk effektivitet och välmående.</p>
+              <p className="mt-2">Genom att utveckla dessa kompetenser kan ledare effektivt driva digital innovation, optimera processer och skapa värde i en snabbt föränderlig digital värld.</p>
             </div>
           )
         }
       ],
       experts: ["Tim Omorogieva"]
+    },
+    {
+      icon: Camera,
+      title: "Kreativ Innehållsproduktion",
+      description: "Professionell foto- och videoproduktion för digital närvaro och varumärkesbyggande.",
+      examples: [
+        {
+          title: "Produktion av företagspresentationsvideos",
+          content: (
+            <div>
+              <p>Produktion av företagspresentationsvideos är ett kraftfullt verktyg för att kommunicera ett företags värderingar, kultur och erbjudanden på ett engagerande sätt.</p>
+              <h3 className="font-semibold mt-2 mb-1">Processen för att skapa en effektiv företagspresentationsvideo inkluderar:</h3>
+              <ul className="list-disc pl-5">
+                <li>Utveckling av ett tydligt koncept och manus</li>
+                <li>Planering av inspelningsplatser och scenografi</li>
+                <li>Professionell videoinspelning med högkvalitativ utrustning</li>
+                <li>Intervjuer med nyckelpersoner inom företaget</li>
+                <li>Inkludering av företagets produkter eller tjänster i action</li>
+                <li>Professionell redigering och postproduktion</li>
+                <li>Tillägg av grafik, animationer och musik</li>
+              </ul>
+              <p className="mt-2">En välproducerad företagspresentationsvideo kan effektivt förmedla företagets budskap, bygga förtroende hos potentiella kunder och partners, samt stärka varumärket.</p>
+            </div>
+          )
+        },
+        {
+          title: "Fotosessioner för personalporträtt och företagsmiljöer",
+          content: (
+            <div>
+              <p>Professionella fotosessioner för personalporträtt och företagsmiljöer är viktiga för att skapa en konsekvent och professionell visuell identitet för företaget.</p>
+              <h3 className="font-semibold mt-2 mb-1">En typisk fotosession kan omfatta:</h3>
+              <ul className="list-disc pl-5">
+                <li>Planering av fotokoncept och stil i linje med företagets varumärke</li>
+                <li>Val av lämpliga bakgrunder och miljöer</li>
+                <li>Professionell belysning för att skapa önskad stämning</li>
+                <li>Individuella porträttfotograferingar av personal</li>
+                <li>Gruppfoton av team eller avdelningar</li>
+                <li>Fotografering av kontorsmiljöer och arbetssituationer</li>
+                <li>Bildbehandling och retuschering för konsekvent look</li>
+              </ul>
+              <p className="mt-2">Högkvalitativa personalporträtt och miljöbilder kan användas på företagets webbplats, i marknadsföringsmaterial och på sociala medier för att skapa en professionell och tilltalande bild av organisationen.</p>
+            </div>
+          )
+        },
+        {
+          title: "Skapande av visuellt innehåll för sociala medier",
+          content: (
+            <div>
+              <p>Skapande av visuellt innehåll för sociala medier är avgörande för att engagera följare, öka varumärkesmedvetenheten och driva interaktion på olika sociala plattformar.</p>
+              <h3 className="font-semibold mt-2 mb-1">Processen för att skapa effektivt visuellt innehåll inkluderar:</h3>
+              <ul className="list-disc pl-5">
+                <li>Utveckling av en konsekvent visuell strategi i linje med varumärket</li>
+                <li>Skapande av mallar för olika typer av inlägg</li>
+                <li>Fotografering och videoproduktion anpassad för sociala medier</li>
+                <li>Design av infografik och animerade GIFs</li>
+                <li>Redigering och optimering av bilder för olika plattformar</li>
+                <li>Skapande av engagerande bildtexter och call-to-actions</li>
+                <li>Planering av innehållskalender för konsekvent publicering</li>
+              </ul>
+              <p className="mt-2">Genom att skapa högkvalitativt och relevant visuellt innehåll kan företag öka sin synlighet, engagemang och följarantal på sociala medier, vilket i sin tur kan leda till ökad varumärkeslojalitet och försäljning.</p>
+            </div>
+          )
+        }
+      ],
+      experts: ["Emelie Nylander"]
     },
     {
       icon: Megaphone,
