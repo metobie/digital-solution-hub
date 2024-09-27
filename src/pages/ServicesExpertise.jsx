@@ -70,6 +70,30 @@ const ServicesExpertise = () => {
               <p className="mt-2">Genom regelbunden utbildning och uppdatering kan organisationen väsentligt minska risken för säkerhetsincidenter orsakade av mänskliga faktorer.</p>
             </div>
           )
+        },
+        {
+          title: "Implementering av Multi-Factor Authentication (MFA)",
+          content: (
+            <div>
+              <p>Multi-Factor Authentication (MFA) är en kritisk säkerhetsåtgärd som avsevärt förbättrar skyddet av användarnas konton och organisationens data.</p>
+              <h3 className="font-semibold mt-2 mb-1">Fördelar med MFA:</h3>
+              <ul className="list-disc pl-5">
+                <li>Ökad säkerhet: Kräver flera verifieringsmetoder, vilket gör det mycket svårare för obehöriga att få åtkomst.</li>
+                <li>Skydd mot lösenordsstölder: Även om ett lösenord komprometteras, förblir kontot säkert.</li>
+                <li>Regelefterlevnad: Hjälper organisationer att uppfylla olika säkerhetsstandarder och regelverk.</li>
+                <li>Flexibilitet: Kan implementeras på olika sätt (t.ex. SMS, appar, biometriska data) för att passa organisationens behov.</li>
+              </ul>
+              <h3 className="font-semibold mt-2 mb-1">Implementeringsprocess:</h3>
+              <ul className="list-disc pl-5">
+                <li>Utvärdering av organisationens behov och val av lämplig MFA-lösning</li>
+                <li>Integrering med befintliga system och applikationer</li>
+                <li>Utbildning av användare i hur man använder MFA</li>
+                <li>Gradvis utrullning och testning</li>
+                <li>Kontinuerlig övervakning och uppdatering av MFA-policyer</li>
+              </ul>
+              <p className="mt-2">Genom att implementera MFA kan organisationer signifikant förbättra sin säkerhetsposition och minska risken för obehörig åtkomst och dataintrång.</p>
+            </div>
+          )
         }
       ],
       experts: ["Tobias Karlsson", "Patrik Berg"]
@@ -443,7 +467,6 @@ const ServicesExpertise = () => {
         {
           title: "Utveckling av digitala ledarskapskompetenser",
           content: (
-            
             <div>
               <p>Utveckling av digitala ledarskapskompetenser är avgörande för att ledare ska kunna utnyttja digitala teknologier effektivt och leda i en digital affärsmiljö.</p>
               <h3 className="font-semibold mt-2 mb-1">Viktiga digitala ledarskapskompetenser inkluderar:</h3>
@@ -537,7 +560,7 @@ const ServicesExpertise = () => {
           title: "Utveckling av innehållsstrategier för sociala medier",
           content: (
             <div>
-              <p>Utveckling av innehållsstrategier för sociala medier är avgörande för att skapa en konsekvent och engagerande närvaro på olika sociala plattformar.</p>
+              <p>Utveckling av innehållsstrategier för sociala medier är avgörande för att skapa en konsekvent och engagerande närvaro på olika social plattformar.</p>
               <h3 className="font-semibold mt-2 mb-1">En effektiv innehållsstrategi för sociala medier inkluderar:</h3>
               <ul className="list-disc pl-5">
                 <li>Definiering av målgrupper och deras preferenser</li>
