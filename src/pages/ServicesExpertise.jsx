@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import { Shield, Briefcase, Lightbulb, Cloud, Code, LineChart, Users, Camera, Megaphone } from 'lucide-react';
 import ExpandableServiceCard from '../components/ExpandableServiceCard';
 
 const ServicesExpertise = () => {
   const [expandedRows, setExpandedRows] = useState([false, false, false]);
+  const { scrollY } = useScroll();
+  const y = useTransform(scrollY, [0, 500], [0, 150]);
 
   const services = [
     {
@@ -116,39 +118,51 @@ const ServicesExpertise = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 pt-24 pb-12">
-      <div className="container mx-auto px-4">
-        <motion.h1 
-          className="text-4xl font-bold mb-8 text-center text-gray-800"
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          Våra Tjänster & Expertiser
-        </motion.h1>
-        <motion.p
-          className="text-xl text-center text-gray-600 mb-12"
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-        >
-          Utforska vårt breda utbud av tjänster och hur vi kan hjälpa ditt företag att växa och innovera.
-        </motion.p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-            >
-              <ExpandableServiceCard 
-                service={service} 
-                isExpanded={expandedRows[Math.floor(index / 3)]}
-                onToggle={() => toggleRowExpansion(Math.floor(index / 3))}
-              />
-            </motion.div>
-          ))}
+    <div className="min-h-screen relative">
+      <motion.div 
+        className="absolute inset-0 z-0"
+        style={{
+          backgroundImage: "url('https://i.imgur.com/2dexfVJ.jpeg')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          y: useTransform(scrollY, [0, 500], [0, 150]),
+        }}
+      />
+      <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
+      <div className="relative z-20 pt-24 pb-12">
+        <div className="container mx-auto px-4">
+          <motion.h1 
+            className="text-4xl font-bold mb-8 text-center text-white"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            Våra Tjänster & Expertiser
+          </motion.h1>
+          <motion.p
+            className="text-xl text-center text-gray-200 mb-12"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
+            Utforska vårt breda utbud av tjänster och hur vi kan hjälpa ditt företag att växa och innovera.
+          </motion.p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {services.map((service, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+              >
+                <ExpandableServiceCard 
+                  service={service} 
+                  isExpanded={expandedRows[Math.floor(index / 3)]}
+                  onToggle={() => toggleRowExpansion(Math.floor(index / 3))}
+                />
+              </motion.div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
