@@ -73,8 +73,8 @@ const Index = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            <Link to="/contact">
-              <Button size="lg" className="bg-gradient-to-br from-[#3E7A8B] to-[#8A3A8B] text-white hover:from-[#5A9AAB] hover:to-[#AA5AAB] transition-all duration-300">Kontakta oss nu</Button>
+            <Link to="/about">
+              <Button size="lg" className="bg-gradient-to-br from-[#3E7A8B] to-[#8A3A8B] text-white hover:from-[#5A9AAB] hover:to-[#AA5AAB] transition-all duration-300">Läs mer om oss</Button>
             </Link>
           </motion.div>
         </div>
