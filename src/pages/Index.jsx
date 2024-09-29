@@ -58,7 +58,7 @@ const Index = () => {
             transition={{ duration: 0.5 }}
           >
             <span className="block">Renew I/O</span>
-            <span className="block text-3xl md:text-5xl mt-2 text-red-500">Unparalleled. Unmatched. Unrivaled.</span>
+            <span className="block text-3xl md:text-5xl mt-2 text-red-500">Oöverträffad. Oefterhärmlig. Oumbärlig.</span>
           </motion.h1>
           <motion.p 
             className="text-xl text-gray-300 mb-8"
@@ -66,7 +66,7 @@ const Index = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Where innovation meets audacity. We're not just another cooperative - we're the future of digital transformation.
+            Där innovation möter djärvhet. Vi är inte bara ett kooperativ - vi är framtiden för digital transformation.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: -20 }}
@@ -74,7 +74,7 @@ const Index = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
           >
             <Link to="/about">
-              <Button size="lg" className="bg-red-500 text-white hover:bg-red-600 transition-all duration-300">Discover Our Edge</Button>
+              <Button size="lg" className="bg-red-500 text-white hover:bg-red-600 transition-all duration-300">Upptäck vår överlägsenhet</Button>
             </Link>
           </motion.div>
         </div>
@@ -101,7 +101,7 @@ const Index = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            <h2 className="text-3xl font-bold mb-4 text-center text-red-500">Services That Defy Expectations</h2>
+            <h2 className="text-3xl font-bold mb-4 text-center text-red-500">Tjänster som överträffar alla förväntningar</h2>
             <ServiceCatalog />
           </motion.section>
 
@@ -111,18 +111,18 @@ const Index = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
           >
-            <h2 className="text-3xl font-bold mb-4 text-center text-red-500">Client Testimonials</h2>
+            <h2 className="text-3xl font-bold mb-4 text-center text-red-500">Klientutlåtanden</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card className="bg-gray-900 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border border-red-500">
                 <CardContent>
-                  <p className="italic mb-2 text-gray-300">"Renew I/O didn't just meet our expectations - they shattered them. Their approach to digital transformation is nothing short of revolutionary."</p>
-                  <p className="font-semibold text-red-500">- CEO, Fortune 500 Company</p>
+                  <p className="italic mb-2 text-gray-300">"Renew I/O överträffade inte bara våra förväntningar - de krossade dem. Deras approach till digital transformation är inget mindre än revolutionerande."</p>
+                  <p className="font-semibold text-red-500">- VD, Fortune 500-företag</p>
                 </CardContent>
               </Card>
               <Card className="bg-gray-900 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 border border-red-500">
                 <CardContent>
-                  <p className="italic mb-2 text-gray-300">"Working with Renew I/O was like glimpsing into the future of tech consultancy. They're not just ahead of the curve - they're defining it."</p>
-                  <p className="font-semibold text-red-500">- CTO, Innovative Startup</p>
+                  <p className="italic mb-2 text-gray-300">"Att arbeta med Renew I/O var som att få en glimt av framtiden inom tech-konsulting. De är inte bara före kurvan - de definierar den."</p>
+                  <p className="font-semibold text-red-500">- CTO, Innovativt startup</p>
                 </CardContent>
               </Card>
             </div>
@@ -134,10 +134,10 @@ const Index = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.8 }}
           >
-            <h2 className="text-3xl font-bold mb-4 text-red-500">Ready to Redefine Possible?</h2>
-            <p className="mb-4 text-gray-300">Join forces with Renew I/O and experience a level of innovation and expertise that's simply unmatched in the industry.</p>
+            <h2 className="text-3xl font-bold mb-4 text-red-500">Redo att omdefiniera det möjliga?</h2>
+            <p className="mb-4 text-gray-300">Slå dig samman med Renew I/O och upplev en nivå av innovation och expertis som är helt oöverträffad i branschen.</p>
             <Link to="/contact">
-              <Button size="lg" className="bg-red-500 text-white hover:bg-red-600 transition-all duration-300">Initiate Collaboration</Button>
+              <Button size="lg" className="bg-red-500 text-white hover:bg-red-600 transition-all duration-300">Initiera samarbete</Button>
             </Link>
           </motion.section>
         </div>

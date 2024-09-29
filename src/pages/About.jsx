@@ -19,7 +19,7 @@ const About = () => {
     {
       name: "Tobias Karlsson",
       imageSrc: "https://i.imgur.com/PBAVzJh.jpeg",
-      description: "Tobias isn't just a technical expert - he's a visionary who rewrites the rules of infrastructure and strategy. His ability to bridge the gap between business goals and cutting-edge tech solutions is unparalleled.",
+      description: "Tobias är inte bara en teknisk expert - han är en visionär som omskriver reglerna för infrastruktur och strategi. Hans förmåga att överbrygga klyftan mellan affärsmål och banbrytande tekniska lösningar är oöverträffad.",
       email: "tobias@renew-io.se",
       location: "Kristianstad",
       imageClassName: "object-top object-[50%_30%]",
@@ -28,15 +28,15 @@ const About = () => {
     {
       name: "Patrik Berg",
       initials: "PB",
-      description: "Patrik doesn't just solve problems - he anticipates and eliminates them before they even materialize. His deep understanding of system architecture and problem-solving skills are the stuff of legend.",
+      description: "Patrik löser inte bara problem - han förutser och eliminerar dem innan de ens materialiseras. Hans djupa förståelse för systemarkitektur och problemlösningsförmåga är legendarisk.",
       email: "patrik@renew-io.se",
       location: "Stockholm",
-      expandedTitle: "Master of Technological Alchemy"
+      expandedTitle: "Mästare av teknologisk alkemi"
     },
     {
       name: "Robert Nesta Nuhu",
       imageSrc: "https://i.imgur.com/JKev6yM.png",
-      description: "Robert doesn't just code - he crafts digital symphonies. His ability to transform complex visions into tangible solutions is not just impressive, it's revolutionary.",
+      description: "Robert kodar inte bara - han komponerar digitala symfonier. Hans förmåga att omvandla komplexa visioner till konkreta lösningar är inte bara imponerande, den är revolutionerande.",
       email: "robert@renew-io.se",
       location: "Kristianstad",
       expandedTitle: "Digital Realm Architect"
@@ -44,20 +44,20 @@ const About = () => {
     {
       name: "Tim Omorogieva",
       imageSrc: "https://i.imgur.com/VUh5uU0.png",
-      description: "Tim doesn't just build relationships - he forges unbreakable alliances. His expertise in innovation and personal development isn't just shaping leadership - it's defining the future of business itself.",
+      description: "Tim bygger inte bara relationer - han smider obrytbara allianser. Hans expertis inom innovation och personlig utveckling formar inte bara ledarskap - den definierar framtiden för affärsvärlden.",
       email: "tim@renew-io.se",
       location: "Kristianstad",
       imageClassName: "object-[50%_40%]",
-      expandedTitle: "Catalyst of Human Potential"
+      expandedTitle: "Katalysator för mänsklig potential"
     },
     {
       name: "Emelie Nylander",
       imageSrc: "https://i.imgur.com/9akoW1T.jpeg",
-      description: "Emelie doesn't just capture moments - she immortalizes legacies. Her talent for photography and videography doesn't just build profiles - it crafts visual narratives that resonate on a cellular level.",
+      description: "Emelie fångar inte bara ögonblick - hon förevigar arv. Hennes talang för fotografi och videoproduktion bygger inte bara profiler - den skapar visuella berättelser som resonerar på cellnivå.",
       email: "emelie@renew-io.se",
       location: "Kristianstad",
       imageClassName: "object-[50%_40%]",
-      expandedTitle: "Visual Narrative Weaver"
+      expandedTitle: "Vävare av visuella berättelser"
     }
   ];
 
@@ -84,7 +84,7 @@ const About = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            About Us
+            Om oss
           </motion.h1>
           <motion.p 
             className="text-2xl text-red-500 mb-8"
@@ -92,7 +92,7 @@ const About = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            Redefining Excellence in Tech, Innovation, and Leadership
+            Omdefiniera excellens inom teknik, innovation och ledarskap
           </motion.p>
           <motion.p 
             className="text-lg text-gray-300"
@@ -100,7 +100,7 @@ const About = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            Renew I/O isn't just another cooperative - we're a force of nature in the tech world. Our unique blend of expertise isn't just impressive, it's transformative. We don't just meet industry standards, we shatter them and set new ones.
+            Renew I/O är inte bara ett annat kooperativ - vi är en naturkraft i teknikvärlden. Vår unika blandning av expertis är inte bara imponerande, den är transformativ. Vi möter inte bara branschstandarder, vi krossar dem och sätter nya.
           </motion.p>
         </div>
         <ScrollIndicator />
@@ -114,7 +114,7 @@ const About = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <h2 className="text-3xl font-bold mb-6 text-center text-red-500">Our Unrivaled Team</h2>
+            <h2 className="text-3xl font-bold mb-6 text-center text-red-500">Vårt oöverträffade team</h2>
             {teamMembers.map((member, index) => (
               <AnimatedTeamMember key={index} {...member} />
             ))}
@@ -130,15 +130,15 @@ const About = () => {
               <IconWrapper>
                 <Lightbulb className="w-4 h-4 text-white" />
               </IconWrapper>
-              Our Vision
+              Vår vision
             </h2>
             <Card className="shadow-md hover:shadow-lg transition-shadow duration-300 bg-gray-900 border border-red-500">
               <CardContent className="p-6">
                 <p className="text-gray-300">
-                  We're not content with being a leading force - we're here to completely redefine the digital landscape. As a collective of unparalleled experts, we're not just catalysts for change - we're the architects of a new digital era. Our focus isn't just on delivering tailored digital solutions - it's on crafting revolutionary approaches that don't just streamline businesses, but catapult them into new realms of possibility.
+                  Vi nöjer oss inte med att vara en ledande kraft - vi är här för att helt omdefiniera det digitala landskapet. Som ett kollektiv av oöverträffade experter är vi inte bara katalysatorer för förändring - vi är arkitekterna bakom en ny digital era. Vårt fokus ligger inte bara på att leverera skräddarsydda digitala lösningar - det handlar om att skapa revolutionerande metoder som inte bara effektiviserar företag, utan katapulterar dem in i nya sfärer av möjligheter.
                 </p>
                 <p className="text-gray-300 mt-4">
-                  At Renew I/O, client satisfaction isn't just a goal - it's our obsession. We don't just believe our success is linked to our clients' - we know our innovative approaches are the key to unlocking unprecedented levels of achievement for those bold enough to partner with us. Our dedication to client success isn't just a part of our work - it's the very essence of our existence.
+                  På Renew I/O är kundnöjdhet inte bara ett mål - det är vår besatthet. Vi tror inte bara att vår framgång är kopplad till våra klienters - vi vet att våra innovativa metoder är nyckeln till att låsa upp tidigare ouppnådda nivåer av framgång för de som är modiga nog att samarbeta med oss. Vår hängivenhet till klienternas framgång är inte bara en del av vårt arbete - det är själva essensen av vår existens.
                 </p>
               </CardContent>
             </Card>
@@ -154,12 +154,12 @@ const About = () => {
               <IconWrapper>
                 <Users className="w-4 h-4 text-white" />
               </IconWrapper>
-              Our Network
+              Vårt nätverk
             </h2>
             <Card className="shadow-md hover:shadow-lg transition-shadow duration-300 bg-gray-900 border border-red-500">
               <CardContent className="p-6">
                 <p className="text-gray-300">
-                  Renew I/O isn't just a cooperative - it's a powerhouse network of elite specialists, each a titan in their own domain. This unrivaled collective enables us to deliver not just high-quality solutions, but groundbreaking innovations that redefine industries. From digital transformation to sustainable development, from visionary leadership to game-changing market communication - we don't just meet needs, we anticipate and exceed them in ways our clients never thought possible.
+                  Renew I/O är inte bara ett kooperativ - det är ett kraftcentrum av elitspecialister, var och en en titan inom sitt område. Detta oöverträffade kollektiv gör det möjligt för oss att leverera inte bara högkvalitativa lösningar, utan banbrytande innovationer som omdefinerar branscher. Från digital transformation till hållbar utveckling, från visionärt ledarskap till spelförändrande marknadskommunikation - vi möter inte bara behov, vi förutser och överträffar dem på sätt som våra klienter aldrig trodde var möjliga.
                 </p>
               </CardContent>
             </Card>
