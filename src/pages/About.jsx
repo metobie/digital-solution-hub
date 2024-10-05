@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Shield, Briefcase, Lightbulb, Cloud, Code, LineChart, Users, Camera, Megaphone } from 'lucide-react';
 import AnimatedTeamMember from '../components/AnimatedTeamMember';
 import ScrollIndicator from '../components/ScrollIndicator';
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const About = () => {
   const { scrollY } = useScroll();
@@ -95,13 +96,29 @@ const About = () => {
             Ett kooperativ av experter inom teknik, innovation och ledarskap
           </motion.p>
           <motion.p 
-            className="text-lg text-gray-200"
+            className="text-lg text-gray-200 mb-8"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
             Renew I/O är ett unikt kooperativ som samlar experter inom teknik, innovation, ledarskap och digital strategi. Vår styrka ligger i vår mångfald av kompetenser, vilket gör oss till en ovärderlig partner i din digitala transformation och organisatoriska utveckling.
           </motion.p>
+          <motion.div
+            className="flex justify-center space-x-4"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+          >
+            {teamMembers.map((member, index) => (
+              <Avatar key={index} className="w-16 h-16 border-2 border-white">
+                {member.imageSrc ? (
+                  <AvatarImage src={member.imageSrc} alt={member.name} className={member.imageClassName} />
+                ) : (
+                  <AvatarFallback>{member.initials}</AvatarFallback>
+                )}
+              </Avatar>
+            ))}
+          </motion.div>
         </div>
         <ScrollIndicator />
       </motion.section>
