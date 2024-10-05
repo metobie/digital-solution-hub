@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Handshake, Users, Lightbulb, TrendingUp } from 'lucide-react';
+import { Handshake, Users, Lightbulb } from 'lucide-react';
 
 const Index = () => {
   return (
@@ -121,7 +121,7 @@ const CallToActionSection = () => (
       <h2 className="text-3xl font-bold mb-4">Redo att forma framtiden tillsammans?</h2>
       <p className="text-xl mb-8">Låt oss inleda en dialog om hur vi kan hjälpa er att nå era mål och visioner.</p>
       <Link to="/contact">
-        <Button size="lg" className="bg-gradient-to-br from-[#3E7A8B] to-[#8A3A8B] text-white hover:from-[#5A9AAB] hover:to-[#AA5AAB] transition-all duration-300">
+        <Button size="lg" className="bg-gradient-to-br from-[#4E8A9B] to-[#9A4A9B] text-white hover:from-[#6AAABC] hover:to-[#BA6ABC] transition-all duration-300 shadow-lg hover:shadow-xl">
           Kontakta oss idag
         </Button>
       </Link>
