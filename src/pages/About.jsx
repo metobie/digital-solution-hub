@@ -9,7 +9,7 @@ import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 const About = () => {
   const { scrollY } = useScroll();
   const y = useTransform(scrollY, [0, 500], [0, 150]);
-  const imageOpacity = useTransform(scrollY, [0, 300], [1, 0]);
+  const avatarOpacity = useTransform(scrollY, [0, 300], [1, 0]);
 
   const IconWrapper = ({ children }) => (
     <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center mr-2 border border-gray-200">
@@ -76,7 +76,6 @@ const About = () => {
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             y: useTransform(scrollY, [0, 500], [0, 150]),
-            opacity: imageOpacity
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-br from-[#0C2A3B] to-[#3A0A3B] opacity-90 z-10"></div>
@@ -109,6 +108,7 @@ const About = () => {
           </motion.p>
           <motion.div
             className="flex justify-center space-x-4"
+            style={{ opacity: avatarOpacity }}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
