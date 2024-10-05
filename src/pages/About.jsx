@@ -20,13 +20,13 @@ const About = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
-      <HeroSection y={y} avatarOpacity={avatarOpacity} />
+      <HeroSection y={y} avatarOpacity={avatarOpacity} scrollY={scrollY} />
       <ContentSection />
     </div>
   );
 };
 
-const HeroSection = ({ y, avatarOpacity }) => (
+const HeroSection = ({ y, avatarOpacity, scrollY }) => (
   <motion.section 
     className="relative h-screen flex items-center justify-center overflow-hidden"
     style={{ y }}
