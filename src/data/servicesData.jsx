@@ -177,7 +177,7 @@ export const services = [
         )
       }
     ],
-    experts: ["Robert Nesta Nuhu", "Patrik Berg"]
+    experts: ["Robert Nesta Nuhu", "Tobias Karlsson"]
   },
   {
     icon: LineChart,
