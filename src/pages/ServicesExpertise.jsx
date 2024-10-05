@@ -31,10 +31,6 @@ const ServicesExpertise = () => {
         className="relative h-screen flex items-center justify-center overflow-hidden"
         style={{ y }}
       >
-      <motion.section 
-        className="relative h-screen flex items-center justify-center overflow-hidden"
-        style={{ y }}
-      >
         <motion.div 
           className="absolute inset-0 z-0"
           style={{
