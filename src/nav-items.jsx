@@ -1,12 +1,10 @@
-import { HomeIcon, MailIcon, InfoIcon, BriefcaseIcon } from "lucide-react";
+import { HomeIcon, MailIcon, InfoIcon, BriefcaseIcon, FolderIcon } from "lucide-react";
 import Index from "./pages/Index.jsx";
 import Contact from "./pages/Contact.jsx";
 import About from "./pages/About.jsx";
 import Services from "./pages/Services.jsx";
+import Portfolio from "./pages/Portfolio.jsx";
 
-/**
- * Central place for defining the navigation items. Used for navigation components and routing.
- */
 export const navItems = [
   {
     title: "Hem",
@@ -19,6 +17,12 @@ export const navItems = [
     to: "/services",
     icon: <BriefcaseIcon className="h-4 w-4" />,
     page: <Services />,
+  },
+  {
+    title: "Portfölj",
+    to: "/portfolio",
+    icon: <FolderIcon className="h-4 w-4" />,
+    page: <Portfolio />,
   },
   {
     title: "Om oss",
