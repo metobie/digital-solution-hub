@@ -38,10 +38,12 @@ const Portfolio = () => {
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 pt-24">
       <div className="container mx-auto px-4">
         <h1 className="text-4xl font-bold text-center mb-12">Vår Digitala Portfölj</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {portfolioItems.map((item, index) => (
-            <PortfolioItem key={index} {...item} />
-          ))}
+        <div className="flex justify-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl">
+            {portfolioItems.map((item, index) => (
+              <PortfolioItem key={index} {...item} />
+            ))}
+          </div>
         </div>
       </div>
     </div>
