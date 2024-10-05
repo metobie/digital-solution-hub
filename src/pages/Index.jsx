@@ -93,12 +93,12 @@ const TestimonialSection = () => (
         {[
           { 
             name: "Robert Nesta Nuhu", 
-            company: "Musikproducent", 
+            company: "Grundare, Nakof", 
             quote: "Renew I/O har hjälpt mig att ta mitt musikskapande till nästa nivå genom att implementera innovativa lösningar som effektiviserar min arbetsprocess." 
           },
           { 
             name: "Tim Omorogieva", 
-            company: "Digitaliseringsstrateg", 
+            company: "VD, Rider AB", 
             quote: "Samarbetet med Renew I/O har varit avgörande för vår digitala transformation. Deras expertis och engagemang har överträffat våra förväntningar." 
           },
         ].map((testimonial, index) => (
