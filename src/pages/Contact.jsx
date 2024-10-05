@@ -36,7 +36,7 @@ const Contact = () => {
     <div className="min-h-screen relative bg-cover bg-center flex items-center justify-center" style={{ backgroundImage: "url('https://i.imgur.com/2dexfVJ.jpeg')" }}>
       <div className="absolute inset-0 bg-black opacity-70"></div>
       {showConfetti && <Confetti />}
-      <div className="container mx-auto px-6 py-12 relative z-10 max-w-4xl md:pt-12 pt-24"> {/* Added pt-24 for mobile */}
+      <div className="container mx-auto px-6 py-12 relative z-10 max-w-4xl md:pt-12 pt-24">
         <motion.h1 
           className="text-4xl font-bold mb-8 text-center text-white"
           initial={{ opacity: 0, y: -20 }}
@@ -61,7 +61,7 @@ const Contact = () => {
                   </p>
                   <Button 
                     onClick={handleEmailClick}
-                    className="w-full mb-4 bg-gradient-to-br from-[#3E7A8B] to-[#8A3A8B] text-white hover:from-[#5A9AAB] hover:to-[#AA5AAB] transition-all duration-300"
+                    className="w-full mb-4 bg-gradient-to-br from-[#4E8A9B] to-[#9A4A9B] text-white hover:from-[#6AAABC] hover:to-[#BA6ABC] transition-all duration-300 shadow-lg hover:shadow-xl"
                     size="lg"
                   >
                     Maila oss
