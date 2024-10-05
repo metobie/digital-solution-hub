@@ -6,13 +6,13 @@ const portfolioItems = [
   {
     title: "Frame Wave",
     description: "En komplett webbdesign baserad på kundens kärnverksamhet.",
-    image: "https://i.imgur.com/placeholder1.jpg", // Ersätt med faktisk bild
+    image: "https://i.imgur.com/XLFseHc.jpeg",
     url: "https://framewave.se"
   },
   {
     title: "Selected Trade",
     description: "Kundanpassad webbdesign med specifika önskemål om layout och färger.",
-    image: "https://i.imgur.com/placeholder2.jpg", // Ersätt med faktisk bild
+    image: "https://i.imgur.com/bCpJF4Y.jpeg",
     url: "https://selectedtrade.dk"
   },
   // Lägg till fler portföljprojekt här
