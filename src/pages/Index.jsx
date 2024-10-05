@@ -53,7 +53,7 @@ const HeroSection = () => (
         transition={{ duration: 0.5, delay: 0.4 }}
       >
         <Link to="/contact">
-          <Button size="lg" className="bg-gradient-to-r from-blue-500 to-purple-600 text-white hover:from-blue-600 hover:to-purple-700 transition-all duration-300">
+          <Button size="lg" className="bg-gradient-to-br from-[#3E7A8B] to-[#8A3A8B] text-white hover:from-[#5A9AAB] hover:to-[#AA5AAB] transition-all duration-300">
             Starta vår resa
           </Button>
         </Link>
@@ -74,7 +74,7 @@ const PartnershipSection = () => (
         ].map((item, index) => (
           <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
             <CardContent className="p-6 text-center">
-              <item.icon className="w-12 h-12 mx-auto mb-4 text-blue-500" />
+              <item.icon className="w-12 h-12 mx-auto mb-4 text-[#3E7A8B]" />
               <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
               <p className="text-gray-600">{item.description}</p>
             </CardContent>
@@ -108,12 +108,12 @@ const TestimonialSection = () => (
 );
 
 const CallToActionSection = () => (
-  <section className="py-16 bg-gradient-to-r from-blue-500 to-purple-600 text-white">
+  <section className="py-16 bg-gradient-to-br from-[#3E7A8B] to-[#8A3A8B] text-white">
     <div className="container mx-auto px-6 text-center">
       <h2 className="text-3xl font-bold mb-4">Redo att forma framtiden tillsammans?</h2>
       <p className="text-xl mb-8">Låt oss inleda en dialog om hur vi kan hjälpa er att nå era mål och visioner.</p>
       <Link to="/contact">
-        <Button size="lg" variant="outline" className="bg-white text-blue-600 hover:bg-blue-100 transition-all duration-300">
+        <Button size="lg" variant="outline" className="bg-white text-[#3E7A8B] hover:bg-gray-100 transition-all duration-300">
           Kontakta oss idag
         </Button>
       </Link>
