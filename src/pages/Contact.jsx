@@ -36,7 +36,7 @@ const Contact = () => {
     <div className="min-h-screen relative bg-cover bg-center flex items-center justify-center" style={{ backgroundImage: "url('https://i.imgur.com/2dexfVJ.jpeg')" }}>
       <div className="absolute inset-0 bg-black opacity-70"></div>
       {showConfetti && <Confetti />}
-      <div className="container mx-auto px-6 py-12 relative z-10 max-w-4xl">
+      <div className="container mx-auto px-6 py-12 relative z-10 max-w-4xl md:pt-12 pt-24"> {/* Added pt-24 for mobile */}
         <motion.h1 
           className="text-4xl font-bold mb-8 text-center text-white"
           initial={{ opacity: 0, y: -20 }}
