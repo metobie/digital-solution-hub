@@ -1,4 +1,21 @@
 import { Shield, Briefcase, Lightbulb, Cloud, Code, LineChart, Users, Camera, Megaphone } from 'lucide-react';
+import { serviceGroups } from './serviceGroups';
+
+const createServiceContent = (title, content) => ({
+  title,
+  content: (
+    <div>
+      <p>{content.description}</p>
+      <h3 className="font-semibold mt-2 mb-1">Nyckelaspekter:</h3>
+      <ul className="list-disc pl-5">
+        {content.aspects.map((aspect, index) => (
+          <li key={index}>{aspect}</li>
+        ))}
+      </ul>
+      <p className="mt-2">{content.conclusion}</p>
+    </div>
+  )
+});
 
 export const services = [
   {
@@ -6,23 +23,17 @@ export const services = [
     title: "Cybersäkerhet",
     description: "Implementera och optimera marknadsledande säkerhetslösningar för att skydda din verksamhet mot dagens avancerade cyberhot.",
     examples: [
-      {
-        title: "Säkerhetsrevision och riskbedömning",
-        content: (
-          <div>
-            <p>En säkerhetsrevision och riskbedömning är grundläggande för att identifiera sårbarheter och potentiella hot mot en organisations IT-infrastruktur.</p>
-            <h3 className="font-semibold mt-2 mb-1">Processen inkluderar:</h3>
-            <ul className="list-disc pl-5">
-              <li>Genomgång av befintliga säkerhetspolicyer och procedurer</li>
-              <li>Identifiering av kritiska tillgångar och data</li>
-              <li>Analys av potentiella hot och sårbarheter</li>
-              <li>Bedömning av nuvarande säkerhetsåtgärders effektivitet</li>
-              <li>Rekommendationer för förbättringar och riskreducering</li>
-            </ul>
-            <p className="mt-2">Resultatet av denna process ger en solid grund för att utveckla en omfattande cybersäkerhetsstrategi.</p>
-          </div>
-        )
-      },
+      createServiceContent("Säkerhetsrevision och riskbedömning", {
+        description: "En säkerhetsrevision och riskbedömning är grundläggande för att identifiera sårbarheter och potentiella hot mot en organisations IT-infrastruktur.",
+        aspects: [
+          "Genomgång av befintliga säkerhetspolicyer och procedurer",
+          "Identifiering av kritiska tillgångar och data",
+          "Analys av potentiella hot och sårbarheter",
+          "Bedömning av nuvarande säkerhetsåtgärders effektivitet",
+          "Rekommendationer för förbättringar och riskreducering"
+        ],
+        conclusion: "Resultatet av denna process ger en solid grund för att utveckla en omfattande cybersäkerhetsstrategi."
+      }),
       {
         title: "Implementering av Zero Trust-arkitektur",
         content: (
@@ -573,3 +584,11 @@ export const services = [
     experts: ["Emelie Nylander", "Tim Omorogieva"]
   }
 ];
+
+// Lägg till gruppinformation till varje tjänst
+services.forEach(service => {
+  const group = serviceGroups.find(group => group.services.includes(service.title));
+  if (group) {
+    service.group = group.name;
+  }
+});
