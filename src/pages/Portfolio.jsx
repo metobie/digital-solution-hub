@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Card, CardContent } from "@/components/ui/card";
+import { Link } from 'react-router-dom';
 
 const portfolioItems = [
   {
@@ -18,8 +19,8 @@ const portfolioItems = [
   {
     title: "Ditt Företag Här",
     description: "Vi ser fram emot att skapa en unik digital lösning för just ditt företag. Låt oss tillsammans forma din online-närvaro!",
-    image: "/placeholder.svg", // Using the placeholder SVG from the public folder
-    url: "#contact"
+    image: "/placeholder.svg",
+    url: "/contact"
   }
 ];
 
@@ -34,10 +35,10 @@ const PortfolioItem = ({ title, description, image, url }) => (
       <CardContent className="p-6 flex flex-col flex-grow">
         <h3 className="text-xl font-semibold mb-2">{title}</h3>
         <p className="text-gray-600 mb-4 flex-grow">{description}</p>
-        {url.startsWith('#') ? (
-          <a href={url} className="text-blue-600 hover:underline mt-auto">
+        {url.startsWith('/') ? (
+          <Link to={url} className="text-blue-600 hover:underline mt-auto">
             Kontakta oss
-          </a>
+          </Link>
         ) : (
           <a href={url} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline mt-auto">
             Besök webbplatsen
