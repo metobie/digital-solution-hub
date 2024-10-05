@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Popup from '../components/Popup';
 import ScrollIndicator from '../components/ScrollIndicator';
-import { services } from '../data/servicesData';
+import { services } from '../data/servicesData.jsx';
 import ServiceCard from '../components/ServiceCard';
 
 const ServicesExpertise = () => {
