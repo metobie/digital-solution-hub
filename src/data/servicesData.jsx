@@ -443,7 +443,7 @@ export const services = [
   },
   {
     icon: Camera,
-    title: "Kreativ Innehållsproduktion",
+    title: "Innehållsproduktion",
     description: "Professionell foto- och videoproduktion för att förstärka din digitala närvaro och varumärke.",
     examples: [
       {
