@@ -28,12 +28,13 @@ const About = () => {
       expandedTitle: "Chief Technology Strategist"
     },
     {
-      name: "Patrik Berg",
-      initials: "PB",
-      description: "Patrik är vår tekniska expert som med sin djupa förståelse för systemarkitektur och detaljerade problemlösning levererar innovativa lösningar. Han är särskilt skicklig på att analysera komplexa tekniska system och identifiera optimeringsmöjligheter på en låg nivå. Patrik säkerställer att våra tekniska implementeringar inte bara är funktionella utan även optimerade för långsiktig prestanda och hållbarhet.",
-      email: "patrik@renew-io.se",
-      location: "Stockholm",
-      expandedTitle: "Senior System Architect"
+      name: "Emelie Nylander",
+      imageSrc: "https://i.imgur.com/9akoW1T.jpeg",
+      description: "Emelie är en expert på att fånga ögonblick som skapar starka visuella avtryck. Med sin talang för fotografering och filmning hjälper hon företag att bygga genuina och minnesvärda profiler på sociala medier. Hennes kreativa öga och känsla för detaljer ger varje projekt en autentisk och engagerande ton, vilket skapar en omedelbar koppling till målgruppen. Genom att kombinera äkthet med strategiskt tänkande hjälper Emelie våra kunder att inte bara synas, utan också lämna ett bestående intryck i den digitala världen.",
+      email: "emelie@renew-io.se",
+      location: "Kristianstad",
+      imageClassName: "object-cover",
+      expandedTitle: "Content Creator"
     },
     {
       name: "Robert Nesta Nuhu",
@@ -53,13 +54,12 @@ const About = () => {
       expandedTitle: "People Development"
     },
     {
-      name: "Emelie Nylander",
-      imageSrc: "https://i.imgur.com/9akoW1T.jpeg",
-      description: "Emelie är en expert på att fånga ögonblick som skapar starka visuella avtryck. Med sin talang för fotografering och filmning hjälper hon företag att bygga genuina och minnesvärda profiler på sociala medier. Hennes kreativa öga och känsla för detaljer ger varje projekt en autentisk och engagerande ton, vilket skapar en omedelbar koppling till målgruppen. Genom att kombinera äkthet med strategiskt tänkande hjälper Emelie våra kunder att inte bara synas, utan också lämna ett bestående intryck i den digitala världen.",
-      email: "emelie@renew-io.se",
-      location: "Kristianstad",
-      imageClassName: "object-cover",
-      expandedTitle: "Content Creator"
+      name: "Patrik Berg",
+      initials: "PB",
+      description: "Patrik är vår tekniska expert som med sin djupa förståelse för systemarkitektur och detaljerade problemlösning levererar innovativa lösningar. Han är särskilt skicklig på att analysera komplexa tekniska system och identifiera optimeringsmöjligheter på en låg nivå. Patrik säkerställer att våra tekniska implementeringar inte bara är funktionella utan även optimerade för långsiktig prestanda och hållbarhet.",
+      email: "patrik@renew-io.se",
+      location: "Stockholm",
+      expandedTitle: "Senior System Architect"
     }
   ];
 
@@ -107,14 +107,14 @@ const About = () => {
             Renew I/O är ett unikt kooperativ som samlar experter inom teknik, innovation, ledarskap och digital strategi. Vår styrka ligger i vår mångfald av kompetenser, vilket gör oss till en ovärderlig partner i din digitala transformation och organisatoriska utveckling.
           </motion.p>
           <motion.div
-            className="flex justify-center space-x-4"
+            className="flex flex-wrap justify-center space-x-4 space-y-4 md:space-y-0"
             style={{ opacity: avatarOpacity }}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
           >
             {teamMembers.map((member, index) => (
-              <Avatar key={index} className="w-16 h-16 border-2 border-white">
+              <Avatar key={index} className={`w-16 h-16 border-2 border-white ${index > 2 ? 'md:mt-0 mt-4' : ''}`}>
                 {member.imageSrc ? (
                   <AvatarImage src={member.imageSrc} alt={member.name} className={member.imageClassName} />
                 ) : (
@@ -187,6 +187,12 @@ const About = () => {
           </motion.section>
         </div>
       </div>
+    </div>
+  );
+};
+
+export default About;
+
     </div>
   );
 };
