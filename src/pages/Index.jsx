@@ -93,13 +93,13 @@ const TestimonialSection = () => (
         {[
           { 
             name: "Robert Nesta Nuhu", 
-            company: "Kristianstad Kommun", 
-            quote: "Renew I/O har varit en ovärderlig partner i vår digitala transformation. Deras expertis och engagemang har verkligen gjort skillnad i hur vi levererar våra tjänster till medborgarna." 
+            company: "Musikproducent", 
+            quote: "Renew I/O:s mjukvaruprogram för musik har revolutionerat mitt sätt att skapa och producera. Deras innovativa lösningar har öppnat upp helt nya kreativa möjligheter för mig som artist." 
           },
           { 
             name: "Tim Omorogieva", 
-            company: "Högskolan Kristianstad", 
-            quote: "Samarbetet med Renew I/O har öppnat nya möjligheter för vår organisation. Deras innovativa lösningar och strategiska rådgivning har varit avgörande för vår framgång i den digitala eran." 
+            company: "Digitaliseringsstrateg", 
+            quote: "Samarbetet med Renew I/O i vår digitala transformationsresa har varit ovärderligt. Deras expertis och strategiska rådgivning har hjälpt oss att framgångsrikt navigera i den digitala eran och uppnå våra affärsmål." 
           },
         ].map((testimonial, index) => (
           <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
