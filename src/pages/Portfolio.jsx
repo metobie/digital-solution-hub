@@ -36,11 +36,11 @@ const PortfolioItem = ({ title, description, image, url }) => (
         <h3 className="text-xl font-semibold mb-2">{title}</h3>
         <p className="text-gray-600 mb-4 flex-grow">{description}</p>
         {url.startsWith('/') ? (
-          <Link to={url} className="text-blue-600 hover:underline mt-auto">
+          <Link to={url} className="text-[#3E7A8B] hover:text-[#8A3A8B] transition-colors duration-300 mt-auto">
             Kontakta oss
           </Link>
         ) : (
-          <a href={url} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline mt-auto">
+          <a href={url} target="_blank" rel="noopener noreferrer" className="text-[#3E7A8B] hover:text-[#8A3A8B] transition-colors duration-300 mt-auto">
             Besök webbplatsen
           </a>
         )}
