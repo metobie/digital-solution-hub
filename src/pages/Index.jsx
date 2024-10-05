@@ -53,7 +53,7 @@ const HeroSection = () => (
         transition={{ duration: 0.5, delay: 0.4 }}
       >
         <Link to="/contact">
-          <Button size="lg" className="bg-gradient-to-br from-[#3E7A8B] to-[#8A3A8B] text-white hover:from-[#5A9AAB] hover:to-[#AA5AAB] transition-all duration-300">
+          <Button size="lg" className="bg-gradient-to-br from-[#4E8A9B] to-[#9A4A9B] text-white hover:from-[#6AAABC] hover:to-[#BA6ABC] transition-all duration-300 shadow-lg hover:shadow-xl">
             Starta vår resa
           </Button>
         </Link>
