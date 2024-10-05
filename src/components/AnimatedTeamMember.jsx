@@ -24,7 +24,6 @@ const AnimatedTeamMember = ({ name, imageSrc, initials, description, email, loca
                 src={imageSrc}
                 alt={`${name} profile`}
                 className={`w-full h-full object-cover ${imageClassName || ''}`}
-                style={{ objectPosition: '50% 20%' }}
                 layout
               />
             ) : initials ? (
