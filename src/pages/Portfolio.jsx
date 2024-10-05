@@ -15,7 +15,12 @@ const portfolioItems = [
     image: "https://i.imgur.com/bCpJF4Y.jpeg",
     url: "https://selectedtrade.dk"
   },
-  // Lägg till fler portföljprojekt här
+  {
+    title: "Ditt Företag Här",
+    description: "Vi ser fram emot att skapa en unik digital lösning för just ditt företag. Låt oss tillsammans forma din online-närvaro!",
+    image: "https://i.imgur.com/placeholder.jpg", // Ersätt med en lämplig platshållarbild
+    url: "#contact" // Länk till kontaktformuläret eller kontaktsidan
+  }
 ];
 
 const PortfolioItem = ({ title, description, image, url }) => (
@@ -25,9 +30,15 @@ const PortfolioItem = ({ title, description, image, url }) => (
       <CardContent className="p-4">
         <h3 className="text-xl font-semibold mb-2">{title}</h3>
         <p className="text-gray-600 mb-4">{description}</p>
-        <a href={url} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
-          Besök webbplatsen
-        </a>
+        {url.startsWith('#') ? (
+          <a href={url} className="text-blue-600 hover:underline">
+            Kontakta oss
+          </a>
+        ) : (
+          <a href={url} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+            Besök webbplatsen
+          </a>
+        )}
       </CardContent>
     </Card>
   </motion.div>
