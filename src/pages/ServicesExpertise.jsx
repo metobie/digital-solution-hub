@@ -3,6 +3,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import Popup from '../components/Popup';
 import ScrollIndicator from '../components/ScrollIndicator';
 import { services } from '../data/servicesData.jsx';
+import { serviceGroups } from '../data/serviceGroups';
 import ServiceCard from '../components/ServiceCard';
 
 const ServicesExpertise = () => {
@@ -70,16 +71,24 @@ const ServicesExpertise = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            <h2 className="text-2xl font-semibold mb-4 text-center text-gray-700">Våra Tjänster och Expertis</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {services.map((service, index) => (
-                <ServiceCard 
-                  key={index} 
-                  service={service} 
-                  openPopup={openPopup}
-                />
-              ))}
-            </div>
+            <h2 className="text-2xl font-semibold mb-8 text-center text-gray-700">Våra Tjänster och Expertis</h2>
+            {serviceGroups.map((group, groupIndex) => (
+              <div key={groupIndex} className="mb-12">
+                <h3 className="text-xl font-semibold mb-4 text-gray-700">{group.name}</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {services
+                    .filter(service => group.services.includes(service.title))
+                    .map((service, serviceIndex) => (
+                      <ServiceCard 
+                        key={serviceIndex} 
+                        service={service} 
+                        openPopup={openPopup}
+                      />
+                    ))
+                  }
+                </div>
+              </div>
+            ))}
           </motion.section>
         </div>
       </main>
