@@ -1,14 +1,18 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Handshake, Users, Lightbulb } from 'lucide-react';
+import ScrollIndicator from '../components/ScrollIndicator';
 
 const Index = () => {
+  const { scrollY } = useScroll();
+  const y = useTransform(scrollY, [0, 500], [0, 150]);
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
-      <HeroSection />
+      <HeroSection y={y} />
       <PartnershipSection />
       <TestimonialSection />
       <CallToActionSection />
@@ -16,7 +20,7 @@ const Index = () => {
   );
 };
 
-const HeroSection = () => (
+const HeroSection = ({ y }) => (
   <section className="relative h-screen flex items-center justify-center overflow-hidden">
     <motion.div 
       className="absolute inset-0 z-0"
@@ -24,10 +28,8 @@ const HeroSection = () => (
         backgroundImage: "url('https://i.imgur.com/2dexfVJ.jpeg')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
+        y,
       }}
-      initial={{ scale: 1.1 }}
-      animate={{ scale: 1 }}
-      transition={{ duration: 10, repeat: Infinity, repeatType: "reverse" }}
     />
     <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
     <div className="relative z-20 text-center px-6 max-w-4xl">
@@ -59,6 +61,7 @@ const HeroSection = () => (
         </Link>
       </motion.div>
     </div>
+    <ScrollIndicator />
   </section>
 );
 
