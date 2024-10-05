@@ -71,10 +71,9 @@ const ServicesExpertise = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            <h2 className="text-2xl font-semibold mb-8 text-center text-gray-700">Våra Tjänster och Expertis</h2>
             {serviceGroups.map((group, groupIndex) => (
-              <div key={groupIndex} className="mb-12">
-                <h3 className="text-xl font-semibold mb-4 text-gray-700">{group.name}</h3>
+              <div key={groupIndex} className="mb-16">
+                <h2 className="text-3xl font-semibold mb-8 text-center text-gray-800">{group.name}</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {services
                     .filter(service => group.services.includes(service.title))
