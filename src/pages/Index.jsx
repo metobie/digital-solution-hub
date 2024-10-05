@@ -3,7 +3,6 @@ import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion'
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import ServiceCatalog from '../components/ServiceCatalog';
 import VMwarePopup from '../components/VMwarePopup';
 import { ChevronDown } from 'lucide-react';
 
@@ -101,8 +100,27 @@ const Index = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            <h2 className="text-2xl font-semibold mb-4 text-center text-gray-700">Våra Tjänster</h2>
-            <ServiceCatalog />
+            <h2 className="text-2xl font-semibold mb-4 text-center text-gray-700">Varför välja Renew I/O?</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <Card className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                <CardContent>
+                  <h3 className="text-xl font-semibold mb-2 text-gray-800">Expertis som möter behov</h3>
+                  <p className="text-gray-600">Vi förstår era unika utmaningar och levererar skräddarsydda lösningar som driver er verksamhet framåt.</p>
+                </CardContent>
+              </Card>
+              <Card className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                <CardContent>
+                  <h3 className="text-xl font-semibold mb-2 text-gray-800">Samarbete för tillväxt</h3>
+                  <p className="text-gray-600">Vi ser er som partners, inte bara kunder. Tillsammans bygger vi en starkare framtid för er verksamhet.</p>
+                </CardContent>
+              </Card>
+              <Card className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                <CardContent>
+                  <h3 className="text-xl font-semibold mb-2 text-gray-800">Innovativ utveckling</h3>
+                  <p className="text-gray-600">Med vår expertis inom teknik och innovation hjälper vi er att ligga steget före i en snabbt föränderlig digital värld.</p>
+                </CardContent>
+              </Card>
+            </div>
           </motion.section>
 
           <motion.section 
@@ -134,10 +152,10 @@ const Index = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.8 }}
           >
-            <h2 className="text-2xl font-semibold mb-4 text-gray-700">Redo att ta nästa steg?</h2>
-            <p className="mb-4 text-gray-600">Låt oss tillsammans utforska hur Renew I/O kan hjälpa ditt företag att nå nya höjder inom teknik, innovation och ledarskap.</p>
+            <h2 className="text-2xl font-semibold mb-4 text-gray-700">Redo att ta nästa steg tillsammans?</h2>
+            <p className="mb-4 text-gray-600">Låt oss utforska hur Renew I/O kan vara er partner i att bygga en framgångsrik och hållbar framtid för ert företag.</p>
             <Link to="/contact">
-              <Button size="lg" className="bg-gray-100 text-gray-800 hover:bg-gray-200 transition-all duration-300 border border-gray-900/10 hover:border-gray-900/20">Kontakta oss nu</Button>
+              <Button size="lg" className="bg-gradient-to-br from-[#3E7A8B] to-[#8A3A8B] text-white hover:from-[#5A9AAB] hover:to-[#AA5AAB] transition-all duration-300">Starta vår resa tillsammans</Button>
             </Link>
           </motion.section>
         </div>
