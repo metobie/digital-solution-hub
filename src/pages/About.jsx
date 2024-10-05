@@ -10,7 +10,7 @@ const About = () => {
   const y = useTransform(scrollY, [0, 500], [0, 150]);
 
   const IconWrapper = ({ children }) => (
-    <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center mr-2">
+    <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center mr-2 border border-gray-200">
       {children}
     </div>
   );
@@ -19,50 +19,50 @@ const About = () => {
     {
       name: "Tobias Karlsson",
       imageSrc: "https://i.imgur.com/PBAVzJh.jpeg",
-      description: "Tobias är inte bara en teknisk expert - han är en visionär som omskriver reglerna för infrastruktur och strategi. Hans förmåga att överbrygga klyftan mellan affärsmål och banbrytande tekniska lösningar är oöverträffad.",
+      description: "Tobias är en teknisk expert med fokus på storskalig infrastruktur och strategisk rådgivning. Med förmågan att överbrygga klyftan mellan affärsmål och tekniska lösningar, arbetar han på hög nivå för att säkerställa att företagets digitala strategi är både hållbar och framtidssäkrad. Hans visionära tänkande hjälper företag att navigera komplexa IT-utmaningar, med ett särskilt fokus på sömlös integration och robusta säkerhetslösningar.",
       email: "tobias@renew-io.se",
       location: "Kristianstad",
       imageClassName: "object-top object-[50%_30%]",
-      expandedTitle: "Chief Disruption Officer"
+      expandedTitle: "Chief Technology Strategist"
     },
     {
       name: "Patrik Berg",
       initials: "PB",
-      description: "Patrik löser inte bara problem - han förutser och eliminerar dem innan de ens materialiseras. Hans djupa förståelse för systemarkitektur och problemlösningsförmåga är legendarisk.",
+      description: "Patrik är vår tekniska expert som med sin djupa förståelse för systemarkitektur och detaljerade problemlösning levererar innovativa lösningar. Han är särskilt skicklig på att analysera komplexa tekniska system och identifiera optimeringsmöjligheter på en låg nivå. Patrik säkerställer att våra tekniska implementeringar inte bara är funktionella utan även optimerade för långsiktig prestanda och hållbarhet.",
       email: "patrik@renew-io.se",
       location: "Stockholm",
-      expandedTitle: "Mästare av teknologisk alkemi"
+      expandedTitle: "Senior System Architect"
     },
     {
       name: "Robert Nesta Nuhu",
       imageSrc: "https://i.imgur.com/JKev6yM.png",
-      description: "Robert kodar inte bara - han komponerar digitala symfonier. Hans förmåga att omvandla komplexa visioner till konkreta lösningar är inte bara imponerande, den är revolutionerande.",
+      description: "Robert är en expert på att strukturera och koda, vilket ger vårt team ett stabilt och innovativt fundament. Med sin förmåga att snabbt sätta sig in i nya teknologier och omvandla komplexa visioner till konkreta lösningar, är han en central drivkraft i vårt arbete. Hans kombination av teknisk precision och kreativa angreppssätt säkerställer att varje projekt når sin fulla potential.",
       email: "robert@renew-io.se",
       location: "Kristianstad",
-      expandedTitle: "Digital Realm Architect"
+      expandedTitle: "Digital Product Developer"
     },
     {
       name: "Tim Omorogieva",
       imageSrc: "https://i.imgur.com/VUh5uU0.png",
-      description: "Tim bygger inte bara relationer - han smider obrytbara allianser. Hans expertis inom innovation och personlig utveckling formar inte bara ledarskap - den definierar framtiden för affärsvärlden.",
+      description: "Tim har en unik förmåga att bygga långvariga relationer och inspirera både team och kunder. Med sin expertis inom innovation, personlig utveckling och hållbarhet bidrar han till att forma morgondagens ledarskap. Hans helhetssyn och driv för positiv förändring gör honom till en ovärderlig resurs i vår strävan att hjälpa företag att nå framgång på ett hållbart och innovativt sätt.",
       email: "tim@renew-io.se",
       location: "Kristianstad",
       imageClassName: "object-[50%_40%]",
-      expandedTitle: "Katalysator för mänsklig potential"
+      expandedTitle: "People Development"
     },
     {
       name: "Emelie Nylander",
       imageSrc: "https://i.imgur.com/9akoW1T.jpeg",
-      description: "Emelie fångar inte bara ögonblick - hon förevigar arv. Hennes talang för fotografi och videoproduktion bygger inte bara profiler - den skapar visuella berättelser som resonerar på cellnivå.",
+      description: "Emelie är en expert på att fånga ögonblick som skapar starka visuella avtryck. Med sin talang för fotografering och filmning hjälper hon företag att bygga genuina och minnesvärda profiler på sociala medier. Hennes kreativa öga och känsla för detaljer ger varje projekt en autentisk och engagerande ton, vilket skapar en omedelbar koppling till målgruppen. Genom att kombinera äkthet med strategiskt tänkande hjälper Emelie våra kunder att inte bara synas, utan också lämna ett bestående intryck i den digitala världen.",
       email: "emelie@renew-io.se",
       location: "Kristianstad",
       imageClassName: "object-[50%_40%]",
-      expandedTitle: "Vävare av visuella berättelser"
+      expandedTitle: "Content Creator"
     }
   ];
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
       <motion.section 
         className="relative h-screen flex items-center justify-center overflow-hidden"
         style={{ y }}
@@ -76,10 +76,10 @@ const About = () => {
             y: useTransform(scrollY, [0, 500], [0, 150]),
           }}
         />
-        <div className="absolute inset-0 bg-black opacity-70 z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#0C2A3B] to-[#3A0A3B] opacity-90 z-10"></div>
         <div className="relative z-20 text-center px-6 max-w-3xl">
           <motion.h1 
-            className="text-5xl md:text-7xl font-extrabold mb-2 text-white tracking-tight"
+            className="text-4xl md:text-6xl font-extrabold mb-2 text-white tracking-tight"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -87,26 +87,26 @@ const About = () => {
             Om oss
           </motion.h1>
           <motion.p 
-            className="text-2xl text-red-500 mb-8"
+            className="text-xl text-gray-100 mb-8"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            Omdefiniera excellens inom teknik, innovation och ledarskap
+            Ett kooperativ av experter inom teknik, innovation och ledarskap
           </motion.p>
           <motion.p 
-            className="text-lg text-gray-300"
+            className="text-lg text-gray-200"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            Renew I/O är inte bara ett annat kooperativ - vi är en naturkraft i teknikvärlden. Vår unika blandning av expertis är inte bara imponerande, den är transformativ. Vi möter inte bara branschstandarder, vi krossar dem och sätter nya.
+            Renew I/O är ett unikt kooperativ som samlar experter inom teknik, innovation, ledarskap och digital strategi. Vår styrka ligger i vår mångfald av kompetenser, vilket gör oss till en ovärderlig partner i din digitala transformation och organisatoriska utveckling.
           </motion.p>
         </div>
         <ScrollIndicator />
       </motion.section>
 
-      <div className="relative z-30 bg-black">
+      <div className="relative z-30 bg-gradient-to-br from-gray-50 to-gray-100">
         <div className="container mx-auto px-6 py-12">
           <motion.section 
             className="mb-12"
@@ -114,7 +114,7 @@ const About = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <h2 className="text-3xl font-bold mb-6 text-center text-red-500">Vårt oöverträffade team</h2>
+            <h2 className="text-2xl font-semibold mb-6 text-center text-gray-800">Vårt Team</h2>
             {teamMembers.map((member, index) => (
               <AnimatedTeamMember key={index} {...member} />
             ))}
@@ -126,19 +126,19 @@ const About = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
           >
-            <h2 className="text-3xl font-bold mb-4 flex items-center text-red-500">
+            <h2 className="text-2xl font-semibold mb-4 flex items-center text-gray-800">
               <IconWrapper>
-                <Lightbulb className="w-4 h-4 text-white" />
+                <Lightbulb className="w-4 h-4 text-black" />
               </IconWrapper>
-              Vår vision
+              Vår Vision
             </h2>
-            <Card className="shadow-md hover:shadow-lg transition-shadow duration-300 bg-gray-900 border border-red-500">
+            <Card className="shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
               <CardContent className="p-6">
-                <p className="text-gray-300">
-                  Vi nöjer oss inte med att vara en ledande kraft - vi är här för att helt omdefiniera det digitala landskapet. Som ett kollektiv av oöverträffade experter är vi inte bara katalysatorer för förändring - vi är arkitekterna bakom en ny digital era. Vårt fokus ligger inte bara på att leverera skräddarsydda digitala lösningar - det handlar om att skapa revolutionerande metoder som inte bara effektiviserar företag, utan katapulterar dem in i nya sfärer av möjligheter.
+                <p className="text-gray-600">
+                  Vår vision är att vara den ledande kraften i att forma en digital framtid där innovation möter praktisk tillämpning. Som ett kooperativ av experter strävar vi efter att vara katalysatorn för positiv förändring i företagsvärlden. Vi fokuserar på att leverera skräddarsydda digitala lösningar som inte bara effektiviserar verksamheter, utan också öppnar upp för nya möjligheter och affärsmodeller. Genom att kombinera teknisk expertis med strategiskt tänkande, strävar vi efter att hjälpa våra kunder att navigera den digitala transformationen på ett sätt som är både innovativt och hållbart, samtidigt som vi skapar genuint värde och engagemang för deras intressenter.
                 </p>
-                <p className="text-gray-300 mt-4">
-                  På Renew I/O är kundnöjdhet inte bara ett mål - det är vår besatthet. Vi tror inte bara att vår framgång är kopplad till våra klienters - vi vet att våra innovativa metoder är nyckeln till att låsa upp tidigare ouppnådda nivåer av framgång för de som är modiga nog att samarbeta med oss. Vår hängivenhet till klienternas framgång är inte bara en del av vårt arbete - det är själva essensen av vår existens.
+                <p className="text-gray-600 mt-4">
+                  Kundnöjdhet står i centrum för allt vi gör. Vi är övertygade om att vår framgång är direkt kopplad till våra kunders framgång. Därför lägger vi stor vikt vid att förstå varje kunds unika behov och utmaningar, och arbetar outtröttligt för att överträffa deras förväntningar. Vår dedikation till kundnöjdhet genomsyrar varje aspekt av vårt arbete, från den initiala konsultationen till den slutliga leveransen och beyond. Vi strävar efter att bygga långsiktiga partnerskap med våra kunder, där deras tillfredsställelse och framgång är vårt yttersta mål.
                 </p>
               </CardContent>
             </Card>
@@ -150,16 +150,16 @@ const About = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.8 }}
           >
-            <h2 className="text-3xl font-bold mb-4 flex items-center text-red-500">
+            <h2 className="text-2xl font-semibold mb-4 flex items-center text-gray-800">
               <IconWrapper>
-                <Users className="w-4 h-4 text-white" />
+                <Users className="w-4 h-4 text-black" />
               </IconWrapper>
-              Vårt nätverk
+              Vårt Nätverk
             </h2>
-            <Card className="shadow-md hover:shadow-lg transition-shadow duration-300 bg-gray-900 border border-red-500">
+            <Card className="shadow-md hover:shadow-lg transition-shadow duration-300 bg-white">
               <CardContent className="p-6">
-                <p className="text-gray-300">
-                  Renew I/O är inte bara ett kooperativ - det är ett kraftcentrum av elitspecialister, var och en en titan inom sitt område. Detta oöverträffade kollektiv gör det möjligt för oss att leverera inte bara högkvalitativa lösningar, utan banbrytande innovationer som omdefinerar branscher. Från digital transformation till hållbar utveckling, från visionärt ledarskap till spelförändrande marknadskommunikation - vi möter inte bara behov, vi förutser och överträffar dem på sätt som våra klienter aldrig trodde var möjliga.
+                <p className="text-gray-600">
+                  Som ett kooperativ samarbetar vi som ett brett nätverk av specialister, var och en med egen spetskompetens och egna företag. Detta möjliggör att vi alltid kan erbjuda skräddarsydda och högkvalitativa lösningar, anpassade efter varje kunds unika behov och utmaningar inom digital transformation, hållbar utveckling, ledarskap och effektiv marknadskommunikation.
                 </p>
               </CardContent>
             </Card>

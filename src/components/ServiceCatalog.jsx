@@ -12,47 +12,47 @@ const ServiceCatalog = () => {
     {
       icon: Shield,
       title: "Cybersäkerhet",
-      description: "Implementera och optimera marknadsledande säkerhetslösningar för att skydda din verksamhet mot dagens mest avancerade cyberhot."
+      description: "Implementera och optimera marknadsledande säkerhetslösningar för att skydda din verksamhet mot dagens avancerade cyberhot."
     },
     {
       icon: Cloud,
       title: "Molntjänster",
-      description: "Revolutionera din infrastruktur med våra skalbara och säkra molnlösningar, skräddarsydda för din verksamhets unika behov."
+      description: "Optimera din infrastruktur med skalbara och säkra molnlösningar anpassade för din verksamhet."
     },
     {
       icon: Server,
       title: "Hyperconverged Infrastructure (HCI)",
-      description: "Implementera och optimera HCI-lösningar med fokus på Nutanix för en oöverträffad, skalbar och flexibel infrastruktur."
+      description: "Implementera och optimera HCI-lösningar med fokus på Nutanix för effektiv, skalbar och flexibel infrastruktur."
     },
     {
       icon: LineChart,
       title: "Digital Strategi",
-      description: "Utveckla en framtidssäkrad digital strategi som inte bara ger din verksamhet konkurrensfördelar, utan revolutionerar hela din bransch."
+      description: "Utveckla en framtidssäkrad digital strategi som ger din verksamhet konkurrensfördelar."
     },
     {
       icon: Briefcase,
       title: "IT-Konsulttjänster",
-      description: "Få tillgång till vår oöverträffade expertis för att optimera din IT-infrastruktur och processer bortom vad du trodde var möjligt."
+      description: "Expert rådgivning och support för att optimera din IT-infrastruktur och processer."
     },
     {
       icon: Lightbulb,
       title: "Innovationsledning",
-      description: "Skapa en kultur av banbrytande innovation och teknologisk framåtanda som positionerar din organisation i framkanten av din industri."
+      description: "Främja en kultur av innovation och teknologisk framåtanda i din organisation."
     },
     {
       icon: Users,
       title: "Ledarskapsutbildning",
-      description: "Våra skräddarsydda program utvecklar inte bara framtidens ledare - de skapar visionärer som kommer att omdefiniera affärsvärlden."
+      description: "Skräddarsydda utbildningsprogram för att utveckla framtidens ledare i en digital värld."
     },
     {
       icon: Camera,
       title: "Kreativ Innehållsproduktion",
-      description: "Vår professionella foto- och videoproduktion förstärker inte bara din digitala närvaro - den skapar visuella upplevelser som etsar sig fast i betraktarens minne."
+      description: "Professionell foto- och videoproduktion för att förstärka din digitala närvaro och varumärke."
     },
     {
       icon: Megaphone,
       title: "Digital Marknadsföring",
-      description: "Vår strategiska digitala marknadsföring och hantering av sociala medier ökar inte bara din synlighet - den dominerar din marknadsnisch."
+      description: "Strategisk digital marknadsföring och sociala medier-hantering för att öka din synlighet och kundengagemang."
     }
   ];
 
