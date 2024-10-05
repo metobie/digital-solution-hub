@@ -91,8 +91,16 @@ const TestimonialSection = () => (
       <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Vad våra partners säger</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {[
-          { name: "Anna Svensson", company: "TechInnovate AB", quote: "Renew I/O har varit en ovärderlig partner i vår digitala transformation. Deras expertis och engagemang har verkligen gjort skillnad." },
-          { name: "Erik Lindberg", company: "GreenFuture Solutions", quote: "Att arbeta med Renew I/O känns som att ha en dedikerad innovationsavdelning. De förstår verkligen våra behov och levererar alltid över förväntan." },
+          { 
+            name: "Robert Nesta Nuhu", 
+            company: "Kristianstad Kommun", 
+            quote: "Renew I/O har varit en ovärderlig partner i vår digitala transformation. Deras expertis och engagemang har verkligen gjort skillnad i hur vi levererar våra tjänster till medborgarna." 
+          },
+          { 
+            name: "Tim Omorogieva", 
+            company: "Högskolan Kristianstad", 
+            quote: "Samarbetet med Renew I/O har öppnat nya möjligheter för vår organisation. Deras innovativa lösningar och strategiska rådgivning har varit avgörande för vår framgång i den digitala eran." 
+          },
         ].map((testimonial, index) => (
           <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
             <CardContent className="p-6">
