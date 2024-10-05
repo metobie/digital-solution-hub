@@ -18,24 +18,28 @@ const portfolioItems = [
   {
     title: "Ditt Företag Här",
     description: "Vi ser fram emot att skapa en unik digital lösning för just ditt företag. Låt oss tillsammans forma din online-närvaro!",
-    image: "https://i.imgur.com/placeholder.jpg", // Ersätt med en lämplig platshållarbild
-    url: "#contact" // Länk till kontaktformuläret eller kontaktsidan
+    image: "/placeholder.svg", // Using the placeholder SVG from the public folder
+    url: "#contact"
   }
 ];
 
 const PortfolioItem = ({ title, description, image, url }) => (
-  <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring", stiffness: 300, damping: 10 }}>
-    <Card className="overflow-hidden">
+  <motion.div 
+    whileHover={{ scale: 1.05 }} 
+    transition={{ type: "spring", stiffness: 300, damping: 10 }}
+    className="flex flex-col h-full"
+  >
+    <Card className="overflow-hidden flex flex-col h-full">
       <img src={image} alt={title} className="w-full h-48 object-cover" />
-      <CardContent className="p-4">
+      <CardContent className="p-6 flex flex-col flex-grow">
         <h3 className="text-xl font-semibold mb-2">{title}</h3>
-        <p className="text-gray-600 mb-4">{description}</p>
+        <p className="text-gray-600 mb-4 flex-grow">{description}</p>
         {url.startsWith('#') ? (
-          <a href={url} className="text-blue-600 hover:underline">
+          <a href={url} className="text-blue-600 hover:underline mt-auto">
             Kontakta oss
           </a>
         ) : (
-          <a href={url} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+          <a href={url} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline mt-auto">
             Besök webbplatsen
           </a>
         )}
@@ -46,7 +50,7 @@ const PortfolioItem = ({ title, description, image, url }) => (
 
 const Portfolio = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 pt-24">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-24">
       <div className="container mx-auto px-4">
         <h1 className="text-4xl font-bold text-center mb-12">Vår Digitala Portfölj</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
