@@ -1,18 +1,5 @@
 import { Shield, Briefcase, Lightbulb, Cloud, Code, LineChart, Users, Camera, Megaphone } from 'lucide-react';
 
-const createServiceContent = (title, content) => (
-  <div>
-    <p>{content.description}</p>
-    <h3 className="font-semibold mt-2 mb-1">{content.subtitle}</h3>
-    <ul className="list-disc pl-5">
-      {content.items.map((item, index) => (
-        <li key={index}>{item}</li>
-      ))}
-    </ul>
-    {content.conclusion && <p className="mt-2">{content.conclusion}</p>}
-  </div>
-);
-
 export const services = [
   {
     icon: Shield,
@@ -21,18 +8,20 @@ export const services = [
     examples: [
       {
         title: "Säkerhetsrevision och riskbedömning",
-        content: createServiceContent("Säkerhetsrevision och riskbedömning", {
-          description: "En säkerhetsrevision och riskbedömning är grundläggande för att identifiera sårbarheter och potentiella hot mot en organisations IT-infrastruktur.",
-          subtitle: "Processen inkluderar:",
-          items: [
-            "Genomgång av befintliga säkerhetspolicyer och procedurer",
-            "Identifiering av kritiska tillgångar och data",
-            "Analys av potentiella hot och sårbarheter",
-            "Bedömning av nuvarande säkerhetsåtgärders effektivitet",
-            "Rekommendationer för förbättringar och riskreducering"
-          ],
-          conclusion: "Resultatet av denna process ger en solid grund för att utveckla en omfattande cybersäkerhetsstrategi."
-        })
+        content: (
+          <div>
+            <p>En säkerhetsrevision och riskbedömning är grundläggande för att identifiera sårbarheter och potentiella hot mot en organisations IT-infrastruktur.</p>
+            <h3 className="font-semibold mt-2 mb-1">Processen inkluderar:</h3>
+            <ul className="list-disc pl-5">
+              <li>Genomgång av befintliga säkerhetspolicyer och procedurer</li>
+              <li>Identifiering av kritiska tillgångar och data</li>
+              <li>Analys av potentiella hot och sårbarheter</li>
+              <li>Bedömning av nuvarande säkerhetsåtgärders effektivitet</li>
+              <li>Rekommendationer för förbättringar och riskreducering</li>
+            </ul>
+            <p className="mt-2">Resultatet av denna process ger en solid grund för att utveckla en omfattande cybersäkerhetsstrategi.</p>
+          </div>
+        )
       },
       {
         title: "Implementering av Zero Trust-arkitektur",
@@ -454,25 +443,27 @@ export const services = [
   },
   {
     icon: Camera,
-    title: "Innehållsproduktion",
+    title: "Kreativ Innehållsproduktion",
     description: "Professionell foto- och videoproduktion för att förstärka din digitala närvaro och varumärke.",
     examples: [
       {
         title: "Produktion av företagspresentationsvideos",
-        content: createServiceContent("Produktion av företagspresentationsvideos", {
-          description: "Produktion av företagspresentationsvideos är ett kraftfullt verktyg för att kommunicera ett företags värderingar, kultur och erbjudanden på ett engagerande sätt.",
-          subtitle: "Processen för att skapa en effektiv företagspresentationsvideo inkluderar:",
-          items: [
-            "Utveckling av ett tydligt koncept och manus",
-            "Planering av inspelningsplatser och scenografi",
-            "Professionell videoinspelning med högkvalitativ utrustning",
-            "Intervjuer med nyckelpersoner inom företaget",
-            "Inkludering av företagets produkter eller tjänster i action",
-            "Professionell redigering och postproduktion",
-            "Tillägg av grafik, animationer och musik"
-          ],
-          conclusion: "En välproducerad företagspresentationsvideo kan effektivt förmedla företagets budskap, bygga förtroende hos potentiella kunder och partners, samt stärka varumärket."
-        })
+        content: (
+          <div>
+            <p>Produktion av företagspresentationsvideos är ett kraftfullt verktyg för att kommunicera ett företags värderingar, kultur och erbjudanden på ett engagerande sätt.</p>
+            <h3 className="font-semibold mt-2 mb-1">Processen för att skapa en effektiv företagspresentationsvideo inkluderar:</h3>
+            <ul className="list-disc pl-5">
+              <li>Utveckling av ett tydligt koncept och manus</li>
+              <li>Planering av inspelningsplatser och scenografi</li>
+              <li>Professionell videoinspelning med högkvalitativ utrustning</li>
+              <li>Intervjuer med nyckelpersoner inom företaget</li>
+              <li>Inkludering av företagets produkter eller tjänster i action</li>
+              <li>Professionell redigering och postproduktion</li>
+              <li>Tillägg av grafik, animationer och musik</li>
+            </ul>
+            <p className="mt-2">En välproducerad företagspresentationsvideo kan effektivt förmedla företagets budskap, bygga förtroende hos potentiella kunder och partners, samt stärka varumärket.</p>
+          </div>
+        )
       },
       {
         title: "Fotosessioner för personalporträtt och företagsmiljöer",
@@ -515,5 +506,70 @@ export const services = [
     ],
     experts: ["Emelie Nylander"]
   },
-  // ... keep existing code for other services
+  {
+    icon: Megaphone,
+    title: "Digital Marknadsföring",
+    description: "Strategisk digital marknadsföring och sociala medier-hantering för att öka din synlighet och kundengagemang.",
+    examples: [
+      {
+        title: "Utveckling av innehållsstrategier för sociala medier",
+        content: (
+          <div>
+            <p>Utveckling av innehållsstrategier för sociala medier är avgörande för att skapa en konsekvent och engagerande närvaro på olika social plattformar.</p>
+            <h3 className="font-semibold mt-2 mb-1">En effektiv innehållsstrategi för sociala medier inkluderar:</h3>
+            <ul className="list-disc pl-5">
+              <li>Definiering av målgrupper och deras preferenser</li>
+              <li>Val av relevanta sociala medieplattformar</li>
+              <li>Skapande av en innehållskalender</li>
+              <li>Utveckling av olika innehållstyper (t.ex. bilder, videos, stories)</li>
+              <li>Anpassning av innehåll för varje plattform</li>
+              <li>Integrering av varumärkets röst och värderingar</li>
+              <li>Planering för interaktion och community management</li>
+            </ul>
+            <p className="mt-2">En välutformad innehållsstrategi hjälper företag att bygga starka relationer med sin målgrupp, öka engagemanget och driva affärsresultat genom sociala medier.</p>
+          </div>
+        )
+      },
+      {
+        title: "Skapande och hantering av digitala reklamkampanjer",
+        content: (
+          <div>
+            <p>Skapande och hantering av digitala reklamkampanjer är en komplex process som syftar till att nå rätt målgrupp med rätt budskap vid rätt tidpunkt.</p>
+            <h3 className="font-semibold mt-2 mb-1">Nyckelsteg i processen inkluderar:</h3>
+            <ul className="list-disc pl-5">
+              <li>Definiering av kampanjmål och KPI:er</li>
+              <li>Målgruppsanalys och segmentering</li>
+              <li>Val av lämpliga digitala reklamplattformar (t.ex. Google Ads, Facebook Ads)</li>
+              <li>Skapande av engagerande annonser (text, bild, video)</li>
+              <li>Implementering av målgruppsinriktning och budgivningsstrategier</li>
+              <li>Uppsättning av spårning och konverteringsmätning</li>
+              <li>Kontinuerlig optimering baserad på prestationsdata</li>
+            </ul>
+            <p className="mt-2">Genom att skapa och hantera effektiva digitala reklamkampanjer kan företag öka sin synlighet, driva trafik till sin webbplats och generera leads eller försäljning på ett kostnadseffektivt sätt.</p>
+          </div>
+        )
+      },
+      {
+        title: "Planering och genomförande av företagsevent",
+        content: (
+          <div>
+            <p>Planering och genomförande av företagsevent är en viktig del av marknadsförings- och kundrelationsstrategin för många företag.</p>
+            <h3 className="font-semibold mt-2 mb-1">Nyckelaspekter av eventplanering inkluderar:</h3>
+            <ul className="list-disc pl-5">
+              <li>Definiering av eventets syfte och mål</li>
+              <li>Val av lämplig plats och datum</li>
+              <li>Budgetering och resursallokering</li>
+              <li>Utveckling av eventprogram och innehåll</li>
+              <li>Marknadsföring av eventet genom olika kanaler</li>
+              <li>Koordinering av logistik (catering, teknik, etc.)</li>
+              <li>Hantering av gästlista och registrering</li>
+              <li>Uppföljning och utvärdering efter eventet</li>
+            </ul>
+            <p className="mt-2">Framgångsrika företagsevent kan stärka kundrelationer, öka varumärkesmedvetenheten och generera nya affärsmöjligheter.</p>
+          </div>
+        )
+      }
+    ],
+    experts: ["Emelie Nylander", "Tim Omorogieva"]
+  }
 ];
