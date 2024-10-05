@@ -116,12 +116,12 @@ const TestimonialSection = () => (
 );
 
 const CallToActionSection = () => (
-  <section className="py-16 bg-gradient-to-br from-[#3E7A8B] to-[#8A3A8B] text-white">
+  <section className="py-16 bg-white text-gray-800">
     <div className="container mx-auto px-6 text-center">
       <h2 className="text-3xl font-bold mb-4">Redo att forma framtiden tillsammans?</h2>
       <p className="text-xl mb-8">Låt oss inleda en dialog om hur vi kan hjälpa er att nå era mål och visioner.</p>
       <Link to="/contact">
-        <Button size="lg" variant="outline" className="bg-white text-[#3E7A8B] hover:bg-gray-100 transition-all duration-300">
+        <Button size="lg" className="bg-gradient-to-br from-[#3E7A8B] to-[#8A3A8B] text-white hover:from-[#5A9AAB] hover:to-[#AA5AAB] transition-all duration-300">
           Kontakta oss idag
         </Button>
       </Link>
