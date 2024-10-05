@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Linkedin } from 'lucide-react';
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -7,12 +7,10 @@ import Confetti from 'react-confetti';
 
 const Contact = () => {
   const [showConfetti, setShowConfetti] = useState(false);
-  const { scrollY } = useScroll();
-  const y = useTransform(scrollY, [0, 500], [0, 150]);
 
   const handleEmailClick = () => {
     setShowConfetti(true);
-    setTimeout(() => setShowConfetti(false), 5000);
+    setTimeout(() => setShowConfetti(false), 5000); // Hide confetti after 5 seconds
     window.location.href = "mailto:info@renew-io.se?subject=Förfrågan%20från%20webbplatsen&body=Hej%20Renew%20I/O,%0D%0A%0D%0AJag%20skulle%20vilja%20veta%20mer%20om%20era%20tjänster.";
   };
 
@@ -35,19 +33,10 @@ const Contact = () => {
   );
 
   return (
-    <div className="min-h-screen relative overflow-hidden">
-      <motion.div 
-        className="absolute inset-0 z-0"
-        style={{
-          backgroundImage: "url('https://i.imgur.com/2dexfVJ.jpeg')",
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          y,
-        }}
-      />
-      <div className="absolute inset-0 bg-gradient-to-br from-[#0C2A3B] to-[#3A0A3B] opacity-90 z-10"></div>
+    <div className="min-h-screen relative bg-cover bg-center flex items-center justify-center" style={{ backgroundImage: "url('https://i.imgur.com/2dexfVJ.jpeg')" }}>
+      <div className="absolute inset-0 bg-black opacity-70"></div>
       {showConfetti && <Confetti />}
-      <div className="container mx-auto px-6 py-12 relative z-20 max-w-4xl md:pt-12 pt-24">
+      <div className="container mx-auto px-6 py-12 relative z-10 max-w-4xl md:pt-12 pt-24">
         <motion.h1 
           className="text-4xl font-bold mb-8 text-center text-white"
           initial={{ opacity: 0, y: -20 }}
