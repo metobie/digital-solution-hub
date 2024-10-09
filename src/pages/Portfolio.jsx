@@ -7,7 +7,7 @@ const portfolioItems = [
   {
     title: "Frame Wave",
     description: "En komplett webbdesign baserad på kundens kärnverksamhet.",
-    image: "https://i.imgur.com/XLFseHc.jpeg",
+    image: "https://i.imgur.com/MZXO6Nf.png",
     url: "https://framewave.se"
   },
   {
