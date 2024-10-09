@@ -37,7 +37,9 @@ const PortfolioItem = ({ title, description, image, url }) => (
     className="flex flex-col h-full"
   >
     <Card className="overflow-hidden flex flex-col h-full">
-      <img src={image} alt={title} className="w-full h-48 object-cover" />
+      <div className="w-full aspect-square">
+        <img src={image} alt={title} className="w-full h-full object-cover" />
+      </div>
       <CardContent className="p-6 flex flex-col flex-grow">
         <h3 className="text-xl font-semibold mb-2">{title}</h3>
         <p className="text-gray-600 mb-4 flex-grow">{description}</p>
