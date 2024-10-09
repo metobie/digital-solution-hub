@@ -17,6 +17,12 @@ const portfolioItems = [
     url: "https://selectedtrade.dk"
   },
   {
+    title: "Eyobel Samson",
+    description: "En personlig webbplats som speglar Eyobel Samsons professionella profil och kompetenser.",
+    image: "https://i.imgur.com/RP527Md.png",
+    url: "https://eyoo.se"
+  },
+  {
     title: "Ditt Företag Här",
     description: "Vi ser fram emot att skapa en unik digital lösning för just ditt företag. Låt oss tillsammans forma din online-närvaro!",
     image: "/placeholder.svg",
