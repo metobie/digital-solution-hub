@@ -13,7 +13,7 @@ const portfolioItems = [
   {
     title: "Selected Trade",
     description: "Kundanpassad webbdesign med specifika önskemål om layout och färger.",
-    image: "https://i.imgur.com/bCpJF4Y.jpeg",
+    image: "https://i.imgur.com/sSo09hU.png",
     url: "https://selectedtrade.dk"
   },
   {
